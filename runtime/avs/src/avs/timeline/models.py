@@ -1,0 +1,167 @@
+"""src/avs/timeline/models.py — 时间线数据模型。
+
+与 schemas/timeline.schema.json 保持一致；不依赖 Pydantic，只用 dataclass
+以减少外部依赖。所有路径为相对路径字符串（相对于 episode 根）。
+"""
+from __future__ import annotations
+
+import json
+from dataclasses import dataclass, field
+from datetime import UTC, datetime
+from pathlib import Path
+from typing import Any
+
+
+def _now_iso() -> str:
+    return datetime.now(tz=UTC).isoformat()
+
+
+@dataclass
+class Canvas:
+    width: int = 1080
+    height: int = 1920
+    fps: float = 30.0
+
+
+@dataclass
+class Clip:
+    clip_id: str
+    start: float               # 轨道起始秒
+    duration: float            # 片段时长秒
+
+    # 可选字段
+    asset_ref: str | None = None     # 相对路径或 renderer 标识
+    in_point: float | None = None    # 素材截取起点
+    out_point: float | None = None   # 素材截取终点
+    source_start: float | None = None
+    source_end: float | None = None
+    transform: dict[str, Any] | None = None  # 例如 {"layout": "contain"}
+    text: str | None = None          # 文字内容（字幕/占位卡）
+    style: dict[str, Any] | None = None      # 样式参数
+    primitive: str | None = None
+    asset_id: str | None = None
+    region_id: str | None = None
+    segment_id: str | None = None
+    evidence_id: str | None = None
+    reference_pattern_ids: list[str] | None = None
+    keyframes: list[dict[str, Any]] | None = None
+
+    @property
+    def end(self) -> float:
+        return self.start + self.duration
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "clip_id": self.clip_id,
+            "start": self.start,
+            "duration": self.duration,
+            "asset_ref": self.asset_ref,
+            "in_point": self.in_point,
+            "out_point": self.out_point,
+            "source_start": self.source_start,
+            "source_end": self.source_end,
+            "transform": self.transform,
+            "text": self.text,
+            "style": self.style,
+            "primitive": self.primitive,
+            "asset_id": self.asset_id,
+            "region_id": self.region_id,
+            "segment_id": self.segment_id,
+            "evidence_id": self.evidence_id,
+            "reference_pattern_ids": self.reference_pattern_ids,
+            "keyframes": self.keyframes,
+        }
+
+
+@dataclass
+class Track:
+    track_id: str
+    kind: str          # "video" | "audio" | "caption" | "graphic"
+    clips: list[Clip] = field(default_factory=list)
+    audio_role: str | None = None  # "voice" | "bgm" | "sfx" | "intentional_silence" (仅 audio track)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "track_id": self.track_id,
+            "kind": self.kind,
+            "audio_role": self.audio_role,
+            "clips": [c.to_dict() for c in self.clips],
+        }
+
+
+@dataclass
+class Timeline:
+    episode_id: str
+    canvas: Canvas = field(default_factory=Canvas)
+    tracks: list[Track] = field(default_factory=list)
+    total_duration: float | None = None
+    version: str = "1.0"
+
+    def compute_duration(self) -> float:
+        """从所有轨道 clip 计算总时长。"""
+        max_end = 0.0
+        for track in self.tracks:
+            for clip in track.clips:
+                max_end = max(max_end, clip.end)
+        return round(max_end, 3)
+
+    def get_track(self, kind: str) -> Track | None:
+        for t in self.tracks:
+            if t.kind == kind:
+                return t
+        return None
+
+    def to_dict(self) -> dict[str, Any]:
+        dur = self.total_duration if self.total_duration is not None else self.compute_duration()
+        return {
+            "episode_id": self.episode_id,
+            "version": self.version,
+            "canvas": {"width": self.canvas.width, "height": self.canvas.height, "fps": self.canvas.fps},
+            "total_duration": dur,
+            "tracks": [t.to_dict() for t in self.tracks],
+            "generated_at": _now_iso(),
+        }
+
+    def save(self, path: Path) -> None:
+        """原子写入 timeline.json；实质内容未变时保持文件与 mtime 不动。
+
+        渲染层以 mtime 判定时间线是否有更新。若每次运行都无条件重写内容相同的
+        timeline.json，渲染缓存会永久失效，退化为每次全量重渲染。
+
+        比较时必须剔除 `generated_at`：它每次调用都取当前时间，逐字节比较会让
+        "内容未变"永不成立，mtime 稳定性也就无从谈起。
+        """
+        from avs.freshness import write_text_if_changed
+
+        payload = self.to_dict()
+        try:
+            with path.open(encoding="utf-8") as fh:
+                existing = json.load(fh)
+        except (OSError, json.JSONDecodeError):
+            existing = None
+        if existing is not None:
+            if {k: v for k, v in existing.items() if k != "generated_at"} == {
+                k: v for k, v in payload.items() if k != "generated_at"
+            }:
+                return
+        write_text_if_changed(path, json.dumps(payload, ensure_ascii=False, indent=2))
+
+    @classmethod
+    def load(cls, path: Path) -> Timeline:
+        with path.open(encoding="utf-8") as fh:
+            data = json.load(fh)
+        canvas = Canvas(**data["canvas"])
+        tracks = []
+        for td in data.get("tracks", []):
+            clips = [Clip(**{
+                k: v for k, v in cd.items()
+                if k in ("clip_id","start","duration","asset_ref","in_point","out_point","source_start","source_end","transform","text","style", "primitive", "asset_id", "region_id", "segment_id", "evidence_id", "reference_pattern_ids", "keyframes")
+            }) for cd in td.get("clips", [])]
+            tracks.append(Track(track_id=td["track_id"], kind=td["kind"], clips=clips, audio_role=td.get("audio_role")))
+        return cls(
+            episode_id=data["episode_id"],
+            canvas=canvas,
+            tracks=tracks,
+            total_duration=data.get("total_duration"),
+            version=data.get("version", "1.0"),
+        )

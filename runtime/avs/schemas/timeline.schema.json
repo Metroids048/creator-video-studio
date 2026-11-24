@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "timeline.schema.json",
+  "title": "Timeline",
+  "description": "渲染器共享时间线协议",
+  "type": "object",
+  "required": ["episode_id", "version", "canvas", "tracks", "generated_at"],
+  "additionalProperties": false,
+  "properties": {
+    "episode_id": {"type": "string"},
+    "version": {"type": "string", "description": "协议版本，当前 1.1"},
+    "canvas": {
+      "type": "object",
+      "required": ["width", "height", "fps"],
+      "additionalProperties": false,
+      "properties": {
+        "width": {"type": "integer"},
+        "height": {"type": "integer"},
+        "fps": {"type": "number"}
+      }
+    },
+    "total_duration": {"type": ["number", "null"]},
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["track_id", "kind", "clips"],
+        "additionalProperties": false,
+        "properties": {
+          "track_id": {"type": "string"},
+          "kind": {"type": "string", "enum": ["video", "audio", "caption", "graphic"]},
+          "audio_role": {
+            "type": ["string", "null"],
+            "enum": ["voice", "bgm", "sfx", "intentional_silence", null],
+            "description": "音频轨道角色（仅 kind=audio 时应显式指定）"
+          },
+          "clips": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["clip_id", "start", "duration"],
+              "additionalProperties": false,
+              "properties": {
+                "clip_id": {"type": "string"},
+                "start": {"type": "number", "minimum": 0},
+                "duration": {"type": "number", "exclusiveMinimum": 0},
+                "asset_ref": {"type": ["string", "null"]},
+                "in_point": {"type": ["number", "null"]},
+                "out_point": {"type": ["number", "null"]},
+                "source_start": {"type": ["number", "null"], "minimum": 0},
+                "source_end": {"type": ["number", "null"], "exclusiveMinimum": 0},
+                "transform": {"type": ["object", "null"]},
+                "text": {"type": ["string", "null"]},
+                "style": {"type": ["object", "null"]},
+                "primitive": {"type": ["string", "null"]},
+                "asset_id": {"type": ["string", "null"]},
+                "region_id": {"type": ["string", "null"]},
+                "segment_id": {"type": ["string", "null"]},
+                "evidence_id": {"type": ["string", "null"]},
+                "reference_pattern_ids": {"type": ["array", "null"], "items": {"type": "string"}},
+                "keyframes": {"type": ["array", "null"], "items": {"type": "object"}}
+              }
+            }
+          }
+        }
+      }
+    },
+    "generated_at": {"type": "string", "format": "date-time"}
+  }
+}

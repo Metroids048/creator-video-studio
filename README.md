@@ -4,9 +4,13 @@
 
 ## 快速开始
 
-需要 Python 3.10+，以及带有 `libx264` 的 FFmpeg 和 FFprobe。可使用 PATH 或项目的 `.studio/bin/`。以下命令只读，不会下载媒体或调用模型。
+需要 Python 3.10+、Node.js 24，以及带有 `libx264` 的 FFmpeg 和 FFprobe。先把本机工具接到工作室的固定入口，再查看可用路线。这几条命令不会下载媒体或调用模型。
 
 ```sh
+mkdir -p .studio/bin
+ln -s "$(command -v node)" .studio/bin/node
+ln -s "$(command -v ffmpeg)" .studio/bin/ffmpeg
+ln -s "$(command -v ffprobe)" .studio/bin/ffprobe
 python3 scripts/studio.py doctor
 python3 scripts/studio.py templates list
 python3 scripts/studio.py templates match '纸墨地形，讲一次练习如何带来反馈' --purpose engineering_validation
@@ -58,6 +62,19 @@ python3 scripts/studio.py inspect-bundle works/paperink-feedback-example/version
 ```
 
 样例生成 12 秒无声视频。初版在 `works/paperink-feedback-example/versions/v0001/`，含成片、封面、字幕、可编辑工程包和制作回执。审查保留待完成状态，完成同版审查后才能交付。
+
+## 本地剪辑与可选引擎
+
+专注计时器示例展示保留片段、插入静帧、增加音轨和字幕。前两条命令安装锁定的剪辑依赖并生成测试图形和音频。第三条命令验证时间线方案。
+
+```sh
+npm ci --prefix runtime/editor
+bash examples/make-focus-media.sh
+python3 scripts/studio.py plan examples/briefs/focus.json
+```
+
+- AVS 的 Python 源码、Episode 合同、分阶段入口及本地动效模板随仓库提供。按 [AVS 本地配置](runtime/avs/README.md) 安装后，用 `bash scripts/avs.sh runtime-check` 核对运行条件。
+- Nook 的场景引擎随仓库提供。按 [Nook 本地配置](resources/nook-anim/setup.md) 安装依赖和字体，再运行 `python3 scripts/nook.py check`。
 
 ## 代码与文档
 

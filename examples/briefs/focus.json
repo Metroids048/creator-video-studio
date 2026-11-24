@@ -1,0 +1,27 @@
+{
+  "id":"focus",
+  "title":"如何开始和暂停一次专注",
+  "request":"把这段专注计时器录屏、两张图片和说明文字剪成一条视频。保留开始和暂停两个实际操作，加字幕和讲解，给我可编辑工程。",
+  "description":"以本地专注计时器为演示，先开始倒计时，再暂停并确认剩余时长。",
+  "route":"editor",
+  "mode":"录屏与图文剪辑",
+  "primary":"screen",
+  "inputs":[
+    {"id":"screen","kind":"video","path":"../media/focus/screen.mp4","origin":"FFmpeg 本地生成的无声测试画面"},
+    {"id":"capture-log","kind":"notes","path":"../media/focus/capture.json","origin":"本地生成的样例元数据"},
+    {"id":"before","kind":"image","path":"../media/focus/before.png","frames":48,"origin":"本地生成的开始前示意图"},
+    {"id":"paused","kind":"image","path":"../media/focus/paused.png","frames":75,"origin":"本地生成的暂停示意图"},
+    {"id":"start-voice","kind":"audio","path":"../media/focus/start.aiff","origin":"本地生成的测试音调"},
+    {"id":"pause-voice","kind":"audio","path":"../media/focus/pause.aiff","origin":"本地生成的测试音调"}
+  ],
+  "operations":[
+    {"type":"keep_ranges","ranges":[{"start":24,"end":241}]},
+    {"type":"insert","at":0,"assetId":"before","in":0},
+    {"type":"insert","at":241,"assetId":"paused","in":0},
+    {"type":"audio_add","id":"start-line","assetId":"start-voice","start":49,"end":150,"role":"voice","anchor":"timeline","coordinateSpace":"result"},
+    {"type":"audio_add","id":"pause-line","assetId":"pause-voice","start":190,"end":314,"role":"voice","anchor":"timeline","coordinateSpace":"result"},
+    {"type":"caption_add","id":"intro","text":"专注计时器｜开始与暂停","start":0,"end":48,"anchor":"timeline","coordinateSpace":"result"},
+    {"type":"caption_add","id":"step-one","text":"先点开始专注，计时器开始倒数。","start":49,"end":150,"anchor":"timeline","coordinateSpace":"result"},
+    {"type":"caption_add","id":"step-two","text":"想停一下就点暂停，剩余时间会保留。","start":190,"end":314,"anchor":"timeline","coordinateSpace":"result"}
+  ]
+}

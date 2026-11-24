@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "shot-plan.schema.json",
+  "title": "Deterministic shot plan",
+  "type": "object",
+  "required": ["episode_id", "shots", "excluded_assets"],
+  "additionalProperties": false,
+  "properties": {
+    "episode_id": {"type": "string"},
+    "shots": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {
+      "source_start": {"type": ["number", "null"], "minimum": 0},
+      "source_end": {"type": ["number", "null"], "exclusiveMinimum": 0},
+      "asset_refs": {"type": "array", "items": {"type": "object", "properties": {
+        "source_start": {"type": ["number", "null"], "minimum": 0},
+        "source_end": {"type": ["number", "null"], "exclusiveMinimum": 0}
+      }}}
+    }}},
+    "excluded_assets": {"type": "array", "items": {"type": "object"}},
+    "analysis_asset_ids": {"type": "array", "items": {"type": "string"}}
+  }
+}

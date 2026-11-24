@@ -129,7 +129,7 @@
     "avs": {
       "integration": "adapted_unverified_media",
       "entry": "scripts/avs.sh",
-      "source": "sources/video",
+      "source": "runtime/avs/src/avs/cli.py",
       "files": [
         "runtime/avs/src/avs/cli.py",
         "scripts/avs-plan.py",

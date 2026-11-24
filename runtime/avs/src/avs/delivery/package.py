@@ -1,0 +1,369 @@
+"""Build a self-contained editable delivery package."""
+from __future__ import annotations
+
+import json
+import shutil
+import subprocess
+from datetime import UTC, datetime
+from pathlib import Path
+from typing import Any
+
+from avs.delivery.manifest import file_record, sha256_file, validate_manifest
+from avs.delivery.paths import safe_delivery_target
+from avs.models.episode import EpisodeModel
+
+
+def _final_video_path(ep_dir: Path) -> Path:
+    candidates = (
+        ep_dir / "renders" / "final-with-captions.mp4",
+        ep_dir / "renders" / "preview-with-motion.mp4",
+        ep_dir / "renders" / "preview-with-captions.mp4",
+    )
+    return next((path for path in candidates if path.is_file()), candidates[0])
+
+
+def _copy_file(source: Path, target: Path, *, force: bool) -> Path:
+    if not source.is_file():
+        raise FileNotFoundError(f"交付所需文件不存在: {source}")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if target.is_file():
+        if sha256_file(source) == sha256_file(target):
+            return target
+        if not force:
+            raise FileExistsError(f"交付目标已有不同内容，请使用 --force: {target}")
+    shutil.copy2(source, target)
+    return target
+
+
+def _write_text(path: Path, content: str, *, force: bool) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.is_file():
+        if path.read_text(encoding="utf-8") == content:
+            return path
+        if not force:
+            raise FileExistsError(f"交付目标已有不同内容，请使用 --force: {path}")
+    path.write_text(content, encoding="utf-8")
+    return path
+
+
+def _qa_report(ep_dir: Path) -> dict[str, Any]:
+    path = ep_dir / "delivery" / "qa-report.json"
+    if not path.is_file():
+        raise FileNotFoundError("缺少 delivery/qa-report.json，请先运行 avs qa")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("passed") is not True:
+        blocking = payload.get("blocking_reasons", [])
+        reasons_text = "; ".join(blocking) if blocking else "未知原因"
+        raise ValueError(f"QA 报告未通过，不能生成交付包。原因: {reasons_text}")
+    return payload
+
+
+def _require_passing_creative_review(ep_dir: Path, final_video: Path) -> None:
+    """Refuse delivery until a real reviewer has scored this exact MP4."""
+    from avs.qa.creative_review import evaluate_gate, load_review
+
+    review = load_review(ep_dir)
+    if review is None:
+        raise ValueError("缺少 work/qa/creative-review.json；必须先实际审看片子并评分")
+    if review.get("reviewer_kind") not in {"agent", "provider"} or not review.get("reviewer_id"):
+        raise ValueError("Creative Review 没有有效的真实审片人身份")
+    if not review.get("reviewed_artifacts"):
+        raise ValueError("Creative Review 未记录实际查看的 MP4 / 关键帧 / 联系表")
+    if review.get("scores") is None:
+        raise ValueError("Creative Review 只有审片包，尚未填写评分")
+    gate = review.get("gate") or {}
+    if not gate.get("technical_passed") or not gate.get("creative_passed"):
+        raise ValueError("Creative Gate 未通过，不能生成交付包")
+    evaluated = evaluate_gate(review.get("metrics") or {}, review["scores"], review.get("findings") or [])
+    if not evaluated["technical_passed"] or not evaluated["creative_passed"]:
+        raise ValueError("Creative Review 评分或技术证据未达到 Gate 阈值")
+    if review.get("video_sha256") != sha256_file(final_video):
+        raise ValueError("Creative Review 对应的不是当前最终视频；请重新审片")
+
+
+def _require_current_qa(ep_dir: Path, final_video: Path) -> dict[str, Any]:
+    report = _qa_report(ep_dir)
+    if not report.get("technical_passed") or not final_video.is_file() or report.get("video_sha256") != sha256_file(final_video):
+        raise ValueError("QA 报告未绑定当前最终视频；必须重新运行 technical-qa")
+    return report
+
+
+def require_current_delivery(ep_dir: Path, *, publishable: bool) -> None:
+    """Validate the package and its acceptance before export or completion."""
+    final_video = _final_video_path(ep_dir)
+    _require_current_qa(ep_dir, final_video)
+    if publishable:
+        from avs.qa.approval import verify_approval_current
+        _require_passing_creative_review(ep_dir, final_video)
+        valid, reason = verify_approval_current(ep_dir, final_video)
+        if not valid:
+            raise ValueError(reason)
+    manifest = json.loads((ep_dir / "delivery/delivery-manifest.json").read_text(encoding="utf-8"))
+    if manifest.get("video_sha256") != sha256_file(final_video):
+        raise ValueError("交付包对应的视频已变更；必须重新 deliver")
+    validate_manifest(ep_dir, manifest)
+
+
+def run_delivery(ep_dir: Path, model: EpisodeModel, *, force: bool = False) -> dict[str, Any]:
+    """Copy all editable outputs into delivery/ and write a validated manifest."""
+    if model.status not in {"QA_PASSED", "DELIVERY_READY"}:
+        raise ValueError(f"当前状态 {model.status}，必须先达到 QA_PASSED")
+
+    current_final = _final_video_path(ep_dir)
+    qa_report = _require_current_qa(ep_dir, current_final)
+
+    # Verify QA report matches current state
+    if model.publishable:
+        strict_active = "final-render" in model.completed_stages or (ep_dir / "work" / "content" / "shot-plan.json").is_file()
+        if strict_active and "technical-qa" not in model.completed_stages and "qa" not in model.completed_stages:
+            raise ValueError("必须先完成 technical-qa")
+        if strict_active and "creative-gate" not in model.completed_stages:
+            raise ValueError("必须先通过 Creative Gate")
+        if not qa_report.get("human_approved") and "approve" not in model.completed_stages:
+            raise ValueError("publishable=true 需要人工视觉批准，但 QA 报告中 human_approved=false")
+
+        # Verify final video hash matches approval
+        from avs.qa.approval import load_approval, verify_approval_current
+
+        approval = load_approval(ep_dir)
+        if approval is None:
+            raise ValueError("publishable=true 需要人工视觉批准，但缺少 visual-approval.json")
+
+        final_video = current_final
+
+        if not final_video.is_file():
+            raise FileNotFoundError("最终视频不存在")
+
+        _require_passing_creative_review(ep_dir, final_video)
+
+        valid, reason = verify_approval_current(ep_dir, final_video)
+        if not valid:
+            raise ValueError(reason or "人工批准已失效")
+
+    delivery_dir = ep_dir / "delivery"
+    delivery_dir.mkdir(parents=True, exist_ok=True)
+    files: list[tuple[Path, bool]] = []
+
+    required_copies = (
+        (ep_dir / "renders" / "preview-clean.mp4", Path("preview-clean.mp4")),
+        (ep_dir / "renders" / "preview-with-captions.mp4", Path("preview-with-captions.mp4")),
+        (ep_dir / "work" / "captions.srt", Path("captions.srt")),
+        (ep_dir / "work" / "timeline.json", Path("timeline/timeline.json")),
+        (ep_dir / "work" / "timeline.csv", Path("timeline/timeline.csv")),
+    )
+    for source, relative in required_copies:
+        files.append((_copy_file(source, safe_delivery_target(ep_dir, relative), force=force), True))
+
+    optional_copies = (
+        (ep_dir / "renders" / "final-clean.mp4", Path("final-clean.mp4")),
+        (ep_dir / "renders" / "final-with-captions.mp4", Path("final-with-captions.mp4")),
+        (ep_dir / "renders" / "preview-with-motion.mp4", Path("preview-with-motion.mp4")),
+        (ep_dir / "work" / "motion-manifest.json", Path("motion-manifest.json")),
+        (ep_dir / "work" / "reference" / "reference-recipe.json", Path("reference/reference-recipe.json")),
+        (ep_dir / "work" / "content" / "brief.md", Path("content/brief.md")),
+        (ep_dir / "work" / "content" / "script.json", Path("content/script.json")),
+        (ep_dir / "work" / "content" / "storyboard.json", Path("content/storyboard.json")),
+        (ep_dir / "work" / "content" / "missing-assets.md", Path("content/missing-assets.md")),
+        (ep_dir / "work" / "input-manifest.json", Path("input/input-manifest.json")),
+        (ep_dir / "work" / "analysis" / "asset-intelligence.json", Path("analysis/asset-intelligence.json")),
+        (ep_dir / "work" / "analysis" / "recording-analysis.json", Path("analysis/recording-analysis.json")),
+        (ep_dir / "work" / "analysis" / "document-analysis.json", Path("analysis/document-analysis.json")),
+        (ep_dir / "work" / "analysis" / "transcription.json", Path("analysis/transcription.json")),
+        (ep_dir / "work" / "content" / "creative-brief.json", Path("content/creative-brief.json")),
+        (ep_dir / "work" / "content" / "reference-selection.json", Path("content/reference-selection.json")),
+        (ep_dir / "work" / "content" / "evidence-map.json", Path("content/evidence-map.json")),
+        (ep_dir / "work" / "content" / "shot-plan.json", Path("content/shot-plan.json")),
+        (ep_dir / "work" / "qa" / "visual-review.json", Path("qa/visual-review.json")),
+    )
+    for source, relative in optional_copies:
+        if source.is_file():
+            files.append((_copy_file(source, safe_delivery_target(ep_dir, relative), force=force), False))
+
+    active_manifest_path = ep_dir / "work" / "input-manifest.json"
+    if active_manifest_path.is_file():
+        active_manifest = json.loads(active_manifest_path.read_text(encoding="utf-8"))
+        input_root = (ep_dir / "input").resolve()
+        for asset in active_manifest.get("assets", []):
+            source = (ep_dir / str(asset.get("source_path"))).resolve()
+            try:
+                relative_input = source.relative_to(input_root)
+            except ValueError as exc:
+                raise ValueError(f"输入素材路径逃逸 Episode: {source}") from exc
+            if source.is_file():
+                target = safe_delivery_target(ep_dir, Path("input/raw") / relative_input)
+                files.append((_copy_file(source, target, force=force), True))
+
+    timeline = json.loads((ep_dir / "work" / "timeline.json").read_text(encoding="utf-8"))
+    asset_refs = sorted({
+        clip["asset_ref"]
+        for track in timeline.get("tracks", [])
+        for clip in track.get("clips", [])
+        if clip.get("asset_ref")
+    })
+    for reference in asset_refs:
+        source = ep_dir / Path(reference)
+        prepared_root = (ep_dir / "work" / "prepared").resolve()
+        relative_asset = source.resolve().relative_to(prepared_root)
+        target = safe_delivery_target(ep_dir, Path("assets-used") / relative_asset)
+        files.append((_copy_file(source, target, force=force), False))
+
+    motion_dir = delivery_dir / "motion-graphics"
+    if motion_dir.is_dir():
+        files.extend((path, False) for path in sorted(motion_dir.rglob("*.mp4")) if path.is_file())
+
+    for qa_relative in ("qa-report.json", "qa-report.md", "visual-review.md", "qa-contact-sheet.jpg"):
+        path = delivery_dir / qa_relative
+        if not path.is_file():
+            raise FileNotFoundError(f"缺少 QA 交付文件: delivery/{qa_relative}")
+        files.append((path, True))
+
+    edit_notes = _write_text(
+        delivery_dir / "edit-notes.md", _edit_notes(timeline, publishable=model.publishable), force=force,
+    )
+    files.append((edit_notes, True))
+
+    if model.publishable:
+        for platform in model.to_dict().get("platforms", []):
+            publish_path = delivery_dir / "publish" / f"{platform}.md"
+            files.append((_write_text(publish_path, _publish_copy(platform, model), force=force), False))
+
+    if "final-render" in model.completed_stages:
+        titles = [
+            "这个 AI 收到信号后，第一件事是拒绝下单",
+            "自动交易最危险的错误，被这道风险闸门拦住了",
+            "我把量化系统的拒单证据做成了可审计流程",
+        ]
+        title_path = delivery_dir / "publish" / "title-candidates.json"
+        _write_text(title_path, json.dumps({"titles": titles}, ensure_ascii=False, indent=2), force=force)
+        files.append((title_path, False))
+        usage = _material_usage_report(timeline)
+        usage_path = delivery_dir / "material-usage-report.json"
+        _write_text(usage_path, json.dumps(usage, ensure_ascii=False, indent=2), force=force)
+        files.append((usage_path, True))
+        keywords_path = delivery_dir / "publish" / "keywords.json"
+        _write_text(
+            keywords_path,
+            json.dumps({"keywords": ["AI量化", "风险控制", "自动交易", "产品复盘"]}, ensure_ascii=False, indent=2),
+            force=force,
+        )
+        files.append((keywords_path, False))
+        final_video = _final_video_path(ep_dir)
+        cover = delivery_dir / "publish" / "cover.jpg"
+        if force or not cover.is_file():
+            _generate_cover(final_video, cover)
+        files.append((cover, True))
+
+    final_video = _final_video_path(ep_dir)
+    timeline_path = ep_dir / "work" / "timeline.json"
+    timeline_data = json.loads(timeline_path.read_text(encoding="utf-8")) if timeline_path.is_file() else {}
+    source_intervals = [
+        {"clip_id": clip.get("clip_id"), "source_start": clip.get("source_start"), "source_end": clip.get("source_end")}
+        for track in timeline_data.get("tracks", [])
+        for clip in track.get("clips", [])
+        if track.get("kind") == "video" and clip.get("source_start") is not None
+    ]
+    acceptance = {
+        "episode_id": model.id,
+        "final_video_path": final_video.relative_to(ep_dir).as_posix() if final_video.is_file() else None,
+        "final_video_hash": sha256_file(final_video) if final_video.is_file() else None,
+        "timeline_source_intervals": source_intervals,
+        "qa_video_sha256": qa_report.get("video_sha256"),
+        "creative_review_video_sha256": None,
+        "approval_video_sha256": None,
+        "visual_acceptance": "PARTIAL/BLOCKED",
+        "tests": [],
+        "generated_at": datetime.now(UTC).isoformat(),
+    }
+    review_path = ep_dir / "work" / "qa" / "creative-review.json"
+    approval_path = ep_dir / "delivery" / "visual-approval.json"
+    if review_path.is_file():
+        acceptance["creative_review_video_sha256"] = json.loads(review_path.read_text(encoding="utf-8")).get("video_sha256")
+    if approval_path.is_file():
+        acceptance["approval_video_sha256"] = json.loads(approval_path.read_text(encoding="utf-8")).get("video_sha256")
+    acceptance_path = delivery_dir / "acceptance.json"
+    if acceptance_path.is_file() and not force:
+        try:
+            acceptance["generated_at"] = json.loads(acceptance_path.read_text(encoding="utf-8")).get("generated_at", acceptance["generated_at"])
+        except (OSError, ValueError):
+            pass
+    files.append((_write_text(acceptance_path, json.dumps(acceptance, ensure_ascii=False, indent=2), force=force), False))
+
+    unique_files = {path.resolve(): (path, required) for path, required in files}
+    records = [
+        file_record(ep_dir, path, required=required)
+        for path, required in sorted(unique_files.values(), key=lambda item: item[0].as_posix())
+    ]
+    manifest: dict[str, Any] = {
+        "episode_id": model.id,
+        "publishable": model.publishable,
+        "platforms": model.to_dict().get("platforms", []) if model.publishable else [],
+        "files": records,
+        "video_sha256": sha256_file(_final_video_path(ep_dir)) if _final_video_path(ep_dir).is_file() else "",
+        "final_video_hash": sha256_file(_final_video_path(ep_dir)) if _final_video_path(ep_dir).is_file() else "",
+        "edit_notes_path": "delivery/edit-notes.md",
+        "generated_at": datetime.now(UTC).isoformat(),
+    }
+    validate_manifest(ep_dir, manifest)
+
+    manifest_path = delivery_dir / "delivery-manifest.json"
+    if manifest_path.is_file() and not force:
+        existing = json.loads(manifest_path.read_text(encoding="utf-8"))
+        validate_manifest(ep_dir, existing)
+        comparable_existing = {key: value for key, value in existing.items() if key != "generated_at"}
+        comparable_new = {key: value for key, value in manifest.items() if key != "generated_at"}
+        if comparable_existing == comparable_new:
+            return existing
+        raise FileExistsError("delivery-manifest.json 已存在且内容不同，请使用 --force")
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return manifest
+
+
+def _edit_notes(timeline: dict[str, Any], *, publishable: bool) -> str:
+    placeholders = [
+        f"- {clip['clip_id']} ({clip['start']:.1f}s-{clip['start'] + clip['duration']:.1f}s): {clip.get('text') or '未命名占位卡'}"
+        for track in timeline.get("tracks", [])
+        for clip in track.get("clips", [])
+        if (clip.get("style") or {}).get("placeholder")
+    ]
+    final_step = "- 人工确认平台文案后发布" if publishable else "- 本包仅供内部学习，不得公开发布"
+    lines = ["# 编辑说明", "", "## 待补素材", "", *(placeholders or ["- 无"]), "", "## 发布前人工复核", "", "- 完整播放并检查画面、音量、字幕和事实", "- 替换全部占位卡", "- 在剪映等软件中完成最终调整", final_step, ""]
+    return "\n".join(lines)
+
+
+def _publish_copy(platform: str, model: EpisodeModel) -> str:
+    title = model.to_dict().get("title") or f"{model.id} 视频"
+    return "\n".join([
+        f"# {platform} 发布文案草稿", "", f"标题: {title}", "", "正文:", "", "（发布前人工填写并核对事实）", "", "话题:", "", "（发布前人工选择）", "",
+    ])
+
+
+def _material_usage_report(timeline: dict[str, Any]) -> dict[str, Any]:
+    used = sorted({
+        clip.get("asset_id")
+        for track in timeline.get("tracks", [])
+        for clip in track.get("clips", [])
+        if clip.get("asset_id")
+    })
+    primitives = sorted({
+        clip.get("primitive")
+        for track in timeline.get("tracks", [])
+        for clip in track.get("clips", [])
+        if clip.get("primitive")
+    })
+    return {"used_asset_ids": used, "primitives": primitives}
+
+
+def _generate_cover(video_path: Path, output_path: Path) -> None:
+    executable = shutil.which("ffmpeg")
+    if executable is None or not video_path.is_file():
+        raise FileNotFoundError("无法从最终视频生成封面")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    result = subprocess.run(
+        [executable, "-y", "-ss", "0", "-i", str(video_path), "-frames:v", "1", "-q:v", "2", str(output_path)],
+        capture_output=True,
+        text=True,
+        timeout=120,
+        check=False,
+    )
+    if result.returncode != 0 or not output_path.is_file():
+        raise RuntimeError(f"封面生成失败: {result.stderr[-300:]}")

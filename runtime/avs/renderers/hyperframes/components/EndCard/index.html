@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN" data-resolution="portrait" data-composition-variables='[
+  {"id":"message","type":"string","label":"Message","default":"下一条，继续把创意做成片"},
+  {"id":"action","type":"string","label":"Action","default":"关注获取下一次制作模板"}
+]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>EndCard</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Microsoft YaHei"; src: local("Microsoft YaHei"); }
+      * { box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; margin: 0; overflow: hidden; }
+      body { background: #241412; color: #fff7ed; font-family: "Microsoft YaHei", sans-serif; }
+      #end-card { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      .rail { position: absolute; top: 0; bottom: 0; width: 20px; background: #fb923c; }
+      .rail-left { left: 112px; } .rail-right { right: 112px; background: #fbbf24; }
+      .content { position: absolute; top: 590px; left: 150px; width: 780px; text-align: center; }
+      .mark { width: 108px; height: 108px; margin: 0 auto 58px; border: 12px solid #fb923c; border-radius: 50%; }
+      #message { margin: 0; font-size: 66px; line-height: 1.32; font-weight: 800; overflow-wrap: anywhere; }
+      #action { margin: 42px 0 0; color: #fed7aa; font-size: 36px; line-height: 1.5; overflow-wrap: anywhere; }
+      .footer { position: absolute; bottom: 250px; left: 0; width: 100%; color: #fbbf24; text-align: center; font-size: 26px; font-weight: 700; letter-spacing: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="end-card" data-composition-id="end-card" data-start="0" data-duration="3" data-width="1080" data-height="1920">
+      <div class="rail rail-left" data-layout-ignore></div>
+      <div class="rail rail-right" data-layout-ignore></div>
+      <main id="end-content" class="content clip" data-start="0" data-duration="3" data-track-index="1">
+        <div class="mark" data-layout-ignore></div>
+        <h1 id="message">下一条，继续把创意做成片</h1>
+        <p id="action">关注获取下一次制作模板</p>
+      </main>
+      <p id="end-footer" class="footer clip" data-start="0" data-duration="3" data-track-index="2" data-layout-allow-overflow>AGENT VIDEO STUDIO</p>
+    </div>
+    <script>
+      const vars = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
+      document.getElementById("message").textContent = vars.message || "下一条，继续把创意做成片";
+      document.getElementById("action").textContent = vars.action || "关注获取下一次制作模板";
+      const tl = gsap.timeline({ paused: true });
+      // The first encoded frame is complete and readable; motion adds emphasis only.
+      tl.to(".mark", { scale: 1.08, duration: 0.42, ease: "power2.out" }, 0.05);
+      tl.to(".mark", { scale: 1, duration: 0.38, ease: "power2.inOut" }, 0.47);
+      tl.to("#message", { y: -12, duration: 0.45, ease: "power2.out" }, 0.22);
+      tl.to("#message", { y: 0, duration: 0.4, ease: "power2.inOut" }, 0.67);
+      tl.to("#action", { color: "#fff7ed", duration: 0.35, ease: "power2.out" }, 0.75);
+      tl.to(".footer", { y: -8, duration: 0.35, ease: "power2.out" }, 0.95);
+      tl.to(".mark", { rotation: 360, duration: 1.4, ease: "none" }, 1.25);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["end-card"] = tl;
+    </script>
+  </body>
+</html>
