@@ -1,0 +1,655 @@
+{
+  "routes": {
+    "code": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/studio.py",
+      "source": "sources/zh-explainer/skills/vibe-film/SKILL.md",
+      "files": [
+        "adapters/scene.js",
+        "adapters/code-shot.html",
+        "runtime/vibe/render.mjs",
+        "runtime/vibe/node_modules/puppeteer-core/package.json",
+        "scripts/nook_shot.py",
+        "scripts/html_shot.py",
+        "adapters/native-html-shot.mjs"
+      ],
+      "tools": [
+        "node",
+        "chrome",
+        "ffmpeg",
+        "ffprobe"
+      ],
+      "limits": "每镜 engine=vibe|nook|art|lanshu|opuscar，各自场景/资产/固定引擎进入作品原生包，混合本地视频、无声/已有音轨；Lanshu 另需自有 beatsAsset。新适配通过隔离准备、往返和缓存拒绝检查，未渲染或验证媒体效果。旧样片只显式复用。"
+    },
+    "editor": {
+      "integration": "adapted",
+      "entry": "scripts/studio.py",
+      "source": "sources/hyperframe-local",
+      "files": [
+        "adapters/native-editor.mjs",
+        "runtime/editor/lib/edit/timeline.mjs",
+        "runtime/editor/lib/edit/media.mjs",
+        "runtime/editor/node_modules/hyperframes/package.json",
+        "adapters/native-patch.mjs"
+      ],
+      "tools": [
+        "node",
+        "ffmpeg",
+        "ffprobe"
+      ],
+      "locks": [
+        "runtime/editor/package.json"
+      ],
+      "limits": "原生包原样导入和锁轨补丁规划已接入。editor plan/workflow 以只读 FFprobe 元数据调用原生操作校验，制作前重核，不准备媒体或读取旧 Provider 配置；转码后帧边界及新补丁实际视听效果待生产验收。"
+    },
+    "vibe": {
+      "integration": "adapted",
+      "entry": "scripts/vibe.sh",
+      "source": "sources/zh-explainer/skills/vibe-film/SKILL.md",
+      "files": [
+        "runtime/vibe/bin/film.sh",
+        "runtime/vibe/templates/lyric-mv/studio.html",
+        "runtime/vibe/templates/knowledge-short/film/index.html",
+        "runtime/vibe/node_modules/p5/lib/p5.min.js",
+        "runtime/vibe/node_modules/p5.brush/dist/p5.brush.js",
+        "scripts/vibe.py",
+        "runtime/vibe-venv/bin/python",
+        "docs/vibe-macos-arm64.lock.json",
+        "runtime/vibe/styles/_metrics.json"
+      ],
+      "tools": [
+        "node",
+        "chrome",
+        "ffmpeg",
+        "ffprobe"
+      ],
+      "limits": "独立原生工程；runtime-check/inspect/gate 只读，Workflow 核工程与模板；不推断工作室 current，真实制片待授权验证。"
+    },
+    "lanshu": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/lanshu.py",
+      "source": "sources/zh-explainer/vendor/lanshu/explainer",
+      "files": [
+        "sources/zh-explainer/vendor/lanshu/explainer/tools/sync.sh",
+        "sources/zh-explainer/vendor/lanshu/explainer/tools/stamp.py",
+        "sources/zh-explainer/tools/video.py",
+        "adapters/preview-styles.mjs",
+        "scripts/html_shot.py",
+        "adapters/native-html-shot.mjs",
+        "docs/lanshu-fonts.json",
+        "docs/lanshu-font-downloads.json",
+        "runtime/lanshu-fonts/archivo/Archivo[wdth,wght].ttf",
+        "runtime/lanshu-fonts/archivo/OFL.txt",
+        "runtime/lanshu-fonts/archivoblack/ArchivoBlack-Regular.ttf",
+        "runtime/lanshu-fonts/archivoblack/OFL.txt",
+        "runtime/lanshu-fonts/bangers/Bangers-Regular.ttf",
+        "runtime/lanshu-fonts/bangers/OFL.txt",
+        "runtime/lanshu-fonts/caveat/Caveat[wght].ttf",
+        "runtime/lanshu-fonts/caveat/OFL.txt",
+        "runtime/lanshu-fonts/geist/Geist[wght].ttf",
+        "runtime/lanshu-fonts/geist/OFL.txt",
+        "runtime/lanshu-fonts/geistmono/GeistMono[wght].ttf",
+        "runtime/lanshu-fonts/geistmono/OFL.txt",
+        "runtime/lanshu-fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+        "runtime/lanshu-fonts/ibmplexmono/OFL.txt",
+        "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Italic.ttf",
+        "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Regular.ttf",
+        "runtime/lanshu-fonts/instrumentserif/OFL.txt",
+        "runtime/lanshu-fonts/jetbrainsmono/JetBrainsMono[wght].ttf",
+        "runtime/lanshu-fonts/jetbrainsmono/OFL.txt",
+        "runtime/lanshu-fonts/longcang/LongCang-Regular.ttf",
+        "runtime/lanshu-fonts/longcang/OFL.txt",
+        "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "runtime/lanshu-fonts/notoserifsc/NotoSerifSC[wght].ttf",
+        "runtime/lanshu-fonts/notoserifsc/OFL.txt",
+        "runtime/lanshu-fonts/patrickhand/OFL.txt",
+        "runtime/lanshu-fonts/patrickhand/PatrickHand-Regular.ttf",
+        "runtime/lanshu-fonts/specialelite/LICENSE.txt",
+        "runtime/lanshu-fonts/specialelite/SpecialElite-Regular.ttf",
+        "runtime/lanshu-fonts/stixtwotext/OFL.txt",
+        "runtime/lanshu-fonts/stixtwotext/STIXTwoText-Italic[wght].ttf",
+        "runtime/lanshu-fonts/stixtwotext/STIXTwoText[wght].ttf",
+        "runtime/lanshu-fonts/zcoolkuaile/OFL.txt",
+        "runtime/lanshu-fonts/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+        "runtime/lanshu-fonts/zcoolqingkehuangyou/OFL.txt",
+        "runtime/lanshu-fonts/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf",
+        "runtime/lanshu-fonts/zcoolxiaowei/OFL.txt",
+        "runtime/lanshu-fonts/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf",
+        "runtime/vibe/fonts/OFL-SmileySans.txt",
+        "runtime/vibe/fonts/SmileySans-Oblique.ttf"
+      ],
+      "tools": [
+        "node",
+        "chrome",
+        "ffmpeg"
+      ],
+      "limits": "13 套横屏样式保持原生结构；code brief 的 engine=lanshu、style、自有 story JSON 和 beatsAsset JS；31 字体面/19 家族及许可证离线复制。13 套隔离准备/原生包往返已验，完整浏览器渲染/竖版重排未验。"
+    },
+    "avs": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/avs.sh",
+      "source": "sources/video",
+      "files": [
+        "runtime/avs/src/avs/cli.py",
+        "scripts/avs-plan.py",
+        "runtime/avs/knowledge/references/patterns.yaml",
+        "runtime/avs-venv/bin/python",
+        "scripts/avs-adopt.py",
+        "scripts/avs-stage.py",
+        "runtime/avs/schemas/creative-review.schema.json"
+      ],
+      "locks": [
+        "runtime/avs/package.json"
+      ],
+      "limits": "原生 Episode 继续持有状态；Codex 分析/视觉/创作审查/人工确认通过显式 writeback 写原生合同，plan 保护写回六合同。preview/final-render/qa/审片包/deliver/export 已接阶段保护，stage-check 只读检查；禁止自动 TTS/旧 provider/run/resume。隔离合同与拒绝分支已验，真实媒体链未验；历史 SCREEN_DOCUMENTARY Pilot 仍绑定旧样例，单列保留。"
+    },
+    "avs-render": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/avs.sh",
+      "source": "runtime/avs/src/avs/cli_timeline.py",
+      "files": [
+        "runtime/avs/node_modules/hyperframes/bin/hyperframes.mjs",
+        "scripts/avs-stage.py",
+        "scripts/avs-adopt.py"
+      ],
+      "tools": [
+        "node",
+        "chrome",
+        "ffmpeg",
+        "ffprobe"
+      ],
+      "locks": [
+        "runtime/avs/package.json"
+      ],
+      "limits": "Workflow 中是 avs 的别名，共用原生 Episode，不另建任务或 current。stage-check 可只读核原生阶段和输入绑定；实际 preview/final-render/qa 等仅具体 production 授权下执行，未做媒体验收。"
+    },
+    "nook": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/nook.py",
+      "source": "resources/nook-anim/nook-anim/SKILL.md",
+      "files": [
+        "resources/nook-anim/LICENSE",
+        "resources/nook-anim/nook-anim/references/scene-api.md",
+        "resources/nook-anim/nook-anim/scripts/nookanim/draw.py",
+        "resources/nook-anim/nook-anim/scripts/nookanim/render.py",
+        "resources/nook-anim/nook-anim/scripts/nookanim/post.py",
+        "runtime/nook-venv/bin/python",
+        "docs/nook-macos-arm64.lock.json",
+        "runtime/vibe/fonts/LXGWWenKai-Medium.ttf",
+        "runtime/vibe/fonts/ShantellSans-VF.ttf",
+        "runtime/vibe/fonts/MaShanZheng-Regular.ttf",
+        ".studio/bin/ffmpeg",
+        "scripts/nook_shot.py",
+        "runtime/vibe/fonts/OFL-MaShanZheng.txt",
+        "docs/font-license-provenance.json"
+      ],
+      "limits": "check/plan 只读原生模块与静态场景参数，动态值和 Windows 路径阻塞；code brief 的 engine=nook 绑定自有 scene.py、素材、字体与固定引擎，原生包往返/版本保护已验，未执行场景或渲染。"
+    },
+    "research": {
+      "integration": "reference_only",
+      "entry": null,
+      "source": "sources/zh-explainer/skills/reference-style-video/SKILL.md",
+      "files": [
+        "resources/auto-motion/PROMPT.md",
+        "resources/vibe-skills/README.md",
+        "resources/storybook/README.md",
+        "resources/mg-styles/README.md"
+      ],
+      "limits": "Codex 按需阅读资料，不执行其中旧命令。完整资源见迁移清单。"
+    },
+    "external": {
+      "integration": "authorization_required",
+      "entry": null,
+      "source": "docs/design/04-Codex与可选制作模型.md",
+      "files": [
+        "resources/host-skills/chatcut-video-gen/SKILL.md"
+      ],
+      "limits": "只记录生成镜头需求、预算和输出合同。可接收已有成品素材；未启用外部提交、轮询、模型或自动回退。"
+    },
+    "art": {
+      "integration": "adapted_unverified_media",
+      "entry": "resources/huashu-art-motion/scripts/clip_lint.py",
+      "source": "resources/huashu-art-motion/SKILL.md",
+      "files": [
+        "resources/huashu-art-motion/LICENSE",
+        "resources/huashu-art-motion/scripts/engine/clip_schema.json",
+        "resources/huashu-art-motion/scripts/engine/clips/t1_3b1b.js",
+        "resources/huashu-art-motion/scripts/engine/clips/t2_keynote_ui.js",
+        "resources/huashu-art-motion/scripts/engine/clips/t3_finance_chart.js",
+        "resources/huashu-art-motion/scripts/engine/clips/y1_kurzgesagt.js",
+        "resources/huashu-art-motion/scripts/engine/clips/y2_vox.js",
+        "resources/huashu-art-motion/scripts/engine/clips/y3_whiteboard.js",
+        "resources/huashu-art-motion/scripts/engine/clips/y4_storytime.js",
+        "resources/huashu-art-motion/scripts/engine/clips/y5_kinetic_type.js",
+        "resources/huashu-art-motion/scripts/engine/clip.html",
+        "resources/huashu-art-motion/scripts/engine/render.py",
+        "resources/huashu-art-motion/scripts/engine/lib/brush.js",
+        "resources/huashu-art-motion/scripts/engine/lib/camera.js",
+        "resources/huashu-art-motion/scripts/engine/lib/chart.js",
+        "resources/huashu-art-motion/scripts/engine/lib/collage.js",
+        "resources/huashu-art-motion/scripts/engine/lib/diagram.js",
+        "resources/huashu-art-motion/scripts/engine/lib/finish.js",
+        "resources/huashu-art-motion/scripts/engine/lib/fonts.js",
+        "resources/huashu-art-motion/scripts/engine/lib/kit.js",
+        "resources/huashu-art-motion/scripts/engine/lib/media.js",
+        "resources/huashu-art-motion/scripts/engine/lib/medium.js",
+        "resources/huashu-art-motion/scripts/engine/lib/motion.js",
+        "resources/huashu-art-motion/scripts/engine/lib/paint.js",
+        "resources/huashu-art-motion/scripts/engine/lib/palettes.js",
+        "resources/huashu-art-motion/scripts/engine/lib/post.js",
+        "resources/huashu-art-motion/scripts/engine/lib/render.js",
+        "resources/huashu-art-motion/scripts/engine/lib/rig.js",
+        "resources/huashu-art-motion/scripts/engine/lib/rig_huashu.js",
+        "resources/huashu-art-motion/scripts/engine/lib/three.min.js",
+        "resources/huashu-art-motion/scripts/engine/lib/toon.js",
+        "resources/huashu-art-motion/scripts/engine/lib/typo.js",
+        "resources/huashu-art-motion/scripts/engine/lib/ui.js",
+        "resources/huashu-art-motion/scripts/engine/lib/util.js",
+        "resources/huashu-art-motion/scripts/engine/spec_assets.py",
+        "scripts/html_shot.py",
+        "adapters/native-html-shot.mjs"
+      ],
+      "limits": "8 类原生语法严格 lint/素材闭包；code brief 的 engine=art 接自有 spec JSON 与 sceneAssets，冻结原生引擎/资源进入原生包。角色姿态名保留，远端素材/透明输出阻塞；结构往返已验，浏览器/渲染未执行。"
+    },
+    "opuscar": {
+      "integration": "adapted_unverified_media",
+      "entry": "scripts/opuscar_templates.py",
+      "source": "resources/lemo-opuscar/mit-8814b84",
+      "files": [
+        "scripts/html_shot.py",
+        "adapters/native-html-shot.mjs",
+        "resources/lemo-opuscar/mit-8814b84/LICENSE"
+      ],
+      "tools": [
+        "node",
+        "chrome",
+        "ffmpeg"
+      ],
+      "limits": "只接本片完整换稿工程；先核16:9。原生入口可调用不代表完整新稿与市场效果已验。"
+    }
+  },
+  "resource_aliases": {
+    "vibe-motion/auto-motion": "auto-motion",
+    "vibe-motion/skills": "vibe-skills",
+    "Vincentwei1021/mg-styles-15": "mg-styles",
+    "captain-nook/nook_skills": "nook-anim",
+    "lhlGitHub/hand-drawn-storybook-animation-skill": "storybook",
+    "heygen-com/hyperframes": "upstream-hyperframes",
+    "alchaincyf/huashu-art-motion": "huashu-art-motion"
+  },
+  "skill_packs": {
+    "framework": {
+      "skill": ".agents/skills/self-media-studio/SKILL.md",
+      "reads": [
+        "STATUS.md",
+        "docs/能力矩阵.md",
+        "docs/verification/foundation.md",
+        ".agents/skills/self-media-studio/references/受众到复盘.md",
+        ".agents/skills/self-media-studio/references/原创内容开发.md",
+        "docs/制作配方/视频制作工作流.md"
+      ],
+      "use": "底座、配置、资源、能力和验收"
+    },
+    "research": {
+      "skill": ".agents/skills/studio-video-research/SKILL.md",
+      "reads": [
+        "sources/zh-explainer/skills/reference-style-video/SKILL.md",
+        "runtime/avs/third_party_skills/ip-strategist/SKILL.md",
+        ".agents/skills/self-media-studio/references/受众到复盘.md",
+        ".agents/skills/self-media-studio/references/原创内容开发.md",
+        ".agents/skills/studio-video-research/references/rea-video.md"
+      ],
+      "use": "原始证据、表达规律和创作假设"
+    },
+    "motion": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "resources/auto-motion/PROMPT.md",
+        "sources/hyperframe-local/hyperframes/skills/hyperframes-core/SKILL.md",
+        "runtime/avs/third_party_skills/video-shotcraft/SKILL.md",
+        "docs/lanshu-fonts.json"
+      ],
+      "use": "机制图解与可控动画"
+    },
+    "storybook": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "resources/storybook/hand-drawn-storybook-animation/SKILL.md",
+        "resources/nook-anim/nook-anim/SKILL.md"
+      ],
+      "use": "绘本分层、角色动作与原生 Nook 场景"
+    },
+    "mg": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "resources/mg-styles/README.zh-CN.md",
+        "resources/mg-styles/rubric.md",
+        "resources/vibe-skills/README.md",
+        "resources/host-skills/remotion-best-practices/SKILL.md",
+        "resources/host-skills/chatcut-create-motion-graphics/SKILL.md"
+      ],
+      "use": "商务动效、程序化组件与短样段评审"
+    },
+    "vibe": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "sources/zh-explainer/skills/vibe-film/SKILL.md",
+        "resources/vibe-sound/SKILL.md",
+        "scripts/vibe.py",
+        "docs/vibe-macos-arm64.lock.json"
+      ],
+      "use": "MV、静默故事、音乐与音效"
+    },
+    "edit": {
+      "skill": ".agents/skills/studio-native-edit/SKILL.md",
+      "reads": [
+        "runtime/avs/skills-src/screen-story-miner/SKILL.md",
+        "resources/host-skills/ffmpeg/SKILL.md",
+        "resources/host-skills/chatcut-asset-import/SKILL.md",
+        ".agents/skills/self-media-studio/references/AVS交接.md"
+      ],
+      "use": "录屏关键操作、素材、时间线"
+    },
+    "external": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "docs/design/04-Codex与可选制作模型.md",
+        "resources/host-skills/chatcut-video-gen/SKILL.md",
+        "sources/zh-explainer/skills/ai-video-gen/SKILL.md",
+        "runtime/avs/third_party_skills/ltx-prompt-director/SKILL.md"
+      ],
+      "use": "生成镜头的规划、来源及可替换素材，所有外部工具保持关闭"
+    },
+    "restore": {
+      "skill": ".agents/skills/studio-native-edit/SKILL.md",
+      "reads": [
+        "docs/迁移与恢复.md"
+      ],
+      "use": "原生包原样恢复与未知任务回执"
+    },
+    "review": {
+      "skill": ".agents/skills/studio-video-review/SKILL.md",
+      "reads": [
+        ".agents/skills/self-media-studio/references/审查与版本.md",
+        "resources/host-skills/chatcut-verification/SKILL.md"
+      ],
+      "use": "绑定版本、审查层和局部返修"
+    },
+    "delivery": {
+      "skill": ".agents/skills/studio-video-review/SKILL.md",
+      "reads": [
+        "runtime/avs/skills-src/create-publish-pack/SKILL.md"
+      ],
+      "use": "本地交付包与平台字段"
+    },
+    "reference": {
+      "skill": ".agents/skills/studio-video-research/SKILL.md",
+      "reads": [
+        "sources/zh-explainer/skills/reference-style-video/SKILL.md",
+        "resources/upstream-hyperframes/skills/reverse-any-video/SKILL.md",
+        "resources/upstream-hyperframes/skills/style-sampling/SKILL.md",
+        ".agents/skills/studio-video-research/references/rea-video.md"
+      ],
+      "use": "原始证据、表达规律和创作假设"
+    },
+    "lanshu": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "sources/zh-explainer/vendor/lanshu/explainer/KITS.md",
+        "sources/zh-explainer/vendor/lanshu/references/styled-explainer.md"
+      ],
+      "use": "横屏风格与故事合同"
+    },
+    "art": {
+      "skill": ".agents/skills/studio-motion-design/SKILL.md",
+      "reads": [
+        "resources/huashu-art-motion/SKILL.md",
+        "resources/huashu-art-motion/references/09-视频动画语法.md",
+        "resources/huashu-art-motion/references/风格配方/INDEX.md"
+      ],
+      "use": "艺术风格配方与参数化片段"
+    },
+    "style-templates": {
+      "skill": ".agents/skills/studio-video-templates/SKILL.md",
+      "reads": [
+        "docs/视频风格模板目录.md",
+        "templates/catalog.json",
+        "templates/gallery/manifest.json",
+        "docs/制作流程.md",
+        ".agents/skills/self-media-studio/references/受众到复盘.md",
+        ".agents/skills/self-media-studio/references/原创内容开发.md"
+      ],
+      "use": "内容方向先行，读取真实样片、验证阶段和换稿入口，再匹配登记风格"
+    },
+    "publish": {
+      "skill": ".agents/skills/studio-publish/SKILL.md",
+      "reads": [
+        "docs/发布与复盘.md",
+        ".agents/skills/self-media-studio/references/受众到复盘.md"
+      ],
+      "use": "同版成片的平台文案、封面与可移交离线包；不接账号不发布"
+    },
+    "analytics": {
+      "skill": ".agents/skills/studio-content-analytics/SKILL.md",
+      "reads": [
+        "docs/发布与复盘.md",
+        ".agents/skills/self-media-studio/references/受众到复盘.md"
+      ],
+      "use": "真实平台快照、缺失数据、同类对照和下一条内容假设"
+    },
+    "visual-design": {
+      "skill": ".agents/skills/studio-visual-design/SKILL.md",
+      "reads": [
+        ".agents/skills/studio-visual-design/references/视觉设计方法.md",
+        "resources/visual-library/catalog.json"
+      ],
+      "use": "图片、封面与视频的视觉方向、素材检索及关键帧设计；配方未取得制作质量资格"
+    }
+  },
+  "intent_profiles": {
+    "framework": {
+      "routes": [],
+      "packs": [
+        "framework"
+      ],
+      "next": "inspect_framework"
+    },
+    "research": {
+      "routes": [
+        "research"
+      ],
+      "packs": [
+        "research"
+      ],
+      "next": "reference_evidence"
+    },
+    "reference": {
+      "routes": [
+        "research"
+      ],
+      "packs": [
+        "reference"
+      ],
+      "next": "reference_to_shot_rules"
+    },
+    "restore-native": {
+      "routes": [
+        "editor",
+        "code",
+        "vibe"
+      ],
+      "packs": [
+        "restore"
+      ],
+      "next": "inspect_bundle"
+    },
+    "resume-unknown": {
+      "routes": [],
+      "packs": [
+        "restore"
+      ],
+      "next": "check_original_receipt"
+    },
+    "revision": {
+      "routes": [
+        "editor",
+        "code"
+      ],
+      "packs": [
+        "review",
+        "edit"
+      ],
+      "next": "bind_parent_and_locked_tracks"
+    },
+    "review": {
+      "routes": [],
+      "packs": [
+        "review"
+      ],
+      "next": "bind_artifact_and_observation"
+    },
+    "delivery": {
+      "routes": [],
+      "packs": [
+        "delivery",
+        "review",
+        "publish"
+      ],
+      "next": "bind_reviewed_current_version"
+    },
+    "mixed": {
+      "routes": [
+        "code",
+        "editor",
+        "vibe",
+        "external"
+      ],
+      "packs": [
+        "motion",
+        "edit"
+      ],
+      "next": "partition_shots_and_bind_native_projects"
+    },
+    "commerce": {
+      "routes": [
+        "editor",
+        "code",
+        "avs"
+      ],
+      "packs": [
+        "mg",
+        "motion"
+      ],
+      "next": "resolve_commerce_scenario"
+    },
+    "generated": {
+      "routes": [
+        "external",
+        "editor"
+      ],
+      "packs": [
+        "external"
+      ],
+      "next": "specify_shot_and_review_provider_authorization"
+    },
+    "mv-silent": {
+      "routes": [
+        "vibe",
+        "code",
+        "editor"
+      ],
+      "packs": [
+        "vibe"
+      ],
+      "next": "lock_audio_and_beat_map"
+    },
+    "edit": {
+      "routes": [
+        "editor",
+        "avs"
+      ],
+      "packs": [
+        "edit"
+      ],
+      "next": "inventory_media_and_protected_operations"
+    },
+    "storybook": {
+      "routes": [
+        "nook",
+        "code",
+        "vibe"
+      ],
+      "packs": [
+        "storybook"
+      ],
+      "next": "map_story_beats_and_character_assets"
+    },
+    "explainer": {
+      "routes": [
+        "code",
+        "lanshu",
+        "avs",
+        "nook"
+      ],
+      "packs": [
+        "motion",
+        "lanshu"
+      ],
+      "next": "map_evidence_and_cause_effect"
+    },
+    "theme": {
+      "routes": [],
+      "packs": [
+        "research",
+        "motion"
+      ],
+      "next": "codex_creative_brief"
+    },
+    "art-motion": {
+      "routes": [
+        "art",
+        "code",
+        "vibe"
+      ],
+      "packs": [
+        "art"
+      ],
+      "next": "select_grammar_and_lint_native_spec"
+    },
+    "motion-graphics": {
+      "routes": [
+        "code",
+        "editor",
+        "art"
+      ],
+      "packs": [
+        "mg",
+        "motion"
+      ],
+      "next": "choose_editable_motion_route"
+    },
+    "publish": {
+      "routes": [],
+      "packs": [
+        "publish",
+        "review"
+      ],
+      "next": "bind_version_and_prepare_offline_publication"
+    },
+    "analytics": {
+      "routes": [],
+      "packs": [
+        "analytics"
+      ],
+      "next": "verify_publication_and_import_real_metrics"
+    },
+    "image": {
+      "routes": [],
+      "packs": [
+        "visual-design"
+      ],
+      "next": "define_visual_direction_and_reference_roles"
+    }
+  }
+}

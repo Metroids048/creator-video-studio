@@ -1,0 +1,2232 @@
+{
+  "schema": 1,
+  "counting": "research recipes, excluded from production template count",
+  "goal": "市场研究配方独立于生产模板；具体完整片与来源对应见templates/catalog.json及市场案例到完整模板.md",
+  "formats": [
+    {
+      "id": "lyric-prop",
+      "name": "歌词语义道具转场",
+      "family": "音乐与图文",
+      "category": "歌曲与意境",
+      "creator": "若卿",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "歌词道具",
+        "国风歌词",
+        "若卿",
+        "红布遮挡"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/lyric-prop.md",
+      "source": "https://www.douyin.com/video/7697550142720045449",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 4447093,
+        "likes": 206947,
+        "saves": 32413,
+        "shares": 19950,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "熟悉歌词在画面上被具体兑现；下一句怎样接上形成期待。",
+      "visual_grammar": "逐句语义物件→手部动作→动作造成遮挡／墨迹→下一语义物件；黑白与色彩有转折功能。",
+      "required_inputs": "歌曲合法音源与逐句时间；每句语义图层／道具；遮挡前后画面；真实手部素材或显式图片适配。",
+      "replacement_operation": "先换歌曲和语义动作表，再替换物件、遮挡方向、入出点与构图；镜头随歌曲重新排。",
+      "avoid": "静态图加同一句歌词循环；把原作真实手部表演说成全静态图片。",
+      "implementation": "完整新稿已接 studio-verse-prop；逐项差异见生产模板及本轮市场对应表。原片数据不转移给新片。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-verse-prop"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "user_reference_urls": [
+        "https://v.douyin.com/uUa2tecTyto/"
+      ],
+      "user_reference_origin": {
+        "source": "本地讨论中形成的样式研究记录",
+        "role": "user",
+        "scope": "具体歌词道具形式参考；不是所有新片都必须选它，也不认证生产适配"
+      }
+    },
+    {
+      "id": "flower-beat",
+      "name": "主体中心变焦卡点",
+      "family": "音乐与图文",
+      "category": "图片与音乐",
+      "creator": "遇见自然（努力涨粉中）",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "图片卡点",
+        "花卉卡点",
+        "照片变焦",
+        "放射模糊"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/flower-beat.md",
+      "source": "https://www.douyin.com/video/7702634704625619429",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 9676,
+        "likes": 33739,
+        "saves": 5991,
+        "shares": 4333,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "每次拍点出现新的清晰主体，辨认与节拍共同带来感官回报。",
+      "visual_grammar": "全屏照片→主体中心快速推近与放射模糊→新照片同中心落定；清晰停留与转场交替。",
+      "required_inputs": "同主题照片及逐张焦点；完整音乐；实际拍点；清晰停留与转场帧数。",
+      "replacement_operation": "按新音乐重排照片和拍点，逐张调整主体坐标与裁切，避免拿一组照片机械重复。",
+      "avoid": "固定一秒换图却称卡点；每张都摇晃而没有看清照片的时间。",
+      "implementation": "已有 photo-beat-montage 原生入口；同作者近期3条已看，赞6481–42712，焦点／镜像／拍点变化需保留。本地12秒试制的重复缺少变化，质量未通过。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "photo-beat-montage"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "photo-scrapbook",
+      "name": "手账照片与共鸣短句",
+      "family": "音乐与图文",
+      "category": "图片与共鸣",
+      "creator": "SherlyRyn",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "图文共鸣",
+        "照片拼贴",
+        "手账短句",
+        "回忆图文"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/photo-scrapbook.md",
+      "source": "https://www.douyin.com/video/7681265802691681457",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 516,
+        "likes": 224,
+        "saves": 55,
+        "shares": 6,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "not yet observed",
+      "viewer_payoff_hypothesis": "照片与具体生活细节使观众代入；翻到下一页补充一层含义。",
+      "visual_grammar": "日常处境照片→短句补充未说出的心情→第二张照片回应→结尾回扣前面的具体物件。",
+      "required_inputs": "同一情境的有许可照片；三段具有进展的短句；照片边缘／胶带图层；音乐。",
+      "replacement_operation": "整组换照片与处境，保留照片主次、页间关系和阅读时间；胶带只服务构图。",
+      "avoid": "泛泛励志语配无关风景；三页不发生信息变化；照片小、装饰抢主体。",
+      "implementation": "已有 tape-photo-essay 入口；来源仅224赞，不能列高流量通过项；18秒新片偏静态。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "tape-photo-essay"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "photo-flipbook",
+      "name": "摄影立体翻页画册",
+      "family": "音乐与图文",
+      "category": "图片与空间",
+      "creator": "fffffff",
+      "source_kind": "制作演示",
+      "amplification": null,
+      "tags": [
+        "摄影画册",
+        "翻页画册",
+        "立体相册",
+        "纸页弯曲",
+        "周末相册",
+        "立体翻页",
+        "照片翻页",
+        "弯曲书页"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/photo-flipbook.md",
+      "source": "https://www.douyin.com/video/7677775651118152866",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 4874,
+        "likes": 14254,
+        "saves": 9126,
+        "shares": 2754,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "纸页弯曲与跨页照片揭示形成触感，下一页保留发现感。",
+      "visual_grammar": "封面→翻封面→完整双页→纸张正反面与阴影→下一组跨页；不是照片淡化。",
+      "required_inputs": "封面、成对跨页照片、页边距、翻页时点与纸张正反面关系。",
+      "replacement_operation": "先按内容分跨页，再改封面／照片／翻页节奏；不能裁掉跨页主体。",
+      "avoid": "用交叉淡化模拟书页；只换一侧照片导致页背穿帮。",
+      "implementation": "新的studio-curved-photo-album完整六页照片与短诗、双面弯曲书页、原创六乐句配乐均已同版AI观察。原帖是制作演示，独立相册成片市场资格仍欠；旧studio-photo-flipbook归档保持。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-curved-photo-album"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ]
+    },
+    {
+      "id": "pendulum-memory",
+      "name": "摆锤遮挡回忆混剪",
+      "family": "音乐与图文",
+      "category": "图片与音乐",
+      "creator": "小戈学剪辑",
+      "source_kind": "剪辑教程",
+      "amplification": null,
+      "tags": [
+        "钟摆回忆",
+        "摆锤遮挡",
+        "怀表转场"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/pendulum-memory.md",
+      "source": "https://www.douyin.com/video/7702684761773840049",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 397598,
+        "likes": 49102,
+        "saves": 19596,
+        "shares": 4642,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "周期摆动形成时间感；摆锤每经过一次带出另一段记忆。",
+      "visual_grammar": "前景摆锤运动→遮罩边界与摆锤一致→新记忆显露→摆回时保留当前画面。",
+      "required_inputs": "摆锤前景／运动路径；待切照片；每次显露区间与拍点；完整音乐。",
+      "replacement_operation": "换记忆组与节拍，重新计算遮罩方向，摆锤不能与照片任意错切。",
+      "avoid": "钟摆只是装饰，照片仍自行淡化；把教程的赞数算成净版混剪表现。",
+      "implementation": "原片完整视觉已看；该高互动证据是剪辑教程，净版新作品尚未验证。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-pendulum-memory"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "grid-beat",
+      "name": "多分屏图片编舞",
+      "family": "音乐与图文",
+      "category": "图片与音乐",
+      "creator": "悦亦川",
+      "source_kind": "剪辑模板教程",
+      "amplification": null,
+      "tags": [
+        "四分屏",
+        "多分屏卡点",
+        "网格照片",
+        "照片编舞"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/grid-beat.md",
+      "source": "https://www.douyin.com/video/7645981477192948089",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 175322,
+        "likes": 75516,
+        "saves": 25912,
+        "shares": 4260,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "同拍点的分屏重排产生整体秩序与局部惊喜。",
+      "visual_grammar": "四屏稳定构图→按拍点让一屏主导→重组位置与大小→单屏落定；主体焦点连续。",
+      "required_inputs": "照片分组、主次关系、版位表、入出拍点、清晰落定时长。",
+      "replacement_operation": "将数字占位换成真正照片后重排主次与裁切，不能直接把教程界面当作品。",
+      "avoid": "每个框同时乱动；只换颜色；照片均是占位数字。",
+      "implementation": "完整教程已看；7.55万赞证明教程需求，尚无同版净作品与模板验收。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-grid-beat"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "rain-ripples",
+      "name": "春雨落点与水面涟漪",
+      "family": "自然与空间",
+      "category": "自然氛围",
+      "creator": "落青池",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "春雨",
+        "落雨涟漪",
+        "花瓣水面",
+        "雨滴"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/rain-ripples.md",
+      "source": "https://www.douyin.com/video/7680133191813926171",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 44834,
+        "likes": 496884,
+        "saves": 31108,
+        "shares": 139926,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "微小落点立即引起水面变化，观众可以轻松持续观察。",
+      "visual_grammar": "雨滴落下→对应位置涟漪扩散→漂浮花瓣受水面影响；统一一场景。",
+      "required_inputs": "花形与分层、落点表、波纹生命周期、风向、相机与环境声／音乐。",
+      "replacement_operation": "换季节与物候，调整雨滴和花的关系；同场景换配色不另计模板。",
+      "avoid": "花瓣贴在背景上不受水面影响；文字卡片切换冒充自然动画。",
+      "implementation": "原片全长视觉已看；可复用本地参数动画，尚未形成经新稿验收的模板。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-rain-ripples"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "flower-field",
+      "name": "暗底繁花空间流场",
+      "family": "自然与空间",
+      "category": "自然氛围",
+      "creator": "Tata",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "暗底繁花",
+        "花朵流场",
+        "繁花景深"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/flower-field.md",
+      "source": "https://www.douyin.com/video/7680774758036331003",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 15288,
+        "likes": 162503,
+        "saves": 14011,
+        "shares": 157784,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "花簇的密度、层次和缓慢显露提供沉浸观察。",
+      "visual_grammar": "暗色空间里多层花簇→风向相关微动→前后景差速→镜头缓慢推进或横向展开。",
+      "required_inputs": "可复用花朵资产与许可、远中近分层、风场、相机曲线与音乐。",
+      "replacement_operation": "换花型、疏密与空间关系；保留层次和微动的相关性。",
+      "avoid": "单张繁花图片单纯放大；拿诗句发布文案说成原片字幕。",
+      "implementation": "原片18.167秒全长视觉已看；与春雨同属自然大类，渲染／声音新稿待验。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-flower-field"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "pixel-absurd",
+      "name": "像素荒诞日常故事",
+      "family": "情绪与剧情",
+      "category": "剧情与反转",
+      "creator": "阿丸焖居",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "像素日常",
+        "荒诞宿舍",
+        "像素故事",
+        "十万人宿舍"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/pixel-absurd.md",
+      "source": "https://www.douyin.com/video/7600724311846437049",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 247336,
+        "likes": 325308,
+        "saves": 13076,
+        "shares": 178039,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "普通生活目标遭遇不断加码的荒诞障碍，观众等待下一次升级。",
+      "visual_grammar": "明确普通目标→三次以上具体空间／制度障碍→短暂解决又遇新代价→结尾回扣。",
+      "required_inputs": "稳定角色与像素场景、普通目标、递进障碍、动作表与镜头轴线、对白／音乐。",
+      "replacement_operation": "换目标和阻碍的因果链，再换人物与场景；先证明一个完整障碍段。",
+      "avoid": "只有像素滤镜和长字幕；每个镜头角色都换脸；障碍没有因果。",
+      "implementation": "完整79.667秒视觉已看；现有原生像素底座不能自动完成同等人群表演。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/pixel-arcade/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "只有像素游戏语法可复用；不能承载完整宿舍人群表演，不是可直接调用的剧情模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "opuscar-pixel-story"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "emotional-reverse",
+      "name": "双人表情正反打",
+      "family": "情绪与剧情",
+      "category": "剧情与表演",
+      "creator": "水猩记",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "情绪正反打",
+        "双人情绪",
+        "眼神对话",
+        "表情戏"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/emotional-reverse.md",
+      "source": "https://www.douyin.com/video/7661309230678412594",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 5420,
+        "likes": 431686,
+        "saves": 30584,
+        "shares": 150314,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "眼神回避与返回、停顿和微小表情使观众推测人物关系。",
+      "visual_grammar": "过肩看甲→甲的视线或表情变化→保持轴线反打乙→乙的回应改变关系。",
+      "required_inputs": "人物一致素材、具体处境、视线目标、两个镜头空间关系、对白与停顿。",
+      "replacement_operation": "先写两人各自要隐藏或表达什么，再按反应切镜，不只替换脸和背景。",
+      "avoid": "推近静态肖像冒充微表情；未听原片就编造对白。",
+      "implementation": "作者5420粉、43.17万赞快照；完整视觉已看，音轨经离线模型辅助观察，不能当真人听审；当前未启用生成视频。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "gold-mechanism",
+      "name": "黑金粒子机制图解",
+      "family": "知识与机制",
+      "category": "知识与机制",
+      "creator": "🇹.🇴.🇲",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "黑金知识",
+        "粒子机制",
+        "凯利公式",
+        "黑金图解"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/gold-mechanism.md",
+      "source": "https://www.douyin.com/video/7693248909879212362",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 18465,
+        "likes": 11338,
+        "saves": 6287,
+        "shares": 2571,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "先给反直觉问题，再用同一组可追踪对象演算出结果。",
+      "visual_grammar": "问题→可数对象与状态→控制变量对比→公式说明变化→现实隐喻→边界与收束。",
+      "required_inputs": "经核实的事实／数据、可追踪对象、参数变化表、因果分镜、来源与字幕。",
+      "replacement_operation": "替换问题、数据、机制与反例；凯利／复利是同一体系，不拆成两套凑数。",
+      "avoid": "金色粒子装饰普通文字卡；公式与画面对象脱节；未经核实搬运金融结论。",
+      "implementation": "完整新稿已接 studio-gold-mechanism；逐项差异见生产模板及本轮市场对应表。原片数据不转移给新片。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-gold-mechanism"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "history-axis",
+      "name": "三维空间历史长轴",
+      "family": "知识与机制",
+      "category": "知识与时间",
+      "creator": "YZ",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "三维历史",
+        "空间长轴",
+        "AI历史",
+        "年代长轴"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/history-axis.md",
+      "source": "https://www.douyin.com/video/7690160210039622946",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 347,
+        "likes": 20120,
+        "saves": 4379,
+        "shares": 6783,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "沿同一空间看见技术演进，最后拉远把各节点连成整体。",
+      "visual_grammar": "起点装置→连续相机沿时间轴经过具象事件→节点关系叠加→拉远见整体曲线。",
+      "required_inputs": "核实的年份和事实、每节点物体隐喻、相机长轴、末段全景、字幕与声音。",
+      "replacement_operation": "换史实与物体、重算节点密度和运动距离；保留整体轴线与回看关系。",
+      "avoid": "沿直线移动的标题卡；把未经核实的作者主张当科普事实。",
+      "implementation": "91.3秒完整视觉已看；作者称Opus5.5，源工程未取得，不启用该模型。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/iso-diorama-3d/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "可借鉴正交场景和投影标签；不等于原片连续历史长轴，史实／节点／相机需另验"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-history-axis"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "lens-lab",
+      "name": "剖面实验与参数演示",
+      "family": "知识与机制",
+      "category": "知识与实验",
+      "creator": "RyanSael",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "镜头剖面",
+        "光学实验",
+        "参数实验",
+        "透镜"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/lens-lab.md",
+      "source": "https://x.com/RyanSael/status/2102591147927654847",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 15510,
+        "views": 3115565,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "观众看到控制变量后结果怎样改变，而不只听概念定义。",
+      "visual_grammar": "可操作参数→内部结构或剖面同步改变→结果窗变化→用对照解释原因。",
+      "required_inputs": "科学模型与来源、参数域、内部结构、同一对象结果对照、操作轨迹。",
+      "replacement_operation": "替换被解释机制与参数映射，先验证模型，再录制能讲清变化的轨迹。",
+      "avoid": "摆几个漂亮剖面没有真实参数关联；把交互演示自动叫科学准确影片。",
+      "implementation": "X历史高流量样本，只有Hypit抽样和作者自述；未核全片与科学正确性。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-lens-lab"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 32.0,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "training-visual",
+      "name": "输入到预测的训练可视化",
+      "family": "知识与机制",
+      "category": "知识与计算",
+      "creator": "DotCSV",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "神经网络训练",
+        "预测变化",
+        "数字识别",
+        "训练可视化"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/training-visual.md",
+      "source": "https://x.com/DotCSV/status/2102737776219168939",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 252127,
+        "likes": 9338,
+        "views": 578843,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "同一输入经过训练后预测改善，抽象过程获得可观察结果。",
+      "visual_grammar": "输入样本→网络中间状态→错误预测→参数更新→同输入再次预测。",
+      "required_inputs": "真实或明确示意的数据、网络结构、状态序列、错误与改善对照、解释字幕。",
+      "replacement_operation": "换任务、数据、更新规则与可视化映射；示意动画不能冒充真实训练日志。",
+      "avoid": "只有发光连线和不断变动的数字；预测改善没有依据。",
+      "implementation": "X历史互动与抽样支持此方向；未取得该作者工程，完整新稿待验。",
+      "method_sources": [
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/board-explainer/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "可借鉴逐词生长的单图；真实训练状态／数据与同版口播未接，不自动证明科学正确"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "browser-process",
+      "name": "浏览器请求流程图解",
+      "family": "知识与机制",
+      "category": "知识与流程",
+      "creator": "addyosmani",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "浏览器流程",
+        "DNS流程",
+        "HTTP动画",
+        "流程图解"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/browser-process.md",
+      "source": "https://x.com/addyosmani/status/2103009037164110327",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 2372,
+        "views": 210498,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "观众能跟随一个请求从起点到结果，知道每一步解决什么问题。",
+      "visual_grammar": "用户动作→请求经过命名节点→响应进入文档结构→布局绘制→可见页面。",
+      "required_inputs": "准确流程与异常分支、可跟踪请求标识、节点状态、最终结果与字幕。",
+      "replacement_operation": "换流程、节点和数据流，保留一个可追踪对象跨镜头连续。",
+      "avoid": "术语依次飞入却没有输入输出；流程事实未经核实。",
+      "implementation": "作者披露JS绘制；目前只有历史数据与抽样，不是完整视觉／听审通过。",
+      "method_sources": [
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/vector-world-explainer/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "可借鉴同一对象跨镜头；浏览器事实、状态与新场景需另建，原人物口播依赖未接"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "kinetic-ident",
+      "name": "几何与动态排版短片",
+      "family": "品牌与产品",
+      "category": "图形与品牌",
+      "creator": "stephanlivera",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "动态排版",
+        "几何快切",
+        "动效showreel",
+        "文字编舞"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/kinetic-ident.md",
+      "source": "https://x.com/stephanlivera/status/2103315922098470926",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 194268,
+        "likes": 17242,
+        "views": 2322214,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "形状与字形的节奏、尺度和预期反转提供短时感官回报。",
+      "visual_grammar": "建立主形与字号秩序→同一形状变换空间角色→排版压缩与释放→标识落定。",
+      "required_inputs": "文案层级、字形／字体许可、几何母题、节拍和完整前后状态。",
+      "replacement_operation": "先按新内容重排视觉层级，再改形变和音乐；相同演示转载合并。",
+      "avoid": "每个字使用不同转场；换色算一套；把15秒showreel证明为长片模板。",
+      "implementation": "历史16061赞／164万播放；高互动参考，源工程和稳定产出能力未知。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-kinetic-ident",
+        "opuscar-swiss-motion"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 15.062,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "product-ui",
+      "name": "真实产品界面发布片",
+      "family": "品牌与产品",
+      "category": "产品与演示",
+      "creator": "Miguel07Code",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "产品界面",
+        "软件发布",
+        "UI动效",
+        "Shotbase"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/product-ui.md",
+      "source": "https://x.com/Miguel07Code/status/2102441708395041170",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 1315,
+        "views": 150893,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "具体用户任务被界面操作解决，观众看清产品收益。",
+      "visual_grammar": "问题／输入→真实界面重点操作→结果变化→关键收益与品牌收束。",
+      "required_inputs": "同版本真实截图／录屏、正确界面状态、目标任务、功能事实与标识。",
+      "replacement_operation": "整组换成真实产品状态，重新设计焦点、操作与结果；不能只贴新logo。",
+      "avoid": "虚构产品功能；广告字卡遮住操作；用占位UI冒充真实使用。",
+      "implementation": "作者称HyperFrames；可复用现有代码与原生素材路线，未核此原片全长。；已接入目录中的完整新稿适配，具体风格差异与市场证据范围见对应模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-product-ui"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 58.304,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "type-ad",
+      "name": "数字论点与字形广告",
+      "family": "品牌与产品",
+      "category": "产品与传播",
+      "creator": "deedydas",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "数字广告",
+        "文字广告",
+        "动效广告",
+        "推理广告"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/type-ad.md",
+      "source": "https://x.com/deedydas/status/2102787937482252537",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 3244,
+        "views": 338541,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "一句清楚的产品承诺通过数字或对比得到可见支持。",
+      "visual_grammar": "承诺主句→数值／图形展开→真实依据或对照→品牌落点；文字本身作为运动主体。",
+      "required_inputs": "经核实的承诺和数值、字形层级、数据图、品牌资料、音乐拍点。",
+      "replacement_operation": "换承诺和证据后重新分配镜头时间；不沿用不适用的性能数字。",
+      "avoid": "大字连续堆叠但不知道产品能做什么；作者自报成本当本机成本。",
+      "implementation": "完整新稿已接 opuscar-swiss-motion；逐项差异见生产模板及本轮市场对应表。原片数据不转移给新片。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "opuscar-swiss-motion"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 26.052789,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "assembly-manual",
+      "name": "说明书到步骤装配",
+      "family": "教程与过程",
+      "category": "教程与操作",
+      "creator": "deedydas",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "装配说明",
+        "说明书动画",
+        "家具步骤",
+        "编号零件"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/assembly-manual.md",
+      "source": "https://x.com/deedydas/status/2103174501345493197",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 1037,
+        "views": 72365,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "每一步的零件、方向和结果清晰，观众能据此完成任务。",
+      "visual_grammar": "目标结构→本步零件高亮→方向与接触→已完成状态→下一步；必要时错误示范。",
+      "required_inputs": "原始说明书、零件与尺寸、步骤依赖、方向、警告和真实完成状态。",
+      "replacement_operation": "按原说明重建步骤图，保留依赖和对象ID；先验最难接合再扩展。",
+      "avoid": "模型看起来装上了但接合方向错误；用简单桌灯证明复杂家具支持。",
+      "implementation": "完整新稿已接 object-assembly；逐项差异见生产模板及本轮市场对应表。原片数据不转移给新片。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "object-assembly"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 102.281054,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "recipe-pour",
+      "name": "材料计量与倒液配方",
+      "family": "教程与过程",
+      "category": "教程与生活",
+      "creator": "Ror_Fly",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "配方动画",
+        "倒液",
+        "饮品步骤",
+        "材料计量"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/recipe-pour.md",
+      "source": "https://x.com/Ror_Fly/status/2102853258582880547",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 28937,
+        "likes": 1049,
+        "views": 81370,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "观众逐步看见材料比例和最终结果，具备保存与照做价值。",
+      "visual_grammar": "空容器→材料和计量→每次加入液面或形态变化→混合动作→完成品。",
+      "required_inputs": "经核实配方、容器与单位、每步剂量、液面状态、材料标识与节奏。",
+      "replacement_operation": "替换配方后重新计算比例、颜色与容器容量；数字和液面必须相符。",
+      "avoid": "液面不随倒入改变；凭画面虚构可食用配方；遗漏单位。",
+      "implementation": "完整新稿已接 studio-recipe-pour；逐项差异见生产模板及本轮市场对应表。原片数据不转移给新片。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-recipe-pour"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 30.0,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "drawn-story",
+      "name": "撕纸拼贴多场景问答故事",
+      "family": "情绪与剧情",
+      "category": "剧情与手绘",
+      "creator": "kevin_t_ngo",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "撕纸故事",
+        "剪纸问答",
+        "纸张情感叙事",
+        "拼贴剧情",
+        "Kevin"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/drawn-story.md",
+      "source": "https://x.com/kevin_t_ngo/status/2102437977435893771",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 27809,
+        "likes": 6184,
+        "views": 675294,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "稳定人物对同一物件的态度变化，提供简单可读的情绪弧。",
+      "visual_grammar": "少女窗口提出问题→折纸飞机传信→多场景纸张拼贴回答→信回主角→圈出答案与夜空收束",
+      "required_inputs": "角色设定、关键物件状态、动作与支撑关系、纸纹／线条、音乐和镜头表。",
+      "replacement_operation": "先换欲望与代价，再替换人物／物件；保持造型、空间与动作连续。",
+      "avoid": "人物站着不动，情节全由字幕说明；靠随机笔刷抖动冒充手绘表演。",
+      "implementation": "完整28.053秒原片画面与完整音轨已核；已接独立撕纸问答模板。不是一笔画。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-paper-question"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 28.053333,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "ink-motif",
+      "name": "黑白手绘角色成长分镜",
+      "family": "情绪与剧情",
+      "category": "剧情与绘画",
+      "creator": "shfred0",
+      "source_kind": "公开原帖；完整原片已观察",
+      "amplification": null,
+      "tags": [
+        "黑白手绘成长",
+        "墨团成长",
+        "手绘学习旅程"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/ink-motif.md",
+      "source": "https://x.com/shfred0/status/2102495989194236158",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 3389,
+        "likes": 4171,
+        "views": 377884,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "同一视觉母题经历形变，在结尾获得新的意义。",
+      "visual_grammar": "笔记本生出墨团角色→图书馆阅读→学习与电脑→城市信息连接→日出；多场景黑白手绘",
+      "required_inputs": "连续母题、形变连接、真实因果、笔触材质、光暗节奏与音乐。",
+      "replacement_operation": "替换母题和故事，重新绘制相邻形态之间的连接，不只替换字幕。",
+      "avoid": "各镜头墨迹随机飞散；仅换黑白颜色称新叙事。",
+      "implementation": "完整30.172秒原片已核且原片无音轨；尚无等同黑白逐格成长的完整模板。一笔画不是其等价替代。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 30.171667,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "illustrated-song",
+      "name": "固定角色的场景叙事MV",
+      "family": "音乐与图文",
+      "category": "歌曲与剧情",
+      "creator": "slimer48484",
+      "source_kind": "原始发布候选；创作者归属待核，不将引用者当制作人",
+      "amplification": {
+        "source": "https://x.com/other__reality/status/2102514581684052169",
+        "author": "other__reality",
+        "followers": 1803,
+        "likes": 7347,
+        "views": 2956549,
+        "scope": "quote post only, not original creator performance"
+      },
+      "tags": [
+        "角色MV",
+        "插画MV",
+        "叙事音乐视频",
+        "歌曲叙事"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/illustrated-song.md",
+      "source": "https://x.com/slimer48484/status/2097752569212756134",
+      "market": {
+        "date": "2026-11-14",
+        "method": "direct original third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 6717,
+        "likes": 2703,
+        "views": 771278,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "角色贯穿歌曲，歌词中的处境转为不断变化的场景与行动。",
+      "visual_grammar": "歌词分句→每段角色目标／行动→副歌视觉母题回归→桥段变化→结尾回扣。",
+      "required_inputs": "有权使用的歌曲与歌词、逐句时间、固定角色、场景状态、重复母题与音画表。",
+      "replacement_operation": "先按新歌结构改整个故事，再换角色和场景；副歌重复需要语义变化。",
+      "avoid": "一张插画循环2分钟；把别人的歌曲／角色直接带入通用模板。",
+      "implementation": "已追到slimer48484原始发布帖：直接第三方快照6717粉／2703赞／77.13万播放；other__reality的295.65万为引用帖曝光。另已固定JohnHeibel的MIT角色底座，其README明确从PDoomVideo提炼；发布者与GitHub作者身份、完整原片和新歌换稿仍待核。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "anime-shot-mv",
+      "name": "分镜生成与重绘动漫MV",
+      "family": "音乐与图文",
+      "category": "歌曲与生成镜头",
+      "creator": "donaldjewkes",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "动漫MV",
+        "赛璐璐MV",
+        "分镜生成",
+        "动画歌曲"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/anime-shot-mv.md",
+      "source": "https://x.com/donaldjewkes/status/2102801274173587569",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 8907,
+        "views": 2528633,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "歌曲推动镜头、角色表演与高潮，视觉变化服务整首歌。",
+      "visual_grammar": "角色与美术基准→歌词分镜→关键帧与连续镜头→重绘／合成统一→音画校对。",
+      "required_inputs": "歌曲权利、角色设计、关键帧、镜头连续性、逐段生成记录与实际音轨。",
+      "replacement_operation": "改歌曲结构和角色动机，重做依赖改变的镜头；未改镜头复用缓存。",
+      "avoid": "把作者多工具和12小时迭代说成纯代码一键；角色不一致靠闪切隐藏。",
+      "implementation": "作者prompt指向多外部服务；当前不启用生成视频和付费调用，仅作候选方法。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "empty-city",
+      "name": "空城探索与情节反转",
+      "family": "情绪与剧情",
+      "category": "剧情与悬念",
+      "creator": "Hesamation",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "空城机器人",
+        "遗迹故事",
+        "探索反转",
+        "机器人短片"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/empty-city.md",
+      "source": "https://x.com/Hesamation/status/2103457566978162901",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 890,
+        "views": 80344,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "角色在异常环境中逐步发现线索，结尾重新解释前面所见。",
+      "visual_grammar": "异常世界→具体探索目标→线索与误解→新线索推翻解释→结尾代价或温情。",
+      "required_inputs": "世界规则、稳定主角、线索因果表、探索行动、反转与音乐变化。",
+      "replacement_operation": "改世界与线索链，结尾必须能由前面事实支持；不能只换废墟背景。",
+      "avoid": "空镜头和悲伤字幕堆积；反转靠一句解释凭空出现。",
+      "implementation": "历史87.632秒X抽样；无源码／音轨记录，作者制作归因尚未验证。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "pixel-runner",
+      "name": "像素跑酷动作循环",
+      "family": "动作与游戏",
+      "category": "动作与游戏视觉",
+      "creator": "riku720720",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "像素跑酷",
+        "像素循环",
+        "彩虹平台",
+        "障碍节奏"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/pixel-runner.md",
+      "source": "https://x.com/riku720720/status/2102515055116063144",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 11567,
+        "likes": 1081,
+        "views": 245951,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "障碍预告、躲避与落地的时机清楚，形成连续观看和循环冲动。",
+      "visual_grammar": "角色稳定前进→可预判障碍→起跳／躲避→接触与落地→末状态接回开头。",
+      "required_inputs": "整数像素网格、固定调色板、人物动作、障碍序列、碰撞／落地时点与循环边界。",
+      "replacement_operation": "换动作和障碍排列后重新验证接触和循环；分辨率改变仍保持整数像素。",
+      "avoid": "只是像素滤镜；角色脚滑或穿地；无缝循环只靠淡出。",
+      "implementation": "11月14日第三方X快照11567粉／1081赞／24.60万播放；作者有详细Canvas约束prompt。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "mosaic-morph",
+      "name": "金箔镶嵌群体变形",
+      "family": "品牌与产品",
+      "category": "材质与抽象叙事",
+      "creator": "LCSlates",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "金箔镶嵌",
+        "马赛克变形",
+        "群体成形",
+        "镶嵌动画"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/mosaic-morph.md",
+      "source": "https://x.com/LCSlates/status/2102503027340988559",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 3172,
+        "likes": 1040,
+        "views": 132727,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "同一群材质单元变成可识别物象，观众期待下一次整体成形。",
+      "visual_grammar": "稳定材质单元→群体路径→鸟／鱼等轮廓成形→空间或光线变化→回归统一母题。",
+      "required_inputs": "材质规则、目标轮廓、单元匹配与路径、相机、成形停顿和音乐乐句。",
+      "replacement_operation": "换轮廓与叙事顺序，重算单元映射；保留材质、数量与可读成形时长。",
+      "avoid": "金色粒子随机漂浮；从不形成可辨对象；只换颜色拆成多模板。",
+      "implementation": "11月14日第三方X快照3172粉／1040赞／13.27万播放；WebGL2作者自述，未全片复看。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "water-light",
+      "name": "水光焦散的自然体验",
+      "family": "自然与空间",
+      "category": "空间与自然",
+      "creator": "Aurelien_Gz",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "水光焦散",
+        "浅水模拟",
+        "水面光影",
+        "Clearwater"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/water-light.md",
+      "source": "https://x.com/Aurelien_Gz/status/2102786378282987591",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 3003,
+        "views": 231998,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "光、水、石头和相机共同变化，细节可信带来沉浸感。",
+      "visual_grammar": "稳定浅水空间→扰动涟漪→焦散与折射同步改变→相机观察不同角度。",
+      "required_inputs": "水面模型、底部纹理、光照、相机轨迹、扰动时点与环境声。",
+      "replacement_operation": "替换底部景观、光照与扰动后验证物理关系；不是换一张水面图。",
+      "avoid": "高光贴在水面不随波动；将嵌入贴图说成完全没有资产。",
+      "implementation": "官方Clearwater单HTML源码已核FFT／涟漪／焦散；本机尚未接入同版完整模板。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "documentary",
+      "name": "访谈与事实证据纪录短片",
+      "family": "纪实与证据",
+      "category": "纪实与解释",
+      "creator": "gavinpurcell",
+      "source_kind": "公开案例；完整原片待核",
+      "amplification": null,
+      "tags": [
+        "纪录短片",
+        "访谈纪录",
+        "纪实旁白",
+        "证据叙事"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/documentary.md",
+      "source": "https://x.com/gavinpurcell/status/2103304514329854102",
+      "market": {
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 3583,
+        "views": 584787,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+      "viewer_payoff_hypothesis": "一个明确问题通过事实、人物视角和证据推进，观众获得解释。",
+      "visual_grammar": "事实问题→可核材料→人物观点→证据冲突／补充→有边界的结论。",
+      "required_inputs": "原始事实来源、合法素材、访谈或明确虚构的角色、旁白与引用、音画表。",
+      "replacement_operation": "先查事实与叙事依据，再换人物／材料／旁白；生成镜头不得冒充史料或真实访谈。",
+      "avoid": "写实画面自动当纪录证据；旁白用虚构数字补齐；作者工具权限当本项目授权。",
+      "implementation": "作者披露Runway MCP，当前未启用云生成；历史市场参考，原片全长待核。",
+      "method_sources": [
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/case-file-explainer/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "可借鉴证据调查结构；原片纪实对象、采访／素材与事实待核，不拿档案视觉替代真实证据"
+        },
+        {
+          "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+          "entry": "resources/madhav-animation-skills/d2b562dd/skills/declassified-dossier/SKILL.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, not installed or executed",
+          "gap": "新闻问答档案世界；依附共用生产外壳，不是独立完整流程"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "paper-action",
+      "name": "纸上极简武打与反转",
+      "family": "动作与游戏",
+      "category": "动作与喜剧",
+      "creator": "土车动画兄弟",
+      "source_kind": "完整作品",
+      "amplification": null,
+      "tags": [
+        "纸上武打",
+        "火柴人武侠",
+        "极简武打",
+        "武打反转",
+        "纸艺人物打斗"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/paper-action.md",
+      "source": "https://www.douyin.com/video/7643751926065317062",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 932243,
+        "likes": 18400,
+        "saves": 1202,
+        "shares": 3530,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "攻击预期、躲闪与反击可读，主角连续获胜后被下一位对手击飞，产生续看期待。",
+      "visual_grammar": "密集围观建立阵势→主角移到城门→绿色对手攻防→红色对手攻防→蓝色对手突入逆转。",
+      "required_inputs": "人物骨架、支撑点、动作节拍、双方距离、连续对手、攻击接触、结尾悬念和拟音。",
+      "replacement_operation": "先换攻防与局势逆转，再换武器／人物；保持动作因果与接触时点。",
+      "avoid": "随机摆四肢；特效盖住接触；把动作补间当成完整武打。",
+      "implementation": "完整纸上火柴人打斗原片已看；触感纸袋没有武打能力，不互相映射。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "craft-reveal",
+      "name": "精细手作过程与成品揭晓",
+      "family": "教程与过程",
+      "category": "手作与满足感",
+      "creator": "花未醒",
+      "source_kind": "完整手作过程",
+      "amplification": null,
+      "tags": [
+        "手作过程",
+        "黏土手作",
+        "成品揭晓",
+        "工序特写"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/craft-reveal.md",
+      "source": "https://www.douyin.com/video/7659692677034061169",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 39434,
+        "likes": 23143,
+        "saves": 7011,
+        "shares": 1827,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "1fps full length plus final frame; not continuous viewing",
+      "viewer_payoff_hypothesis": "每个局部完成都是小回报，观众等待零件合成完整成品并回看细节。",
+      "visual_grammar": "开头成品细节预告→鞋／裙／衣／脸／发／饰物的过程特写→局部完成→整体成品→正反面与细节巡看。",
+      "required_inputs": "原创制作对象、可读工序、手／工具真实素材或明确模拟素材、每步前后状态、成品多角度、音乐与说明。",
+      "replacement_operation": "先拆新对象工序，保留关键不可逆变化；过程要让人看懂，结尾留足整体与细节回报。",
+      "avoid": "用简单物件飘移顶替精细手作；没有制作过程；复制原IP；成品与前面工序不一致。",
+      "implementation": "花未醒约3.94万粉，23143赞／7011收藏；145.367秒全长1fps画面已看。可复用结构，不声称现有小物装配已达到精细手作质感。",
+      "method_sources": [],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": []
+    },
+    {
+      "id": "dot-fable",
+      "name": "圆点角色微冒险",
+      "family": "情绪与剧情",
+      "category": "圆点角色微冒险",
+      "creator": "cherry_mx_reds",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "圆点故事",
+        "圆点角色",
+        "小球冒险",
+        "几何角色"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/dot-fable.md",
+      "source": "https://x.com/cherry_mx_reds/status/2105825930799432073",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 7725,
+        "likes": 6293,
+        "views": 859822,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "同一有表情圆点角色→跳跃障碍→昼夜空间变化→接近星星→角色触发收束",
+      "visual_grammar": "有表情圆点从越障到夜间触星；空间、动作与表情连续。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "角色外形与表情；障碍及动作轨迹；场景状态；追逐目标；结尾动作",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-dot-fable完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-dot-fable"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 15.061333,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "halftone-mascot",
+      "name": "半色调角色产品发布",
+      "family": "品牌与产品",
+      "category": "半色调角色产品发布",
+      "creator": "achxvi",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "半色调角色",
+        "角色产品发布",
+        "网点角色",
+        "漫画产品广告"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/halftone-mascot.md",
+      "source": "https://x.com/achxvi/status/2103918792845963545",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 8647,
+        "likes": 9179,
+        "views": 1147282,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "网点材质角色提出用户问题→同一角色带出产品界面→操作产生可见结果→品牌落定",
+      "visual_grammar": "半色调三维角色串起用户问题、课程卡、支付和收益图。新稿为二维网点角色，未复刻三维体积。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "角色造型与网点映射；用户问题；真实或明确虚构的产品界面；操作状态；结果数量；品牌",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-halftone-mascot完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-halftone-mascot"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 15.061333,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "painted-flipbook",
+      "name": "整页彩绘旅行翻页书",
+      "family": "音乐与图文",
+      "category": "整页彩绘旅行翻页书",
+      "creator": "ann_nnng",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "彩绘翻页",
+        "旅行绘本",
+        "插画翻页书",
+        "丙烯手账"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/painted-flipbook.md",
+      "source": "https://x.com/ann_nnng/status/2102573127192727704",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 14947,
+        "likes": 1924,
+        "views": 134106,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "封面主题→整页插画的地点变化→页卷翻转连接→人物贯穿→回家收束",
+      "visual_grammar": "完整绘画页面随书页卷动；人物贯穿地点，封面与结尾回扣。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "完整旅程与地点；各页场景和人物动作；全页绘画；页序与卷页时点；配乐与记忆短句",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-painted-flipbook完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-painted-flipbook"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 21.6,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "mechanical-cutaway",
+      "name": "金属机械剖面与同轴爆炸图",
+      "family": "知识与机制",
+      "category": "金属机械剖面与同轴爆炸图",
+      "creator": "konstantinsaifo",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "机械剖面",
+        "三维爆炸图",
+        "金属装配",
+        "同轴拆解"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/mechanical-cutaway.md",
+      "source": "https://x.com/konstantinsaifo/status/2104094723887501736",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 4931,
+        "likes": 8384,
+        "views": 1185524,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "连续三维对象→外壳剖开→同轴零件与运动→轴向爆炸→复装对应",
+      "visual_grammar": "金属机体由外观进入剖面、内部旋转、喷嘴参数和同轴爆炸图；原片无音轨。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "实际机械结构或明确示意；零件几何与材质；装配坐标；运动关系与剖面角度；镜头与标注",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-mechanical-cutaway完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-mechanical-cutaway"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 34.7,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "voxel-island",
+      "name": "体素浮岛昼夜微缩故事",
+      "family": "自然与空间",
+      "category": "体素浮岛昼夜微缩故事",
+      "creator": "blueemi99",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "体素浮岛",
+        "微缩小岛",
+        "方块世界",
+        "三维像素"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/voxel-island.md",
+      "source": "https://x.com/blueemi99/status/2105804692811137242",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 4882,
+        "likes": 1392,
+        "views": 147288,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "有空间层次的体素场景→贯穿角色与任务→昼夜灯光变化→环绕镜头→任务完成",
+      "visual_grammar": "体素浮岛中心红屋、花草、环绕部件与小岛，三维镜头持续绕行。新稿缩小场景密度，增加昼夜任务。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "体素地图与场景物件；角色和完整行动；灯光事件；摄像机路径；结尾状态",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-voxel-island完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-voxel-island"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 25.966667,
+        "has_audio": false,
+        "audio_method": "原文件无音轨",
+        "human_review": false
+      }
+    },
+    {
+      "id": "watercolor-music",
+      "name": "水彩晕染生活音乐叙事",
+      "family": "音乐与图文",
+      "category": "水彩晕染生活音乐叙事",
+      "creator": "悲伤喜羊羊",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "水彩音乐叙事",
+        "水彩生活",
+        "雨天音乐故事",
+        "水彩MV"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/watercolor-music.md",
+      "source": "https://www.douyin.com/video/7690199228575960339",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 10824,
+        "likes": 632757,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "水彩晕染与纸感→贯穿人物和生活物件→情绪随行动变化→整段音乐发展→物件回扣",
+      "visual_grammar": "固定人物、水彩纸感、雨伞与红线等物件，多段场景随音乐发展；新稿为器乐叙事。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "完整生活故事；人物衣着与连续性；各段场景动作；情绪转折；音乐结构与物件回扣",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-watercolor-music完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-watercolor-music"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 322.061,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "seaside-flat",
+      "name": "海边扁平插画音乐短叙事",
+      "family": "音乐与图文",
+      "category": "海边扁平插画音乐短叙事",
+      "creator": "XML",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "海边音乐故事",
+        "扁平情感MV",
+        "纸船海边",
+        "海风叙事"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/seaside-flat.md",
+      "source": "https://www.douyin.com/video/7694337242181399922",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 1993,
+        "likes": 23864,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "固定双人关系→物件承载心意→海面与水下转场→昼夜推进→回信动作收束",
+      "visual_grammar": "双人海边、波浪和水下切换、夜间纸船回信，音乐贯穿；不是潮汐科普。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "双人关系与完整情节；承载物；海岸构图；水下转场和昼夜；回信内容与音乐",
+      "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+      "implementation": "已有studio-seaside-flat完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-seaside-flat"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 33.034,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "ui-morph",
+      "name": "单物件连续界面变形",
+      "family": "品牌与产品",
+      "category": "单物件连续界面变形",
+      "creator": "twoclipping",
+      "source_kind": "完整作品；公开指标快照",
+      "amplification": null,
+      "tags": [
+        "界面变形",
+        "连续UI",
+        "同一个按钮",
+        "物件连续变形",
+        "专注工具",
+        "留白专注"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/ui-morph.md",
+      "source": "https://x.com/twoclipping/status/2103273003555402193",
+      "market": {
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 9619,
+        "likes": 12822,
+        "views": 1189451,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "完整时长1fps接触表已实际查看；不是连续真人观看",
+      "viewer_payoff_hypothesis": "同一个外形持续变换→每次光标操作有结果→功能链累积→回到初始按钮",
+      "visual_grammar": "同一界面主体连续变形成按钮、加载、开关与滑块等状态；新稿统一到专注计时。",
+      "required_inputs": "完整新稿、连续人物或对象、画面动作与时序、合法完整音轨",
+      "replacement_operation": "完整任务链；逐步状态；外形尺寸与圆角；光标轨迹；新文案与图表；节拍与结束",
+      "avoid": "静态截图轮播、点击没有结果、每段突然换成另一个不连续物件；不等同真实可操作产品。",
+      "implementation": "已有studio-ui-morph完整新稿及独立Skill；同版画面与完整AI音频感知，用户未认可。",
+      "method_sources": [
+        {
+          "source": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+          "entry": "resources/claude-animation-base/0ac8bf2b/ANIMATION_GUIDE.md",
+          "license": "MIT",
+          "scope": "pinned source snapshot, dependencies not installed, not executed",
+          "gap": "不同作者的角色底座；需新角色／动作／分镜、歌曲时间和离线字体；不是原帖源码或已验模板"
+        }
+      ],
+      "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+      "compatible_production_templates": [
+        "studio-ui-morph"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/完整原片补审.json",
+        "duration": 14.059,
+        "has_audio": true,
+        "audio_method": "本机MiniCPM完整音轨输入",
+        "human_review": false
+      }
+    },
+    {
+      "id": "music-score",
+      "name": "逐音符乐谱光点",
+      "family": "音乐与图文",
+      "category": "逐音符乐谱光点",
+      "creator": "看见琴声",
+      "source_kind": "完整作品；实际全段画面和音轨模型观察",
+      "tags": [
+        "跟谱听音乐",
+        "乐谱光点",
+        "逐音符",
+        "钢琴可视化"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/music-score.md",
+      "source": "https://www.douyin.com/video/7685167835231849770",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and visible page/comments",
+        "followers": 27251,
+        "likes": 41164,
+        "saves": 7810,
+        "shares": 5926,
+        "comments": 630,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "267.067秒；4秒间隔全长画面，12个连续音频片段；曲目识别不能授权挪用演奏。",
+      "viewer_payoff_hypothesis": "同时看到声音和结构，能跟着旋律预测下一个音。",
+      "visual_grammar": "倾斜大谱面连续跟随；旋律与低音分别着色；光点逐音落在实际音头；完整乐句走向终止式。",
+      "required_inputs": "完整音符事件、声部、小节/拍号、由同一事件演奏的完整音轨、曲名与谱行布局。",
+      "replacement_operation": "更换整首曲子的音符、声部、谱面、镜头轨迹与演奏；首音、换行、延音和收尾逐项对齐。",
+      "avoid": "给任意MP3贴不匹配的装饰音符；重复一个小节充完整曲；声画各自独立计时。",
+      "implementation": "studio-music-score已有完整原创12小节新曲与同版观察。当前C大调钢琴双声部16:9；复杂记谱另适配。",
+      "method_sources": [],
+      "compatible_production_templates": [
+        "studio-music-score"
+      ],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [
+        "16:9"
+      ],
+      "whole_source_review": {
+        "full_length_frames_observed": true,
+        "actual_audio_model_input": true,
+        "human_listening": false,
+        "audio_chunks": 12,
+        "scope": "267.067秒；4秒间隔全长画面，12个连续音频片段；曲目识别不能授权挪用演奏。"
+      }
+    },
+    {
+      "id": "chat-screen",
+      "name": "聊天记录渐次揭晓叙事",
+      "family": "情绪与剧情",
+      "category": "聊天记录渐次揭晓叙事",
+      "creator": "七月檐角的猫",
+      "source_kind": "完整作品；实际全段画面和音轨模型观察",
+      "tags": [
+        "聊天记录",
+        "消息气泡",
+        "聊天叙事",
+        "聊天记录视频",
+        "语音告别"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/chat-screen.md",
+      "source": "https://www.douyin.com/video/7456474348975639846",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and visible page/comments",
+        "followers": 2245,
+        "likes": 79900,
+        "saves": 10011,
+        "shares": 81375,
+        "comments": 9422,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "272.162秒全长4秒间隔画面、12个连续音频片段。2025-01旧帖，无近期增长证据。",
+      "viewer_payoff_hypothesis": "观众从信息差读出人物关系，最后一句重新解释前面的消息。",
+      "visual_grammar": "固定聊天界面与发信身份；消息逐条到达并保留读完时间；跨聊天窗口引入第三方信息；误会的前后解释；语音播放器和字幕完成最后揭晓。",
+      "required_inputs": "原创完整对话、发信方与头像、每条时间/打字停顿/读时、必要的自有图片或语音、完整配乐、结尾揭晓。",
+      "replacement_operation": "换完整人物关系和因果链；逐句重新分配阅读时间；更换聊天窗口、伏笔、反转与结尾；语音和字幕使用同一时间表。",
+      "avoid": "用几张对白卡代替真实消息阅读节奏；密集气泡塞满屏；只替换称呼；把演绎说成真实事件；挪用参考的疾病悲剧。",
+      "implementation": "仅研究配方；尚无新的完整聊天界面生产模板。旧等消息有4项open且题材相近，不能作为此项的成功适配。",
+      "method_sources": [
+        {
+          "source": "https://github.com/iart-ai/text-message-video-skills",
+          "entry": "docs/research/2026-11-14-非纯AI高互动模板/text-message-animation-source.md",
+          "scope": "read only; uninstalled; scheduling and legibility method; no upstream retention claims adopted"
+        }
+      ],
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "full_length_frames_observed": true,
+        "actual_audio_model_input": true,
+        "human_listening": false,
+        "audio_chunks": 12,
+        "scope": "272.162秒全长4秒间隔画面、12个连续音频片段。2025-01旧帖，无近期增长证据。"
+      }
+    },
+    {
+      "id": "shadow-theatre",
+      "name": "背光镂空关节皮影",
+      "family": "情绪与剧情",
+      "category": "背光镂空关节皮影",
+      "creator": "汪氏皮影·确实牛皮",
+      "source_kind": "完整作品；实际全段画面和音轨模型观察",
+      "tags": [
+        "皮影",
+        "皮影戏",
+        "背光镂空",
+        "关节影偶",
+        "圆窗背光"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/shadow-theatre.md",
+      "source": "https://www.douyin.com/video/7582925599485725995",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and visible page/comments",
+        "followers": 179211,
+        "likes": 779368,
+        "saves": 90036,
+        "shares": 433919,
+        "comments": 20191,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "97.367秒全长2秒间隔画面、5个连续音频片段；唱腔性别与乐器识别有模型不确定性，不以其认证戏种。",
+      "viewer_payoff_hypothesis": "熟悉角色通过传统戏曲与皮影动作重新解释，形成材质、文化和代际反差。",
+      "visual_grammar": "有镂空花纹和透明染色的关节人物；可见操纵杆及投影；暖色幕布与台口；全景和单色圆窗近景交替；唱词、手势、腾跃和对打有对应。",
+      "required_inputs": "原创或已授权角色分层、关节/杆件/镂空图案、完整剧本与唱词、合法唱腔或音乐、动作节拍、幕布与背光方案。",
+      "replacement_operation": "换完整戏剧情境；重画影偶与关节；重排杆件驱动、人物接触/落地；按新唱词配置动作与近景。",
+      "avoid": "把普通剪纸或黑色剪影标为皮影；无关节的整体平移；只换背景色；复制动漫人物和现成唱段充新稿。",
+      "implementation": "仅研究配方；目前没有保住镂空、杆件和表演的新稿工程，未接虚假生产入口。",
+      "method_sources": [],
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "full_length_frames_observed": true,
+        "actual_audio_model_input": true,
+        "human_listening": false,
+        "audio_chunks": 5,
+        "scope": "97.367秒全长2秒间隔画面、5个连续音频片段；唱腔性别与乐器识别有模型不确定性，不以其认证戏种。"
+      }
+    },
+    {
+      "id": "meme-stage",
+      "name": "实景舞台与表情素材拼贴",
+      "family": "情绪与剧情",
+      "category": "实景舞台与表情素材拼贴",
+      "creator": "猫meme的快乐生活",
+      "source_kind": "完整作品；实际全段画面和音轨模型观察",
+      "tags": [
+        "表情拼贴",
+        "猫meme",
+        "实景表情舞台",
+        "角色反应拼贴",
+        "影视拼贴共鸣"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/meme-stage.md",
+      "source": "https://www.douyin.com/video/7674253898282167922",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and visible page/comments",
+        "followers": 49133,
+        "likes": 533564,
+        "saves": 66351,
+        "shares": 170126,
+        "comments": 39484,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "38.034秒全长1fps画面和连续音频；不是新生产模板。",
+      "viewer_payoff_hypothesis": "日常误会和情绪被夸张表演，短时间读懂立场变化，便于转发给有类似经历的人。",
+      "visual_grammar": "固定实景/照片舞台承载有动作的角色抠像；角色位置与对白保持关系；反应镜头、局部放大、字幕和音效强调信息变化；物件或动作在结尾回扣。",
+      "required_inputs": "原创完整情节或观点、可用表演素材及许可、固定空间、角色/对白表、反应镜头、音效/音乐和结尾回扣。",
+      "replacement_operation": "整段对白、人物关系、空间调度、表演素材、各角色反应时点、声音与结尾全部随新内容重编。",
+      "avoid": "三条猫视频算三种视觉风格；只有表情图轮播没有信息变化；照抄冲突；高频闪烁遮盖表演。",
+      "implementation": "一个视觉家族，下面三种叙事分支；未有合格完整新稿，不冒用旧低分情绪片。",
+      "method_sources": [],
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "full_length_frames_observed": true,
+        "actual_audio_model_input": true,
+        "human_listening": false,
+        "audio_chunks": 2,
+        "scope": "38.034秒全长1fps画面和连续音频；不是新生产模板。"
+      },
+      "branches": [
+        {
+          "source": "https://www.douyin.com/video/7674253898282167922",
+          "name": "对白误会反转",
+          "market": {
+            "date": "2026-11-14",
+            "method": "public Douyin detail response and visible page/comments",
+            "followers": 49133,
+            "likes": 533564,
+            "saves": 66351,
+            "shares": 170126,
+            "comments": 39484,
+            "views": null,
+            "retention": null,
+            "follower_growth": null,
+            "recent_consecutive_baseline": false
+          }
+        },
+        {
+          "source": "https://www.douyin.com/video/7673856500855183345",
+          "name": "影视拼贴议论",
+          "market": {
+            "date": "2026-11-14",
+            "method": "public Douyin detail response and visible page/comments",
+            "followers": 226296,
+            "likes": 437569,
+            "saves": 71354,
+            "shares": 124804,
+            "comments": 9547,
+            "views": null,
+            "retention": null,
+            "follower_growth": null,
+            "recent_consecutive_baseline": false
+          }
+        },
+        {
+          "source": "https://www.douyin.com/video/7668983167327900322",
+          "name": "歌曲识别与群体反应",
+          "market": {
+            "date": "2026-11-14",
+            "method": "public Douyin detail response and visible page/comments",
+            "followers": 17726,
+            "likes": 157885,
+            "saves": 93753,
+            "shares": 8931,
+            "comments": null,
+            "views": null,
+            "retention": null,
+            "follower_growth": null,
+            "recent_consecutive_baseline": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "paper-cutout-op",
+      "name": "彩铅纸片分层摄影",
+      "family": "音乐与图文",
+      "category": "彩铅纸片分层摄影",
+      "creator": "纸动画-甄强",
+      "source_kind": "完整作品；实际全段画面和音轨模型观察",
+      "tags": [
+        "彩铅纸片",
+        "纸片片头",
+        "分层纸片",
+        "纸片摄影",
+        "手绘纸片MV"
+      ],
+      "entry": ".agents/skills/studio-video-templates/references/formats/paper-cutout-op.md",
+      "source": "https://www.douyin.com/video/7702405372371291402",
+      "market": {
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and visible page/comments",
+        "followers": 969120,
+        "likes": 81768,
+        "saves": 6381,
+        "shares": 13290,
+        "comments": 932,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false
+      },
+      "visual_review": "89.281秒元数据；实际视频89.267秒。全长1fps画面89帧、4个连续音频片段；不挪用角色、歌曲或纸片图形。",
+      "viewer_payoff_hypothesis": "熟悉片头被重建成可触摸的手作舞台，人物、物件和镜头层次不断揭晓。",
+      "visual_grammar": "全彩铅笔纸纹与裁切边缘；人物和肢体/物件分层；前后景遮挡与换焦；舞台灯色、近景和全景按整首音乐重排；片头、群像、动作和署名有完整段落。",
+      "required_inputs": "原创或已授权整段音乐、分层彩铅人物与手/道具、实景或纸片舞台、遮挡与焦点表、动作及全片剪辑时表。",
+      "replacement_operation": "换完整音乐与人物情境；重新分层纸片、安排手势和物件；按新乐句重排焦点、前后景、灯色和群像；结尾有完整收束。",
+      "avoid": "平面卡片轮播；给旧纸艺窗口换皮即称新模板；只有剪影没有彩铅材质；把原IP和歌曲吸引力算作通用模板效果。",
+      "implementation": "仅研究配方；旧纸艺窗口不具有分层摄影与整段动作，未强绑生产模板。原作摄影的手工痕迹和换焦不是已获验证的AI能力。",
+      "method_sources": [],
+      "compatible_production_templates": [],
+      "readiness": "research-recipe",
+      "production_template": false,
+      "formats_verified": [],
+      "whole_source_review": {
+        "full_length_frames_observed": true,
+        "actual_audio_model_input": true,
+        "human_listening": false,
+        "audio_chunks": 4,
+        "scope": "89.281秒元数据；实际视频89.267秒。全长1fps画面89帧、4个连续音频片段；不挪用角色、歌曲或纸片图形。"
+      }
+    }
+  ]
+}

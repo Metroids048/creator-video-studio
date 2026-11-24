@@ -1,0 +1,23 @@
+{
+  "template": "studio-paper-question",
+  "style": "paper-question",
+  "entry": "index.html",
+  "duration": 28,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "她写下一句话，折成小小的信。小鸟把它带过，仍然亮着的窗。回信只有一句：给晚归的你。有人留灯，路就有了尽头。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "48d75caed5a47beef30bcbecba146c347f0c7b45c80994ec8501cbeb6e8566c8",
+    "story.json": "47230934d58a8180b5a4481ba41ba1ae318e10be53746f364fe4e15be4676464",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://x.com/kevin_t_ngo/status/2102437977435893771"
+  }
+}

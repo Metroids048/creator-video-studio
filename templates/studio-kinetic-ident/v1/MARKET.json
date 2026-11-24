@@ -1,0 +1,40 @@
+{
+  "id": "kinetic-ident",
+  "name": "几何与动态排版短片",
+  "family": "品牌与产品",
+  "category": "图形与品牌",
+  "creator": "stephanlivera",
+  "source_kind": "公开案例；完整原片待核",
+  "amplification": null,
+  "tags": [
+    "动态排版",
+    "几何快切",
+    "动效showreel",
+    "文字编舞"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/kinetic-ident.md",
+  "source": "https://x.com/stephanlivera/status/2103315922098470926",
+  "market": {
+    "date": "2026-09-27",
+    "method": "historical public X post HTML snapshot",
+    "followers": null,
+    "likes": 16061,
+    "views": 1640686,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+  "viewer_payoff_hypothesis": "形状与字形的节奏、尺度和预期反转提供短时感官回报。",
+  "visual_grammar": "建立主形与字号秩序→同一形状变换空间角色→排版压缩与释放→标识落定。",
+  "required_inputs": "文案层级、字形／字体许可、几何母题、节拍和完整前后状态。",
+  "replacement_operation": "先按新内容重排视觉层级，再改形变和音乐；相同演示转载合并。",
+  "avoid": "每个字使用不同转场；换色算一套；把15秒showreel证明为长片模板。",
+  "implementation": "历史16061赞／164万播放；高互动参考，源工程和稳定产出能力未知。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

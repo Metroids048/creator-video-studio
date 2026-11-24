@@ -1,0 +1,29 @@
+{
+  "template": "studio-watercolor-music",
+  "style": "watercolor-music",
+  "entry": "index.html",
+  "duration": 55,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "歌曲《送别》完整一节演唱，歌词逐句变成水彩画面。\n前奏：水岸长亭，旅人与友人相对；镜头轻轻靠近旧路。\n长亭外，古道边：旅人沿古道走出亭子，友人留在台阶。\n芳草碧连天：切到低视点的草坡，风从近处一直吹向远山。\n晚风拂柳笛声残：垂柳枝叶拂过水面，亭中的人渐渐远去。\n夕阳山外山：太阳沉在层层山后，小舟从暖色倒影前划过。\n天之涯，地之角：山水向两边展开，小舟成为天地间很小的一个点。\n知交半零落：长亭中同行者的回忆渐渐淡去，只留下一个身影。\n一瓢浊酒尽余欢：木桌上两只酒杯向中间靠近，一起举杯送行。\n今宵别梦寒：夜色落下，明月照水；岸上故人望着远处小舟。\n尾声：画面收回纸色，留下“山水有相逢”。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "90cc77d44b099c6a5829e298e1c9df9c895dd1ad4e29659955bea9673420df32",
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "story.json": "16923bd3cb5781885eafd19691bc61f1a352b33d4508842444ec3b4822a8fab4",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original picture code and new complete visual script, one complete sung stanza",
+    "music_source": "../music-source.json",
+    "audio_segment_seconds": [
+      16,
+      71
+    ],
+    "alignment_status": "model-derived phrase intervals, not human listening approval",
+    "revision": "v0003→v0004: three repeated distant shots replaced; opacity bug fixed; audio and lyric onsets preserved"
+  }
+}

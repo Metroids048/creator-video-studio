@@ -1,0 +1,40 @@
+{
+  "id": "lens-lab",
+  "name": "剖面实验与参数演示",
+  "family": "知识与机制",
+  "category": "知识与实验",
+  "creator": "RyanSael",
+  "source_kind": "公开案例；完整原片待核",
+  "amplification": null,
+  "tags": [
+    "镜头剖面",
+    "光学实验",
+    "参数实验",
+    "透镜"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/lens-lab.md",
+  "source": "https://x.com/RyanSael/status/2102591147927654847",
+  "market": {
+    "date": "2026-09-27",
+    "method": "historical public X post HTML snapshot",
+    "followers": null,
+    "likes": 15510,
+    "views": 3115565,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+  "viewer_payoff_hypothesis": "观众看到控制变量后结果怎样改变，而不只听概念定义。",
+  "visual_grammar": "可操作参数→内部结构或剖面同步改变→结果窗变化→用对照解释原因。",
+  "required_inputs": "科学模型与来源、参数域、内部结构、同一对象结果对照、操作轨迹。",
+  "replacement_operation": "替换被解释机制与参数映射，先验证模型，再录制能讲清变化的轨迹。",
+  "avoid": "摆几个漂亮剖面没有真实参数关联；把交互演示自动叫科学准确影片。",
+  "implementation": "X历史高流量样本，只有Hypit抽样和作者自述；未核全片与科学正确性。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

@@ -1,0 +1,23 @@
+{
+  "template": "studio-dot-fable",
+  "style": "dot-fable",
+  "entry": "index.html",
+  "duration": 18,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "第一次跳起来，落地也算进步。挡在前面的，可以一步步越过。天暗了，才看见远处的星星。朝它走近一点，再近一点。小小一步，也算出发。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "6bd2ec87f5602ab941dea723cbc456de7dc41587a85da270ee4f41112ef80989",
+    "story.json": "7ad8b98770c92406b679395f29682cc7176b8b66279f0a994883edb787a81ba4",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://x.com/cherry_mx_reds/status/2105825930799432073"
+  }
+}

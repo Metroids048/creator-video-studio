@@ -1,0 +1,35 @@
+{
+  "template": "studio-curved-photo-album",
+  "style": "curved-photo-album",
+  "entry": "index.html",
+  "duration": 36,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "周末不必去很远，；先把目光交给天空。 / 风把叶子翻了一遍，；我也慢慢翻过这一页。 / 没有要追上的日程，；只有光，落在眼前。 / 把没说完的心事，；先放在花边。 / 路拐弯的时候，；也会多出一片天空。 / 今天没有完成什么，；也可以是很好的一天。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "three.core.min.js": "295a28f4a9786dd24a2a357a4ce90921eb041127e53a508335b9a0556c1e0875",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a",
+    "LICENSE": "d2d00a697a2038cd5fa826cebfe884b1d0c88f333f00d148f2d1301f18270872",
+    "PHOTO-CREDITS.json": "fc1e46534a4485828deb3fa07e7cc08539330f65e4530239c33c0c7d24a345e2",
+    "main.js": "535ade276c473a86d22989317ecff7e8ba880c9fb3e605b17ce4bca65d0719b4",
+    "story.json": "23f6a9daf91ade6ad82b3196f7778929f275f78702776918607b84583715b97f",
+    "photo-3.jpg": "a9219b9087693015372e1da7e03217e81fcef0c69b768f29dd7078e26db3efa8",
+    "THREE-LICENSE": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "photo-2.jpg": "92bd18868af6afe2aa381e8598627c090b73d0e1b84cc7c64db8fd73be3db1af",
+    "photo-0.jpg": "c6d298be1520546c0440d64d1073e33a356043e2481a8a67e940d5262c0c2e28",
+    "three.module.min.js": "979c1ae4b0579c9901eacf797602c0b46df129d87102c6443d14be4a1f790b70",
+    "photo-1.jpg": "76b1b97982e9591fa19d544131458d03cfcace690a6a79482eefac321d56949f",
+    "photo-5.jpg": "b13f5a16af1cecb399a1c533b00a4fc935a3e8ce80b2b34ed435eadb3f1b9481",
+    "photo-4.jpg": "bf2fdee8ddab837f0d978801d451ebf5e6f9d82461af0ece37a28051d4a406c0",
+    "fonts/sans.ttf": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "source": {
+    "scope": "original script, original local implementation and composition; reference grammar only",
+    "market": "https://www.douyin.com/video/7677775651118152866"
+  }
+}

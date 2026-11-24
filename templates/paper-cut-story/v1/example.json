@@ -1,0 +1,143 @@
+{
+  "template": "paper-cut-story",
+  "format": "9:16",
+  "frames": 450,
+  "seed": 57,
+  "subtitle": "用一张纸，安排一件小事",
+  "direction": {
+    "track": "纸艺生活短片",
+    "audience": "喜欢手作与日常整理的抖音观众",
+    "promise": "出门小物各归其位，再合上纸袋"
+  },
+  "camera": [
+    {
+      "frame": 0,
+      "zoom": 0.86,
+      "reason": "看清打开的纸与散落物"
+    },
+    {
+      "frame": 285,
+      "zoom": 0.86,
+      "reason": "固定俯拍观察物件归位"
+    },
+    {
+      "frame": 370,
+      "zoom": 1,
+      "reason": "合拢后靠近观察纸边和标签"
+    },
+    {
+      "frame": 450,
+      "zoom": 1,
+      "reason": "留停阅读结果"
+    }
+  ],
+  "id": "paper-pocket-1113",
+  "layout": "organizer",
+  "title": "明早，少翻一次包",
+  "request": "给通勤的人做一条15秒竖屏纸艺短片。把卡、钥匙和耳机收进一张折成的纸袋，最后合起来，表达今晚归位、明早少翻包。保留落纸声，不要讲大道理。",
+  "finalLabel": "今晚归位",
+  "objects": [
+    {
+      "id": "card",
+      "shape": "card",
+      "label": "通勤卡",
+      "color": "#e6b957",
+      "from": [
+        -365,
+        -350
+      ],
+      "to": [
+        -170,
+        -120
+      ],
+      "rotation": -0.3
+    },
+    {
+      "id": "key",
+      "shape": "key",
+      "color": "#d5ad5c",
+      "from": [
+        390,
+        -110
+      ],
+      "to": [
+        160,
+        -65
+      ],
+      "rotation": 0.6
+    },
+    {
+      "id": "headphones",
+      "shape": "headphones",
+      "color": "#d97257",
+      "from": [
+        -380,
+        300
+      ],
+      "to": [
+        0,
+        110
+      ],
+      "rotation": -0.4
+    },
+    {
+      "id": "fold",
+      "shape": "hidden",
+      "color": "#efead9",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "card-in",
+      "object": "card",
+      "prepare": 20,
+      "contact": 65,
+      "result": 73,
+      "end": 135,
+      "caption": "卡，回到固定位置",
+      "sound": "paper",
+      "action": "place"
+    },
+    {
+      "id": "key-in",
+      "object": "key",
+      "prepare": 135,
+      "contact": 178,
+      "result": 186,
+      "end": 245,
+      "caption": "钥匙，不再躲角落",
+      "sound": "metal",
+      "action": "place"
+    },
+    {
+      "id": "earphone-in",
+      "object": "headphones",
+      "prepare": 245,
+      "contact": 285,
+      "result": 293,
+      "end": 340,
+      "caption": "耳机，也有自己的位置",
+      "sound": "paper",
+      "action": "place"
+    },
+    {
+      "id": "pocket-close",
+      "object": "fold",
+      "prepare": 340,
+      "contact": 380,
+      "result": 388,
+      "end": 450,
+      "caption": "今晚归位，明早从容",
+      "sound": "stamp",
+      "action": "fold"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "usage": "NASA Media Usage Guidelines: factual educational photo collection, NASA acknowledged; no endorsement.",
+  "policy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "images": [
+    {
+      "id": "as11-40-5880",
+      "path": "resources/nasa-apollo11-20261114/as11-40-5880.jpg",
+      "url": "https://images-assets.nasa.gov/image/as11-40-5880/as11-40-5880~medium.jpg",
+      "metadata": {
+        "center": "JSC",
+        "date_created": "1969-07-20T00:00:00Z",
+        "description": "AS11-40-5880 (20 July 1969) --- A close-up view of an astronaut's boot and bootprint in the lunar soil, photographed with a 70mm lunar surface camera during the Apollo 11 lunar surface extravehicular activity (EVA). While astronauts Neil A. Armstrong, commander, and Edwin A. Aldrin Jr., lunar module pilot, descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM)\" Columbia\" in lunar orbit.",
+        "keywords": [
+          "APOLLO 11",
+          "APOLLO PROJECT",
+          "ASTRONAUTS",
+          "EXTRAVEHICULAR ACTIVITY",
+          "FOOTPRINTS",
+          "FEET (ANATOMY)",
+          "LUNAR EXPLORATION",
+          "LUNAR PHOTOGRAPHY",
+          "LUNAR SOIL LUNAR SURFACE",
+          "PHOTOGRAPHY"
+        ],
+        "media_type": "image",
+        "nasa_id": "as11-40-5880",
+        "title": "Close-up view of astronauts foot and footprint in lunar soil"
+      },
+      "sha256": "aacdf869c2a79a1f445d30b478a5048191c8bdc2c492e1eda0b93beaa78b0dbb"
+    },
+    {
+      "id": "as11-40-5903",
+      "path": "resources/nasa-apollo11-20261114/as11-40-5903.jpg",
+      "url": "https://images-assets.nasa.gov/image/as11-40-5903/as11-40-5903~medium.jpg",
+      "metadata": {
+        "center": "JSC",
+        "date_created": "1969-07-20T00:00:00Z",
+        "description": "AS11-40-5903 (20 July 1969) --- Astronaut Edwin E. Aldrin Jr., lunar module pilot, walks on the surface of the moon near the leg of the Lunar Module (LM) \"Eagle\" during the Apollo 11 extravehicular activity (EVA). Astronaut Neil A. Armstrong, commander, took this photograph with a 70mm lunar surface camera. While astronauts Armstrong and Aldrin descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+        "keywords": [
+          "ACTIVITY",
+          "APOLLO 11",
+          "APOLLO PROJECT",
+          "ASTRONAUTS",
+          "EXTRAVEHICULAR ACTIVITY",
+          "EXTRAVEHICULAR MOBILITY UNITS",
+          "LUNAR MODULE",
+          "LUNAR PHOTOGRAPHY",
+          "LUNAR SOIL LUNAR SURFACE",
+          "MOON",
+          "PHOTOGRAPHY"
+        ],
+        "media_type": "image",
+        "nasa_id": "as11-40-5903",
+        "title": "Astronaut Edwin Aldrin walks on lunar surface near leg of Lunar Module"
+      },
+      "sha256": "24bf4ce093822101801f5ba3cad3f84525a5c6a42927b0a29579581c13c691ce"
+    },
+    {
+      "id": "as11-40-5948",
+      "path": "resources/nasa-apollo11-20261114/as11-40-5948.jpg",
+      "url": "https://images-assets.nasa.gov/image/as11-40-5948/as11-40-5948~medium.jpg",
+      "metadata": {
+        "center": "JSC",
+        "date_created": "1969-07-20T00:00:00Z",
+        "description": "AS11-40-5948 (20 July 1969) --- Astronaut Edwin E. Aldrin Jr., lunar module pilot, is photographed during the Apollo 11 extravehicular activity (EVA) on the moon. He has just deployed the Early Apollo Scientific Experiments Package (EASEP). This is a good view of the deployed equipment. In the foreground is the Passive Seismic Experiment Package (PSEP); beyond it is the Laser Ranging Retro-Reflector (LR-3); in the center background is the United States flag; in the left background is the black and white lunar surface television camera; in the far right background is the Lunar Module (LM). Astronaut Neil A. Armstrong, commander, took this picture with a 70mm lunar surface camera. While astronauts Armstrong and Aldrin descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+        "keywords": [
+          "APOLLO 11",
+          "APOLLO PROJECT",
+          "ASTRONAUTS",
+          "EXTRAVEHICULAR ACTIVITY",
+          "LUNAR MODULE LASER RANGE FINDERS",
+          "LUNAR PHOTOGRAPHY",
+          "LUNAR SURFACE",
+          "PHOTOGRAPHY PHOTOGRAPHIC EQUIPMENT",
+          "SEISMOGRAPHS",
+          "SPACEBORNE EXPERIMENTS"
+        ],
+        "media_type": "image",
+        "nasa_id": "as11-40-5948",
+        "title": "Astronaut Edwin Aldrin after deployment of EASEP on surface of moon"
+      },
+      "sha256": "51c5d1fcd3fa3050a8c540cc2b00daf9366858ec67079823a7b04b25096d5d5e"
+    },
+    {
+      "id": "as11-40-5863",
+      "path": "resources/nasa-apollo11-20261114/as11-40-5863.jpg",
+      "url": "https://images-assets.nasa.gov/image/as11-40-5863/as11-40-5863~medium.jpg",
+      "metadata": {
+        "center": "JSC",
+        "date_created": "1969-07-20T00:00:00Z",
+        "description": "AS11-40-5863 (20 July 1969) --- Astronaut Edwin E. Aldrin Jr., lunar module pilot, is photographed egressing the Lunar Module (LM) during the Apollo 11 extravehicular activity (EVA) on the moon. This photograph was taken by astronaut Neil A. Armstrong, commander, with a 70mm lunar surface camera. While astronauts Armstrong and Aldrin descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+        "keywords": [
+          "APOLLO 11",
+          "APOLLO PROJECT",
+          "ASTRONAUTS",
+          "EGRESS",
+          "EXTRAVEHICULAR ACTIVITY",
+          "MOON EXTRAVEHICULAR MOBILITY UNITS",
+          "LUNAR EXPLORATION",
+          "LUNAR LANDING SITES LUNAR MODULE",
+          "LUNAR PHOTOGRAPHY",
+          "LUNAR SURFACE",
+          "PHOTOGRAPHY"
+        ],
+        "media_type": "image",
+        "nasa_id": "as11-40-5863",
+        "title": "Astronaut Edwin Aldrin egresses lunar module on lunar surface"
+      },
+      "sha256": "50dcf6aaf9b7a96be43af91b18223d7542eceeba5d62e29e1fc2409918289c56"
+    }
+  ]
+}

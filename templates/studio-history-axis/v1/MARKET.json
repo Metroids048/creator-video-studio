@@ -1,0 +1,50 @@
+{
+  "id": "history-axis",
+  "name": "三维空间历史长轴",
+  "family": "知识与机制",
+  "category": "知识与时间",
+  "creator": "YZ",
+  "source_kind": "完整作品",
+  "amplification": null,
+  "tags": [
+    "三维历史",
+    "空间长轴",
+    "AI历史",
+    "年代长轴"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/history-axis.md",
+  "source": "https://www.douyin.com/video/7690160210039622946",
+  "market": {
+    "date": "2026-11-14",
+    "method": "public Douyin detail response",
+    "followers": 347,
+    "likes": 20120,
+    "saves": 4379,
+    "shares": 6783,
+    "views": null,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "1fps full length plus final frame; not continuous viewing",
+  "viewer_payoff_hypothesis": "沿同一空间看见技术演进，最后拉远把各节点连成整体。",
+  "visual_grammar": "起点装置→连续相机沿时间轴经过具象事件→节点关系叠加→拉远见整体曲线。",
+  "required_inputs": "核实的年份和事实、每节点物体隐喻、相机长轴、末段全景、字幕与声音。",
+  "replacement_operation": "换史实与物体、重算节点密度和运动距离；保留整体轴线与回看关系。",
+  "avoid": "沿直线移动的标题卡；把未经核实的作者主张当科普事实。",
+  "implementation": "91.3秒完整视觉已看；作者称Opus5.5，源工程未取得，不启用该模型。",
+  "method_sources": [
+    {
+      "source": "https://github.com/madhavsomani/animation-skills/tree/d2b562dd4a0aa1a8cf7d6a35b6719318cf372c51",
+      "entry": "resources/madhav-animation-skills/d2b562dd/skills/iso-diorama-3d/SKILL.md",
+      "license": "MIT",
+      "scope": "pinned source snapshot, not installed or executed",
+      "gap": "可借鉴正交场景和投影标签；不等于原片连续历史长轴，史实／节点／相机需另验"
+    }
+  ],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "history-axis",
+  "title": "一条线，连接两座城",
+  "duration": 32,
+  "category": "连续事件长轴 · 史实图解",
+  "events": [
+    {
+      "date": "1843",
+      "label": "获得线路建设拨款"
+    },
+    {
+      "date": "1844.05.24",
+      "label": "华盛顿发出电报"
+    },
+    {
+      "date": "同一天",
+      "label": "巴尔的摩收到记录"
+    },
+    {
+      "date": "七天后",
+      "label": "摩尔斯写信谈成功"
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 8,
+      "text": "1843年，建设电报线路获得国会拨款。"
+    },
+    {
+      "start": 8,
+      "end": 16,
+      "text": "次年5月24日，摩尔斯在华盛顿发报。"
+    },
+    {
+      "start": 16,
+      "end": 24,
+      "text": "巴尔的摩，收到点和划写下的消息。"
+    },
+    {
+      "start": 24,
+      "end": 32,
+      "text": "一周后，他在信中谈到成功的责任。"
+    }
+  ],
+  "facts": [
+    "https://www.loc.gov/collections/samuel-morse-papers/articles-and-essays/collection-highlights/invention-of-the-telegraph/"
+  ]
+}

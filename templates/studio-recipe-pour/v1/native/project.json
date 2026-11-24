@@ -1,0 +1,22 @@
+{
+  "template": "studio-recipe-pour",
+  "style": "recipe-pour",
+  "entry": "index.html",
+  "duration": 30,
+  "capture": "canvas",
+  "canvas": {
+    "width": 720,
+    "height": 1280
+  },
+  "content_promise": "同一只刻度杯中按顺序加入冰、80mL茶、80mL气泡水、20mL柠檬汁和10mL糖浆，点缀搅拌，完整呈现从空杯到190mL成品。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "b4b849c10b708c11c8414f59f3d862b6f69a7c2b728d4e2dcfa92a120e462fbc",
+    "story.json": "2bf4d9c3afeda74088a1b017b6e3a4492e65ed53931bb17c71374dfabe7444b2",
+    "index.html": "717fc5990fdb2d3277bd29641eda012cd873a62c49a41d72e623d781401f6ee4"
+  },
+  "source": {
+    "scope": "original code, full fresh recipe and score; reference grammar only",
+    "market": "https://x.com/Ror_Fly/status/2102853258582880547"
+  }
+}

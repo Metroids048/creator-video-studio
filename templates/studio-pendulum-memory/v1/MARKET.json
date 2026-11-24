@@ -1,0 +1,41 @@
+{
+  "id": "pendulum-memory",
+  "name": "摆锤遮挡回忆混剪",
+  "family": "音乐与图文",
+  "category": "图片与音乐",
+  "creator": "小戈学剪辑",
+  "source_kind": "剪辑教程",
+  "amplification": null,
+  "tags": [
+    "钟摆回忆",
+    "摆锤遮挡",
+    "怀表转场"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/pendulum-memory.md",
+  "source": "https://www.douyin.com/video/7702684761773840049",
+  "market": {
+    "date": "2026-11-14",
+    "method": "public Douyin detail response",
+    "followers": 397598,
+    "likes": 49102,
+    "saves": 19596,
+    "shares": 4642,
+    "views": null,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "1fps full length plus final frame; not continuous viewing",
+  "viewer_payoff_hypothesis": "周期摆动形成时间感；摆锤每经过一次带出另一段记忆。",
+  "visual_grammar": "前景摆锤运动→遮罩边界与摆锤一致→新记忆显露→摆回时保留当前画面。",
+  "required_inputs": "摆锤前景／运动路径；待切照片；每次显露区间与拍点；完整音乐。",
+  "replacement_operation": "换记忆组与节拍，重新计算遮罩方向，摆锤不能与照片任意错切。",
+  "avoid": "钟摆只是装饰，照片仍自行淡化；把教程的赞数算成净版混剪表现。",
+  "implementation": "原片完整视觉已看；该高互动证据是剪辑教程，净版新作品尚未验证。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

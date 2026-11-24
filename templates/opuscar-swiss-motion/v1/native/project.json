@@ -1,0 +1,19 @@
+{
+  "template": "opuscar-swiss-motion",
+  "style": "swiss-motion",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "用一张从拥挤到有空隙的日程海报，演示取舍、对齐和预留缓冲三个实际改变。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "ccd91455670a471f78595b083df5926c52868bb880798c0372e2a9f51dd6e9f7",
+    "story.json": "499d524070e1e98e976c02671651c34ab814b4b910071f777e2e766016856645",
+    "index.html": "e6bb42cfa87d0d6797835864b4e4f0d4bd4987413999881646eeb44055dfb9d2"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT primitives only; new authored full story"
+  }
+}

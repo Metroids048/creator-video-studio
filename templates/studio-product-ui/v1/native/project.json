@@ -1,0 +1,20 @@
+{
+  "template": "studio-product-ui",
+  "style": "product-ui",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "事情很多，先放进同一个地方。只看今天，留给眼前的三件事。完成一件，就把它移到右边。两项完成。给下午，减一点重量。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "d09070fe69cca76d29c4d987d18403edd3251605b8fd775ddba69c50523fe580",
+    "story.json": "c549c39bda5b44ad31560577412fa33e8112d8a67d551b97c8303a62dd15621a",
+    "index.html": "e95911dacf63f0b0527aabe9a466864cbc7698dc0b01b07fe9a1a32443837ee9",
+    "ease.js": "81fc5d6aa1d69e6fb2e900143b9c209929c1bc371e43a4481098ad1f16767d05"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT precise easing reused; full picture/story code authored locally"
+  }
+}

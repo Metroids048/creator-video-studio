@@ -1,0 +1,19 @@
+{
+  "template": "opuscar-pictogram",
+  "style": "pictogram-motion",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "雨天里，一个人把伞偏向另一个人；两人一起走到车站，将自己的晴天分出一半。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "037527daa3e47d3b0d58b737edb6998f1b7bca0f76ac6e1ea56503c75874d79b",
+    "story.json": "a7a50cb773a7f54669302ec11b1f5f3936f421fc0fc1d2be2128dac227267059",
+    "index.html": "ba787b34fa600fbcfa65bb2222997cc7f07753f6d515bad230acaa37b6e96df1"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT primitives only; new authored full story"
+  }
+}

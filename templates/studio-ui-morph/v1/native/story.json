@@ -1,0 +1,218 @@
+{
+  "kind": "ui-morph",
+  "brand": "留 白",
+  "title": "一段专注，也可以轻一点。",
+  "duration": 24,
+  "states": [
+    {
+      "start": 0,
+      "kind": "button",
+      "label": "开始一段专注",
+      "shape": [
+        320,
+        68,
+        34
+      ],
+      "dark": true,
+      "cursor": [
+        735,
+        386
+      ]
+    },
+    {
+      "start": 2,
+      "kind": "loader",
+      "label": "正在准备",
+      "shape": [
+        240,
+        62,
+        31
+      ],
+      "dark": true,
+      "cursor": [
+        735,
+        386
+      ]
+    },
+    {
+      "start": 4,
+      "kind": "check",
+      "label": "准备好了",
+      "shape": [
+        240,
+        62,
+        31
+      ],
+      "dark": true,
+      "cursor": [
+        735,
+        386
+      ]
+    },
+    {
+      "start": 6,
+      "kind": "timer",
+      "label": "写完这一段",
+      "shape": [
+        410,
+        260,
+        28
+      ],
+      "dark": false,
+      "cursor": [
+        801,
+        367
+      ]
+    },
+    {
+      "start": 8,
+      "kind": "progress",
+      "label": "走过一半",
+      "shape": [
+        400,
+        110,
+        24
+      ],
+      "dark": false,
+      "cursor": [
+        652,
+        382
+      ]
+    },
+    {
+      "start": 10,
+      "kind": "slider",
+      "label": "让杂念，低一点",
+      "shape": [
+        400,
+        110,
+        55
+      ],
+      "dark": false,
+      "cursor": [
+        565,
+        367
+      ]
+    },
+    {
+      "start": 12,
+      "kind": "toggle",
+      "label": "专注模式",
+      "shape": [
+        320,
+        75,
+        38
+      ],
+      "dark": false,
+      "cursor": [
+        749,
+        368
+      ]
+    },
+    {
+      "start": 14,
+      "kind": "tabs",
+      "label": "",
+      "shape": [
+        390,
+        66,
+        33
+      ],
+      "dark": false,
+      "cursor": [
+        642,
+        366
+      ],
+      "labels": [
+        "今天",
+        "本周",
+        "本月"
+      ]
+    },
+    {
+      "start": 16,
+      "kind": "chart",
+      "label": "一点点，累积起来",
+      "shape": [
+        420,
+        275,
+        25
+      ],
+      "dark": false,
+      "cursor": [
+        787,
+        407
+      ],
+      "values": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "start": 18,
+      "kind": "command",
+      "label": "留下今天的一句话",
+      "shape": [
+        430,
+        260,
+        22
+      ],
+      "dark": false,
+      "cursor": [
+        535,
+        378
+      ],
+      "query": "最难的是开始"
+    },
+    {
+      "start": 20,
+      "kind": "toast",
+      "label": "最难的一步，已经开始。",
+      "shape": [
+        430,
+        74,
+        37
+      ],
+      "dark": false,
+      "cursor": [
+        735,
+        386
+      ]
+    },
+    {
+      "start": 22,
+      "kind": "button",
+      "label": "开始一段专注",
+      "shape": [
+        320,
+        68,
+        34
+      ],
+      "dark": true,
+      "cursor": [
+        735,
+        386
+      ]
+    },
+    {
+      "start": 24,
+      "kind": "button",
+      "label": "开始一段专注",
+      "shape": [
+        320,
+        68,
+        34
+      ],
+      "dark": true,
+      "cursor": [
+        735,
+        386
+      ]
+    }
+  ]
+}

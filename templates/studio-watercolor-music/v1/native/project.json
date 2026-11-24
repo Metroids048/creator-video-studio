@@ -1,0 +1,23 @@
+{
+  "template": "studio-watercolor-music",
+  "style": "watercolor-music",
+  "entry": "index.html",
+  "duration": 36,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "雨下大的时候，她还在等末班车。熟悉的伞，先一步到了。车来了，赶路也可以一起慢一点。坐下之后，才听见彼此松了口气。最后一段路，窗里的灯正亮着。等你到家，热茶刚好。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "2e024199d4b754b9a6e07a49b78f4e74c45bdef8838c12995ad27afd2c43ca1d",
+    "story.json": "5d0a628c11af4a44f93e2967b37c928912b732b4f5d49009bd14d1097632316e",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://www.douyin.com/video/7690199228575960339"
+  }
+}

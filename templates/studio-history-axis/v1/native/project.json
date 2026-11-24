@@ -1,0 +1,20 @@
+{
+  "template": "studio-history-axis",
+  "style": "history-axis",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "1843年，建设电报线路获得国会拨款。次年5月24日，摩尔斯在华盛顿发报。巴尔的摩，收到点和划写下的消息。一周后，他在信中谈到成功的责任。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "d09070fe69cca76d29c4d987d18403edd3251605b8fd775ddba69c50523fe580",
+    "story.json": "43f377cafbada69a57f104cedd6f91ee905891031982a17d6bd1d4b27c7e7a08",
+    "index.html": "e95911dacf63f0b0527aabe9a466864cbc7698dc0b01b07fe9a1a32443837ee9",
+    "ease.js": "81fc5d6aa1d69e6fb2e900143b9c209929c1bc371e43a4481098ad1f16767d05"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT precise easing reused; full picture/story code authored locally"
+  }
+}

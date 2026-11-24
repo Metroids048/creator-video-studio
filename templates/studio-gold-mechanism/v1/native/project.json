@@ -1,0 +1,23 @@
+{
+  "template": "studio-gold-mechanism",
+  "style": "gold-mechanism",
+  "entry": "index.html",
+  "duration": 28,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "连着三次正面，下一次更该反面吗？公平且独立的抛掷，每次仍然各占一半。16种四次序列里，前三次正面的两种，最后一面各一种。独立事件，不欠你一个反转。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "d53d1e0b4657d66ec42167c172bc4e451d1579e87db26d9aa0668c6cb5636b1c",
+    "story.json": "3a80ba0fd7f2150e88a46f811aee266d8fd93ecf024eecb99f1114b425c9d3df",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://www.douyin.com/video/7693248909879212362"
+  }
+}

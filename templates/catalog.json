@@ -1,0 +1,4378 @@
+{
+  "schema": 2,
+  "updated": "2026-11-14",
+  "templates": [
+    {
+      "id": "lanshu-v1-editorial",
+      "version": "1",
+      "name": "暖纸编辑部",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v1-editorial",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "商业分析、结构化科普",
+      "tags": [
+        "商业",
+        "分析",
+        "编辑部",
+        "杂志",
+        "报告",
+        "纸张"
+      ],
+      "entry": "templates/lanshu-v1-editorial/v1/SKILL.md",
+      "starter": "templates/lanshu-v1-editorial/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/mean-and-median-1114/versions/v0001/video.mp4",
+        "player": "works/mean-and-median-1114/versions/v0001/video.mp4",
+        "poster": "works/mean-and-median-1114/versions/v0001/cover.jpg",
+        "story": "works/mean-and-median-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "mean-and-median-1114",
+        "version": "v0001",
+        "editable": "works/mean-and-median-1114/versions/v0001/editable.zip",
+        "brief": "works/mean-and-median-1114/versions/v0001/brief.json",
+        "beats": "works/mean-and-median-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/mean-and-median-1114/versions/v0001/video.mp4": "f2799e2049d9b0785ed3043e3d21f2eb0378184bef68bc6f605a76a02f88faa1",
+          "works/mean-and-median-1114/versions/v0001/cover.jpg": "6520e3091fde0ac8e789a5e5b23d6936758b6163f3bb6ad8e5cdac25704a6f3b",
+          "works/mean-and-median-1114/versions/v0001/shots/native-story/film/scene.json": "e6e2acd2288a560539013f01503dc90885ea44c6987138862fab0107fcec6e19",
+          "works/mean-and-median-1114/versions/v0001/editable.zip": "d83d4a8d2cb7b46c47cb00d11413d373b0cdc898e60c134e8023770d12cbc116",
+          "works/mean-and-median-1114/versions/v0001/brief.json": "3cf2316eca36f54d5dbbdb9ffc19d667631a6515bbcce982665f357d60247150",
+          "works/mean-and-median-1114/versions/v0001/shots/native-story/film/engine/beats.js": "a7401806cbdbc7450ea1777487812cc879200afc845e9fe9434ae9946ade19a6"
+        }
+      },
+      "adaptation": {
+        "preserve": "先给一个概括数字→展开个体分布→补另一统计位置",
+        "recipe": "先给一个概括数字→展开个体分布→补另一统计位置",
+        "replace": [
+          "数值分布",
+          "图表标尺",
+          "比较基准",
+          "解释结论"
+        ],
+        "avoid": "复杂人物表演、快切舞蹈",
+        "example_request": "给普通观众讲平均数和中位数，用杂志图表展开九个10和一个100。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v1-editorial/KIT.md",
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "编辑式数据图解",
+        "score": 7.0,
+        "replacement": null,
+        "observation": "网格、数据条与统计位置共同解释均值/中位数，版面有明确阅读顺序。",
+        "reason": "保留信息图代表；与字形主导的动态排版分开。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v1-editorial.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v2-signal",
+      "version": "1",
+      "name": "暗色信号台",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v2-signal",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "AI、系统状态、科技机制",
+      "tags": [
+        "AI",
+        "人工智能",
+        "系统",
+        "科技",
+        "HUD",
+        "信号",
+        "深色"
+      ],
+      "entry": "templates/lanshu-v2-signal/v1/SKILL.md",
+      "starter": "templates/lanshu-v2-signal/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/chunk-retry-1114/versions/v0001/video.mp4",
+        "player": "works/chunk-retry-1114/versions/v0001/video.mp4",
+        "poster": "works/chunk-retry-1114/versions/v0001/cover.jpg",
+        "story": "works/chunk-retry-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "chunk-retry-1114",
+        "version": "v0001",
+        "editable": "works/chunk-retry-1114/versions/v0001/editable.zip",
+        "brief": "works/chunk-retry-1114/versions/v0001/brief.json",
+        "beats": "works/chunk-retry-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/chunk-retry-1114/versions/v0001/video.mp4": "c9e32facd266db6c3cf15a091e22f2be33bd732fc185f04b599b5caf24abd914",
+          "works/chunk-retry-1114/versions/v0001/cover.jpg": "20657f1c0d6be91c1cecd4957afd27902687281b802a53c309fb22b660c15a0f",
+          "works/chunk-retry-1114/versions/v0001/shots/native-story/film/scene.json": "79f866f480928e9802156823bf911c3ab93885c1aac10037535cbe7bf7370fd4",
+          "works/chunk-retry-1114/versions/v0001/editable.zip": "3830ae31df4ac8b6ea7d7800018963fa2a1ba3e9476cdf350cd0336c9850ef84",
+          "works/chunk-retry-1114/versions/v0001/brief.json": "29cd533dc9a86fcdbc24b3f5cd0e59fdecac3f2dd2a4097ba2850d82d1862fe3",
+          "works/chunk-retry-1114/versions/v0001/shots/native-story/film/engine/beats.js": "05e467203891cd88bffe7b1cefa6cbd32d99a0079944a65976a94b2ca4c65432"
+        }
+      },
+      "adaptation": {
+        "preserve": "分块发出→确认缺口→仅重发缺块→完整重组",
+        "recipe": "分块发出→确认缺口→仅重发缺块→完整重组",
+        "replace": [
+          "分块数量",
+          "确认状态",
+          "缺失编号",
+          "重试路径",
+          "终态"
+        ],
+        "avoid": "温暖生活抒情、没有状态变化的议论",
+        "example_request": "用深色系统信号动画讲四个分块只补第三块，不从零重传。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v2-signal/KIT.md",
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "暗底信号传输",
+        "score": 7.2,
+        "replacement": null,
+        "observation": "黑底荧光传输面板，数据包在发送/接收两侧移动并重试。",
+        "reason": "运动承载网络因果，区别于一般卡片。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v2-signal.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v3-notebook",
+      "version": "1",
+      "name": "手写笔记",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v3-notebook",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "教学、步骤、学习方法",
+      "tags": [
+        "学习",
+        "教学",
+        "笔记",
+        "手写",
+        "步骤"
+      ],
+      "entry": "templates/lanshu-v3-notebook/v1/SKILL.md",
+      "starter": "templates/lanshu-v3-notebook/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/discount-order-1114/versions/v0001/video.mp4",
+        "player": "works/discount-order-1114/versions/v0001/video.mp4",
+        "poster": "works/discount-order-1114/versions/v0001/cover.jpg",
+        "story": "works/discount-order-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "discount-order-1114",
+        "version": "v0001",
+        "editable": "works/discount-order-1114/versions/v0001/editable.zip",
+        "brief": "works/discount-order-1114/versions/v0001/brief.json",
+        "beats": "works/discount-order-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/discount-order-1114/versions/v0001/video.mp4": "55e7ecdb58cff6fe3815c9262c71dabdde7ade3b758c92c72582537d843e4b4c",
+          "works/discount-order-1114/versions/v0001/cover.jpg": "842e8a041b27d8d894431d2ce340d9324e49409d69b3036615e487c9d2292959",
+          "works/discount-order-1114/versions/v0001/shots/native-story/film/scene.json": "8d4650e91fb859078bcfd82f3f7e7608a4cf247a35054fda68618ff05c52b88c",
+          "works/discount-order-1114/versions/v0001/editable.zip": "dff8e7001e9481fb6c95667a4f493b7c05b60fbd3de138c1b4d25361ccf2f222",
+          "works/discount-order-1114/versions/v0001/brief.json": "66ca0c20fcde3bb00661b55564a18214e29f88c703b32a54b2d4709d8032d1ce",
+          "works/discount-order-1114/versions/v0001/shots/native-story/film/engine/beats.js": "895c82c9d828569ec9b3c9f94642588445d4dccc2ad16ae69dc6fa77447f460f"
+        }
+      },
+      "adaptation": {
+        "preserve": "提出估算问题→两条手写演算→解释差额",
+        "recipe": "提出估算问题→两条手写演算→解释差额",
+        "replace": [
+          "题目数字",
+          "运算顺序",
+          "逐步等式",
+          "差额高亮"
+        ],
+        "avoid": "多人复杂走位、强空间纵深",
+        "example_request": "用手写笔记演示先减二十再打八折与反过来的价差。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v3-notebook/KIT.md",
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "archived",
+        "family": "课堂推演",
+        "score": 6.1,
+        "replacement": "lanshu-v8-chalkboard",
+        "observation": "浅色网格、公式和示意图逐项出现，主要仍是板书推演。",
+        "reason": "与黑板/推理板重合，黑板的材质和读序更稳定。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v3-notebook.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v4-paper",
+      "version": "1",
+      "name": "纸艺弹出书",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v4-paper",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "温暖的流程、成长与解释",
+      "tags": [
+        "纸艺",
+        "温暖",
+        "成长",
+        "流程",
+        "弹出"
+      ],
+      "entry": "templates/lanshu-v4-paper/v1/SKILL.md",
+      "starter": "templates/lanshu-v4-paper/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/paper-bridge-1114/versions/v0002/video.mp4",
+        "player": "works/paper-bridge-1114/versions/v0002/video.mp4",
+        "poster": "works/paper-bridge-1114/versions/v0002/cover.jpg",
+        "story": "works/paper-bridge-1114/versions/v0002/shots/native-story/film/scene.json",
+        "duration": 36.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "paper-bridge-1114",
+        "version": "v0002",
+        "editable": "works/paper-bridge-1114/versions/v0002/editable.zip",
+        "brief": "works/paper-bridge-1114/versions/v0002/brief.json",
+        "beats": "works/paper-bridge-1114/versions/v0002/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/paper-bridge-1114/versions/v0002/video.mp4": "e8226ae3ef1d489b34312cbe883fd22616a477d08ca373f6b4fd147cb9aadec5",
+          "works/paper-bridge-1114/versions/v0002/cover.jpg": "6654796a88114bdd045990e90dec0081ff6085c5f4888a93ebfef50a1c502155",
+          "works/paper-bridge-1114/versions/v0002/shots/native-story/film/scene.json": "38d12b8d545cdbc6dae4c4b16b480b3163fcdf6874a8599fcff9b362d587ed8a",
+          "works/paper-bridge-1114/versions/v0002/editable.zip": "7aaeaa727f1ee02ded933fea0d9732fcd31a63779d139d9478be7810e5c2a89d",
+          "works/paper-bridge-1114/versions/v0002/brief.json": "385e2de4a1c4630accf3511b6fef304d6d5d7ded721cef4710e78d89df4e1526",
+          "works/paper-bridge-1114/versions/v0002/shots/native-story/film/engine/beats.js": "0f5aec94d5198067d7cb43727dc2e6e6d63a4fba50f6c5c904f5de294ba3003e"
+        }
+      },
+      "adaptation": {
+        "preserve": "空间被隔开→折纸结构建立连接→物件越过→交付结果",
+        "recipe": "空间被隔开→折纸结构建立连接→物件越过→交付结果",
+        "replace": [
+          "两岸布局",
+          "折叠几何",
+          "桥梁高度",
+          "物件路径",
+          "到达时点"
+        ],
+        "avoid": "高密度公式、精密仪表读数",
+        "example_request": "用纸艺弹出小镇讲一份礼物跨过纸桥送到家门口。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v4-paper/KIT.md",
+      "category": "教程与过程",
+      "market_reference": "https://www.douyin.com/video/7659692677034061169",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://www.douyin.com/video/7659692677034061169",
+        "likes": 23143,
+        "views": null,
+        "followers": 39434,
+        "date": "2026-11-14",
+        "learned": "纸张层叠与成品揭晓",
+        "gap": "原片真实手工，新稿为程序折纸弹出桥，不具备手工过程实拍。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "纸艺场景",
+        "score": 6.6,
+        "replacement": "studio-paper-question",
+        "observation": "浅色纸桥、车辆和纸层道具构成因果演示。",
+        "reason": "纸艺保留窗口提问一套；桥梁工程仍可历史恢复，不把其承重内容自动塞进故事模板。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v4-paper.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v5-comic",
+      "version": "1",
+      "name": "波普漫画",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v5-comic",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "误区反转、轻喜剧短解释",
+      "tags": [
+        "漫画",
+        "反转",
+        "误区",
+        "夸张",
+        "喜剧"
+      ],
+      "entry": "templates/lanshu-v5-comic/v1/SKILL.md",
+      "starter": "templates/lanshu-v5-comic/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/read-message-1114/versions/v0001/video.mp4",
+        "player": "works/read-message-1114/versions/v0001/video.mp4",
+        "poster": "works/read-message-1114/versions/v0001/cover.jpg",
+        "story": "works/read-message-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 36.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "read-message-1114",
+        "version": "v0001",
+        "editable": "works/read-message-1114/versions/v0001/editable.zip",
+        "brief": "works/read-message-1114/versions/v0001/brief.json",
+        "beats": "works/read-message-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/read-message-1114/versions/v0001/video.mp4": "86548326c42212f4b66e37ebf0fb381048d7e0b3a7bd9b30880498521a59163a",
+          "works/read-message-1114/versions/v0001/cover.jpg": "516cddb964978795d8e656cfce92c4a75c536d5efa170f8d659f95cc3da3c13f",
+          "works/read-message-1114/versions/v0001/shots/native-story/film/scene.json": "73cd75cd31db6806bcbb8b6fcaabd80bf5c86078dc44eb6191590fd1b48e7535",
+          "works/read-message-1114/versions/v0001/editable.zip": "0ecc15b1312f3e563dd44cb98ddc7ccfbebff06d8ec522e87f854c923fc46fef",
+          "works/read-message-1114/versions/v0001/brief.json": "240034e428a03f621fc98d7238c7cca4c6ee8cc26338083de0daed63e774a1cf",
+          "works/read-message-1114/versions/v0001/shots/native-story/film/engine/beats.js": "882fde2914384f44ce02ceb27f5496ef1cd5df0b16211d018076c26740c449c7"
+        }
+      },
+      "adaptation": {
+        "preserve": "角色误读→三个夸张想象→切到事实→温暖反转",
+        "recipe": "角色误读→三个夸张想象→切到事实→温暖反转",
+        "replace": [
+          "分格数量",
+          "表情",
+          "实际困境",
+          "消息内容",
+          "揭晓动作"
+        ],
+        "avoid": "安静长推导、细腻写实表演",
+        "example_request": "用六格漫画讲已读没回引发内心戏，最后发现对方在做饭。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v5-comic/KIT.md",
+      "category": "情绪与剧情",
+      "market_reference": "https://www.douyin.com/video/7631929439547758321",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://www.douyin.com/video/7631929439547758321",
+        "likes": 45720,
+        "views": null,
+        "followers": 56683,
+        "date": "2026-11-14",
+        "learned": "表情反应、误读与末段揭晓",
+        "gap": "原片竖屏反应角色，新稿六格已读误会；只迁移反应和揭晓结构。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "扁平人物",
+        "score": 4.8,
+        "replacement": "studio-watercolor-music",
+        "observation": "纸框人物、手机与字幕；同版质量复核已有四条未解决缺陷。",
+        "reason": "质量阻塞且人物表现弱，退出推荐；保留失败及原审查。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v5-comic.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v6-cinematic",
+      "version": "1",
+      "name": "电影一镜到底",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v6-cinematic",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "空间机制、少对象的连续展示",
+      "tags": [
+        "电影",
+        "空间",
+        "三维",
+        "3D",
+        "一镜到底"
+      ],
+      "entry": "templates/lanshu-v6-cinematic/v1/SKILL.md",
+      "starter": "templates/lanshu-v6-cinematic/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/umbrella-mechanism-1114/versions/v0001/video.mp4",
+        "player": "works/umbrella-mechanism-1114/versions/v0001/video.mp4",
+        "poster": "works/umbrella-mechanism-1114/versions/v0001/cover.jpg",
+        "story": "works/umbrella-mechanism-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "umbrella-mechanism-1114",
+        "version": "v0001",
+        "editable": "works/umbrella-mechanism-1114/versions/v0001/editable.zip",
+        "brief": "works/umbrella-mechanism-1114/versions/v0001/brief.json",
+        "beats": "works/umbrella-mechanism-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/umbrella-mechanism-1114/versions/v0001/video.mp4": "233945c016824b055eab7359ee5feb2cad3e1a4bd5bc99829b0110c097e2a627",
+          "works/umbrella-mechanism-1114/versions/v0001/cover.jpg": "70a5b390177a55bfad06b9762be2ddbd76c56085a387a10005e18a631d477d19",
+          "works/umbrella-mechanism-1114/versions/v0001/shots/native-story/film/scene.json": "aa51e9098f93a63b32205c50e56b2628a5f15c3bbc1e175aeba02eb342b2913c",
+          "works/umbrella-mechanism-1114/versions/v0001/editable.zip": "de545b697d641b16a8de21fcacbda395bf7048fa58a827fe32d32edac6ddaa01",
+          "works/umbrella-mechanism-1114/versions/v0001/brief.json": "7e34063ac5634c4b98e3b77df804678498053013f7ff2b19ed619f4a9de6ca49",
+          "works/umbrella-mechanism-1114/versions/v0001/shots/native-story/film/engine/beats.js": "fb7a173bc587de32b2da86ad4354a2e9287f2f03e81ddef9aa2a8ee3d0a73e96"
+        }
+      },
+      "adaptation": {
+        "preserve": "收拢结构→推动驱动件→支撑展开→功能状态",
+        "recipe": "收拢结构→推动驱动件→支撑展开→功能状态",
+        "replace": [
+          "真实构件拓扑",
+          "铰点",
+          "相机路径",
+          "开合约束",
+          "功能表现"
+        ],
+        "avoid": "频繁信息跳跃、大段文字、复杂群演",
+        "example_request": "用三维一镜到底讲雨伞滑套怎样带动伞骨撑开。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v6-cinematic/KIT.md",
+      "category": "知识与机制",
+      "market_reference": "https://x.com/konstantinsaifo/status/2104094723887501736",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://x.com/konstantinsaifo/status/2104094723887501736",
+        "likes": 8384,
+        "views": 1185524,
+        "followers": 4931,
+        "date": "2026-11-14",
+        "learned": "三维机构与功能因果的连续观察",
+        "gap": "雨伞为简化运动示意，既非火箭发动机也非真实工业仿真。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "机械展示",
+        "score": 6.5,
+        "replacement": "studio-mechanical-cutaway",
+        "observation": "暗底三维雨伞转动，镜头较慢，运动解释较少。",
+        "reason": "机械保留剖面与爆炸关系更清楚的一套；雨伞仍属历史样例。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v6-cinematic.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v7-drafting",
+      "version": "1",
+      "name": "工程制图",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v7-drafting",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "技术结构、精密机制",
+      "tags": [
+        "工程",
+        "技术",
+        "结构",
+        "制图",
+        "机械"
+      ],
+      "entry": "templates/lanshu-v7-drafting/v1/SKILL.md",
+      "starter": "templates/lanshu-v7-drafting/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/door-clearance-1114/versions/v0002/video.mp4",
+        "player": "works/door-clearance-1114/versions/v0002/video.mp4",
+        "poster": "works/door-clearance-1114/versions/v0002/cover.jpg",
+        "story": "works/door-clearance-1114/versions/v0002/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "door-clearance-1114",
+        "version": "v0002",
+        "editable": "works/door-clearance-1114/versions/v0002/editable.zip",
+        "brief": "works/door-clearance-1114/versions/v0002/brief.json",
+        "beats": "works/door-clearance-1114/versions/v0002/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/door-clearance-1114/versions/v0002/video.mp4": "79eac39849e780abc6731762125155031da0bad73b6a0030b2fb18bb2b4550f2",
+          "works/door-clearance-1114/versions/v0002/cover.jpg": "247a558f6968182de6d14e72000d6f746343be34897f529520dc6c7f4312f5c0",
+          "works/door-clearance-1114/versions/v0002/shots/native-story/film/scene.json": "d904865dfd926770503a9c4588efa36653af8178d30e28c5b1d4d50a8b0f91ac",
+          "works/door-clearance-1114/versions/v0002/editable.zip": "4b7147240f41857b97cc43888bab273759c0a9999bbb778e53455ea649595fc8",
+          "works/door-clearance-1114/versions/v0002/brief.json": "86ee5559620e9162ecf1aabda5a6fd347a6f2906f52601eadd2b7824c98917dd",
+          "works/door-clearance-1114/versions/v0002/shots/native-story/film/engine/beats.js": "f4c5be3eefd1f2612a1ac1b050113d9c823a00dadec55536fdb859699a49cfe3"
+        }
+      },
+      "adaptation": {
+        "preserve": "静态布局可容纳→叠运动扫掠→碰撞→移动→再验证",
+        "recipe": "静态布局可容纳→叠运动扫掠→碰撞→移动→再验证",
+        "replace": [
+          "平面尺寸",
+          "旋转轴",
+          "扫掠半径",
+          "碰撞边界",
+          "修正位置"
+        ],
+        "avoid": "无结构对象的议论、抒情人物故事",
+        "example_request": "用工程制图演示门撞桌角，移动桌子后门能完整打开。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v7-drafting/KIT.md",
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "archived",
+        "family": "课堂推演",
+        "score": 6.2,
+        "replacement": "lanshu-v8-chalkboard",
+        "observation": "深色工程线、门扇旋转与净空标记，画面以线图说明为主。",
+        "reason": "作为几何测量变体归档；保留其特定校验，不宣称黑板自动承接门桌碰撞。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v7-drafting.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v8-chalkboard",
+      "version": "1",
+      "name": "黑板课堂",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v8-chalkboard",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "推理教学、概念推导",
+      "tags": [
+        "黑板",
+        "课堂",
+        "教学",
+        "推理",
+        "推导"
+      ],
+      "entry": "templates/lanshu-v8-chalkboard/v1/SKILL.md",
+      "starter": "templates/lanshu-v8-chalkboard/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/triangle-half-1114/versions/v0001/video.mp4",
+        "player": "works/triangle-half-1114/versions/v0001/video.mp4",
+        "poster": "works/triangle-half-1114/versions/v0001/cover.jpg",
+        "story": "works/triangle-half-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "triangle-half-1114",
+        "version": "v0001",
+        "editable": "works/triangle-half-1114/versions/v0001/editable.zip",
+        "brief": "works/triangle-half-1114/versions/v0001/brief.json",
+        "beats": "works/triangle-half-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/triangle-half-1114/versions/v0001/video.mp4": "a91ee66022e1811aae36ae2e3fb59ce343406f4843b90206b4937d895de9627d",
+          "works/triangle-half-1114/versions/v0001/cover.jpg": "bc86c19e3bed8e551cba49efb38a499133ce7bf0a7444d617d713dae21924aa4",
+          "works/triangle-half-1114/versions/v0001/shots/native-story/film/scene.json": "94b86950f2b877ad6afd93541bcf3310306ef4d0e14e83182c29ed030e21a82f",
+          "works/triangle-half-1114/versions/v0001/editable.zip": "cd959b8aac28e6f091734deb1f909e3cedd7fd571f446b6e1937d4fed0ef3d12",
+          "works/triangle-half-1114/versions/v0001/brief.json": "c9bae1c229524d2f99edabf219a3714d84b408526cc0bc9c84035dd31365ef3b",
+          "works/triangle-half-1114/versions/v0001/shots/native-story/film/engine/beats.js": "601f8a9739d130715345f9306268594d66118c53b03d0a7520bb50bf79942ac0"
+        }
+      },
+      "adaptation": {
+        "preserve": "给出一块图形→复制拼合→标整体面积→分回一半",
+        "recipe": "给出一块图形→复制拼合→标整体面积→分回一半",
+        "replace": [
+          "图形顶点",
+          "全等变换",
+          "拼接对齐",
+          "面积标尺",
+          "推导步骤"
+        ],
+        "avoid": "快速娱乐混剪、写实大场景",
+        "example_request": "用黑板推导直角三角形复制后拼成矩形，解释面积除以二。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v8-chalkboard/KIT.md",
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "粉笔板书推演",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "绿色黑板、粉笔三角形、面积拆分与公式相互对应。",
+        "reason": "保留课堂演绎代表，代替多套换皮板书。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v8-chalkboard.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v9-clay",
+      "version": "1",
+      "name": "黏土小镇",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v9-clay",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "用生活类比解释抽象概念",
+      "tags": [
+        "黏土",
+        "小镇",
+        "生活",
+        "类比",
+        "新手"
+      ],
+      "entry": "templates/lanshu-v9-clay/v1/SKILL.md",
+      "starter": "templates/lanshu-v9-clay/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/clay-seed-1114/versions/v0001/video.mp4",
+        "player": "works/clay-seed-1114/versions/v0001/video.mp4",
+        "poster": "works/clay-seed-1114/versions/v0001/cover.jpg",
+        "story": "works/clay-seed-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 36.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "clay-seed-1114",
+        "version": "v0001",
+        "editable": "works/clay-seed-1114/versions/v0001/editable.zip",
+        "brief": "works/clay-seed-1114/versions/v0001/brief.json",
+        "beats": "works/clay-seed-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/clay-seed-1114/versions/v0001/video.mp4": "854f2aeca09dba36ce9f4ccbd7a646fb620407c54410c3bacebeaf6983694011",
+          "works/clay-seed-1114/versions/v0001/cover.jpg": "66cf9a4872b3c86bf2f45bc25e8043199649c5ce0b0f1c68ef28b33bcb29b470",
+          "works/clay-seed-1114/versions/v0001/shots/native-story/film/scene.json": "beeb6573249d6900055912be89cf4401486e06ef9c9995581b2f6e3dd0206bae",
+          "works/clay-seed-1114/versions/v0001/editable.zip": "6d18e57bb4bf804eb05aec207e02fa70eb4eed418b9979ce8fe42de4b1f9e762",
+          "works/clay-seed-1114/versions/v0001/brief.json": "c6e3c10b2e5fe846ab88c48455451cebee2953784f22fe85306645f3bbb17e44",
+          "works/clay-seed-1114/versions/v0001/shots/native-story/film/engine/beats.js": "f0bbf8d3d88b075ab48aec69789e5380cd4c40748cbf8ea0985affc300a52001"
+        }
+      },
+      "adaptation": {
+        "preserve": "种子静置→浇水→跨时间发芽→叶片→开花",
+        "recipe": "种子静置→浇水→跨时间发芽→叶片→开花",
+        "replace": [
+          "有机几何",
+          "状态生长",
+          "因果动作",
+          "时间跨越",
+          "材料色"
+        ],
+        "avoid": "精密读数、只换外观不改变动作",
+        "example_request": "用黏土小盆栽讲种子浇水后慢慢发芽开花，不催促成长。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v9-clay/KIT.md",
+      "category": "教程与过程",
+      "market_reference": "https://www.douyin.com/video/7572923536638020918",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://www.douyin.com/video/7572923536638020918",
+        "likes": 26493,
+        "views": null,
+        "followers": 88070,
+        "date": "2026-11-14",
+        "learned": "黏土材质、状态变化与场景连续",
+        "gap": "原片为黏土人物长剧情；新稿只验证盆栽成长，未验证复杂人物剧情。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "微缩场景",
+        "score": 6.4,
+        "replacement": "studio-voxel-island",
+        "observation": "小盆栽和泥土场景，黏土材质可见但本稿场景变化有限。",
+        "reason": "与微缩盆景观看方式接近，体素岛空间层次更清楚。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v9-clay.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v10-reasoning",
+      "version": "1",
+      "name": "连续推导",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v10-reasoning",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "公式、关系与逻辑链",
+      "tags": [
+        "公式",
+        "数学",
+        "推导",
+        "逻辑",
+        "关系"
+      ],
+      "entry": "templates/lanshu-v10-reasoning/v1/SKILL.md",
+      "starter": "templates/lanshu-v10-reasoning/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/stair-sum-1114/versions/v0001/video.mp4",
+        "player": "works/stair-sum-1114/versions/v0001/video.mp4",
+        "poster": "works/stair-sum-1114/versions/v0001/cover.jpg",
+        "story": "works/stair-sum-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "stair-sum-1114",
+        "version": "v0001",
+        "editable": "works/stair-sum-1114/versions/v0001/editable.zip",
+        "brief": "works/stair-sum-1114/versions/v0001/brief.json",
+        "beats": "works/stair-sum-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/stair-sum-1114/versions/v0001/video.mp4": "a8d1b9480b51787f84d558a1deb01c1a3baca5e18d3beeae6ad598f7b646a63e",
+          "works/stair-sum-1114/versions/v0001/cover.jpg": "75356813fdf25a8cae36ded127ba5fe4e64e7992f261c554a985386523eb6124",
+          "works/stair-sum-1114/versions/v0001/shots/native-story/film/scene.json": "a965c4cf4fa97de6e3a93e1aadf5a29a8ddf359ec0b449bd8a5b6aa9dbb90106",
+          "works/stair-sum-1114/versions/v0001/editable.zip": "d3083bf36dce3735fab10b4266d55d7a5f8782eaee31e1245c2a96ecf9a567eb",
+          "works/stair-sum-1114/versions/v0001/brief.json": "92170317e58a2558b3b6b5060a6406598b2454584b17290ddd810ace802ffba7",
+          "works/stair-sum-1114/versions/v0001/shots/native-story/film/engine/beats.js": "79d274b8a765fec090a271a12e736a89c02b117b1478aee969b8589368f37353"
+        }
+      },
+      "adaptation": {
+        "preserve": "离散数列→空间排布→补一份→整体计算→还原",
+        "recipe": "离散数列→空间排布→补一份→整体计算→还原",
+        "replace": [
+          "数列范围",
+          "点阵布局",
+          "复制和翻转",
+          "整体计数",
+          "约分"
+        ],
+        "avoid": "没有逻辑链的励志金句、多人表演",
+        "example_request": "用公式推理动画把一到八排成台阶，补成八行九列再取半。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v10-reasoning/KIT.md",
+      "category": "知识与机制",
+      "market_reference": "https://x.com/VictorTaelin/status/2104568082169749982",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://x.com/VictorTaelin/status/2104568082169749982",
+        "likes": 6124,
+        "views": 392884,
+        "followers": null,
+        "date": "2026-11-14",
+        "learned": "可追踪对象的连续推导",
+        "gap": "原片展示Bend证明游戏、归纳、重写、排序与并行运算；新稿为点阵求和，只迁移对象可追踪的连续推导。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "课堂推演",
+        "score": 6.0,
+        "replacement": "lanshu-v8-chalkboard",
+        "observation": "深蓝点阵与粉色步骤行，仍以公式和板书递进。",
+        "reason": "换背景和配色不足以再算一种完整风格。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v10-reasoning.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v11-casefile",
+      "version": "1",
+      "name": "案卷调查",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v11-casefile",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "异常、证据与因果排查",
+      "tags": [
+        "案卷",
+        "调查",
+        "证据",
+        "排查",
+        "悬疑"
+      ],
+      "entry": "templates/lanshu-v11-casefile/v1/SKILL.md",
+      "starter": "templates/lanshu-v11-casefile/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/parcel-casefile-1114/versions/v0001/video.mp4",
+        "player": "works/parcel-casefile-1114/versions/v0001/video.mp4",
+        "poster": "works/parcel-casefile-1114/versions/v0001/cover.jpg",
+        "story": "works/parcel-casefile-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "parcel-casefile-1114",
+        "version": "v0001",
+        "editable": "works/parcel-casefile-1114/versions/v0001/editable.zip",
+        "brief": "works/parcel-casefile-1114/versions/v0001/brief.json",
+        "beats": "works/parcel-casefile-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/parcel-casefile-1114/versions/v0001/video.mp4": "70c3bf1b56f342298ee7a742056d0016286269ca6f8947c08e4e44624244f0ce",
+          "works/parcel-casefile-1114/versions/v0001/cover.jpg": "748851391b6ae4d7f91cf05e3cc199d2c8270df97f1020e0315b7bc7b8cab982",
+          "works/parcel-casefile-1114/versions/v0001/shots/native-story/film/scene.json": "12476840860f4f81876c906293bffab812ab7860dcc032652d4541be81d8838c",
+          "works/parcel-casefile-1114/versions/v0001/editable.zip": "ad679a17b6d89c3bb56133c17e45843d4c820db7ab4952e1f09886b9ee99f1e2",
+          "works/parcel-casefile-1114/versions/v0001/brief.json": "b3f7b7743db38e70b926428de7072fb14753e4f09c82db65478d8cbdc657e0fe",
+          "works/parcel-casefile-1114/versions/v0001/shots/native-story/film/engine/beats.js": "83a20c85618e13ac14b5a7cd5149d68bd1f04190a4236c11913b8169d1d01db8"
+        }
+      },
+      "adaptation": {
+        "preserve": "记录提出结论→现场矛盾→证据交叉→复查位置→解释",
+        "recipe": "记录提出结论→现场矛盾→证据交叉→复查位置→解释",
+        "replace": [
+          "证据卡",
+          "地点",
+          "关系线",
+          "冲突点",
+          "查证动作",
+          "结论边界"
+        ],
+        "avoid": "没有证据的悬疑渲染、捏造事实",
+        "example_request": "用调查案卷讲包裹柜号相同但楼栋看错的虚构案例。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v11-casefile/KIT.md",
+      "category": "纪实与证据",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "线索调查板",
+        "score": 7.0,
+        "replacement": null,
+        "observation": "软木板、纸条与红线把包裹线索逐步连接。",
+        "reason": "证据之间的空间联系是主语法，保留。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v11-casefile.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "lanshu-v12-sitcom",
+      "version": "1",
+      "name": "生活小剧场",
+      "family": "lanshu",
+      "engine": "lanshu",
+      "style": "v12-sitcom",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "用人物和道具演示误区",
+      "tags": [
+        "人物",
+        "对话",
+        "小剧场",
+        "生活",
+        "道具",
+        "误区"
+      ],
+      "entry": "templates/lanshu-v12-sitcom/v1/SKILL.md",
+      "starter": "templates/lanshu-v12-sitcom/v1/example",
+      "input_contract": "story.json + 本作品 beats.js；不是只改讲稿",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅横屏已适配；新故事的画面编排、字幕与视听必须另验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/ask-specific-1114/versions/v0001/video.mp4",
+        "player": "works/ask-specific-1114/versions/v0001/video.mp4",
+        "poster": "works/ask-specific-1114/versions/v0001/cover.jpg",
+        "story": "works/ask-specific-1114/versions/v0001/shots/native-story/film/scene.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "ask-specific-1114",
+        "version": "v0001",
+        "editable": "works/ask-specific-1114/versions/v0001/editable.zip",
+        "brief": "works/ask-specific-1114/versions/v0001/brief.json",
+        "beats": "works/ask-specific-1114/versions/v0001/shots/native-story/film/engine/beats.js",
+        "hashes": {
+          "works/ask-specific-1114/versions/v0001/video.mp4": "8a78731015fbae5a9e2a39078b87d561e0c0986edbf13472bef4de9863135e16",
+          "works/ask-specific-1114/versions/v0001/cover.jpg": "7b164ed00c291122dccf3dcd5eb6fa5a61a22e4afc18baa05ef3cff8f6ae0338",
+          "works/ask-specific-1114/versions/v0001/shots/native-story/film/scene.json": "5ddcc824870fabecc378622b22ccb1a18132201b1402083afcf0635bd935727a",
+          "works/ask-specific-1114/versions/v0001/editable.zip": "64da7a2c52b89cb392fac43f9fc494a7b105cd6f38a4398e0b308c26bc26cb4b",
+          "works/ask-specific-1114/versions/v0001/brief.json": "cea42829c83afa3641c28f75bda43679692c694d8dacae34d23c0a30f70fa8e7",
+          "works/ask-specific-1114/versions/v0001/shots/native-story/film/engine/beats.js": "30580720ceb904932c9215e77d18a20582d13188e6d7c2947ca308b5d35f6f21"
+        }
+      },
+      "adaptation": {
+        "preserve": "模糊请求→另一人的困难→具体化→配合动作→落定",
+        "recipe": "模糊请求→另一人的困难→具体化→配合动作→落定",
+        "replace": [
+          "人物目标",
+          "对白",
+          "道具",
+          "动作回应",
+          "结果和停顿"
+        ],
+        "avoid": "复杂情绪细演、只有字幕没有人物行动",
+        "example_request": "用人物小剧场讲把帮我看一下改成五分钟找错字。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "source_entry": "sources/zh-explainer/vendor/lanshu/explainer/kits/v12-sitcom/KIT.md",
+      "category": "情绪与剧情",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "archived",
+        "family": "扁平人物",
+        "score": 5.7,
+        "replacement": "studio-watercolor-music",
+        "observation": "浅色办公室人物与对话气泡，表演和场景层次较弱。",
+        "reason": "人物故事只留更完整的水彩；不能用水彩自动替代长对话。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/lanshu-v12-sitcom.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "paper-ink-landscape",
+      "version": "1",
+      "name": "纸墨山形·微人物叙事",
+      "family": "paper-ink",
+      "engine": "vibe",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "把选择、练习、反馈等因果转成空间路径的低密度叙事",
+      "tags": [
+        "纸墨",
+        "水墨",
+        "山形",
+        "人物",
+        "学习",
+        "反馈",
+        "选择",
+        "成长",
+        "故事",
+        "路径"
+      ],
+      "entry": "templates/paper-ink-landscape/v1/SKILL.md",
+      "starter": "templates/paper-ink-landscape/v1",
+      "input_contract": "direction + 新文案/因果分镜 + 地形 + 人物路径 + 相机关键帧",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "1280×720、30fps、单段不超过120秒；本轮32秒横屏新稿含原创器乐，无配音；完整画面与模型音轨观察已记录，真人听审及竖屏未验。",
+      "evidence": "productions/template-closeout-20261113/verification.json",
+      "sample": {
+        "kind": "video",
+        "path": "works/paperink-pause-1114/versions/v0001/video.mp4",
+        "player": "works/paperink-pause-1114/versions/v0001/video.mp4",
+        "poster": "works/paperink-pause-1114/versions/v0001/cover.jpg",
+        "story": "works/paperink-pause-1114/inputs/story-85c04d7ee7b8334e.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "paperink-pause-1114",
+        "version": "v0001",
+        "editable": "works/paperink-pause-1114/versions/v0001/editable.zip",
+        "brief": "works/paperink-pause-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/paperink-pause-1114/versions/v0001/video.mp4": "aad56a46032c537e4fdae1d550f0d2b946409ea2dca19a4ac4b9f0678e80636d",
+          "works/paperink-pause-1114/versions/v0001/cover.jpg": "479fd2a5b65383409288402ef6c2a3a61c727017050b89cb00ce5645d851f910",
+          "works/paperink-pause-1114/inputs/story-85c04d7ee7b8334e.json": "85c04d7ee7b8334e1eacd607fc7a164332e93e151c593e463e515a15f61fd814",
+          "works/paperink-pause-1114/versions/v0001/editable.zip": "b5cd39f49423ebdde4ae29abfd4b7fbec93136b5103245d15faa4c2ea6db17f8",
+          "works/paperink-pause-1114/versions/v0001/brief.json": "b699cb985becc7fe14a041380b53ae4c4037619005c9043d8957bee2bc26f2f9"
+        }
+      },
+      "adaptation": {
+        "preserve": "人物前行→有理由停下→镜头一起驻足→继续→留白",
+        "recipe": "人物前行→有理由停下→镜头一起驻足→继续→留白",
+        "replace": [
+          "地形",
+          "世界宽度",
+          "人物路径",
+          "相机关键帧",
+          "停顿和四句新稿"
+        ],
+        "avoid": "密集讲解、复杂人物表演、只把原片字幕改成新词",
+        "example_request": "用纸墨山形讲一个总催自己快一点的人，停下后继续前行。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "category": "自然与空间",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "水墨长卷空间",
+        "score": 7.3,
+        "replacement": null,
+        "observation": "纸墨山形、微小旅人和横向行进，空间距离承担叙事。",
+        "reason": "横向长卷与人物近景水彩明显不同。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/paper-ink-landscape.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "object-assembly",
+      "version": "1",
+      "name": "小物装配·体积与接触",
+      "family": "tactile",
+      "engine": "vibe",
+      "formats": [
+        "9:16",
+        "16:9"
+      ],
+      "fit": "几何可构成的家居小物、结构与装配过程",
+      "tags": [
+        "装配",
+        "零件",
+        "桌灯",
+        "花架",
+        "结构",
+        "小物",
+        "产品设计"
+      ],
+      "entry": "templates/object-assembly/v1/SKILL.md",
+      "starter": "templates/object-assembly/v1",
+      "input_contract": "自然输入由Codex编排为 objects + 整数帧events + 有动机camera；用户不需写JSON",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "只支持已声明的几何/纸片对象语法，不支持复杂人物表演或写实生成；音效听感待验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/assembly-lamp-1113/versions/v0005/video.mp4",
+        "player": "works/assembly-lamp-1113/versions/v0005/video.mp4",
+        "poster": "works/assembly-lamp-1113/versions/v0005/cover.jpg",
+        "story": "works/assembly-lamp-1113/versions/v0005/shots/tactile/film/assets/story.json",
+        "duration": 15.0,
+        "audio": "event-sfx",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "9:16",
+        "work": "assembly-lamp-1113",
+        "version": "v0005",
+        "editable": "works/assembly-lamp-1113/versions/v0005/editable.zip",
+        "brief": "works/assembly-lamp-1113/versions/v0005/brief.json",
+        "alternate": "works/assembly-planter-1113/versions/v0004/video.mp4",
+        "hashes": {
+          "works/assembly-lamp-1113/versions/v0005/video.mp4": "8d46908a2346428236709a95271571518f757b508b04827794912c1ab40c00a9",
+          "works/assembly-lamp-1113/versions/v0005/cover.jpg": "01a2918e3064c0a6a9748a7617fef6c0c4931b8117e4f175d21cd34a384f74b4",
+          "works/assembly-lamp-1113/versions/v0005/shots/tactile/film/assets/story.json": "c7d77190d37c9c8601ff4e36ee45b8e6fea1c748aa6c4de63a28892e7d5720b2",
+          "works/assembly-lamp-1113/versions/v0005/editable.zip": "50acf39c89b1acc268a82f2df8da11c4aca4dacc10b07f15303c204bca691604",
+          "works/assembly-lamp-1113/versions/v0005/brief.json": "b57d5c122b3a7722af69de3c376de71fb4cb60218d8527f9f797b7873c72512d",
+          "works/assembly-planter-1113/versions/v0004/video.mp4": "546e4f4f1b9d831ab0067c6fcadf848a8cab9195b5576fb0619b4bdbef49c648"
+        }
+      },
+      "adaptation": {
+        "preserve": "散开的零件→接近→接触落位→功能激活→侧面检查",
+        "recipe": "散开的零件→接近→接触落位→功能激活→侧面检查",
+        "replace": [
+          "零件几何",
+          "支撑关系",
+          "整数帧事件",
+          "接触音",
+          "激活",
+          "相机"
+        ],
+        "avoid": "复杂人物表演、长篇讲解、云生成写实、只换标题",
+        "example_request": "做抖音竖屏桌灯零件装配，底座支杆灯罩依次落位，亮灯，无配乐。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "unsupported_hints": [
+        "多人对话",
+        "真人走路",
+        "复杂表演",
+        "人物打斗",
+        "跳舞",
+        "口型"
+      ],
+      "category": "教程与过程",
+      "market_reference": "https://x.com/deedydas/status/2103174501345493197",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://x.com/deedydas/status/2103174501345493197",
+        "likes": 1037,
+        "views": 72365,
+        "followers": null,
+        "date": "2026-11-14",
+        "learned": "零件对应、依序装配与功能落定",
+        "gap": "借鉴装配的可追踪步骤；不是原作者CAD或实拍声音。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "触感物件装配",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "竖屏台灯零件在浅色台面上逐步接触装配，短接触音随动作。",
+        "reason": "四条触感片只留台灯主入口，其余保留为历史换稿案例。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/object-assembly.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "paper-cut-story",
+      "version": "1",
+      "name": "纸艺定格·日常小仪式",
+      "family": "tactile",
+      "engine": "vibe",
+      "formats": [
+        "9:16",
+        "16:9"
+      ],
+      "fit": "低密度、无人物的整理/赠礼/物件动作短故事",
+      "tags": [
+        "纸艺",
+        "定格",
+        "信封",
+        "礼物",
+        "通勤",
+        "归位",
+        "纸袋"
+      ],
+      "entry": "templates/paper-cut-story/v1/SKILL.md",
+      "starter": "templates/paper-cut-story/v1",
+      "input_contract": "自然输入由Codex编排为 objects + 整数帧events + 有动机camera；用户不需写JSON",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "只支持已声明的几何/纸片对象语法，不支持复杂人物表演或写实生成；音效听感待验。",
+      "sample": {
+        "kind": "video",
+        "path": "works/paper-pocket-1113/versions/v0004/video.mp4",
+        "player": "works/paper-pocket-1113/versions/v0004/video.mp4",
+        "poster": "works/paper-pocket-1113/versions/v0004/cover.jpg",
+        "story": "works/paper-pocket-1113/versions/v0004/shots/tactile/film/assets/story.json",
+        "duration": 15.0,
+        "audio": "event-sfx",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "9:16",
+        "work": "paper-pocket-1113",
+        "version": "v0004",
+        "editable": "works/paper-pocket-1113/versions/v0004/editable.zip",
+        "brief": "works/paper-pocket-1113/versions/v0004/brief.json",
+        "alternate": "works/paper-gift-1113/versions/v0004/video.mp4",
+        "hashes": {
+          "works/paper-pocket-1113/versions/v0004/video.mp4": "0b18ea2009563f030d70f0a2cbc49341cd2e729cf112b748f84d9ca685e1fca4",
+          "works/paper-pocket-1113/versions/v0004/cover.jpg": "e482cd2da84de5014d162589defc892a600a1880e9f83013199ebebe2a390de0",
+          "works/paper-pocket-1113/versions/v0004/shots/tactile/film/assets/story.json": "5f4d424351673c81813fedee13003349250e1d39779436b64daa114d073bdb3a",
+          "works/paper-pocket-1113/versions/v0004/editable.zip": "2cda59e5f2d38b246a6ed4dbd3c4fe7c17a079e52c4eb0ae0f903e8c149d223c",
+          "works/paper-pocket-1113/versions/v0004/brief.json": "84f04678112e2c44290168ee8c215664fb11d2ec252b66ec27d7e045ace826bb",
+          "works/paper-gift-1113/versions/v0004/video.mp4": "588f19a823ea72f7bbee7c89827f23334f542a37b1a3d75789cdc9666b59d5c4"
+        }
+      },
+      "adaptation": {
+        "preserve": "物件依次归位→纸张折叠遮住→打开或封合→语义结果",
+        "recipe": "物件依次归位→纸张折叠遮住→打开或封合→语义结果",
+        "replace": [
+          "纸层路径",
+          "物件",
+          "遮挡顺序",
+          "接触帧",
+          "折痕",
+          "实录短音"
+        ],
+        "avoid": "复杂人物表演、长篇讲解、云生成写实、只换标题",
+        "example_request": "用纸艺定格让通勤票钥匙耳机依次进纸袋，最后折好出发。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "unsupported_hints": [
+        "多人对话",
+        "真人走路",
+        "复杂表演",
+        "人物打斗",
+        "跳舞",
+        "口型"
+      ],
+      "category": "教程与过程",
+      "market_reference": "https://x.com/pleometric/status/2102572941699354900",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://x.com/pleometric/status/2102572941699354900",
+        "likes": 3766,
+        "views": 411706,
+        "followers": null,
+        "date": "2026-11-14",
+        "learned": "真实纸层的遮挡、纸物件日常动作与收束",
+        "gap": "原片纸TikTok递归睡前故事，新稿纸袋归位仪式，叙事不同。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "触感物件装配",
+        "score": 6.4,
+        "replacement": "object-assembly",
+        "observation": "浅色台面上纸袋/钥匙归位，与台灯同为单物件居中分步动作。",
+        "reason": "材料与故事变化不再单独计风格；不强制把人物需求路由给台灯。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/paper-cut-story.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "photo-beat-montage",
+      "version": "1",
+      "name": "图片音乐卡点",
+      "family": "photo",
+      "engine": "vibe",
+      "style": "photo-beat-montage",
+      "formats": [
+        "9:16",
+        "16:9"
+      ],
+      "fit": "照片主体与音乐节拍，风景/花卉/回忆",
+      "tags": [
+        "图片卡点",
+        "照片卡点",
+        "图片转场",
+        "音乐混剪",
+        "卡点",
+        "花卉",
+        "风景图片"
+      ],
+      "entry": "templates/photo-beat-montage/v1/SKILL.md",
+      "starter": "productions/photo-formats-20261114/beat-story.json",
+      "input_contract": "有许可的照片、短句、整数帧时间线、音乐及来源；不是任意讲稿自动换皮",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "静态照片转场；不支持连续人物表演；新作品无流量与留存数据",
+      "adaptation": {
+        "preserve": "同一主题四张图→拍点换主图→反问被逐步回答→末图收束",
+        "recipe": "同一主题四张图→拍点换主图→反问被逐步回答→末图收束",
+        "replace": [
+          "有许可照片",
+          "主体焦点",
+          "节拍",
+          "换图窗口",
+          "短句",
+          "音乐"
+        ],
+        "avoid": "长篇知识密文、人物连续表演",
+        "example_request": "做图片卡点短片，用阿波罗11号四张真实照片讲脚印之外的工作。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/moon-photo-beat-1114/versions/v0001/video.mp4",
+        "player": "works/moon-photo-beat-1114/versions/v0001/video.mp4",
+        "poster": "works/moon-photo-beat-1114/versions/v0001/cover.jpg",
+        "story": "works/moon-photo-beat-1114/inputs/story.json",
+        "duration": 24.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "moon-photo-beat-1114",
+        "version": "v0001",
+        "editable": "works/moon-photo-beat-1114/versions/v0001/editable.zip",
+        "brief": "works/moon-photo-beat-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/moon-photo-beat-1114/versions/v0001/video.mp4": "21c42bc164492e7bf5318c40b53f73ec7b36f8a2a5233f5fb483d8fff5714566",
+          "works/moon-photo-beat-1114/versions/v0001/cover.jpg": "2c72898192a36d96500d25cceef0c036abee1a57ae7c106f12141ea3481af842",
+          "works/moon-photo-beat-1114/inputs/story.json": "108459af8e25066d7e467c5dfb588ac8e511394a0dbac649c0950f1bd6685540",
+          "works/moon-photo-beat-1114/versions/v0001/editable.zip": "c58860e1081dc1088f33308bcfefb3c04022b2b40e93750caa85c8005dd2c7db",
+          "works/moon-photo-beat-1114/versions/v0001/brief.json": "43eb78182e69c2febae26223e4d3ec53c32ffdc27fb51fbb384a0b65ccc32fc2"
+        }
+      },
+      "category": "音乐与图文",
+      "market_reference": "https://www.douyin.com/video/7702634704625619429",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://www.douyin.com/video/7702634704625619429",
+        "likes": 33739,
+        "views": null,
+        "followers": 9676,
+        "date": "2026-11-14",
+        "learned": "同主题照片的中心聚焦与拍点换主图",
+        "gap": "花卉原片转成NASA照片，使用合法官方图片，照片事实与构图另核。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "照片音乐编排",
+        "score": 7.0,
+        "replacement": null,
+        "observation": "同一登月主题照片按音乐切换，主题统一、画面干净。",
+        "reason": "照片系保留这套，胶带与摆锤作为可选转场变体归档。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/photo-beat-montage.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "tape-photo-essay",
+      "version": "1",
+      "name": "手账照片短句",
+      "family": "photo",
+      "engine": "vibe",
+      "style": "tape-photo-essay",
+      "formats": [
+        "9:16",
+        "16:9"
+      ],
+      "fit": "日常共鸣与回忆，三页短句照片叙事",
+      "tags": [
+        "图文共鸣",
+        "图文拼贴",
+        "照片拼贴",
+        "手账",
+        "照片短句",
+        "回忆图文"
+      ],
+      "entry": "templates/tape-photo-essay/v1/SKILL.md",
+      "starter": "productions/photo-formats-20261114/essay-story.json",
+      "input_contract": "有许可的照片、短句、整数帧时间线、音乐及来源；不是任意讲稿自动换皮",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "静态照片转场；不支持连续人物表演；新作品无流量与留存数据",
+      "adaptation": {
+        "preserve": "一主题多视角→每页图文互证→手账空间重排→短句落定",
+        "recipe": "一主题多视角→每页图文互证→手账空间重排→短句落定",
+        "replace": [
+          "照片",
+          "事实说明",
+          "胶带版位",
+          "页内主次",
+          "留白",
+          "逐页时间"
+        ],
+        "avoid": "长篇知识密文、人物连续表演",
+        "example_request": "用手账照片拼贴讲月面工作日，人物完整，不裁掉头脚。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/moon-tape-essay-1114/versions/v0001/video.mp4",
+        "player": "works/moon-tape-essay-1114/versions/v0001/video.mp4",
+        "poster": "works/moon-tape-essay-1114/versions/v0001/cover.jpg",
+        "story": "works/moon-tape-essay-1114/inputs/story.json",
+        "duration": 28.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "moon-tape-essay-1114",
+        "version": "v0001",
+        "editable": "works/moon-tape-essay-1114/versions/v0001/editable.zip",
+        "brief": "works/moon-tape-essay-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/moon-tape-essay-1114/versions/v0001/video.mp4": "489ce3ff7279023f59048e0c6bcd8444caa75cdaa978a54a270c96d31bc169b7",
+          "works/moon-tape-essay-1114/versions/v0001/cover.jpg": "636dcb3116ff7495014fd23ac5015f3cabe679ebf94ab83cdf2aad54304c4655",
+          "works/moon-tape-essay-1114/inputs/story.json": "1c9f59ba29fa4e58ac695e456bf22511f6d04755d53ef6991c20f4d9d39899fc",
+          "works/moon-tape-essay-1114/versions/v0001/editable.zip": "5c127ae60f8ed9e3fc10774ad9e43ad97e16dc20cffdf7b3afb17bc17952e4b4",
+          "works/moon-tape-essay-1114/versions/v0001/brief.json": "f7b57650fa4f4c2ca5bc9d1a6dc5e64ab0319c700cb3c9ad867b925585f638e9"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "archived",
+        "family": "照片音乐编排",
+        "score": 6.5,
+        "replacement": "photo-beat-montage",
+        "observation": "同组登月照片增加胶带、浅色底和短文。",
+        "reason": "边框/装饰不足以再算风格，当前内容与照片卡点高度重复。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/tape-photo-essay.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "opuscar-one-line",
+      "version": "1",
+      "name": "连续墨线叙事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "one-line",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "以物件和一条旅程表达想念、成长、选择等情绪",
+      "tags": [
+        "墨线",
+        "一笔画",
+        "连续线",
+        "归途",
+        "物件叙事"
+      ],
+      "entry": "templates/opuscar-one-line/v1/SKILL.md",
+      "starter": "templates/opuscar-one-line/v1/native",
+      "input_contract": "完整原生工程 ZIP；story.json 路径、镜头、字幕与本片 project.json 哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "只接横屏；不承载复杂人物表演或歌词口型；市场原片与工程来源不同。",
+      "adaptation": {
+        "preserve": "一条线连接语义物件→镜头跟随→物件承接→拉远见归途",
+        "recipe": "一条线连接语义物件→镜头跟随→物件承接→拉远见归途",
+        "replace": [
+          "SVG路径",
+          "物件连接点",
+          "线速和笔压",
+          "镜头",
+          "字幕和全景"
+        ],
+        "avoid": "只换标题复用原路径",
+        "example_request": "用一笔画连续墨线连接日历车票火车和家门，讲一次归途。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/one-line-home-1114/versions/v0003/video.mp4",
+        "player": "works/one-line-home-1114/versions/v0003/video.mp4",
+        "poster": "works/one-line-home-1114/versions/v0003/cover.jpg",
+        "story": "works/one-line-home-1114/versions/v0003/shots/native-style/film/engine/story.json",
+        "duration": 38.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "one-line-home-1114",
+        "version": "v0003",
+        "editable": "works/one-line-home-1114/versions/v0003/editable.zip",
+        "brief": "works/one-line-home-1114/versions/v0003/brief.json",
+        "hashes": {
+          "works/one-line-home-1114/versions/v0003/video.mp4": "57dda54d8243446d1fbaea633900e9db467d5966ec6a54fae3a729c777d88eb4",
+          "works/one-line-home-1114/versions/v0003/cover.jpg": "b9457d5d7ea5af48621bd94acab462a912c122fda850f08132373f47b79ca5d2",
+          "works/one-line-home-1114/versions/v0003/shots/native-style/film/engine/story.json": "9306058f88b57399e900b23ef8d4125e3c305f34bba42a1b7b2a2368d0a47789",
+          "works/one-line-home-1114/versions/v0003/editable.zip": "97c0aa24b954a332fc6d2f4c25202fcbdd605fda131573686a58d0aee282ac37",
+          "works/one-line-home-1114/versions/v0003/brief.json": "32738d2880d01597a68d10d1d5ff6182728962543098e8d2f8bd4a7a16bebdc5"
+        }
+      },
+      "category": "情绪与剧情",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "单线连续绘画",
+        "score": 7.5,
+        "replacement": null,
+        "observation": "线条在物件、道路与家的轮廓之间延展，留白明确。",
+        "reason": "线本身持续生成形状，区别于卡片或纸层。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/opuscar-one-line.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "opuscar-pixel-story",
+      "version": "1",
+      "name": "像素日常荒诞故事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "pixel-story",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "把日常目标写成递进空间障碍与动作反转的完整剧情",
+      "tags": [
+        "像素日常",
+        "像素故事",
+        "荒诞",
+        "最后一公里",
+        "游戏剧情"
+      ],
+      "entry": "templates/opuscar-pixel-story/v1/SKILL.md",
+      "starter": "templates/opuscar-pixel-story/v1/native",
+      "input_contract": "完整原生ZIP工程；场景地图、人物动作、字幕和project.json哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "当前为单人五场景；不声称复杂宿舍人群表演；市场原作者与工程不同。",
+      "adaptation": {
+        "preserve": "普通目标→空间障碍→判断错误→可见修正→荒诞反转",
+        "recipe": "普通目标→空间障碍→判断错误→可见修正→荒诞反转",
+        "replace": [
+          "像素地图",
+          "人物状态",
+          "碰撞路径",
+          "道具",
+          "障碍和结尾"
+        ],
+        "avoid": "像素滤镜加长字幕；只改标题沿用原剧情",
+        "example_request": "用像素日常故事讲最后一公里，电梯停用、找错楼、终于回家。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/pixel-last-mile-1114/versions/v0002/video.mp4",
+        "player": "works/pixel-last-mile-1114/versions/v0002/video.mp4",
+        "poster": "works/pixel-last-mile-1114/versions/v0002/cover.jpg",
+        "story": "works/pixel-last-mile-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 36.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "pixel-last-mile-1114",
+        "version": "v0002",
+        "editable": "works/pixel-last-mile-1114/versions/v0002/editable.zip",
+        "brief": "works/pixel-last-mile-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/pixel-last-mile-1114/versions/v0002/video.mp4": "078c5bb992bf6de06787f77f6d5763223f3473f53e57eaa627963ed81e99fdc1",
+          "works/pixel-last-mile-1114/versions/v0002/cover.jpg": "6af6c93688bceee52d3ff61205e9dd41c7c2f3c7942071e8c030e3abd23ebb2b",
+          "works/pixel-last-mile-1114/versions/v0002/shots/native-style/film/engine/story.json": "ca2899208b8f42912c48d30c4a7943f761a4e3f6dc7aaa003612fa490b8ba016",
+          "works/pixel-last-mile-1114/versions/v0002/editable.zip": "624e30b88d3623eab9c804ed0bfebdba61b6fb33bce56dff41cadfbacc172955",
+          "works/pixel-last-mile-1114/versions/v0002/brief.json": "ce9843b8178c9f594e8b3e56f84a9c30586a84047ab2d995c16f32bb45d19da9"
+        }
+      },
+      "category": "动作与游戏",
+      "market_reference": "https://www.douyin.com/video/7600724311846437049",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://www.douyin.com/video/7600724311846437049",
+        "likes": 325308,
+        "views": null,
+        "followers": 247336,
+        "date": "2026-11-14",
+        "learned": "像素地图、可见障碍、行动与荒诞反转",
+        "gap": "换成末班路程，不复制原作情节。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "像素关卡日常",
+        "score": 7.5,
+        "replacement": null,
+        "observation": "像素人物穿过电梯和道路，步行动作推进小关卡。",
+        "reason": "离散像素尺度、角色运动和游戏镜头共同构成风格。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/opuscar-pixel-story.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "opuscar-pictogram",
+      "version": "1",
+      "name": "几何图标动作叙事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "pictogram-motion",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "雨天里，一个人把伞偏向另一个人；两人一起走到车站，将自己的晴天分出一半。",
+      "tags": [
+        "图标叙事",
+        "几何人物",
+        "雨天分享",
+        "符号动作",
+        "单色图案"
+      ],
+      "entry": "templates/opuscar-pictogram/v1/SKILL.md",
+      "starter": "templates/opuscar-pictogram/v1/native",
+      "input_contract": "完整新稿原生工程、动作时序、project.json哈希和同版音轨",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅16:9；新稿与市场原片须分别核验。",
+      "adaptation": {
+        "preserve": "几何人物遇事→共享道具→共同位移→抵达→海报收束",
+        "recipe": "几何人物遇事→共享道具→共同位移→抵达→海报收束",
+        "replace": [
+          "人物轨迹",
+          "道具状态",
+          "单色层级",
+          "图案节拍",
+          "结束句"
+        ],
+        "avoid": "只换标题或色板沿用原故事",
+        "example_request": "用几何图标动作叙事讲雨天两个人分享一把伞走到车站。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/pictogram-rain-1114/versions/v0002/video.mp4",
+        "player": "works/pictogram-rain-1114/versions/v0002/video.mp4",
+        "poster": "works/pictogram-rain-1114/versions/v0002/cover.jpg",
+        "story": "works/pictogram-rain-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程画面与本版音频观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "pictogram-rain-1114",
+        "version": "v0002",
+        "editable": "works/pictogram-rain-1114/versions/v0002/editable.zip",
+        "brief": "works/pictogram-rain-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/pictogram-rain-1114/versions/v0002/video.mp4": "853cce92bd050058d19c0909a4eee9287663364a602ad4cd68b230b504e10143",
+          "works/pictogram-rain-1114/versions/v0002/cover.jpg": "dbfa0493863a4be68d3975654096a454ca53d17c72918ac31f080a1dddad7376",
+          "works/pictogram-rain-1114/versions/v0002/shots/native-style/film/engine/story.json": "d80d8a0bd9213b803506ac3c7cc6302a78b640eeb93b448d1cb893599130d42d",
+          "works/pictogram-rain-1114/versions/v0002/editable.zip": "fdbe9601f6b76f157c9dd540c1e8af5d911da13b72d511e474757e01f62c116a",
+          "works/pictogram-rain-1114/versions/v0002/brief.json": "23844daf9bc335b2c03dd14235da30b94c492ab5bde64d2fa69064bd844458cf"
+        }
+      },
+      "category": "动作与游戏",
+      "market_evidence": {
+        "relation": "保留的制作底座；本轮不计高互动来源对应数量",
+        "source": null
+      },
+      "curation": {
+        "status": "archived",
+        "family": "扁平人物",
+        "score": 6.2,
+        "replacement": "studio-watercolor-music",
+        "observation": "几何小人与雨伞表达让伞故事，背景和动作较简。",
+        "reason": "当下完成度不足以独立保留为人物故事主入口。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/opuscar-pictogram.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "opuscar-swiss-motion",
+      "version": "1",
+      "name": "瑞士网格动态海报",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "swiss-motion",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "用一张从拥挤到有空隙的日程海报，演示取舍、对齐和预留缓冲三个实际改变。",
+      "tags": [
+        "瑞士排版",
+        "网格动效",
+        "动态海报",
+        "时间留白",
+        "日程"
+      ],
+      "entry": "templates/opuscar-swiss-motion/v1/SKILL.md",
+      "starter": "templates/opuscar-swiss-motion/v1/native",
+      "input_contract": "完整新稿原生工程、动作时序、project.json哈希和同版音轨",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅16:9；新稿与市场原片须分别核验。",
+      "adaptation": {
+        "preserve": "网格挤满→删减选择→对齐重要项→空格接住意外→海报",
+        "recipe": "网格挤满→删减选择→对齐重要项→空格接住意外→海报",
+        "replace": [
+          "事项数据",
+          "字号层级",
+          "网格位置",
+          "删减项",
+          "缓冲和新文案"
+        ],
+        "avoid": "只换标题或色板沿用原故事",
+        "example_request": "用瑞士排版动态海报，把拥挤的日程删到三件并留出缓冲。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/swiss-calendar-1114/versions/v0002/video.mp4",
+        "player": "works/swiss-calendar-1114/versions/v0002/video.mp4",
+        "poster": "works/swiss-calendar-1114/versions/v0002/cover.jpg",
+        "story": "works/swiss-calendar-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "swiss-calendar-1114",
+        "version": "v0002",
+        "editable": "works/swiss-calendar-1114/versions/v0002/editable.zip",
+        "brief": "works/swiss-calendar-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/swiss-calendar-1114/versions/v0002/video.mp4": "7a5e8d6e28946cb260ce6606135b0ebc8810ee53de93c4cdb8aba3a0acaf8dfe",
+          "works/swiss-calendar-1114/versions/v0002/cover.jpg": "e7da5097f9fb9fcc1a501d57c7c75e9bb9a04f9cbf06dfb29d190ded9b2abc21",
+          "works/swiss-calendar-1114/versions/v0002/shots/native-style/film/engine/story.json": "499d524070e1e98e976c02671651c34ab814b4b910071f777e2e766016856645",
+          "works/swiss-calendar-1114/versions/v0002/editable.zip": "0206ff10bdcb1250a6e4d2d631501c0174f79ebdf536becbf12c511595930e68",
+          "works/swiss-calendar-1114/versions/v0002/brief.json": "0599801250c13104bf24287a6e52f9be2ecb62d0eee9bd30a30466bf5fad95d4"
+        }
+      },
+      "category": "品牌与产品",
+      "market_reference": "https://x.com/deedydas/status/2102787937482252537",
+      "market_evidence": {
+        "relation": "形式／材料迁移，非逐镜复刻",
+        "source": "https://x.com/deedydas/status/2102787937482252537",
+        "likes": 3244,
+        "views": 338541,
+        "followers": null,
+        "date": "2026-11-14",
+        "learned": "字形层级、量化论点和版面节奏",
+        "gap": "新稿网格日程删减，不宣称有原作产品投放数据。",
+        "retention": null,
+        "follower_growth": null,
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "瑞士动态排版",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "黑白红日历与字块成组排布，排版重组就是动作。",
+        "reason": "动态字形/布局代表，优于另一套短字变形。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/opuscar-swiss-motion.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "opuscar-silent-comedy",
+      "version": "1",
+      "name": "手摇默片喜剧",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "silent-film",
+      "formats": [
+        "16:9"
+      ],
+      "fit": "无需对白即可看懂的生活目标、升级尝试、身体反应与最后反转；适合寻找、争抢、误会和失误喜剧。",
+      "tags": [
+        "默片",
+        "黑白喜剧",
+        "手摇电影",
+        "虹膜转场",
+        "眼镜"
+      ],
+      "entry": "templates/opuscar-silent-comedy/v1/SKILL.md",
+      "starter": "templates/opuscar-silent-comedy/v1/native",
+      "input_contract": "完整新稿原生工程、动作时序、project.json哈希和同版音轨",
+      "readiness": "engineering-source-only; boxcutter-representative-blocked; reference-review-withdrawn",
+      "validation": "眼镜历史完整样片及源工程保留；开箱刀v0011仍blocked，动作可信度/开头/笑点未成立；TV Dinner旧完整拆解已撤回。不能据旧样片或胶片外观认证成熟换稿。",
+      "limits": "仅16:9基础人形舞台动作。未复现Simon’s Cat白底线描动物形式；原上游完整持物段也有细长关节与木偶感。开箱刀复杂握持、连续受力拆包装未通过，不能作为该题材新片模板。",
+      "adaptation": {
+        "preserve": "已成型工程的角色体系、完整表演段、构图、镜头关系和节奏；目标→尝试→后果→反应→回扣的因果语法",
+        "recipe": "沿可编辑完整工程/表演段换入主题、道具和处境；先验证最难代表段",
+        "replace": [
+          "角色目标与处境",
+          "道具及其因果关系",
+          "必要场景和字幕",
+          "新内容必要的表演适配"
+        ],
+        "avoid": "借胶片外壳重写简化人物和全部动作；以同类喜剧冒充原作形式复刻",
+        "example_request": "做黑白默片喜剧，翻桌找眼镜，最后照镜发现一直戴在头顶。",
+        "steps": [
+          "先看具体对标、本地样片与可编辑入口，说明形式差距",
+          "在原策划写清保留工程/完整表演段、替换内容和未验难点；沿父工程派生",
+          "保留角色、构图、镜头关系和节奏，适配原内容，先核最难代表段",
+          "沿真实prepare/plan/workflow/返修入口制作；同版真实审片成立前不扩整片"
+        ],
+        "acting_source": {
+          "path": "resources/lemo-opuscar/mit-8814b84/styles/silent-film/demo/shots.js",
+          "segments": [
+            "bakery",
+            "tender"
+          ],
+          "status": "source observed at 2fps; puppet-like joints remain; boxcutter grip/turn/force NOT validated",
+          "reference_form_gap": "Simon’s Cat白底线描动物与本地人形舞台不同；双高赞不证明本地形式复现",
+          "observation": "productions/boxcutter-1114/rig-trial-03/source-observation/record.json"
+        }
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/silent-glasses-1114/versions/v0001/video.mp4",
+        "player": "works/silent-glasses-1114/versions/v0001/video.mp4",
+        "poster": "works/silent-glasses-1114/versions/v0001/cover.jpg",
+        "story": "works/silent-glasses-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "silent-glasses-1114",
+        "version": "v0001",
+        "editable": "works/silent-glasses-1114/versions/v0001/editable.zip",
+        "brief": "works/silent-glasses-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/silent-glasses-1114/versions/v0001/video.mp4": "cef63cd5206247a3634340d1694f8977c3ec324fb3e490af75df0c9babcf8caf",
+          "works/silent-glasses-1114/versions/v0001/cover.jpg": "dd20ff65c09983b2b4ad938a80162ee94ae577126d521ddd283a7ebe6dee6ebe",
+          "works/silent-glasses-1114/versions/v0001/shots/native-style/film/engine/story.json": "6588e93c58eed7d42419be601c18324312e73ebf2a050a74c2da036e53850425",
+          "works/silent-glasses-1114/versions/v0001/editable.zip": "25e1ca267d5c9e6aa8ec8adf832c713aa9344edf53690085a202dc92ad19bdb3",
+          "works/silent-glasses-1114/versions/v0001/brief.json": "887f97dd32829c1f0cf3a7c287e9b501feb65ebd0189f3369bbeff7bb68afa6f"
+        }
+      },
+      "category": "情绪与剧情",
+      "market_evidence": {
+        "relation": "同类无对白肢体喜剧叙事机制；画面材质不同",
+        "source": "https://www.youtube.com/watch?v=s13dLaTIHSg",
+        "sources": [
+          "https://www.youtube.com/watch?v=s13dLaTIHSg",
+          "https://www.youtube.com/watch?v=3VLcLH97eRw"
+        ],
+        "likes": [
+          229000,
+          240000
+        ],
+        "date": "2026-11-14",
+        "method": "YouTube原页搜索索引显示近似赞数；作者站核片名与原链接；完整镜像仅用于观察，不借镜像赞数",
+        "learned": "黑白二维、无对白、清晰目标→重复尝试→动作升级→主人/动物反应→反转回扣；声音负责接触和反应而非解释剧情。",
+        "gap": "2026-11-15撤回TV Dinner旧完整拆解及运行双对标资格；仍保留两原帖历史指标。原作形式与本地人物舞台不同，开箱刀v0011质量失败。",
+        "proof_index": "productions/template-rollout-20261114/simons-pair-evidence.json",
+        "retention": null,
+        "follower_growth": null
+      },
+      "curation": {
+        "status": "active",
+        "family": "黑白默片喜剧",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "黑白画面、片间字幕和寻找眼镜的身体动作形成反转。",
+        "reason": "保留为基础舞台工程供明确范围试验；不作为开箱刀成熟模板或市场同款形式。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/opuscar-silent-comedy.jpg",
+        "is_market_performance": false
+      },
+      "unsupported_hints": [
+        "开箱刀",
+        "复杂握持",
+        "受力拆包装"
+      ]
+    },
+    {
+      "id": "studio-rain-ripples",
+      "version": "1",
+      "name": "春雨落点与水面涟漪",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "rain-ripples",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "落雨涟漪",
+        "雨滴",
+        "水面",
+        "自然氛围"
+      ],
+      "fit": "雨落下，每一滴都有回声。碰见另一圈，就一起走远。有些事，急也急不来。等雨停，水面会把月亮还给你。",
+      "entry": "templates/studio-rain-ripples/v1/SKILL.md",
+      "starter": "templates/studio-rain-ripples/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅核16:9；新片为程序雨滴与波纹、原创器乐。完整原片观察不代表达到原作质感或本片获得流量。",
+      "market_reference": "https://www.douyin.com/video/7680133191813926171",
+      "adaptation": {
+        "preserve": "雨滴落点→对应波纹扩散相遇→雨停→水面显月",
+        "recipe": "雨滴落点→对应波纹扩散相遇→雨停→水面显月",
+        "replace": [
+          "落点表",
+          "雨量",
+          "波纹寿命",
+          "花瓣漂移",
+          "雨停和倒影时间"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "做落雨涟漪自然氛围片，雨滴落在水面扩散，雨停后月亮倒映。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/rain-ripples-story-1114/versions/v0003/video.mp4",
+        "player": "works/rain-ripples-story-1114/versions/v0003/video.mp4",
+        "poster": "works/rain-ripples-story-1114/versions/v0003/cover.jpg",
+        "story": "works/rain-ripples-story-1114/versions/v0003/shots/native-style/film/engine/story.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程画面与本版音频观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "rain-ripples-story-1114",
+        "version": "v0003",
+        "editable": "works/rain-ripples-story-1114/versions/v0003/editable.zip",
+        "brief": "works/rain-ripples-story-1114/versions/v0003/brief.json",
+        "hashes": {
+          "works/rain-ripples-story-1114/versions/v0003/video.mp4": "7a12a3087cfa817f13ed853b69e8d829fe6f2819977330d605639cd04ff378f3",
+          "works/rain-ripples-story-1114/versions/v0003/cover.jpg": "569510aad1ee36d0c38f5838d150bf62ccd1bbac10db27a5dccf71748453475f",
+          "works/rain-ripples-story-1114/versions/v0003/shots/native-style/film/engine/story.json": "ad8d6ce1042a0f415ac66e718cc78a349f9812640fdd33f3889c874b96693e61",
+          "works/rain-ripples-story-1114/versions/v0003/editable.zip": "9f0a21ab8e78369913263387ea08a68fabee0520aefe4640a75bd2eec81a2d17",
+          "works/rain-ripples-story-1114/versions/v0003/brief.json": "77b9e3e1cd3255d78e6b42e45c9b87da6f99048f02b0be7b01ca1444762c7f97"
+        }
+      },
+      "category": "自然与空间",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7680133191813926171",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 44834,
+        "likes": 496884,
+        "saves": 31108,
+        "shares": 139926,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "雨滴落点→对应波纹扩散相遇→雨停→水面显月",
+        "gap": "仅核16:9；新片为程序雨滴与波纹、原创器乐。完整原片观察不代表达到原作质感或本片获得流量。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "程序自然氛围",
+        "score": 6.6,
+        "replacement": "studio-flower-field",
+        "observation": "暗底水面涟漪循环、草线和短句，变化较少。",
+        "reason": "自然氛围只留空间更丰富的繁花；原低音听审矛盾记录保留。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-rain-ripples.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-flower-field",
+      "version": "1",
+      "name": "暗底繁花空间流场",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "flower-field",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "暗底繁花",
+        "花朵流场",
+        "繁花景深",
+        "花海"
+      ],
+      "fit": "花海、花朵随风摇曳的自然氛围与短情绪文案；以密度、深度、风场和缓慢镜头推进。",
+      "entry": "templates/studio-flower-field/v1/SKILL.md",
+      "starter": "templates/studio-flower-field/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "新稿为分层插画花园；不等同原作写实繁花材质或留存效果。仅核16:9。",
+      "market_reference": "https://www.douyin.com/video/7684122337486746341",
+      "adaptation": {
+        "preserve": "少量花簇→镜头展开花园→风向微动→花开→留白",
+        "recipe": "少量花簇→镜头展开花园→风向微动→花开→留白",
+        "replace": [
+          "花朵形状",
+          "分层深度",
+          "风场",
+          "相机",
+          "开花时序",
+          "短句"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "做暗底繁花流场，风吹花簇摇动，最后留下风过花还在。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/flower-field-story-1114/versions/v0001/video.mp4",
+        "player": "works/flower-field-story-1114/versions/v0001/video.mp4",
+        "poster": "works/flower-field-story-1114/versions/v0001/cover.jpg",
+        "story": "works/flower-field-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "flower-field-story-1114",
+        "version": "v0001",
+        "editable": "works/flower-field-story-1114/versions/v0001/editable.zip",
+        "brief": "works/flower-field-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/flower-field-story-1114/versions/v0001/video.mp4": "f1bbd21bd586d70da1ba7c67c074604c8773dcb18870e03c59cf2125373c1750",
+          "works/flower-field-story-1114/versions/v0001/cover.jpg": "55d1f3d44ccbd776a750dae9f88e63546bc3ea7dc7a6b125b0176834cc02000b",
+          "works/flower-field-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "447373ef7efe4b7a851d6f8a35dc068766de3e8439ec0526a9e10b45f2e8ce4a",
+          "works/flower-field-story-1114/versions/v0001/editable.zip": "4f09523f0842578834d179893b9c8f69cb660a71a886559837dd8b86b0d155f8",
+          "works/flower-field-story-1114/versions/v0001/brief.json": "38778afb8d3d1620c022f2d2e41502945cbf49ae087e230255da5a071c66dd18"
+        }
+      },
+      "category": "自然与空间",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7684122337486746341",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 15304,
+        "likes": 635940,
+        "saves": 55650,
+        "shares": 449504,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "少量花簇→镜头展开花园→风向微动→花开→留白",
+        "gap": "两条为同一作者的两个独立成片；未取得留存、好评率、连续涨粉。原作可公开访问不等于素材授权。本地现有新稿为插画/字幕叙事，材质、密度与循环结构仍有差距，不因此认定新稿达标。",
+        "proof_index": "productions/template-rollout-20261114/flower-pair-evidence.json",
+        "dual_benchmark": [
+          {
+            "id": "7684122337486746341",
+            "url": "https://www.douyin.com/video/7684122337486746341",
+            "likes": 635940,
+            "source_role": "original",
+            "mechanism_reviewed": true,
+            "full_observation": true,
+            "evidence": "productions/template-rollout-20261114/flower-pair-evidence.json",
+            "evidence_sha256": "0254ba6a5b34323087aaf03e1b35f05eb0ac408c93eb0c9cc1fdec93855361dd",
+            "observation": "暗夜红花、满幅花茎、近固定构图、微风连续摇动、光晕；无歌词剧情或乐谱；全段抽帧＋实际音轨AI观察，非真人连续视听"
+          },
+          {
+            "id": "7695747594438292965",
+            "url": "https://www.douyin.com/video/7695747594438292965",
+            "likes": 223214,
+            "source_role": "original",
+            "mechanism_reviewed": true,
+            "full_observation": true,
+            "evidence": "productions/template-rollout-20261114/flower-pair-evidence.json",
+            "evidence_sha256": "0254ba6a5b34323087aaf03e1b35f05eb0ac408c93eb0c9cc1fdec93855361dd",
+            "observation": "暗夜蓝色小花密集填满画面、花茎随风摆动、缓慢镜头；无歌词剧情或乐谱；全段抽帧＋实际音轨AI观察，非真人连续视听"
+          }
+        ]
+      },
+      "curation": {
+        "status": "active",
+        "family": "程序自然流场",
+        "score": 7.2,
+        "replacement": null,
+        "observation": "暗底多层花枝在空间中流动，疏密和风向持续变化。",
+        "reason": "自然氛围代表，不能称真实花卉拍摄。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-flower-field.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-grid-beat",
+      "version": "1",
+      "name": "多分屏图片编舞",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "grid-beat",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "多分屏卡点",
+        "九宫格",
+        "分屏故事",
+        "窗口"
+      ],
+      "fit": "夜里，每一扇窗都有自己的生活。有人热饭，有人翻书，有猫睡熟。灯一盏盏熄了，还有一盏亮着。因为晚归的人，也值得被等一等。",
+      "entry": "templates/studio-grid-beat/v1/SKILL.md",
+      "starter": "templates/studio-grid-beat/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅核16:9；市场数据来自剪辑教程，不能当作净版作品的流量或留存证明。",
+      "market_reference": "https://www.douyin.com/video/7645981477192948089",
+      "adaptation": {
+        "preserve": "九窗依次亮起→三组生活动作→熄灯→仍有等待→晚归",
+        "recipe": "九窗依次亮起→三组生活动作→熄灯→仍有等待→晚归",
+        "replace": [
+          "窗口内容",
+          "主次窗格",
+          "几何版位",
+          "拍点和人物路径"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用九宫格多分屏卡点讲夜间热饭翻书和睡猫，留一盏灯等晚归。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/grid-beat-story-1114/versions/v0001/video.mp4",
+        "player": "works/grid-beat-story-1114/versions/v0001/video.mp4",
+        "poster": "works/grid-beat-story-1114/versions/v0001/cover.jpg",
+        "story": "works/grid-beat-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "grid-beat-story-1114",
+        "version": "v0001",
+        "editable": "works/grid-beat-story-1114/versions/v0001/editable.zip",
+        "brief": "works/grid-beat-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/grid-beat-story-1114/versions/v0001/video.mp4": "e82fa1eb82fa220335057163f34bfc1aa0cdad73fcaee652f147fe3ec2bdce03",
+          "works/grid-beat-story-1114/versions/v0001/cover.jpg": "4fa52a2eb39367674a2fe8997ff6ca41e4668e924fb2a2b028d35397aebe784c",
+          "works/grid-beat-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "609803e2c2afa4e76ef498d7cd8660ef68c7c9bcabe190136024dbc042038076",
+          "works/grid-beat-story-1114/versions/v0001/editable.zip": "67dc0f6e7503b07dd34d708b7eea13c3c55527a1d38a83f76abbc0b1344eb94b",
+          "works/grid-beat-story-1114/versions/v0001/brief.json": "30ace7eade76465d7166c02f8d639ed0db26cd369c35201cb7bf84fcdac804d9"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7645981477192948089",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 175322,
+        "likes": 75516,
+        "saves": 25912,
+        "shares": 4260,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "九窗依次亮起→三组生活动作→熄灯→仍有等待→晚归",
+        "gap": "仅核16:9；市场数据来自剪辑教程，不能当作净版作品的流量或留存证明。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "照片音乐编排",
+        "score": 5.6,
+        "replacement": "photo-beat-montage",
+        "observation": "九宫格公交/灯光插图反复排列，单格内容变化不足。",
+        "reason": "分屏是组件，当前样片不足以独立成一派。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-grid-beat.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-pendulum-memory",
+      "version": "1",
+      "name": "摆锤遮挡回忆混剪",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "pendulum-memory",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "钟摆回忆",
+        "摆锤遮挡",
+        "历史相册",
+        "照片摆动"
+      ],
+      "fit": "1969年7月，奥尔德林走下登月舱。镜头留下鞋和月壤中的脚印。阿姆斯特朗，拍下同伴的身影。他们也把实验设备，安放在月面。",
+      "entry": "templates/studio-pendulum-memory/v1/SKILL.md",
+      "starter": "templates/studio-pendulum-memory/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅核16:9；市场数据来自剪辑教程，摆锤遮挡与照片主题须随新内容重写。",
+      "market_reference": "https://www.douyin.com/video/7702684761773840049",
+      "adaptation": {
+        "preserve": "照片缓摆→摆板遮住→下一记忆显露→末图落定",
+        "recipe": "照片缓摆→摆板遮住→下一记忆显露→末图落定",
+        "replace": [
+          "照片顺序",
+          "摆板几何",
+          "遮罩边界",
+          "摆角",
+          "拍点和事实"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用摆锤遮挡回忆混剪展示阿波罗11号四张官方照片。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/pendulum-memory-story-1114/versions/v0001/video.mp4",
+        "player": "works/pendulum-memory-story-1114/versions/v0001/video.mp4",
+        "poster": "works/pendulum-memory-story-1114/versions/v0001/cover.jpg",
+        "story": "works/pendulum-memory-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 24.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "pendulum-memory-story-1114",
+        "version": "v0001",
+        "editable": "works/pendulum-memory-story-1114/versions/v0001/editable.zip",
+        "brief": "works/pendulum-memory-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/pendulum-memory-story-1114/versions/v0001/video.mp4": "9b696e146b548a4f443523c1df7b64d0cd2415032b2a69636aa3648390020bd0",
+          "works/pendulum-memory-story-1114/versions/v0001/cover.jpg": "91beb3c95109c909fe4e4b98e465c4e914a5b2b5a531d86e97db89119f6f0ce4",
+          "works/pendulum-memory-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "dd005a7d594e6479d86fcae69ce09e7d94b859fd406155bb242211aa52da30f3",
+          "works/pendulum-memory-story-1114/versions/v0001/editable.zip": "75c71c2550b9e01741883f6ddb3165d26dac53484cb21c1b68b446c083d49b12",
+          "works/pendulum-memory-story-1114/versions/v0001/brief.json": "2009b95bf140c20cc6232adfcf24e79132ee6eb581a683fd2bb8f93294388331"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7702684761773840049",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 397598,
+        "likes": 49102,
+        "saves": 19596,
+        "shares": 4642,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "照片缓摆→摆板遮住→下一记忆显露→末图落定",
+        "gap": "仅核16:9；市场数据来自剪辑教程，摆锤遮挡与照片主题须随新内容重写。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "照片音乐编排",
+        "score": 6.4,
+        "replacement": "photo-beat-montage",
+        "observation": "同组登月照片加摆动遮挡和相框，内容推进相同。",
+        "reason": "摆锤作为转场变体保留源文件，不再当独立模板。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-pendulum-memory.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-history-axis",
+      "version": "1",
+      "name": "连续空间历史长轴",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "history-axis",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "空间长轴",
+        "年代长轴",
+        "历史时间轴",
+        "电报"
+      ],
+      "fit": "1843年，建设电报线路获得国会拨款。次年5月24日，摩尔斯在华盛顿发报。巴尔的摩，收到点和划写下的消息。一周后，他在信中谈到成功的责任。",
+      "entry": "templates/studio-history-axis/v1/SKILL.md",
+      "starter": "templates/studio-history-axis/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "本例为二维连续轴适配；不等同原片三维场景。史实逐项核来源。仅核16:9。",
+      "market_reference": "https://www.douyin.com/video/7690160210039622946",
+      "adaptation": {
+        "preserve": "沿连续二维轴前进→节点具象变化→时间关联→全景",
+        "recipe": "沿连续二维轴前进→节点具象变化→时间关联→全景",
+        "replace": [
+          "史实来源",
+          "年份",
+          "装置图形",
+          "轴距",
+          "相机",
+          "最终关联"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用二维空间历史长轴讲1843拨款到1844电报成功，最后拉远看全程。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/history-axis-story-1114/versions/v0001/video.mp4",
+        "player": "works/history-axis-story-1114/versions/v0001/video.mp4",
+        "poster": "works/history-axis-story-1114/versions/v0001/cover.jpg",
+        "story": "works/history-axis-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "history-axis-story-1114",
+        "version": "v0001",
+        "editable": "works/history-axis-story-1114/versions/v0001/editable.zip",
+        "brief": "works/history-axis-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/history-axis-story-1114/versions/v0001/video.mp4": "8930f95310f54c438123c3f5b20a655cfb99d84772cd7fe0be3bf58041ae3901",
+          "works/history-axis-story-1114/versions/v0001/cover.jpg": "2f623726dcb4c9f7e9c6d5d4adf9c8d7a4806966e0a835362d9c42cec895d926",
+          "works/history-axis-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "43f377cafbada69a57f104cedd6f91ee905891031982a17d6bd1d4b27c7e7a08",
+          "works/history-axis-story-1114/versions/v0001/editable.zip": "3424f90c925dae37cacb477362d899a1f3c414106ddd0f77ee4ec4e195e51c9a",
+          "works/history-axis-story-1114/versions/v0001/brief.json": "5221b2b6017789c7e9c9fa8c70690640e4b080ef09dc676935475c6d6f3f5dea"
+        }
+      },
+      "unsupported_hints": [
+        "三维",
+        "3D",
+        "3d"
+      ],
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7690160210039622946",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 347,
+        "likes": 20120,
+        "saves": 4379,
+        "shares": 6783,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "沿连续二维轴前进→节点具象变化→时间关联→全景",
+        "gap": "本例为二维连续轴适配；不等同原片三维场景。史实逐项核来源。仅核16:9。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "编辑式数据图解",
+        "score": 5.9,
+        "replacement": "lanshu-v1-editorial",
+        "observation": "年代卡片与文字横向推进，未形成真正连续三维历史空间。",
+        "reason": "名义与实物有差距，作为时间轴组件归档。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-history-axis.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-lens-lab",
+      "version": "1",
+      "name": "剖面实验与参数演示",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "lens-lab",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "镜头剖面",
+        "光学实验",
+        "透镜",
+        "对焦"
+      ],
+      "fit": "光线在这里相遇，感光面却在后面。把感光面移到成像位置，就清晰了。物体靠近透镜，成像的位置向后移动。重新让感光面与像重合，就是再次对焦。",
+      "entry": "templates/studio-lens-lab/v1/SKILL.md",
+      "starter": "templates/studio-lens-lab/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅核16:9；市场指标为2026-09-27历史快照，原片全长已观察；本例光学示意，不替代真实镜头设计。",
+      "market_reference": "https://x.com/RyanSael/status/2102591147927654847",
+      "adaptation": {
+        "preserve": "失焦结果→观察光线交点→移感光面→物距改变→再对焦",
+        "recipe": "失焦结果→观察光线交点→移感光面→物距改变→再对焦",
+        "replace": [
+          "可核物理关系",
+          "参数域",
+          "剖面结构",
+          "光线路径",
+          "结果对照"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用镜头剖面实验讲物体靠近透镜时像距改变，移动感光面重新对焦。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/lens-lab-story-1114/versions/v0001/video.mp4",
+        "player": "works/lens-lab-story-1114/versions/v0001/video.mp4",
+        "poster": "works/lens-lab-story-1114/versions/v0001/cover.jpg",
+        "story": "works/lens-lab-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "lens-lab-story-1114",
+        "version": "v0001",
+        "editable": "works/lens-lab-story-1114/versions/v0001/editable.zip",
+        "brief": "works/lens-lab-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/lens-lab-story-1114/versions/v0001/video.mp4": "39b33daf43fe97d33b941167df179369fa2ddd75ae8edb3e4b86e8fb5fd65c2a",
+          "works/lens-lab-story-1114/versions/v0001/cover.jpg": "a64af46893597ee192a5487ec16b6318d8aef686206bb274887a103547ca9a08",
+          "works/lens-lab-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "a986867a0062fa870dac18553defb5d70e7cb7698649e775bfa8594c17382e1a",
+          "works/lens-lab-story-1114/versions/v0001/editable.zip": "9def67af1622b6a203775aa90a5f7044dddd6e300b9a40ac14aaa0d10570bce9",
+          "works/lens-lab-story-1114/versions/v0001/brief.json": "fcec1e2d687c1621434f2dff8cfc470703f121d0d82f1677cf96f7e3f62b257f"
+        }
+      },
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/RyanSael/status/2102591147927654847",
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 15510,
+        "views": 3115565,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "失焦结果→观察光线交点→移感光面→物距改变→再对焦",
+        "gap": "仅核16:9；市场指标为2026-09-27历史快照，原片全长已观察；本例光学示意，不替代真实镜头设计。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "课堂推演",
+        "score": 6.3,
+        "replacement": "lanshu-v8-chalkboard",
+        "observation": "浅底光轴、光线与成像面箭头，图解可读但布局较基本。",
+        "reason": "参数图实验保留源码，等待真正状态驱动的成熟方法，不按新名称保留。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-lens-lab.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-kinetic-ident",
+      "version": "1",
+      "name": "几何与动态排版短片",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "kinetic-ident",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "动态排版",
+        "文字编舞",
+        "几何快切",
+        "语义字形"
+      ],
+      "fit": "把太大的想法，压成一个小问题。把缠在一起的步骤，一点点拉开。写下一行，让它有个可以修改的形状。删掉犹豫。从一行开始。",
+      "entry": "templates/studio-kinetic-ident/v1/SKILL.md",
+      "starter": "templates/studio-kinetic-ident/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "仅核16:9；原片全长已观察；文字含义必须决定几何动作，不能只替换文字内容。",
+      "market_reference": "https://x.com/stephanlivera/status/2103315922098470926",
+      "adaptation": {
+        "preserve": "压缩大想法→拉开纠结步骤→写一行→删犹豫→落版",
+        "recipe": "压缩大想法→拉开纠结步骤→写一行→删犹豫→落版",
+        "replace": [
+          "语义动词",
+          "字形变形",
+          "几何母题",
+          "字体许可",
+          "节拍"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用动态排版文字编舞把压拉写删变成动作，鼓励从一行开始。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/kinetic-ident-story-1114/versions/v0001/video.mp4",
+        "player": "works/kinetic-ident-story-1114/versions/v0001/video.mp4",
+        "poster": "works/kinetic-ident-story-1114/versions/v0001/cover.jpg",
+        "story": "works/kinetic-ident-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "kinetic-ident-story-1114",
+        "version": "v0001",
+        "editable": "works/kinetic-ident-story-1114/versions/v0001/editable.zip",
+        "brief": "works/kinetic-ident-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/kinetic-ident-story-1114/versions/v0001/video.mp4": "027fa8513db9e2b8463950aea5b9f362fd87c2cdb8847cd7e2bc8baa869ad504",
+          "works/kinetic-ident-story-1114/versions/v0001/cover.jpg": "c33040133496f553ae57a6ffa0d3e1d073ae454207c2da488c1f6bd538143f8c",
+          "works/kinetic-ident-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "b096b4b8c36f3c0202dc3d0d22d8f65d57f3222b1ad336379ce304d358ef7ed9",
+          "works/kinetic-ident-story-1114/versions/v0001/editable.zip": "17765fd7bd0adb1fd48a436602de2f964f20aa67d74dc31467f4632a7e88aa0a",
+          "works/kinetic-ident-story-1114/versions/v0001/brief.json": "9515f4e2c55319e124b87d196567f1fcf83edb25807ef83ee59c551108d2586d"
+        }
+      },
+      "category": "品牌与产品",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/stephanlivera/status/2103315922098470926",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 194268,
+        "likes": 17242,
+        "views": 2322214,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "压缩大想法→拉开纠结步骤→写一行→删犹豫→落版",
+        "gap": "仅核16:9；原片全长已观察；文字含义必须决定几何动作，不能只替换文字内容。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "瑞士动态排版",
+        "score": 6.5,
+        "replacement": "opuscar-swiss-motion",
+        "observation": "大字拉伸分割配纯色几何底，主要依靠文字变形。",
+        "reason": "动态排版保留日历一套，另一套退为字效素材。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-kinetic-ident.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-product-ui",
+      "version": "1",
+      "name": "产品界面流程发布片",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "product-ui",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "产品界面",
+        "软件发布",
+        "UI动效",
+        "便签产品"
+      ],
+      "fit": "事情很多，先放进同一个地方。只看今天，留给眼前的三件事。完成一件，就把它移到右边。两项完成。给下午，减一点重量。",
+      "entry": "templates/studio-product-ui/v1/SKILL.md",
+      "starter": "templates/studio-product-ui/v1/native",
+      "input_contract": "完整故事JSON、对应画面函数、project.json哈希、许可素材与完整同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出；最终MP4全程1fps抽帧已看；完整音轨由本机音频模型观察，非人耳审听或用户认可",
+      "limits": "本例为虚构轻签界面；真实产品须换成同版本录屏或正确界面状态，不宣称已验证其功能。仅核16:9。",
+      "market_reference": "https://x.com/Miguel07Code/status/2102441708395041170",
+      "adaptation": {
+        "preserve": "任务过多→收拢输入→筛选今天→完成迁移→总结结果",
+        "recipe": "任务过多→收拢输入→筛选今天→完成迁移→总结结果",
+        "replace": [
+          "产品状态",
+          "数据",
+          "操作轨迹",
+          "结果数量",
+          "标识和事实边界"
+        ],
+        "avoid": "只换标题而保留原故事；将示意图冒充真实产品或实拍",
+        "example_request": "用产品界面动效演示虚构轻签便签，把今天三件事完成两件。",
+        "steps": [
+          "Codex从自然输入整理受众、内容承诺和完整因果分镜",
+          "从本套完整新稿及可编辑工程复制到新目录，替换内容、几何和时序",
+          "使用该套真实准备入口，plan、workflow后按授权make",
+          "核对同一导出版本的全片画面、完整音轨及播放；局部问题沿父版返修"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/product-ui-story-1114/versions/v0001/video.mp4",
+        "player": "works/product-ui-story-1114/versions/v0001/video.mp4",
+        "poster": "works/product-ui-story-1114/versions/v0001/cover.jpg",
+        "story": "works/product-ui-story-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 已核全程抽帧及音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "product-ui-story-1114",
+        "version": "v0001",
+        "editable": "works/product-ui-story-1114/versions/v0001/editable.zip",
+        "brief": "works/product-ui-story-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/product-ui-story-1114/versions/v0001/video.mp4": "fa30c1d1c006ac2dfc4fa54a5e8a510ef7d0296e88d1ec71116fa9f801e72e47",
+          "works/product-ui-story-1114/versions/v0001/cover.jpg": "03c562ce664bc7ec761a0ae235c62e30ec8e5a8016d5e9124130be80b6aeb926",
+          "works/product-ui-story-1114/versions/v0001/shots/native-style/film/engine/story.json": "c549c39bda5b44ad31560577412fa33e8112d8a67d551b97c8303a62dd15621a",
+          "works/product-ui-story-1114/versions/v0001/editable.zip": "21a58f737c40eb5e70ef7220fd100d6d254e3550349eea1342ae7a16872d7f50",
+          "works/product-ui-story-1114/versions/v0001/brief.json": "48f723f11c4cf9a2464e3ecc91774c256c816f4025d8b15b789c5fb3d575115e"
+        }
+      },
+      "category": "品牌与产品",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/Miguel07Code/status/2102441708395041170",
+        "date": "2026-09-27",
+        "method": "historical public X post HTML snapshot",
+        "followers": null,
+        "likes": 1315,
+        "views": 150893,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "任务过多→收拢输入→筛选今天→完成迁移→总结结果",
+        "gap": "本例为虚构轻签界面；真实产品须换成同版本录屏或正确界面状态，不宣称已验证其功能。仅核16:9。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "界面连续变形",
+        "score": 6.4,
+        "replacement": "studio-ui-morph",
+        "observation": "浅蓝看板三列与卡片平移，转场动作较常规。",
+        "reason": "与UI/半色调卡片重合，保留连续变形更强的版本。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-product-ui.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-verse-prop",
+      "version": "1",
+      "name": "诗句语义与国风道具转场",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "verse-prop",
+      "formats": [
+        "9:16"
+      ],
+      "tags": [
+        "国风诗句",
+        "歌词道具",
+        "折扇",
+        "红绸",
+        "信封",
+        "语义转场",
+        "纸上寄意"
+      ],
+      "fit": "四句原创诗，以信、折扇、红绸、梅枝逐句承接想念，纸面、布面和墨迹转场。",
+      "entry": "templates/studio-verse-prop/v1/SKILL.md",
+      "starter": "templates/studio-verse-prop/v1/native",
+      "input_contract": "四句完整原创诗、逐句道具与遮挡转场、原生竖屏工程、全长音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "最终24秒MP4全程1fps已看；完整24秒音轨由本机音频模型实际感知；非人耳或用户认可",
+      "limits": "本例为二维原创道具动画与原创器乐；没有原作真人手部表演、演唱或授权流行歌曲，不能冒称完成歌曲MV。",
+      "market_reference": "https://www.douyin.com/video/7697550142720045449",
+      "adaptation": {
+        "preserve": "语义先给出道具→道具动作→材质遮挡→下一句新道具→情绪落定",
+        "replace": [
+          "完整诗句",
+          "逐句道具",
+          "道具动作",
+          "材质遮挡路径",
+          "四段音乐乐句"
+        ],
+        "recipe": "信封→折扇→红绸→梅枝",
+        "example_request": "用国风诗句和道具语义转场做竖屏，信封折扇红绸梅花，讲等待远方的人归来。",
+        "avoid": "演唱歌曲MV、真人手部表演、仅换标题而不换四句意象与物件。",
+        "steps": [
+          "先写完整四句新诗，每句对应一种具体物件与可见变化。",
+          "逐句替换 story.json 的文字、物件、颜色、遮罩和音乐段落；新增物件同时实现相应绘制。",
+          "保留纸、绸、墨由动作造成的转场，核新语义与揭晓时点。",
+          "通过 templates prepare、plan、workflow 后制作新作品，完整检查最终音画。"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/verse-prop-1114/versions/v0001/video.mp4",
+        "player": "works/verse-prop-1114/versions/v0001/video.mp4",
+        "poster": "works/verse-prop-1114/versions/v0001/cover.jpg",
+        "story": "works/verse-prop-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 24,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧与完整音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "9:16",
+        "work": "verse-prop-1114",
+        "version": "v0001",
+        "editable": "works/verse-prop-1114/versions/v0001/editable.zip",
+        "brief": "works/verse-prop-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/verse-prop-1114/versions/v0001/video.mp4": "30382a14d613e319af97fd806ea3fd032788f5e888e718bb4663fbd1b10675fa",
+          "works/verse-prop-1114/versions/v0001/cover.jpg": "7018f3b815572d9fe961f35211cd13b3b8623c37cdba7944a8a0f760162ef825",
+          "works/verse-prop-1114/versions/v0001/brief.json": "f727f1e9b23d485d86098ed6765ae371d6982cf6813dd13cb30b76a8d58cb3bc",
+          "works/verse-prop-1114/versions/v0001/editable.zip": "a79e030f0099a398892b7f4a578278157805d85a2fcec78bd64fc80a70633e31",
+          "works/verse-prop-1114/versions/v0001/shots/native-style/film/engine/story.json": "ce95dd848e0c1a95c0efb87df99424d6a6c015eca32f29ffaa2179d6b73022ac"
+        }
+      },
+      "unsupported_hints": [
+        "演唱",
+        "人声歌曲",
+        "歌曲MV",
+        "真人手部"
+      ],
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7697550142720045449",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 4447093,
+        "likes": 206947,
+        "saves": 32413,
+        "shares": 19950,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "语义先给出道具→道具动作→材质遮挡→下一句新道具→情绪落定",
+        "gap": "本例为二维原创道具动画与原创器乐；没有原作真人手部表演、演唱或授权流行歌曲。不能冒称完成歌曲MV。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "触感物件装配",
+        "score": 6.6,
+        "replacement": "object-assembly",
+        "observation": "浅底信封、扇、红布和梅枝轮流居中，二维道具构图仍接近物件台面。",
+        "reason": "未达到若卿实拍语义转场/演唱效果，归档而不以国风标题独立计数；歌词路线暂缺。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-verse-prop.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-ui-morph",
+      "version": "1",
+      "name": "单物件连续界面变形",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "ui-morph",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "界面变形",
+        "连续UI",
+        "同一个按钮",
+        "物件连续变形",
+        "专注工具",
+        "留白专注"
+      ],
+      "fit": "虚构留白专注工具中，同一个按钮连续变成准备、计时、进度、静音、周期、图表、记录和完成，再回到开始。",
+      "entry": "templates/studio-ui-morph/v1/SKILL.md",
+      "starter": "templates/studio-ui-morph/v1/native",
+      "input_contract": "完整功能链、连续外形关键帧、真实可理解的状态和光标动作、同版音乐",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "24秒全程1fps查看；按钮和图表问题沿父版修正；本机音频模型感知完整音轨，修图后PCM不变。非人耳或用户认可",
+      "limits": "虚构概念界面；每段状态必须换稿，不宣称实际产品已实现；当前只核16:9。",
+      "market_reference": "https://x.com/twoclipping/status/2103273003555402193",
+      "adaptation": {
+        "preserve": "同一个外形持续变换→每次光标操作有结果→功能链累积→回到初始按钮",
+        "replace": [
+          "完整任务链",
+          "逐步状态",
+          "外形尺寸与圆角",
+          "光标轨迹",
+          "新文案与图表",
+          "节拍与结束"
+        ],
+        "recipe": "按钮→准备→计时→进度→专注→回顾→记录→完成→按钮",
+        "example_request": "用同一个按钮连续界面变形，演示留白专注工具，从开始计时到回顾和记录，最后回到开始。",
+        "avoid": "静态截图轮播、点击没有结果、每段突然换成另一个不连续物件；不等同真实可操作产品。",
+        "steps": [
+          "先写完整功能链，明确每一步操作、状态变化与观看回报。",
+          "修改全部 states 的文案、数据、尺寸、圆角、光标目标；新增 kind 同时实现 contents。",
+          "核每次点击或拖动命中物件，外轮廓持续存在，末段回到初始状态。",
+          "通过 templates prepare、plan、workflow 制作新作品，完整核对最终画面与实际音轨。"
+        ]
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/ui-morph-focus-1114/versions/v0003/video.mp4",
+        "player": "works/ui-morph-focus-1114/versions/v0003/video.mp4",
+        "poster": "works/ui-morph-focus-1114/versions/v0003/cover.jpg",
+        "story": "works/ui-morph-focus-1114/versions/v0003/shots/native-style/film/engine/story.json",
+        "duration": 24,
+        "audio": "music",
+        "label": "完整新稿 · 沿父版修正 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "ui-morph-focus-1114",
+        "version": "v0003",
+        "editable": "works/ui-morph-focus-1114/versions/v0003/editable.zip",
+        "brief": "works/ui-morph-focus-1114/versions/v0003/brief.json",
+        "hashes": {
+          "works/ui-morph-focus-1114/versions/v0003/video.mp4": "de602e1f24fc42b70ccccba10f04915cbd0dff2cfc4e93ada3a4f486e35de234",
+          "works/ui-morph-focus-1114/versions/v0003/cover.jpg": "3504c5b8bfafe19393fa84601212950184ffb5cfd6791c7c3fa5fed1d76b0fe8",
+          "works/ui-morph-focus-1114/versions/v0003/brief.json": "878db512eebd1cbb790862ce070a5c06f9e0dacef5ea0255a9fc8b9c8aa440de",
+          "works/ui-morph-focus-1114/versions/v0003/editable.zip": "a8bc6c3115bf5197f45a9ca96875685811e993d6846c9d5cae6c4aa26afee7cb",
+          "works/ui-morph-focus-1114/versions/v0003/shots/native-style/film/engine/story.json": "771f4cfc2c56551ac8654712535dbe46152255c7d0922a86ff52bfd004ca9ec8"
+        }
+      },
+      "unsupported_hints": [
+        "真人界面录屏",
+        "实际可用产品",
+        "三维产品"
+      ],
+      "category": "品牌与产品",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/twoclipping/status/2103273003555402193",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 9619,
+        "likes": 12822,
+        "views": 1189451,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "同一个外形持续变换→每次光标操作有结果→功能链累积→回到初始按钮",
+        "gap": "虚构概念界面；每段状态必须换稿，不宣称实际产品已实现；当前只核16:9。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "界面连续变形",
+        "score": 7.1,
+        "replacement": null,
+        "observation": "同一按钮连续变成计时、静音与图表，再回到开始。",
+        "reason": "几何连续性强于卡片平移，保留UI代表。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-ui-morph.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-recipe-pour",
+      "version": "1",
+      "name": "刻度杯连续倒液配方",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "recipe-pour",
+      "formats": [
+        "9:16"
+      ],
+      "tags": [
+        "倒液配方",
+        "饮品配方",
+        "刻度杯",
+        "材料计量",
+        "气泡茶",
+        "调饮"
+      ],
+      "fit": "同一只刻度杯中按顺序加入冰、80mL茶、80mL气泡水、20mL柠檬汁和10mL糖浆，点缀搅拌，完整呈现从空杯到190mL成品。",
+      "entry": "templates/studio-recipe-pour/v1/SKILL.md",
+      "starter": "templates/studio-recipe-pour/v1/native",
+      "input_contract": "完整配方、逐项体积、加入次序、液面累计映射、搅拌点缀和同版音轨",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "二维配方图解；非实拍；体积不含冰和点缀；不可把自拟配方说成名家标准。",
+      "market_reference": "https://x.com/Ror_Fly/status/2102853258582880547",
+      "adaptation": {
+        "preserve": "同一容器贯穿→材料量与倒入动作同步→液面准确累积→点缀搅拌→成品",
+        "replace": [
+          "完整配方",
+          "每项用量",
+          "逐项颜色",
+          "加入时序",
+          "容器形状和刻度",
+          "新稿文案和音乐"
+        ],
+        "steps": [
+          "列完整材料表并定义体积口径",
+          "按步骤重写story.json并核总量",
+          "对新容器重新标定ml到液面映射",
+          "完成配料与成品动作",
+          "完整核画面、声音和每项计量"
+        ],
+        "avoid": "只有材料清单；液面不随倒入累积；总量与材料不一致；把不同密度材料强行等体积",
+        "recipe": "同一只刻度杯中按顺序加入冰、80mL茶、80mL气泡水、20mL柠檬汁和10mL糖浆，点缀搅拌，完整呈现从空杯到190mL成品。",
+        "example_request": "用刻度杯连续倒液配方，做一杯柠檬气泡茶，按步骤显示每项用量，从空杯到搅拌完成。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/recipe-lemon-tea-1114/versions/v0004/video.mp4",
+        "player": "works/recipe-lemon-tea-1114/versions/v0004/video.mp4",
+        "poster": "works/recipe-lemon-tea-1114/versions/v0004/cover.jpg",
+        "story": "works/recipe-lemon-tea-1114/versions/v0004/shots/native-style/film/engine/story.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "9:16",
+        "work": "recipe-lemon-tea-1114",
+        "version": "v0004",
+        "editable": "works/recipe-lemon-tea-1114/versions/v0004/editable.zip",
+        "brief": "works/recipe-lemon-tea-1114/versions/v0004/brief.json",
+        "hashes": {
+          "works/recipe-lemon-tea-1114/versions/v0004/video.mp4": "52212331371e9b768d11bb6ef652f9b63bea12fac0e979394bb39114d7e03ec8",
+          "works/recipe-lemon-tea-1114/versions/v0004/cover.jpg": "35233200211651470afb0c06f45a338d1463ae40fa821709f7cf864b44115a09",
+          "works/recipe-lemon-tea-1114/versions/v0004/shots/native-style/film/engine/story.json": "2bf4d9c3afeda74088a1b017b6e3a4492e65ed53931bb17c71374dfabe7444b2",
+          "works/recipe-lemon-tea-1114/versions/v0004/editable.zip": "ec241830ab09d3706cd1b0526afde1c6aed59562973bdcb775ae450cd98ff9e0",
+          "works/recipe-lemon-tea-1114/versions/v0004/brief.json": "b07a88b741253ebc39da67451862461b2b1e3a4dc924aec3c81a70020f9558f0"
+        }
+      },
+      "category": "教程与过程",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/Ror_Fly/status/2102853258582880547",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 28937,
+        "likes": 1049,
+        "views": 81370,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "同一容器贯穿→材料量与倒入动作同步→液面准确累积→点缀搅拌→成品",
+        "gap": "二维配方图解；非实拍；体积不含冰和点缀；不可把自拟配方说成名家标准。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "触感物件装配",
+        "score": 6.8,
+        "replacement": "object-assembly",
+        "observation": "浅底量杯、倒液和冰块，物件仍居中在同类台面分步变化。",
+        "reason": "动作有区别但整体观感接近触感物件，保留配方工程为功能变体，不再独立计风格。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-recipe-pour.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-dot-fable",
+      "version": "1",
+      "name": "圆点角色微冒险",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "dot-fable",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "圆点故事",
+        "圆点角色",
+        "小球冒险",
+        "几何角色"
+      ],
+      "fit": "第一次跳起来，落地也算进步。挡在前面的，可以一步步越过。天暗了，才看见远处的星星。朝它走近一点，再近一点。小小一步，也算出发。",
+      "entry": "templates/studio-dot-fable/v1/SKILL.md",
+      "starter": "templates/studio-dot-fable/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/cherry_mx_reds/status/2105825930799432073",
+      "adaptation": {
+        "preserve": "同一有表情圆点角色→跳跃障碍→昼夜空间变化→接近星星→角色触发收束",
+        "replace": [
+          "角色外形与表情",
+          "障碍及动作轨迹",
+          "场景状态",
+          "追逐目标",
+          "结尾动作"
+        ],
+        "recipe": "第一次跳起来，落地也算进步。挡在前面的，可以一步步越过。天暗了，才看见远处的星星。朝它走近一点，再近一点。小小一步，也算出发。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用圆点角色微冒险做一条完整短片：第一次跳起来，落地也算进步。挡在前面的，可以一步步越过。天暗了，才看见远处的星星。朝它走近一点，再近一点。小小一步，也算出发。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/dot-fable-fresh-1114/versions/v0001/video.mp4",
+        "player": "works/dot-fable-fresh-1114/versions/v0001/video.mp4",
+        "poster": "works/dot-fable-fresh-1114/versions/v0001/cover.jpg",
+        "story": "works/dot-fable-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 18.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "dot-fable-fresh-1114",
+        "version": "v0001",
+        "editable": "works/dot-fable-fresh-1114/versions/v0001/editable.zip",
+        "brief": "works/dot-fable-fresh-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/dot-fable-fresh-1114/versions/v0001/video.mp4": "f0ccb7494404f8df30a906d32bad284a24bd82782190339d5618e7da4e117261",
+          "works/dot-fable-fresh-1114/versions/v0001/cover.jpg": "3713bc5ecc8955f15d20833bbe023e4867e254561815b763a20f326001974560",
+          "works/dot-fable-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json": "7ad8b98770c92406b679395f29682cc7176b8b66279f0a994883edb787a81ba4",
+          "works/dot-fable-fresh-1114/versions/v0001/editable.zip": "b991f6943dbdaff5946902d403f62926fc498536c2ecc402c4416c9af85ae825",
+          "works/dot-fable-fresh-1114/versions/v0001/brief.json": "76296b323ee66420053419510e40d800967be78d4bd11675a1883a16317b0e4f"
+        }
+      },
+      "category": "情绪与剧情",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/cherry_mx_reds/status/2105825930799432073",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 7725,
+        "likes": 6293,
+        "views": 859822,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "同一有表情圆点角色→跳跃障碍→昼夜空间变化→接近星星→角色触发收束",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "扁平人物",
+        "score": 5.5,
+        "replacement": "studio-watercolor-music",
+        "observation": "红点小脸越过障碍、遇见星星，背景和人物较简。",
+        "reason": "故事靠抽象小物符号，完成度与辨识度均不足。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-dot-fable.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-halftone-mascot",
+      "version": "1",
+      "name": "半色调角色产品发布",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "halftone-mascot",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "半色调角色",
+        "角色产品发布",
+        "网点角色",
+        "漫画产品广告"
+      ],
+      "fit": "想留下的文章、照片、链接，总散在各处。一起收好，三个入口放进同一个收藏。搜索“海边”，找到两条相关内容。留下来，才找得回来。",
+      "entry": "templates/studio-halftone-mascot/v1/SKILL.md",
+      "starter": "templates/studio-halftone-mascot/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/achxvi/status/2103918792845963545",
+      "adaptation": {
+        "preserve": "网点材质角色提出用户问题→同一角色带出产品界面→操作产生可见结果→品牌落定",
+        "replace": [
+          "角色造型与网点映射",
+          "用户问题",
+          "真实或明确虚构的产品界面",
+          "操作状态",
+          "结果数量",
+          "品牌"
+        ],
+        "recipe": "想留下的文章、照片、链接，总散在各处。一起收好，三个入口放进同一个收藏。搜索“海边”，找到两条相关内容。留下来，才找得回来。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用半色调角色产品发布做一条完整短片：想留下的文章、照片、链接，总散在各处。一起收好，三个入口放进同一个收藏。搜索“海边”，找到两条相关内容。留下来，才找得回来。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/halftone-mascot-fresh-1114/versions/v0001/video.mp4",
+        "player": "works/halftone-mascot-fresh-1114/versions/v0001/video.mp4",
+        "poster": "works/halftone-mascot-fresh-1114/versions/v0001/cover.jpg",
+        "story": "works/halftone-mascot-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 24.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "halftone-mascot-fresh-1114",
+        "version": "v0001",
+        "editable": "works/halftone-mascot-fresh-1114/versions/v0001/editable.zip",
+        "brief": "works/halftone-mascot-fresh-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/halftone-mascot-fresh-1114/versions/v0001/video.mp4": "cf21c38eddf15654a79a52fa47bb7c7a470a68d36a788173b4e16b6b0e3696b6",
+          "works/halftone-mascot-fresh-1114/versions/v0001/cover.jpg": "bd22e8248c93a8550c034c95d559dc2fd532154e06aeff954334c93e048e5d81",
+          "works/halftone-mascot-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json": "d59690db412a2f107bc98a80923669e0c54ad86d18ca0894d03f525d37d1cbd6",
+          "works/halftone-mascot-fresh-1114/versions/v0001/editable.zip": "dd6a70744546f0a3f645c873843733e475a6829278d204e9d4ebd7b801bc7bba",
+          "works/halftone-mascot-fresh-1114/versions/v0001/brief.json": "423c80d30fc14a6cef0772cf34552bcc4ca8deb214ae595daa54f692f4aa7b58"
+        }
+      },
+      "category": "品牌与产品",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/achxvi/status/2103918792845963545",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 8647,
+        "likes": 9179,
+        "views": 1147282,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "网点材质角色提出用户问题→同一角色带出产品界面→操作产生可见结果→品牌落定",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "界面连续变形",
+        "score": 5.9,
+        "replacement": "studio-ui-morph",
+        "observation": "蓝黑界面卡片加半色调头像，主动作仍是UI卡片移动。",
+        "reason": "半色调头像是装饰，未形成独立人物表演风格。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-halftone-mascot.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-painted-flipbook",
+      "version": "1",
+      "name": "整页彩绘旅行翻页书",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "painted-flipbook",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "彩绘翻页",
+        "旅行绘本",
+        "插画翻页书",
+        "丙烯手账"
+      ],
+      "fit": "一起出发，也不必走得一样快。雨来的那天，我们坐同一列车。到了海边，才记得慢一点走。上坡的时候，轮流等对方一下。夜里，星星把沉默也照亮了。回到家，翻开这一页，还在一起。",
+      "entry": "templates/studio-painted-flipbook/v1/SKILL.md",
+      "starter": "templates/studio-painted-flipbook/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/ann_nnng/status/2102573127192727704",
+      "adaptation": {
+        "preserve": "封面主题→整页插画的地点变化→页卷翻转连接→人物贯穿→回家收束",
+        "replace": [
+          "完整旅程与地点",
+          "各页场景和人物动作",
+          "全页绘画",
+          "页序与卷页时点",
+          "配乐与记忆短句"
+        ],
+        "recipe": "一起出发，也不必走得一样快。雨来的那天，我们坐同一列车。到了海边，才记得慢一点走。上坡的时候，轮流等对方一下。夜里，星星把沉默也照亮了。回到家，翻开这一页，还在一起。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用整页彩绘旅行翻页书做一条完整短片：一起出发，也不必走得一样快。雨来的那天，我们坐同一列车。到了海边，才记得慢一点走。上坡的时候，轮流等对方一下。夜里，星星把沉默也照亮了。回到家，翻开这一页，还在一起。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/painted-flipbook-fresh-1114/versions/v0001/video.mp4",
+        "player": "works/painted-flipbook-fresh-1114/versions/v0001/video.mp4",
+        "poster": "works/painted-flipbook-fresh-1114/versions/v0001/cover.jpg",
+        "story": "works/painted-flipbook-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 30.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "painted-flipbook-fresh-1114",
+        "version": "v0001",
+        "editable": "works/painted-flipbook-fresh-1114/versions/v0001/editable.zip",
+        "brief": "works/painted-flipbook-fresh-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/painted-flipbook-fresh-1114/versions/v0001/video.mp4": "cb491ee01b13dff672019cc5e9dbc60262620f1f387c8fad32db4dd68dad2d70",
+          "works/painted-flipbook-fresh-1114/versions/v0001/cover.jpg": "278e4e4608b95ab5b73597d1477f5533fa5bb742bf09ca06a8f5187ba9f933f7",
+          "works/painted-flipbook-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json": "8c6a212bc14ad918aa6c7c2ddabcdb1957e2754dc5552c14273e5d1188ef7cba",
+          "works/painted-flipbook-fresh-1114/versions/v0001/editable.zip": "e1512f9abdc1079a59116e92063085a887d70fd9242f5fefd2057ddc395f1d6a",
+          "works/painted-flipbook-fresh-1114/versions/v0001/brief.json": "ce65a661943ce4885b93879f99ef50e654459ffd18ab7fe6843fc4b4f2c2cc79"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/ann_nnng/status/2102573127192727704",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 14947,
+        "likes": 1924,
+        "views": 134106,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "封面主题→整页插画的地点变化→页卷翻转连接→人物贯穿→回家收束",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "水彩生活叙事",
+        "score": 6.6,
+        "replacement": "studio-watercolor-music",
+        "observation": "绘画纹理和翻页遮挡叙事，本质仍是插画人物场景。",
+        "reason": "翻页作为转场组件，保留水彩生活一套。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-painted-flipbook.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-gold-mechanism",
+      "version": "1",
+      "name": "黑金粒子与可数机制图解",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "gold-mechanism",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "黑金知识",
+        "粒子机制",
+        "黑金图解",
+        "独立概率"
+      ],
+      "fit": "连着三次正面，下一次更该反面吗？公平且独立的抛掷，每次仍然各占一半。16种四次序列里，前三次正面的两种，最后一面各一种。独立事件，不欠你一个反转。",
+      "entry": "templates/studio-gold-mechanism/v1/SKILL.md",
+      "starter": "templates/studio-gold-mechanism/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://www.douyin.com/video/7693248909879212362",
+      "adaptation": {
+        "preserve": "反直觉问题→同一组可追踪对象→枚举对照→条件概率解释→前提与结论",
+        "replace": [
+          "核实的问题与前提",
+          "对象和数量",
+          "可枚举状态",
+          "参数方程",
+          "反例及边界",
+          "字幕"
+        ],
+        "recipe": "连着三次正面，下一次更该反面吗？公平且独立的抛掷，每次仍然各占一半。16种四次序列里，前三次正面的两种，最后一面各一种。独立事件，不欠你一个反转。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用黑金粒子与可数机制图解做一条完整短片：连着三次正面，下一次更该反面吗？公平且独立的抛掷，每次仍然各占一半。16种四次序列里，前三次正面的两种，最后一面各一种。独立事件，不欠你一个反转。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/gold-mechanism-fresh-1114/versions/v0001/video.mp4",
+        "player": "works/gold-mechanism-fresh-1114/versions/v0001/video.mp4",
+        "poster": "works/gold-mechanism-fresh-1114/versions/v0001/cover.jpg",
+        "story": "works/gold-mechanism-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 28.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "gold-mechanism-fresh-1114",
+        "version": "v0001",
+        "editable": "works/gold-mechanism-fresh-1114/versions/v0001/editable.zip",
+        "brief": "works/gold-mechanism-fresh-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/gold-mechanism-fresh-1114/versions/v0001/video.mp4": "e608675a376de1d93fed6917f4c1006b841a39e23eadb1dc11d5fbd8a950e4fc",
+          "works/gold-mechanism-fresh-1114/versions/v0001/cover.jpg": "a87b1d6b0f847b65d5e1b5a3703f815733106d60399eb67479ce93b7d2132735",
+          "works/gold-mechanism-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json": "3a80ba0fd7f2150e88a46f811aee266d8fd93ecf024eecb99f1114b425c9d3df",
+          "works/gold-mechanism-fresh-1114/versions/v0001/editable.zip": "a3ebfa4c5dc80a9d57c2b5580f2266b29c46bb130483e06e0c9a4433c77a994b",
+          "works/gold-mechanism-fresh-1114/versions/v0001/brief.json": "e63507660a0f4010057bfe8637aa4017771a0e9bc5192c2089ba812d76b7babf"
+        }
+      },
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7693248909879212362",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 18465,
+        "likes": 11338,
+        "saves": 6287,
+        "shares": 2571,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "反直觉问题→同一组可追踪对象→枚举对照→条件概率解释→前提与结论",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "编辑式数据图解",
+        "score": 6.1,
+        "replacement": "lanshu-v1-editorial",
+        "observation": "黑金硬币与编号说明，金属色和粒子改变表面材质。",
+        "reason": "颜色/材质不足以构成独立机制风格，信息图代表更清楚。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-gold-mechanism.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-mechanical-cutaway",
+      "version": "1",
+      "name": "金属机械剖面与同轴爆炸图",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "mechanical-cutaway",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "机械剖面",
+        "三维爆炸图",
+        "金属装配",
+        "同轴拆解"
+      ],
+      "fit": "固定外壳与线圈，里面藏着转子。转轴带动叶片，轴承支撑转动。沿轴线拆开，零件仍然一一对应。复装之后，转动关系才完整。",
+      "entry": "templates/studio-mechanical-cutaway/v1/SKILL.md",
+      "starter": "templates/studio-mechanical-cutaway/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/konstantinsaifo/status/2104094723887501736",
+      "adaptation": {
+        "preserve": "连续三维对象→外壳剖开→同轴零件与运动→轴向爆炸→复装对应",
+        "replace": [
+          "实际机械结构或明确示意",
+          "零件几何与材质",
+          "装配坐标",
+          "运动关系与剖面角度",
+          "镜头与标注"
+        ],
+        "recipe": "固定外壳与线圈，里面藏着转子。转轴带动叶片，轴承支撑转动。沿轴线拆开，零件仍然一一对应。复装之后，转动关系才完整。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用金属机械剖面与同轴爆炸图做一条完整短片：固定外壳与线圈，里面藏着转子。转轴带动叶片，轴承支撑转动。沿轴线拆开，零件仍然一一对应。复装之后，转动关系才完整。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/mechanical-cutaway-fresh-1114/versions/v0002/video.mp4",
+        "player": "works/mechanical-cutaway-fresh-1114/versions/v0002/video.mp4",
+        "poster": "works/mechanical-cutaway-fresh-1114/versions/v0002/cover.jpg",
+        "story": "works/mechanical-cutaway-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 28.0,
+        "audio": "music",
+        "label": "完整新稿 · 沿父版删除制作声明 · AI全片画面与实际音轨观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "mechanical-cutaway-fresh-1114",
+        "version": "v0002",
+        "editable": "works/mechanical-cutaway-fresh-1114/versions/v0002/editable.zip",
+        "brief": "works/mechanical-cutaway-fresh-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/mechanical-cutaway-fresh-1114/versions/v0002/video.mp4": "b7093a9be9e6962e3d1015ece2a213ea497766b959a409b08595b6f95ce06f54",
+          "works/mechanical-cutaway-fresh-1114/versions/v0002/cover.jpg": "c84a9a9955a4ceb4c16e6cd31f3e60a9772d1cdb8fe46f5fac4345484f19916c",
+          "works/mechanical-cutaway-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json": "e9c57e62ad18304607fe829d9bab6963725f41623190c7a1cdabf1a5f60d45c3",
+          "works/mechanical-cutaway-fresh-1114/versions/v0002/editable.zip": "78b51f624d299678a612b83be8e8191a683ff0145fbace6b99b8e0a265b56291",
+          "works/mechanical-cutaway-fresh-1114/versions/v0002/brief.json": "ebd5b64bddb60bcecd0df15346c0f25456f1b3f4717c62e9ee02764740b60af4"
+        }
+      },
+      "category": "知识与机制",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/konstantinsaifo/status/2104094723887501736",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 4931,
+        "likes": 8384,
+        "views": 1185524,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "连续三维对象→外壳剖开→同轴零件与运动→轴向爆炸→复装对应",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "金属剖面与爆炸图",
+        "score": 7.8,
+        "replacement": null,
+        "observation": "单个连续三维电机显示固定线圈、转轴、同轴分离与复装。",
+        "reason": "保留用户认可的机械路线；只修画内说明，不增加伪产品背书。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-mechanical-cutaway.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-voxel-island",
+      "version": "1",
+      "name": "体素浮岛昼夜微缩故事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "voxel-island",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "体素浮岛",
+        "微缩小岛",
+        "方块世界",
+        "三维像素"
+      ],
+      "fit": "一座小岛，也可以有自己的节奏。把最后一点亮光，带回家。天色暗下来，窗户先亮起来。原来，回家的路一直亮着。",
+      "entry": "templates/studio-voxel-island/v1/SKILL.md",
+      "starter": "templates/studio-voxel-island/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/blueemi99/status/2105804692811137242",
+      "adaptation": {
+        "preserve": "有空间层次的体素场景→贯穿角色与任务→昼夜灯光变化→环绕镜头→任务完成",
+        "replace": [
+          "体素地图与场景物件",
+          "角色和完整行动",
+          "灯光事件",
+          "摄像机路径",
+          "结尾状态"
+        ],
+        "recipe": "一座小岛，也可以有自己的节奏。把最后一点亮光，带回家。天色暗下来，窗户先亮起来。原来，回家的路一直亮着。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用体素浮岛昼夜微缩故事做一条完整短片：一座小岛，也可以有自己的节奏。把最后一点亮光，带回家。天色暗下来，窗户先亮起来。原来，回家的路一直亮着。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/voxel-island-fresh-1114/versions/v0002/video.mp4",
+        "player": "works/voxel-island-fresh-1114/versions/v0002/video.mp4",
+        "poster": "works/voxel-island-fresh-1114/versions/v0002/cover.jpg",
+        "story": "works/voxel-island-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 28.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "voxel-island-fresh-1114",
+        "version": "v0002",
+        "editable": "works/voxel-island-fresh-1114/versions/v0002/editable.zip",
+        "brief": "works/voxel-island-fresh-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/voxel-island-fresh-1114/versions/v0002/video.mp4": "c214d97723e1fec68841212f635bb29b426fa65110cc10ebb696e6afa98cd20d",
+          "works/voxel-island-fresh-1114/versions/v0002/cover.jpg": "f1101b6349f3efb7f724286d74726082d04ddea0c61b7990ea0f34b6757a2b8e",
+          "works/voxel-island-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json": "09b9d9f2a705ee69afc6cf4a9637aee56a9ab8eb37d9e1969797c469d5f79e48",
+          "works/voxel-island-fresh-1114/versions/v0002/editable.zip": "78d593e98f5ce37ba7de9c6aaead8c55593fa08472f98993f6a11d5875372c6a",
+          "works/voxel-island-fresh-1114/versions/v0002/brief.json": "52f71e1c507b4bcb52b1eeef7d8b9eac6408f0e0972ffa416cc72c4688e92417"
+        }
+      },
+      "category": "自然与空间",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/blueemi99/status/2105804692811137242",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot; not native X UI",
+        "followers": 4882,
+        "likes": 1392,
+        "views": 147288,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "有空间层次的体素场景→贯穿角色与任务→昼夜灯光变化→环绕镜头→任务完成",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "体素微缩场景",
+        "score": 7.5,
+        "replacement": null,
+        "observation": "方块小岛、房屋与道路有稳定立体层级，镜头展示整体空间。",
+        "reason": "保留微缩场景代表，区别于单物件台面。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-voxel-island.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-paper-question",
+      "version": "1",
+      "name": "撕纸拼贴多场景问答故事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "paper-question",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "撕纸故事",
+        "剪纸问答",
+        "纸张情感叙事",
+        "拼贴剧情"
+      ],
+      "fit": "她写下一句话，折成小小的信。小鸟把它带过，仍然亮着的窗。回信只有一句：给晚归的你。有人留灯，路就有了尽头。",
+      "entry": "templates/studio-paper-question/v1/SKILL.md",
+      "starter": "templates/studio-paper-question/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+      "market_reference": "https://x.com/kevin_t_ngo/status/2102437977435893771",
+      "adaptation": {
+        "preserve": "主角提出一个情感问题→纸张承载问题移动→多个生活场景回应→答案回到主角→动作结尾",
+        "replace": [
+          "问题与答案",
+          "主角与信使",
+          "连续场景",
+          "纸张纹理与拼贴物件",
+          "传递动作及收束"
+        ],
+        "recipe": "她写下一句话，折成小小的信。小鸟把它带过，仍然亮着的窗。回信只有一句：给晚归的你。有人留灯，路就有了尽头。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用撕纸拼贴多场景问答故事做一条完整短片：她写下一句话，折成小小的信。小鸟把它带过，仍然亮着的窗。回信只有一句：给晚归的你。有人留灯，路就有了尽头。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/paper-question-fresh-1114/versions/v0002/video.mp4",
+        "player": "works/paper-question-fresh-1114/versions/v0002/video.mp4",
+        "poster": "works/paper-question-fresh-1114/versions/v0002/cover.jpg",
+        "story": "works/paper-question-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 28.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "paper-question-fresh-1114",
+        "version": "v0002",
+        "editable": "works/paper-question-fresh-1114/versions/v0002/editable.zip",
+        "brief": "works/paper-question-fresh-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/paper-question-fresh-1114/versions/v0002/video.mp4": "1b1df2e156a47a8e7a72c5ef8cf237887252bf96c584bccc908d8aa99923f922",
+          "works/paper-question-fresh-1114/versions/v0002/cover.jpg": "9581c012e78b581b870a63de070e5717942541a09d98306a941f42f21ef04b19",
+          "works/paper-question-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json": "47230934d58a8180b5a4481ba41ba1ae318e10be53746f364fe4e15be4676464",
+          "works/paper-question-fresh-1114/versions/v0002/editable.zip": "78ff7ebb8b5385d2d4ddd2201086c807941671ae7e8e12bf78a68beae3320254",
+          "works/paper-question-fresh-1114/versions/v0002/brief.json": "29f81acc86579ac090d14848dc5aef6bcbbc32fbcbef91c733020004a661fc19"
+        }
+      },
+      "category": "情绪与剧情",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://x.com/kevin_t_ngo/status/2102437977435893771",
+        "date": "2026-11-14",
+        "method": "third-party api.fxtwitter.com snapshot, not native X UI",
+        "followers": 27809,
+        "likes": 6184,
+        "views": 675294,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "主角提出一个情感问题→纸张承载问题移动→多个生活场景回应→答案回到主角→动作结尾",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "纸艺窗口叙事",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "撕纸窗口、房屋、鸟与信构成纸层揭晓，纸边承担遮挡。",
+        "reason": "纸艺保留这一套，代替纸桥/翻页等相近外观。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-paper-question.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-watercolor-music",
+      "version": "1",
+      "name": "水彩歌词意象MV",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "watercolor-music",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "歌词意象",
+        "歌曲MV",
+        "水彩MV",
+        "演唱",
+        "歌词变画面"
+      ],
+      "fit": "歌曲有演唱，逐句歌词需要变为连续画面意象；适合送别、旧友、旅途与生活情绪，提供完整歌词和已有音轨。",
+      "entry": "templates/studio-watercolor-music/v1/SKILL.md",
+      "starter": "templates/studio-watercolor-music/v1/native-lyrics",
+      "input_contract": "主题、完整新视觉稿、逐句歌词/时点、已获准使用的真实演唱音轨、原生工程与哈希；新音轨须重新对齐",
+      "readiness": "full-sung-stanza-candidate-review-pending",
+      "validation": "55秒完整演唱歌节和新视觉稿；沿父版修歌词起点、重复开头、中段景别与透明叠化。全片2fps与关键帧实际观察、完整音轨AI感知及同版1x播放；连续视觉和最终审美仍待验。",
+      "limits": "本地《送别》55秒完整一节，取原录音16–71秒，不是117秒整首。薄层水彩与人物表现尚有质量差距。仅16:9；无歌声生成、真人手部表演能力；双对标1/2。",
+      "market_reference": "https://www.douyin.com/video/7690199228575960339",
+      "adaptation": {
+        "preserve": "真实演唱→逐句词义对象/动作→跨句情绪推进→完整歌节收束",
+        "replace": [
+          "完整歌词与新视觉稿",
+          "已有演唱音轨",
+          "逐句起止点",
+          "各段对象和动作",
+          "跨句关系与尾声"
+        ],
+        "recipe": "将每句歌词映射为具体对象、动作及句间关系；按实际演唱起点切换并保留过渡。",
+        "steps": [
+          "Codex读完整歌词与视觉稿，核已有音轨和素材；用intent/templates match --script-file留存全文选型",
+          "获准工程验证时选择engineering_validation并保存selection；复制native-lyrics到新任务，不覆盖父版",
+          "按新歌词改main.js/story.json的画面、时点和project.json.content_promise/changed_files；音轨替换后重新对齐",
+          "经templates prepare→plan/workflow→已授权make；同版画面、完整音轨AI观察和播放分别保存；缺项不export"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用水彩把《送别》这一完整歌节的歌词变成连续意象：长亭与古道、芳草、柳树、夕阳、远舟、故人、酒杯和月夜，按演唱时点变化。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/lyrics-songbei-1114/versions/v0004/video.mp4",
+        "player": "works/lyrics-songbei-1114/versions/v0004/video.mp4",
+        "poster": "works/lyrics-songbei-1114/versions/v0004/cover.jpg",
+        "story": "works/lyrics-songbei-1114/versions/v0004/shots/native-style/film/engine/story.json",
+        "duration": 55.0,
+        "audio": "music",
+        "label": "55秒完整演唱歌节 · 歌词意象 · 质量待验",
+        "stage": "full-sung-stanza-candidate-review-pending",
+        "format": "16:9",
+        "work": "lyrics-songbei-1114",
+        "version": "v0004",
+        "editable": "works/lyrics-songbei-1114/versions/v0004/editable.zip",
+        "brief": "works/lyrics-songbei-1114/versions/v0004/brief.json",
+        "hashes": {
+          "works/lyrics-songbei-1114/versions/v0004/video.mp4": "bc2e4834478a9cbf9a2aa9e320f7bdcd09e042ed9c866a4647ac02f49eb9c32f",
+          "works/lyrics-songbei-1114/versions/v0004/cover.jpg": "333cf03acdb6de30096a364fd5997a217b521ac301bfeb03eed44972b7ee8d8f",
+          "works/lyrics-songbei-1114/versions/v0004/shots/native-style/film/engine/story.json": "16923bd3cb5781885eafd19691bc61f1a352b33d4508842444ec3b4822a8fab4",
+          "works/lyrics-songbei-1114/versions/v0004/editable.zip": "b094596a3c311c2b93fffbbac9dfa28016383da9606c075d3efcbaefa43a0575",
+          "works/lyrics-songbei-1114/versions/v0004/brief.json": "325a53ee7c4e616b05fe3f88bbd9d7472345db5aea9eb65e67123fd4a1fcc304"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7690199228575960339",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 10824,
+        "likes": 632835,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "水彩晕染与纸感→贯穿人物和生活物件→情绪随行动变化→整段音乐发展→物件回扣",
+        "gap": "水彩歌词MV仅1条确认20万赞原作；若卿书法道具、像素天黑黑及手绘过程不能补第二条。完整新稿质量仍待验。",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "active",
+        "family": "水彩生活叙事",
+        "score": null,
+        "replacement": null,
+        "observation": "歌词依次落到长亭、古道、芳草、柳树、夕阳、小舟、酒杯、月夜；薄层水彩与人物表现仍需提高。",
+        "reason": "保留歌词意象方向；新稿不沿用旧器乐样片7.8分。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "v0004全片110张2fps与16/22/42秒原帧；完整实际音轨AI感知及1x播放；连续视觉待验",
+        "evidence": "productions/template-rollout-20261114/songbei-v4-review.json",
+        "is_market_performance": false
+      },
+      "historical_sample": {
+        "kind": "video",
+        "path": "works/watercolor-music-fresh-1114/versions/v0002/video.mp4",
+        "player": "works/watercolor-music-fresh-1114/versions/v0002/video.mp4",
+        "poster": "works/watercolor-music-fresh-1114/versions/v0002/cover.jpg",
+        "story": "works/watercolor-music-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json",
+        "duration": 36.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "watercolor-music-fresh-1114",
+        "version": "v0002",
+        "editable": "works/watercolor-music-fresh-1114/versions/v0002/editable.zip",
+        "brief": "works/watercolor-music-fresh-1114/versions/v0002/brief.json",
+        "hashes": {
+          "works/watercolor-music-fresh-1114/versions/v0002/video.mp4": "d5277bd18ae69442efc514ace575052d46d5e31bf77d00318b859dd5e9dc0b1a",
+          "works/watercolor-music-fresh-1114/versions/v0002/cover.jpg": "9123faa408e561870bc74967ffb2db1364ba4d24135eca1ed0706bf067a3bbec",
+          "works/watercolor-music-fresh-1114/versions/v0002/shots/native-style/film/engine/story.json": "5d0a628c11af4a44f93e2967b37c928912b732b4f5d49009bd14d1097632316e",
+          "works/watercolor-music-fresh-1114/versions/v0002/editable.zip": "d512ed24d31d909aa1aa88023a59d00122807c9b4f3b7a444ee1db3b927b36b2",
+          "works/watercolor-music-fresh-1114/versions/v0002/brief.json": "82db3e0db3f6d6899f7e7ef5b3019489347c2b2ddcbe122c14759bb8f84d38a8"
+        }
+      },
+      "historical_curation": {
+        "status": "active",
+        "family": "水彩生活叙事",
+        "score": 7.8,
+        "replacement": null,
+        "observation": "水彩纸纹、人物与生活场景随器乐叙事，色块有层次。",
+        "reason": "保留用户认可方向；没有演唱或真人表演能力。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-watercolor-music.jpg",
+        "is_market_performance": false
+      },
+      "historical_starter": "templates/studio-watercolor-music/v1/native"
+    },
+    {
+      "id": "studio-seaside-flat",
+      "version": "1",
+      "name": "海边扁平插画音乐短叙事",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "seaside-flat",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "海边音乐故事",
+        "扁平情感MV",
+        "纸船海边",
+        "海风叙事"
+      ],
+      "fit": "他们把下一次的约定，折进同一只纸船。漂远一点，会不会就回不来了？海没有回答，只替他们绕过了一段路。风把它送回来：下一次，还是和你。",
+      "entry": "templates/studio-seaside-flat/v1/SKILL.md",
+      "starter": "templates/studio-seaside-flat/v1/native",
+      "input_contract": "完整新稿分镜、分类字段、画面动作、完整同版音轨与文件哈希",
+      "readiness": "complete-new-script-exported-review-scope-recorded",
+      "validation": "完整新稿已导出并核全程1fps画面；完整音轨由本机音频模型实际感知，非真人听审或用户认可",
+      "limits": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排；本片为原创器乐配乐，无演唱，不证明歌曲生成或真人手部表演。",
+      "market_reference": "https://www.douyin.com/video/7694337242181399922",
+      "adaptation": {
+        "preserve": "固定双人关系→物件承载心意→海面与水下转场→昼夜推进→回信动作收束",
+        "replace": [
+          "双人关系与完整情节",
+          "承载物",
+          "海岸构图",
+          "水下转场和昼夜",
+          "回信内容与音乐"
+        ],
+        "recipe": "他们把下一次的约定，折进同一只纸船。漂远一点，会不会就回不来了？海没有回答，只替他们绕过了一段路。风把它送回来：下一次，还是和你。",
+        "steps": [
+          "按新内容重写完整场景及本类字段",
+          "修改对应画面几何、动作、对象和时序",
+          "更新工程哈希，经真实templates prepare、plan、workflow、make",
+          "同版全片看画面、听音轨并核结果"
+        ],
+        "avoid": "只换标题、颜色或复用无关旧内容；将示意样稿说成真实产品或实拍",
+        "example_request": "用海边扁平插画音乐短叙事做一条完整短片：他们把下一次的约定，折进同一只纸船。漂远一点，会不会就回不来了？海没有回答，只替他们绕过了一段路。风把它送回来：下一次，还是和你。"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/seaside-flat-fresh-1114/versions/v0001/video.mp4",
+        "player": "works/seaside-flat-fresh-1114/versions/v0001/video.mp4",
+        "poster": "works/seaside-flat-fresh-1114/versions/v0001/cover.jpg",
+        "story": "works/seaside-flat-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "duration": 32.0,
+        "audio": "music",
+        "label": "完整新稿 · 全程抽帧及AI音频感知 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "seaside-flat-fresh-1114",
+        "version": "v0001",
+        "editable": "works/seaside-flat-fresh-1114/versions/v0001/editable.zip",
+        "brief": "works/seaside-flat-fresh-1114/versions/v0001/brief.json",
+        "hashes": {
+          "works/seaside-flat-fresh-1114/versions/v0001/video.mp4": "cd6c48064c16354b711ed9885aa9472c7320e4363b6a322020949377d4132cef",
+          "works/seaside-flat-fresh-1114/versions/v0001/cover.jpg": "8f0519ec8a175e97c7a36fec5edd81ee40eed0c0e61e105649f1b051fadcc733",
+          "works/seaside-flat-fresh-1114/versions/v0001/shots/native-style/film/engine/story.json": "02666c4dff7566b44ca5d9cc4612a4d2e9de46726cb3ff3d8f146e2779548e87",
+          "works/seaside-flat-fresh-1114/versions/v0001/editable.zip": "cc8212c736941de9d706a8d36f7d5a952e503bc68446322fe68d155ac13f2169",
+          "works/seaside-flat-fresh-1114/versions/v0001/brief.json": "01861f532a0709688724f562715d76afe177bdf23aca55448bed0d7410684c90"
+        }
+      },
+      "category": "音乐与图文",
+      "market_evidence": {
+        "relation": "直接形式适配，非原作质量认证",
+        "source": "https://www.douyin.com/video/7694337242181399922",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response",
+        "followers": 1993,
+        "likes": 23864,
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "learned": "固定双人关系→物件承载心意→海面与水下转场→昼夜推进→回信动作收束",
+        "gap": "市场形式适配，不冒充原作材质、作者工程、留存或新片流量；仅16:9编排",
+        "proof_index": "docs/research/2026-11-14-广域风格模板证据/市场案例到完整模板.md"
+      },
+      "curation": {
+        "status": "archived",
+        "family": "水彩生活叙事",
+        "score": 6.4,
+        "replacement": "studio-watercolor-music",
+        "observation": "海边人物与水彩片的人物构图接近，只是扁平色块。",
+        "reason": "同一叙事镜头换填色不能独立计一套。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "同哈希全片1fps历史观察 + 本轮五时间点横向对比；机械返修另看2fps全片",
+        "evidence": "productions/template-curation-20261114/comparison/studio-seaside-flat.jpg",
+        "is_market_performance": false
+      }
+    },
+    {
+      "id": "studio-music-score",
+      "version": "1",
+      "name": "逐音符乐谱光点",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "music-score",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "乐谱光点",
+        "乐谱可视化",
+        "逐音符",
+        "钢琴乐谱"
+      ],
+      "fit": "已有完整可演奏音符事件及节奏的数据；让观众随谱听一首完整器乐小品。",
+      "entry": "templates/studio-music-score/v1/SKILL.md",
+      "starter": "templates/studio-music-score/v1/native",
+      "input_contract": "曲名、完整音符及声部事件(at/length/pitch/hand)、谱面布局、由同一事件生成的完整音乐、尾句。",
+      "readiness": "full-script-reviewed-candidate",
+      "validation": "同版AI全片画面、实际音轨和完整播放已记录；非真人/用户验收",
+      "limits": "当前验证16:9钢琴C大调双声部；其他调号/复杂记谱须重排核验；不支持任意MP3自动扒谱。原帖传播数据不转移到新片。",
+      "market_reference": "https://www.douyin.com/video/7685167835231849770",
+      "adaptation": {
+        "preserve": "完整可演奏乐谱→同一音符事件驱动演奏与双色光点→镜头沿谱行跟随→终止式与尾韵",
+        "replace": [
+          "完整曲谱与声部",
+          "实际演奏音轨",
+          "音符时间表",
+          "谱面排版与镜头轨迹",
+          "曲名与尾句"
+        ],
+        "recipe": "完整原创12小节钢琴小品；音频与93个事件使用同一时间表，三个乐句发展到终止式。画面与声音都是新数据；未挪用参考肖邦演奏。",
+        "steps": [
+          "替换完整音符事件与声部；先核小节总时值和可演奏性",
+          "根据新曲重排全部谱行与跟随轨迹",
+          "由同一事件生成完整音乐并核对首音、换行、终止长音",
+          "更新project.json的changed_files哈希，沿templates prepare、plan、workflow、make",
+          "对最终同版整段音乐与画面复审；保留父版和失败"
+        ],
+        "avoid": "只换标题或配色；将原帖互动转移给新片；把市场未知写成通过。",
+        "example_request": "用逐音符乐谱光点做完整短片：风从窗边经过"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/score-breeze-1114/versions/v0001/video.mp4",
+        "poster": "works/score-breeze-1114/versions/v0001/cover.jpg",
+        "story": "works/score-breeze-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "editable": "works/score-breeze-1114/versions/v0001/editable.zip",
+        "brief": "works/score-breeze-1114/versions/v0001/brief.json",
+        "player": "works/score-breeze-1114/versions/v0001/video.mp4",
+        "duration": 33.6,
+        "audio": "music",
+        "label": "完整新稿 · 全片画面与实际音轨AI观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "score-breeze-1114",
+        "version": "v0001",
+        "hashes": {
+          "works/score-breeze-1114/versions/v0001/video.mp4": "aca9450fc5645fe6292c1584de1ecebb2abfbe1c8f0e7bcab7e98a940647b8f7",
+          "works/score-breeze-1114/versions/v0001/cover.jpg": "eb08effb01ab153675caf8f49efca32d391220e00f7620b3a2cc14772e7336a7",
+          "works/score-breeze-1114/versions/v0001/shots/native-style/film/engine/story.json": "78c93a5c119e8f64c1ed96875428994a5701e298051a30f1d4186aae9e4b5086",
+          "works/score-breeze-1114/versions/v0001/editable.zip": "0d662a3bdeab18ff506e9fc88bb2ec90d5ab4079eb834372cc708f788242f8d4",
+          "works/score-breeze-1114/versions/v0001/brief.json": "5d16ee60e1db1ceb1947c2518c37cc3d7448e3c7f55226dd2f1ca031854f8beb"
+        }
+      },
+      "category": "音乐与图文",
+      "curation": {
+        "status": "active",
+        "family": "逐音符乐谱",
+        "score": 7.6,
+        "replacement": null,
+        "observation": "实际查看覆盖全片的68帧2fps原图接触表。暖纸色大谱面有镜头跟随，金色/青色光点分别沿旋律与低音推进；换行连续，最后长音保留后收束。不能用2fps证明逐帧运动。",
+        "reason": "保留为独立观看机制：观众跟随符号听音乐，区别于照片卡点和生活水彩。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "完整新稿全片2fps观察、实际音轨模型输入及1x连续播放",
+        "evidence": "works/score-breeze-1114/reviews/v0001/306b79595c70129afe5f004848290b9552437e82dff259ec4b5fea2e46cddb7a/observed-review.json",
+        "is_market_performance": false
+      },
+      "market_evidence": {
+        "followers": 27251,
+        "likes": 41164,
+        "saves": 7810,
+        "shares": 5926,
+        "comments": 630,
+        "relation": "直接形式适配；原帖为完整演奏成片",
+        "gap": "播放量、留存、涨粉未知；评论抽样有练琴节奏/呼吸和画面好评，不是好评率；本地新曲尚无市场数据。",
+        "source": "https://www.douyin.com/video/7685167835231849770",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and observed full source",
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "proof_index": "docs/research/2026-11-14-非纯AI高互动模板/已看案例与模板落实.md"
+      }
+    },
+    {
+      "id": "studio-curved-photo-album",
+      "version": "1",
+      "name": "立体照片翻页书",
+      "family": "opuscar",
+      "engine": "opuscar",
+      "style": "curved-photo-album",
+      "formats": [
+        "16:9"
+      ],
+      "tags": [
+        "立体照片书",
+        "立体翻页",
+        "照片翻页",
+        "弯曲书页",
+        "周末相册"
+      ],
+      "fit": "有完整照片组和逐页短句的旅行、生活回忆、纪念相册；需要翻页揭晓而非节拍闪切。",
+      "entry": "templates/studio-curved-photo-album/v1/SKILL.md",
+      "starter": "templates/studio-curved-photo-album/v1/native",
+      "input_contract": "合法照片及裁切焦点、逐页place/heading/lines、页序、双面页面、完整配乐及翻页时间。",
+      "readiness": "full-script-reviewed-candidate",
+      "validation": "同版AI全片画面、实际音轨和完整播放已记录；非真人/用户验收",
+      "limits": "当前验证16:9六跨页相册；照片须单独核授权与裁切，未验证任意页数自动美化。参考帖是制作演示，尚缺独立相册成片的市场取证。",
+      "market_reference": "https://www.douyin.com/video/7677775651118152866",
+      "adaptation": {
+        "preserve": "真实照片跨页编排→双面弯曲书页→翻页遮挡与投影→新图及新短句揭晓→最后一页收束",
+        "replace": [
+          "完整图片组与授权",
+          "逐页短句及顺序",
+          "裁切焦点",
+          "双面书页纹理",
+          "乐句和翻页时间"
+        ],
+        "recipe": "全新六页短诗由城市抬头、绿叶、日光、花、山谷走向黄昏；照片来自不同摄影师，是诗意编排，不冒充同一次旅行纪实。原创钢琴按翻页乐句发展，最终页留停顿。",
+        "steps": [
+          "替换整本照片、逐页标题与短句，并核照片授权和焦点",
+          "按新页序设计每页的情绪推进，重新裁切图片",
+          "重建双面页纹理，核背面与下一跨页的对应及遮挡",
+          "按翻页节奏重排完整配乐；更新哈希后沿templates prepare、plan、workflow、make",
+          "审最终全片的翻页、文字、照片焦点与实际音轨；问题沿父版修"
+        ],
+        "avoid": "只换标题或配色；将原帖互动转移给新片；把市场未知写成通过。",
+        "example_request": "用立体照片翻页书做完整短片：把周末翻慢一点"
+      },
+      "sample": {
+        "kind": "video",
+        "path": "works/weekend-album-1114/versions/v0001/video.mp4",
+        "poster": "works/weekend-album-1114/versions/v0001/cover.jpg",
+        "story": "works/weekend-album-1114/versions/v0001/shots/native-style/film/engine/story.json",
+        "editable": "works/weekend-album-1114/versions/v0001/editable.zip",
+        "brief": "works/weekend-album-1114/versions/v0001/brief.json",
+        "player": "works/weekend-album-1114/versions/v0001/video.mp4",
+        "duration": 36,
+        "audio": "music",
+        "label": "完整新稿 · 全片画面与实际音轨AI观察 · 待用户审看",
+        "stage": "full-script-reviewed-candidate",
+        "format": "16:9",
+        "work": "weekend-album-1114",
+        "version": "v0001",
+        "hashes": {
+          "works/weekend-album-1114/versions/v0001/video.mp4": "1bbe3a33c13e4ee419c7b090efcd147707e86c3c5099ef7daba698ee53dbab2a",
+          "works/weekend-album-1114/versions/v0001/cover.jpg": "d9dc00ef680a23fbf81e3e807e097d5917180623d9d5969c245ffe0a20fee2fc",
+          "works/weekend-album-1114/versions/v0001/shots/native-style/film/engine/story.json": "23f6a9daf91ade6ad82b3196f7778929f275f78702776918607b84583715b97f",
+          "works/weekend-album-1114/versions/v0001/editable.zip": "6018415160764fcb4847c75bdb1a4de05313be3125e33b5e78d8df2bdaef13be",
+          "works/weekend-album-1114/versions/v0001/brief.json": "fdd5f8d1b9107ea916c2215e39f4a381e55437c03980bc58121816ff7a459b79"
+        }
+      },
+      "category": "音乐与图文",
+      "curation": {
+        "status": "active",
+        "family": "立体照片翻页书",
+        "score": 7.4,
+        "replacement": null,
+        "observation": "实际查看72帧2fps全片接触表。左页大字短诗、右页照片；每六秒跨页更新，双面弯曲页面产生遮挡和投影后揭晓新跨页。已在最终渲染前增大字号并修开场标题位置，最终全片未见空白闪切。",
+        "reason": "与贴纸剪贴相册分开；保留实际弯曲翻页和揭晓关系。市场资格暂不通过，作为完整可调用制作候选。",
+        "date": "2026-11-14",
+        "reviewer": "Codex subjective visual curation",
+        "basis": "完整新稿全片2fps观察、实际音轨模型输入及1x连续播放",
+        "evidence": "works/weekend-album-1114/reviews/v0001/b13685787029500e5d693f28cfa531e53c1e45ecdcca8f25be78cd3f8d505789/observed-review.json",
+        "is_market_performance": false
+      },
+      "market_evidence": {
+        "followers": 4874,
+        "likes": 14254,
+        "saves": 9126,
+        "shares": 2754,
+        "relation": "制作演示的方法适配；不计独立成片市场验证",
+        "gap": "14,254点赞属于制作演示，不能证明相册成片流量；播放量、留存、涨粉和成片好评率未知。",
+        "source": "https://www.douyin.com/video/7677775651118152866",
+        "date": "2026-11-14",
+        "method": "public Douyin detail response and observed full source",
+        "views": null,
+        "retention": null,
+        "follower_growth": null,
+        "recent_consecutive_baseline": false,
+        "proof_index": "docs/research/2026-11-14-非纯AI高互动模板/已看案例与模板落实.md"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "path": "sources/zh-explainer/vendor/lanshu/explainer/kits/v0-canvas",
+      "reason": "空白基础画布，没有固定视觉风格，不计入模板数。"
+    }
+  ],
+  "supporting_collections": [
+    {
+      "id": "mg",
+      "name": "MG视觉组件",
+      "path": "resources/mg-styles/prompts",
+      "count": 15,
+      "count_unit": "reference_or_component",
+      "limits": "15套风格Prompt与对应短动效源码；不是15套全文自动成片模板"
+    },
+    {
+      "id": "art-cards",
+      "name": "花叔风格配方",
+      "path": "resources/huashu-art-motion/references/风格配方",
+      "count": 53,
+      "count_unit": "reference_or_component",
+      "limits": "53张编号配方，排除INDEX等4份说明；部分为研究配方，不等于53个可执行模板"
+    },
+    {
+      "id": "nook",
+      "name": "Nook场景风格卡",
+      "path": "resources/nook-anim/nook-anim/references/styles",
+      "count": 7,
+      "count_unit": "reference_or_component",
+      "limits": "6个核心风格+1个扩展卡；排除00索引；需素材和场景编排"
+    },
+    {
+      "id": "vibe",
+      "name": "Vibe工程类型",
+      "path": "runtime/vibe/templates",
+      "count": 2,
+      "count_unit": "reference_or_component",
+      "limits": "lyric-mv与knowledge-short两个工程类型；不是两个已验证视觉风格"
+    },
+    {
+      "id": "art-grammar",
+      "name": "花叔片段语法",
+      "path": "resources/huashu-art-motion/references/09-视频动画语法.md",
+      "count": 8,
+      "count_unit": "clip_grammar",
+      "limits": "t1–t3、y1–y5；片段语法，不能与53张风格配方相加"
+    },
+    {
+      "id": "storybook",
+      "name": "手绘绘本方法",
+      "path": "resources/storybook/hand-drawn-storybook-animation/SKILL.md",
+      "count": 1,
+      "count_unit": "method_skill",
+      "limits": "制作方法，需角色、图片分层与逐镜设计"
+    },
+    {
+      "id": "commerce",
+      "name": "商务内容分类",
+      "path": "adapters/commerce-plan.mjs",
+      "count": 6,
+      "count_unit": "content_route",
+      "limits": "A–F题材路由，不是6种视觉风格"
+    }
+  ],
+  "curation": {
+    "date": "2026-11-14",
+    "active": 19,
+    "archived": 25,
+    "registered": 44,
+    "report": "docs/research/2026-11-14-模板总复盘与路由设计/统一复盘.md",
+    "policy": "按观看回报与因果语法合并为13家族/18工程分支，另1专业乐谱，25归档；市场双依据与新稿质量另核。研究媒体已清理，链接及文字保留；后续按具体新稿调用，不重启扩搜。",
+    "latest_increment": "docs/项目记忆.md"
+  }
+}

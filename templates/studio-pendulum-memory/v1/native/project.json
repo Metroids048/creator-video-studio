@@ -1,0 +1,24 @@
+{
+  "template": "studio-pendulum-memory",
+  "style": "pendulum-memory",
+  "entry": "index.html",
+  "duration": 24,
+  "capture": "canvas",
+  "content_promise": "1969年7月，奥尔德林走下登月舱。镜头留下鞋和月壤中的脚印。阿姆斯特朗，拍下同伴的身影。他们也把实验设备，安放在月面。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "d09070fe69cca76d29c4d987d18403edd3251605b8fd775ddba69c50523fe580",
+    "story.json": "dd005a7d594e6479d86fcae69ce09e7d94b859fd406155bb242211aa52da30f3",
+    "index.html": "e95911dacf63f0b0527aabe9a466864cbc7698dc0b01b07fe9a1a32443837ee9",
+    "ease.js": "81fc5d6aa1d69e6fb2e900143b9c209929c1bc371e43a4481098ad1f16767d05",
+    "as11-40-5863.jpg": "50dcf6aaf9b7a96be43af91b18223d7542eceeba5d62e29e1fc2409918289c56",
+    "as11-40-5880.jpg": "aacdf869c2a79a1f445d30b478a5048191c8bdc2c492e1eda0b93beaa78b0dbb",
+    "as11-40-5903.jpg": "24bf4ce093822101801f5ba3cad3f84525a5c6a42927b0a29579581c13c691ce",
+    "as11-40-5948.jpg": "51c5d1fcd3fa3050a8c540cc2b00daf9366858ec67079823a7b04b25096d5d5e"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT precise easing reused; full picture/story code authored locally"
+  }
+}

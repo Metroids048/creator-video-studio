@@ -1,0 +1,27 @@
+{
+  "template": "studio-voxel-island",
+  "style": "voxel-island",
+  "entry": "index.html",
+  "duration": 28,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "一座小岛，也可以有自己的节奏。把最后一点亮光，带回家。天色暗下来，窗户先亮起来。原来，回家的路一直亮着。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "3a3c319ae6392500ab9b02dfa6d157cdfe279d4873966be3536ab1fe113a24db",
+    "story.json": "09b9d9f2a705ee69afc6cf4a9637aee56a9ab8eb37d9e1969797c469d5f79e48",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a",
+    "three-scene.js": "5c8e009b7a36e5d785bb7f92f4b4f3f598f4738a5a4a7471f7975421953c12cd",
+    "three.module.min.js": "979c1ae4b0579c9901eacf797602c0b46df129d87102c6443d14be4a1f790b70",
+    "three.core.min.js": "295a28f4a9786dd24a2a357a4ce90921eb041127e53a508335b9a0556c1e0875",
+    "THREE-LICENSE": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://x.com/blueemi99/status/2105804692811137242"
+  }
+}

@@ -1,0 +1,10 @@
+import{ctx,S,bg,text,line,circle,box,phase,lerp,rng,ready}from'./draw.js';
+const gold='#ddb775';
+function coin(x,y,r,front=true){circle(x,y,r,'#85632b');circle(x-1,y-3,r-3,front?gold:'#e3d8ba');circle(x-1,y-3,r-9,front?'#b78a45':'#aa9c80');text(front?'正':'反',x-1,y-2,r*.8,'#211e17','center',700)}
+ready(t=>{bg('#0b1116');let r=rng(18);for(let j=0;j<90;j++)circle(r()*1280,(r()*720+t*(2+j%5))%720,.4+r()*1.1,'#aa8d5155');text(S.title,60,42,21,gold);text('理想公平硬币 / 每次独立',1220,42,15,'#8a9b9d','right');
+ if(t<6){text('连着三次正面，',640,177,61,'#f1e9d4','center',700);text('下一次更该反面？',640,255,61,gold,'center',700);for(let j=0;j<3;j++){let p=phase(t,.3+j*.6,1+j*.6);coin(445+j*195,440,45*p,true)}text('？',1030,440,72,gold,'center')}
+ else if(t<13){text('前三次的结果，已经发生。',640,140,43,'#eae1cb','center');for(let j=0;j<3;j++)coin(230+j*125,310,40,true);let p=phase(t,6,9);line(600,210,600,525,gold,.8);text('第四次，仍只有两面。',890,210,29,gold,'center');coin(790,365,60*p,true);coin(1020,365,60*p,false);text('1 / 2',790,480,39,'#eee4ce','center');text('1 / 2',1020,480,39,'#eee4ce','center');text('过去的结果不会给硬币“记账”。',640,577,24,'#a0aaa4','center')}
+ else if(t<21){text('看完整四次，有16种等可能序列。',640,125,37,'#eae1cb','center');for(let k=0;k<16;k++){let col=k%8,row=Math.floor(k/8),x=145+col*142,y=280+row*195;let visible=phase(t,13+k*.17,13.6+k*.17);ctx.globalAlpha=visible;for(let j=0;j<4;j++)coin(x+(j%2)*35,y+Math.floor(j/2)*40,15,((k>>(3-j))&1)===0);let isStreak=k<2;if(isStreak)box(x-22,y-24,80,92,'#ddb77522',6);ctx.globalAlpha=1}text('在“前三次都正面”的两种里，最后一面各占一种。',640,585,24,gold,'center')}
+ else{let p=phase(t,21,23);text('独立事件，不欠你一个反转。',640,180,50,'#f0e6ce','center',700);box(260,285,760,140,'#1d292c',12);box(260,285,380*p,140,gold,12);text('正面 50%',450,355,35,'#1b2427','center',700);text('反面 50%',830,355,35,'#eee6d1','center',700);text('前提：公平硬币、抛掷独立。现实对象要先核条件。',640,520,23,'#9ba9a2','center');text('P(第四次反面 | 前三次正面) = 1/2',640,585,27,gold,'center')}
+ let s=S.scenes.findLast(s=>t>=s.start);text(s.text,640,669,23,'#e9e0ca','center');line(55,704,55+1170*t/S.duration,704,gold,2)
+});

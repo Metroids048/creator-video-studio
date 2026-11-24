@@ -1,0 +1,23 @@
+{
+  "template": "studio-halftone-mascot",
+  "style": "halftone-mascot",
+  "entry": "index.html",
+  "duration": 24,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "想留下的文章、照片、链接，总散在各处。一起收好，三个入口放进同一个收藏。搜索“海边”，找到两条相关内容。留下来，才找得回来。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "cf3f5ad0ecb592936fc22e0ba408cec874b256d267970e224649a3db8f1f467c",
+    "story.json": "d59690db412a2f107bc98a80923669e0c54ad86d18ca0894d03f525d37d1cbd6",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://x.com/achxvi/status/2103918792845963545"
+  }
+}

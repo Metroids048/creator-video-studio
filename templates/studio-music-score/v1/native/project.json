@@ -1,0 +1,25 @@
+{
+  "template": "studio-music-score",
+  "style": "music-score",
+  "entry": "index.html",
+  "duration": 33.6,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "窗边：第一句轻轻展开。 / 风过：旋律向上，再回来。 / 回响：同一动机走向终止。 / 把最后一个音，留给窗外的风。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a",
+    "LICENSE": "d2d00a697a2038cd5fa826cebfe884b1d0c88f333f00d148f2d1301f18270872",
+    "main.js": "cc02ac503af44dc06e427bebc9bf77bd7b67a712c701413943000d2ada3053db",
+    "story.json": "78c93a5c119e8f64c1ed96875428994a5701e298051a30f1d4186aae9e4b5086",
+    "fonts/sans.ttf": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "source": {
+    "scope": "original script, original local implementation and composition; reference grammar only",
+    "market": "https://www.douyin.com/video/7685167835231849770"
+  }
+}

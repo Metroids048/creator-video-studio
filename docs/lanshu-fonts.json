@@ -1,0 +1,381 @@
+{
+  "commit": "google/fonts@c30b221beb0c1da59d563feb91ec8656a1fa972a; Smiley Sans existing pinned font",
+  "source": "AST FONTS plus per-kit fonts.json; offline full fonts and licenses",
+  "faces": {
+    "noto-serif-sc-900": {
+      "family": "Noto Serif SC",
+      "weight": 900,
+      "font": {
+        "path": "runtime/lanshu-fonts/notoserifsc/NotoSerifSC[wght].ttf",
+        "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notoserifsc/OFL.txt",
+        "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+      }
+    },
+    "noto-serif-sc-500": {
+      "family": "Noto Serif SC",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/notoserifsc/NotoSerifSC[wght].ttf",
+        "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notoserifsc/OFL.txt",
+        "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+      }
+    },
+    "instrument-serif-400": {
+      "family": "Instrument Serif",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Regular.ttf",
+        "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/instrumentserif/OFL.txt",
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      }
+    },
+    "instrument-serif-400i": {
+      "family": "Instrument Serif",
+      "weight": 400,
+      "style": "italic",
+      "font": {
+        "path": "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Italic.ttf",
+        "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/instrumentserif/OFL.txt",
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      }
+    },
+    "zcool-xiaowei": {
+      "family": "ZCOOL XiaoWei",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf",
+        "sha256": "a42b620140f493db42f741351dfbf343c0936d58588ee8004b8b2a218d997ff1"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/zcoolxiaowei/OFL.txt",
+        "sha256": "a094514ca57cf8f9c5e8d8d1adab5d8cd3a377297ff016f9df2c05b3ecd77f0a"
+      }
+    },
+    "long-cang": {
+      "family": "Long Cang",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/longcang/LongCang-Regular.ttf",
+        "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/longcang/OFL.txt",
+        "sha256": "603546b7219a94bb59bf8294458194a5010119486354092b66a09a3fd61aeacc"
+      }
+    },
+    "zcool-kuaile": {
+      "family": "ZCOOL KuaiLe",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+        "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/zcoolkuaile/OFL.txt",
+        "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d"
+      }
+    },
+    "zcool-qingke": {
+      "family": "ZCOOL QingKe HuangYou",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf",
+        "sha256": "54f0c0df4308cd74cd0f2fd3494ae054dbc4a1fd6fa7d71f4807eb4cdd8b4136"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/zcoolqingkehuangyou/OFL.txt",
+        "sha256": "f1bce31b817dee01c1e4ef8bc45d8ecb95f01f4abbf0a985007cb3cd0fd8123d"
+      }
+    },
+    "bangers": {
+      "family": "Bangers",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/bangers/Bangers-Regular.ttf",
+        "sha256": "4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/bangers/OFL.txt",
+        "sha256": "630dd5a307c0657b094d324e069b390edf90182fe5003639e06c02a0e5769af7"
+      }
+    },
+    "smiley-sans": {
+      "family": "Smiley Sans",
+      "weight": 400,
+      "font": {
+        "path": "runtime/vibe/fonts/SmileySans-Oblique.ttf",
+        "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4"
+      },
+      "license": {
+        "path": "runtime/vibe/fonts/OFL-SmileySans.txt",
+        "sha256": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72"
+      }
+    },
+    "jetbrains-mono-400": {
+      "family": "JetBrains Mono",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/JetBrainsMono[wght].ttf",
+        "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/OFL.txt",
+        "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+      }
+    },
+    "jetbrains-mono-700": {
+      "family": "JetBrains Mono",
+      "weight": 700,
+      "font": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/JetBrainsMono[wght].ttf",
+        "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/OFL.txt",
+        "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+      }
+    },
+    "caveat-700": {
+      "family": "Caveat",
+      "weight": 700,
+      "font": {
+        "path": "runtime/lanshu-fonts/caveat/Caveat[wght].ttf",
+        "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/caveat/OFL.txt",
+        "sha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b"
+      }
+    },
+    "archivo-black": {
+      "family": "Archivo Black",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/archivoblack/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/archivoblack/OFL.txt",
+        "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff"
+      }
+    },
+    "ibm-plex-mono-400": {
+      "family": "IBM Plex Mono",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/ibmplexmono/OFL.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      }
+    },
+    "noto-sans-sc-500": {
+      "family": "Noto Sans SC",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      }
+    },
+    "noto-sans-sc-700": {
+      "family": "Noto Sans SC",
+      "weight": 700,
+      "font": {
+        "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      }
+    },
+    "stix-two-500i": {
+      "family": "STIX Two Text",
+      "weight": 500,
+      "style": "italic",
+      "font": {
+        "path": "runtime/lanshu-fonts/stixtwotext/STIXTwoText-Italic[wght].ttf",
+        "sha256": "88c0e2e316eaff56eddc9e51e4850317e2a1e490bbf758b2dec4793aedba9c74"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/stixtwotext/OFL.txt",
+        "sha256": "62c0967a997b9691326d35b1f90baf085a557327b711618bc4161325ce1bb1b2"
+      }
+    },
+    "stix-two-500": {
+      "family": "STIX Two Text",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/stixtwotext/STIXTwoText[wght].ttf",
+        "sha256": "7962b8b7811e6a896c9a91a0bccbb5241047770eb24d4997c5cb5fe21d5c0df2"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/stixtwotext/OFL.txt",
+        "sha256": "62c0967a997b9691326d35b1f90baf085a557327b711618bc4161325ce1bb1b2"
+      }
+    },
+    "jetbrains-mono-500": {
+      "family": "JetBrains Mono",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/JetBrainsMono[wght].ttf",
+        "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/jetbrainsmono/OFL.txt",
+        "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+      }
+    },
+    "special-elite": {
+      "family": "Special Elite",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/specialelite/SpecialElite-Regular.ttf",
+        "sha256": "a776fcb4ceb8bdf03e2967688ebdad42680de5b91a7e62c17e718ae212d14bc4"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/specialelite/LICENSE.txt",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "noto-sans-sc-900": {
+      "family": "Noto Sans SC",
+      "weight": 900,
+      "font": {
+        "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      }
+    },
+    "noto-sans-sc-300": {
+      "family": "Noto Sans SC",
+      "weight": 300,
+      "font": {
+        "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      }
+    },
+    "geist-300": {
+      "family": "Geist",
+      "weight": 300,
+      "font": {
+        "path": "runtime/lanshu-fonts/geist/Geist[wght].ttf",
+        "sha256": "73894e0448cae90a92b6c2f8732b7bb9acb7b94c418bff559dad4a18e1de9659"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/geist/OFL.txt",
+        "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+      }
+    },
+    "geist-500": {
+      "family": "Geist",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/geist/Geist[wght].ttf",
+        "sha256": "73894e0448cae90a92b6c2f8732b7bb9acb7b94c418bff559dad4a18e1de9659"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/geist/OFL.txt",
+        "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+      }
+    },
+    "geist-mono-400": {
+      "family": "Geist Mono",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/geistmono/GeistMono[wght].ttf",
+        "sha256": "d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/geistmono/OFL.txt",
+        "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+      }
+    },
+    "noto-serif-sc-600": {
+      "family": "Noto Serif SC",
+      "weight": 600,
+      "font": {
+        "path": "runtime/lanshu-fonts/notoserifsc/NotoSerifSC[wght].ttf",
+        "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notoserifsc/OFL.txt",
+        "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+      }
+    },
+    "archivo-x-900": {
+      "family": "Archivo",
+      "weight": 900,
+      "stretch": "125%",
+      "font": {
+        "path": "runtime/lanshu-fonts/archivo/Archivo[wdth,wght].ttf",
+        "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/archivo/OFL.txt",
+        "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+      }
+    },
+    "patrick-hand": {
+      "family": "Patrick Hand",
+      "weight": 400,
+      "font": {
+        "path": "runtime/lanshu-fonts/patrickhand/PatrickHand-Regular.ttf",
+        "sha256": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/patrickhand/OFL.txt",
+        "sha256": "377f4f9c19e935228552478eb68cc2ed82910988a60ba60e2ac73b09f32d02d1"
+      }
+    },
+    "noto-sans-sc-800": {
+      "family": "Noto Sans SC",
+      "weight": 800,
+      "font": {
+        "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      }
+    },
+    "geist-mono-500": {
+      "family": "Geist Mono",
+      "weight": 500,
+      "font": {
+        "path": "runtime/lanshu-fonts/geistmono/GeistMono[wght].ttf",
+        "sha256": "d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196"
+      },
+      "license": {
+        "path": "runtime/lanshu-fonts/geistmono/OFL.txt",
+        "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+      }
+    }
+  }
+}

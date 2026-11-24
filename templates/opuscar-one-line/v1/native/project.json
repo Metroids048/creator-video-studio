@@ -1,0 +1,30 @@
+{
+  "template": "opuscar-one-line",
+  "style": "one-line",
+  "entry": "index.html",
+  "duration": 38,
+  "content_promise": "用一条连续墨线，从日历、手机、车票和列车走向家门，完整讲清把想念变成一次回家。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "0c8ba092853a9f6833cd9415c0084ef1ce62f9f3510c6b1a727f34ea00cbe038",
+    "story.json": "9306058f88b57399e900b23ef8d4125e3c305f34bba42a1b7b2a2368d0a47789",
+    "index.html": "13a92db9983c78bc2e71166692a6d50b1ef4826ea5021842e05b49c3aabaa9ff"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "reused": [
+      "geom.js",
+      "ink.js",
+      "paper.js",
+      "core/lib.js"
+    ],
+    "replacement": [
+      "全新路径几何",
+      "六句中文新稿",
+      "镜头关键帧",
+      "中文排版与家窗结尾"
+    ]
+  },
+  "capture": "canvas"
+}

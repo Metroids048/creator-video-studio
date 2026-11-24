@@ -1,0 +1,10 @@
+{
+  "repo": "googlefonts/mashanzheng",
+  "commit": "72c50ec001cea63d223d35562eeb2ba42f0fe67a",
+  "license_url": "https://raw.githubusercontent.com/googlefonts/mashanzheng/72c50ec001cea63d223d35562eeb2ba42f0fe67a/OFL.txt",
+  "license_sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+  "font": "runtime/vibe/fonts/MaShanZheng-Regular.ttf",
+  "font_sha256": "7aeadc89ef360fd53085a83a08c0062b08dae43d0b70c367c4170bf1f1f53696",
+  "basis": "font name copyright identifies same project; source license recovered via Wi-Fi, no font replacement",
+  "transport": "curl -q -4 --http1.1 --noproxy * --proxy empty --interface if!en0; no proxy fallback"
+}

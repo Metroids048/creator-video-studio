@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light"><title>视频形式与样片库</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="#" class="brand">STUDIO / 样片库</a><span>本地留存 · 2026.11.14</span></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">CONTENT FIRST · TEMPLATE NEXT</p><h1>从观众想看什么开始。</h1><p class="lead">歌曲、图文共鸣、知识、剧情和展示分别比较。<br>先看具体原片与市场证据，再选换稿方式。</p></div><div class="count">__STYLE_COUNT__<small>工程储备入口<br>__RESEARCH_COUNT__项研究配方<br>市场合格 __MARKET_COUNT__ · 生产资格 __PRODUCTION_COUNT__</small></div></section>
+  <p class="notice">从44份历史登记工程中精炼保留__STYLE_COUNT__个主入口，__ARCHIVED_COUNT__个同质或较弱版本归档，退出新片推荐。照片边框、换色、翻页和物件换稿不再重复计为风格。下方评分是Codex对当前成片的主观判断；全片抽帧与音频模型观察不等于真人审片、用户认可或本片流量验证。</p>
+  <section class="router" aria-label="主题与全文匹配"><label for="request">主题与受众</label><div class="inputrow"><input id="request" placeholder="例如：花海随风吹拂的自然氛围短片"><select id="format" aria-label="目标画幅"><option value="16:9">16:9 横屏</option><option value="9:16">9:16 竖屏</option></select><button id="route">匹配完整文案</button></div><label for="script">完整文案</label><textarea id="script" rows="5" placeholder="粘贴整篇文案；歌词请说明演唱和逐句画面意图。"></textarea><div id="routes" aria-live="polite">主题与全文共同匹配；缺少同类原作证据的底座会单独标为工程候选。</div></section>
+  <section class="research" aria-label="市场原片与研究配方"><div class="libraryhead"><h2>原片与换稿配方</h2><label>大类 <select id="researchFamily" aria-label="研究形式大类"><option value="">全部类型</option></select></label><label>筛选 <input id="researchFilter" type="search" placeholder="若卿 / 图文共鸣 / 像素"></label></div><p class="lead">高互动作品、教程与较弱案例分别注明。吸引力是拆解判断；播放、留存与涨粉未公开的保持未知。</p><div id="researchCards" class="researchCards"></div><p id="researchEmpty" hidden>没有匹配的研究配方。</p></section>
+  <section id="detail" class="detail" aria-label="样片详情">
+    <div class="view"><div id="screen" class="screen"></div><div class="controls"><button id="play" disabled>播放</button><button id="sound" hidden>开启声音</button><input id="seek" type="range" min="0" max="45" step="0.05" value="0" aria-label="播放进度"><output id="time">0:00 / 0:45</output></div><p id="playerStatus" role="status"></p></div>
+    <article><p id="badge" class="eyebrow"></p><h2 id="title"></h2><p id="fit"></p><p id="validation" class="validation"></p><div id="links" class="links"></div></article>
+  </section>
+  <section class="adapt"><div><p class="eyebrow">HOW TO ADAPT</p><h3>换内容，保留视觉语法。</h3><dl id="grammar"></dl></div><div><h3>从用户输入到新视频</h3><ol id="steps"></ol><p id="example" class="example"></p><div id="sourceLinks" class="links"></div></div></section>
+  <section class="library"><div class="libraryhead"><h2>历史样片与可编辑工程</h2><label>类型 <select id="category" aria-label="工程类型"><option value="">全部类型</option></select></label><label>筛选 <input id="filter" type="search" placeholder="名称 / 适合内容"></label></div><div id="cards" class="cards"></div><p id="empty" hidden>没有匹配的风格；可先清空筛选，再查看现有演示。</p></section>
+  <footer>目录与路由共用 templates/catalog.json · 学习片与原创样片分开留存 · 本页不触发生成、渲染或发布。<br>若直接打开文件无法播放原生工程，请双击同目录「打开样片目录.command」，使用本机预览服务。</footer>
+</main>
+<script id="catalog" type="application/json">__CATALOG_JSON__</script><script id="formats" type="application/json">__FORMATS_JSON__</script><script src="app.js"></script>
+</body></html>

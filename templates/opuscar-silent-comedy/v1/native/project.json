@@ -1,0 +1,19 @@
+{
+  "template": "opuscar-silent-comedy",
+  "style": "silent-film",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "角色翻桌、找沙发，最后在镜子里发现眼镜一直架在头顶；用实际动作完成反转。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "26119e9d3e19179999b11f04133539bb8b6d66ab7d1caf9ec8915f437aafe6f2",
+    "story.json": "6588e93c58eed7d42419be601c18324312e73ebf2a050a74c2da036e53850425",
+    "index.html": "e6bb42cfa87d0d6797835864b4e4f0d4bd4987413999881646eeb44055dfb9d2"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT primitives only; new authored full story"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "template": "studio-painted-flipbook",
+  "style": "painted-flipbook",
+  "entry": "index.html",
+  "duration": 30,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "一起出发，也不必走得一样快。雨来的那天，我们坐同一列车。到了海边，才记得慢一点走。上坡的时候，轮流等对方一下。夜里，星星把沉默也照亮了。回到家，翻开这一页，还在一起。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "1239eaff34f7fb79840be54cbb5df00cc4c4a57f65a21397a9b40bc93e08b63d",
+    "story.json": "8c6a212bc14ad918aa6c7c2ddabcdb1957e2754dc5552c14273e5d1188ef7cba",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://x.com/ann_nnng/status/2102573127192727704"
+  }
+}

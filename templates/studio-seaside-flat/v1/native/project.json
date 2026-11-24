@@ -1,0 +1,23 @@
+{
+  "template": "studio-seaside-flat",
+  "style": "seaside-flat",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "他们把下一次的约定，折进同一只纸船。漂远一点，会不会就回不来了？海没有回答，只替他们绕过了一段路。风把它送回来：下一次，还是和你。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "draw.js": "95b3aff4b7a4d2a71925da595e84990c479536725e4fd5550e351aeed42724c0",
+    "main.js": "a935f7b4ba26c2c9ac7ebc80ca25d65fd85242df650af42457b38a7865d1a3cc",
+    "story.json": "02666c4dff7566b44ca5d9cc4612a4d2e9de46726cb3ff3d8f146e2779548e87",
+    "index.html": "741dc88ac6d6b31c1728217aa8e8000286124a14d1c6f4f16a9dee451b8a177a"
+  },
+  "source": {
+    "scope": "original full new script and picture code; market grammar reference, not creator source",
+    "market": "https://www.douyin.com/video/7694337242181399922"
+  }
+}

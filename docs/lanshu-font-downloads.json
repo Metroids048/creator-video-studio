@@ -1,0 +1,273 @@
+{
+  "repo": "google/fonts",
+  "commit": "c30b221beb0c1da59d563feb91ec8656a1fa972a",
+  "transport": "strict Wi-Fi if!en0; no proxy or fallback",
+  "files": [
+    {
+      "path": "runtime/lanshu-fonts/notoserifsc/NotoSerifSC[wght].ttf",
+      "size": 25125512,
+      "git_blob": "eab063faf229160a52d3760f5555150e4eb9e5bf",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/notoserifsc/OFL.txt",
+      "size": 4350,
+      "git_blob": "94d1bf7b52481343e2983fb7751e8b7abe1ea07b",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/notoserifsc/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Regular.ttf",
+      "size": 70012,
+      "git_blob": "36fac00ef9b7d523236df6536cb09c712bb2c7e4",
+      "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/instrumentserif/InstrumentSerif-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/instrumentserif/InstrumentSerif-Italic.ttf",
+      "size": 71592,
+      "git_blob": "192c3eda9864241ad280e9bcc84e258c80a4a588",
+      "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/instrumentserif/InstrumentSerif-Italic.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/instrumentserif/OFL.txt",
+      "size": 4405,
+      "git_blob": "669ce7917bec662fcf7244d37f49c4277f6fbd73",
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/instrumentserif/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf",
+      "size": 6313808,
+      "git_blob": "2d8731a231f2e6625b32d96b87f84852e24f9d82",
+      "sha256": "a42b620140f493db42f741351dfbf343c0936d58588ee8004b8b2a218d997ff1",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolxiaowei/OFL.txt",
+      "size": 4400,
+      "git_blob": "8e5184b269289a6adda77caa05defe3acc309651",
+      "sha256": "a094514ca57cf8f9c5e8d8d1adab5d8cd3a377297ff016f9df2c05b3ecd77f0a",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolxiaowei/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/bangers/Bangers-Regular.ttf",
+      "size": 93148,
+      "git_blob": "9b0f8c1f1b45e7bb4971b7d6a8604f9aacacdd32",
+      "sha256": "4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/bangers/Bangers-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/bangers/OFL.txt",
+      "size": 4479,
+      "git_blob": "bf717d4be410cf7616b9bd345b40ab4817a26e6f",
+      "sha256": "630dd5a307c0657b094d324e069b390edf90182fe5003639e06c02a0e5769af7",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/bangers/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/jetbrainsmono/JetBrainsMono[wght].ttf",
+      "size": 187208,
+      "git_blob": "aa310be8b717fe3774f9444dd89d5f4101cc6d10",
+      "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/jetbrainsmono/OFL.txt",
+      "size": 4399,
+      "git_blob": "821a3dac22aff15a1f1c9689a1d79c45bb58ca39",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/jetbrainsmono/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/caveat/Caveat[wght].ttf",
+      "size": 403648,
+      "git_blob": "f84acf2ce2d1b3329b194749530dbaec047e6df6",
+      "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/caveat/Caveat%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/caveat/OFL.txt",
+      "size": 4385,
+      "git_blob": "6e5220c9576d98dfc684e550ddf0d87f68b3edc5",
+      "sha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/caveat/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/archivoblack/ArchivoBlack-Regular.ttf",
+      "size": 90988,
+      "git_blob": "82d07de3b84ed4428f6a302b70f4b555148dfeb0",
+      "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/archivoblack/ArchivoBlack-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/archivoblack/OFL.txt",
+      "size": 4492,
+      "git_blob": "8894736938f94c6c7a81f27501f26151c412fcbc",
+      "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/archivoblack/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "size": 135580,
+      "git_blob": "0c9770d5183ba60dc4350d3e011b782a320761ae",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/ibmplexmono/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/ibmplexmono/OFL.txt",
+      "size": 4456,
+      "git_blob": "c35c4c618fab33da8695177b3a6cefe0810b7b28",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/ibmplexmono/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/notosanssc/NotoSansSC[wght].ttf",
+      "size": 17772300,
+      "git_blob": "fb0637bafbcd804fe32152370a1225990745b4bc",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/notosanssc/OFL.txt",
+      "size": 4388,
+      "git_blob": "1c9f43281b8f216c5461fe9ac729afbade7724e4",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/notosanssc/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/geist/Geist[wght].ttf",
+      "size": 169056,
+      "git_blob": "f63f0afc6390323715972b6645115485f37cc9f4",
+      "sha256": "73894e0448cae90a92b6c2f8732b7bb9acb7b94c418bff559dad4a18e1de9659",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/geist/Geist%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/geist/OFL.txt",
+      "size": 4387,
+      "git_blob": "61f6f4b7853081236aec6407f2dd3c7170997f84",
+      "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/geist/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/geistmono/GeistMono[wght].ttf",
+      "size": 171948,
+      "git_blob": "173867dce0580ea751e4b9c558740d34f20ce549",
+      "sha256": "d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/geistmono/GeistMono%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/geistmono/OFL.txt",
+      "size": 4387,
+      "git_blob": "61f6f4b7853081236aec6407f2dd3c7170997f84",
+      "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/geistmono/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/stixtwotext/STIXTwoText[wght].ttf",
+      "size": 418956,
+      "git_blob": "65db142942c21dd5c8267798615a36de858c99e1",
+      "sha256": "7962b8b7811e6a896c9a91a0bccbb5241047770eb24d4997c5cb5fe21d5c0df2",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/stixtwotext/STIXTwoText%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/stixtwotext/STIXTwoText-Italic[wght].ttf",
+      "size": 454368,
+      "git_blob": "f7b444d116d5f00e678abb9f0b2e480869a31718",
+      "sha256": "88c0e2e316eaff56eddc9e51e4850317e2a1e490bbf758b2dec4793aedba9c74",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/stixtwotext/STIXTwoText-Italic%5Bwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/stixtwotext/OFL.txt",
+      "size": 4520,
+      "git_blob": "4190bc7de7812f55886f062ce7cbf58f6d667796",
+      "sha256": "62c0967a997b9691326d35b1f90baf085a557327b711618bc4161325ce1bb1b2",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/stixtwotext/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/patrickhand/PatrickHand-Regular.ttf",
+      "size": 214772,
+      "git_blob": "fb45ccdbd344ab7f9f4ae98792521405e48cda3e",
+      "sha256": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/patrickhand/PatrickHand-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/patrickhand/OFL.txt",
+      "size": 4376,
+      "git_blob": "4d5f9447f48357b6a4ac294604954b274059d119",
+      "sha256": "377f4f9c19e935228552478eb68cc2ed82910988a60ba60e2ac73b09f32d02d1",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/patrickhand/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/archivo/Archivo[wdth,wght].ttf",
+      "size": 658596,
+      "git_blob": "cc64253d36665a5ca0d6719cdf1e32b3de453b51",
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/archivo/OFL.txt",
+      "size": 4388,
+      "git_blob": "8597481ebc941863ab228e79ea4305507cd73cc6",
+      "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/archivo/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/specialelite/SpecialElite-Regular.ttf",
+      "size": 166180,
+      "git_blob": "6654876f95f11cb2b55c7c4254727ef68dbea74c",
+      "sha256": "a776fcb4ceb8bdf03e2967688ebdad42680de5b91a7e62c17e718ae212d14bc4",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/apache/specialelite/SpecialElite-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/specialelite/LICENSE.txt",
+      "size": 11358,
+      "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/apache/specialelite/LICENSE.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/longcang/LongCang-Regular.ttf",
+      "size": 5162508,
+      "git_blob": "363bb08696fe4d3827bd36d3d2fbc028d1205161",
+      "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/longcang/LongCang-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/longcang/OFL.txt",
+      "size": 4390,
+      "git_blob": "06a1757ca2ae5ff689aac4b410fffa98cd73dad0",
+      "sha256": "603546b7219a94bb59bf8294458194a5010119486354092b66a09a3fd61aeacc",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/longcang/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+      "size": 1514968,
+      "git_blob": "3cf6cd927ee910d46875de173efdaac4330e84ac",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolkuaile/OFL.txt",
+      "size": 4398,
+      "git_blob": "fe1432fe7e56b24842d855a8ddbde0911a844d7f",
+      "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolkuaile/OFL.txt"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf",
+      "size": 8328684,
+      "git_blob": "982a3b80143268592f573feb196791fbc2330e17",
+      "sha256": "54f0c0df4308cd74cd0f2fd3494ae054dbc4a1fd6fa7d71f4807eb4cdd8b4136",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf"
+    },
+    {
+      "path": "runtime/lanshu-fonts/zcoolqingkehuangyou/OFL.txt",
+      "size": 4419,
+      "git_blob": "bd3df5cf6f237a4afaea70106f8243da07cd8cd8",
+      "sha256": "f1bce31b817dee01c1e4ef8bc45d8ecb95f01f4abbf0a985007cb3cd0fd8123d",
+      "url": "https://raw.githubusercontent.com/google/fonts/c30b221beb0c1da59d563feb91ec8656a1fa972a/ofl/zcoolqingkehuangyou/OFL.txt"
+    }
+  ]
+}

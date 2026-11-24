@@ -1,0 +1,22 @@
+{
+  "template": "studio-ui-morph",
+  "style": "ui-morph",
+  "entry": "index.html",
+  "duration": 24,
+  "capture": "canvas",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "content_promise": "虚构留白专注工具中，同一个按钮连续变成准备、计时、进度、静音、周期、图表、记录和完成，再回到开始。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "dc80531c778565d01ee4f92c4ed04b4853ece7718a845ee3642524f2881e75e9",
+    "story.json": "771f4cfc2c56551ac8654712535dbe46152255c7d0922a86ff52bfd004ca9ec8",
+    "index.html": "5cfabca7825d06339dcbad1a38d8a2a373ab30b77025c800a7548f2a2d105cea"
+  },
+  "source": {
+    "scope": "original local picture, story and score; reference grammar only, no upstream code copied",
+    "market": "https://x.com/twoclipping/status/2103273003555402193"
+  }
+}

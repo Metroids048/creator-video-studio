@@ -1,0 +1,63 @@
+{
+  "title": "一杯，慢下来。",
+  "duration": 30,
+  "steps": [
+    {
+      "start": 0,
+      "title": "先给杯子降温",
+      "caption": "4块冰，留出气泡的位置",
+      "short": "冰块"
+    },
+    {
+      "start": 4,
+      "title": "倒入冷泡茶",
+      "caption": "80 mL / 提前冷藏",
+      "short": "茶 80",
+      "ml": 80,
+      "color": "#ad7134"
+    },
+    {
+      "start": 8,
+      "title": "接着，是气泡",
+      "caption": "80 mL / 沿杯壁慢慢倒",
+      "short": "气泡水 80",
+      "ml": 80,
+      "color": "#dce9db"
+    },
+    {
+      "start": 12,
+      "title": "一点清新的酸",
+      "caption": "柠檬汁 20 mL",
+      "short": "柠檬汁 20",
+      "ml": 20,
+      "color": "#dec44c"
+    },
+    {
+      "start": 16,
+      "title": "用甜味收住边角",
+      "caption": "糖浆 10 mL / 可按口味调整",
+      "short": "糖浆 10",
+      "ml": 10,
+      "color": "#d2ad54"
+    },
+    {
+      "start": 20,
+      "title": "把香气，放在杯沿",
+      "caption": "一片柠檬，几片薄荷",
+      "short": "点缀"
+    },
+    {
+      "start": 24,
+      "title": "轻搅两圈，就好",
+      "caption": "让味道混合，留住气泡",
+      "short": "搅拌"
+    },
+    {
+      "start": 27,
+      "title": "留三秒，慢慢喝",
+      "caption": "给今天，添一点清爽",
+      "short": "完成"
+    }
+  ],
+  "scope": "原创家庭饮品示例配方；体积不计冰块及点缀，不作健康功效承诺"
+}

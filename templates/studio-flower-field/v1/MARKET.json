@@ -1,0 +1,41 @@
+{
+  "id": "flower-field",
+  "name": "暗底繁花空间流场",
+  "family": "自然与空间",
+  "category": "自然氛围",
+  "creator": "Tata",
+  "source_kind": "完整作品",
+  "amplification": null,
+  "tags": [
+    "暗底繁花",
+    "花朵流场",
+    "繁花景深"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/flower-field.md",
+  "source": "https://www.douyin.com/video/7680774758036331003",
+  "market": {
+    "date": "2026-11-14",
+    "method": "public Douyin detail response",
+    "followers": 15288,
+    "likes": 162503,
+    "saves": 14011,
+    "shares": 157784,
+    "views": null,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "1fps full length plus final frame; not continuous viewing",
+  "viewer_payoff_hypothesis": "花簇的密度、层次和缓慢显露提供沉浸观察。",
+  "visual_grammar": "暗色空间里多层花簇→风向相关微动→前后景差速→镜头缓慢推进或横向展开。",
+  "required_inputs": "可复用花朵资产与许可、远中近分层、风场、相机曲线与音乐。",
+  "replacement_operation": "换花型、疏密与空间关系；保留层次和微动的相关性。",
+  "avoid": "单张繁花图片单纯放大；拿诗句发布文案说成原片字幕。",
+  "implementation": "原片18.167秒全长视觉已看；与春雨同属自然大类，渲染／声音新稿待验。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

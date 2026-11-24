@@ -1,0 +1,21 @@
+{
+  "template": "studio-verse-prop",
+  "style": "verse-prop",
+  "entry": "index.html",
+  "duration": 24,
+  "capture": "canvas",
+  "canvas": {
+    "width": 720,
+    "height": 1280
+  },
+  "content_promise": "四句原创诗，以信、折扇、红绸、梅枝逐句承接想念，纸面、布面和墨迹转场。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "29f4d7fb22fc63ff8e542c47773f8be3a848baad3745fc0ce5171d9e8d6d1a84",
+    "story.json": "ce95dd848e0c1a95c0efb87df99424d6a6c015eca32f29ffaa2179d6b73022ac",
+    "index.html": "38aa8944a4ca1fc087cf7128c1ec892a4347ebcc9325cc0c046bac09039315f6"
+  },
+  "source": {
+    "scope": "original local Canvas picture and poem; market reference is live-action prop editing, not its footage or music"
+  }
+}

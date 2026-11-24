@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/elementary/wallpapers",
+  "revision": "a533370e8e70309b16d34bd1389cd6295310be69",
+  "selected": [
+    {
+      "path": "backgrounds/Ashim DSilva.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f0b0aee0973eaa3dcb92141696e12dcb760fd1d",
+      "size": 1221365,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/2f0b0aee0973eaa3dcb92141696e12dcb760fd1d"
+    },
+    {
+      "path": "backgrounds/Martin Adams.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99365376a2bafd1adc98b58f9a925b5c347c13d8",
+      "size": 659953,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/99365376a2bafd1adc98b58f9a925b5c347c13d8"
+    },
+    {
+      "path": "backgrounds/Morskie Oko.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0832b455d1d8a79532ad8504c218518482431d93",
+      "size": 2494291,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/0832b455d1d8a79532ad8504c218518482431d93"
+    },
+    {
+      "path": "backgrounds/Sunset by the Pier.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c04159676e76262cd1e91252567a3df8c052447e",
+      "size": 1244157,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/c04159676e76262cd1e91252567a3df8c052447e"
+    },
+    {
+      "path": "backgrounds/Tj Holowaychuk.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "015f10e5063cdf42ef29a45a6d88c39bc9905111",
+      "size": 501195,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/015f10e5063cdf42ef29a45a6d88c39bc9905111"
+    },
+    {
+      "path": "backgrounds/Viktor Forgacs.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96a048cbaeaecf14cd7177ff603620f6f2f138d",
+      "size": 1600593,
+      "url": "https://api.github.com/repos/elementary/wallpapers/git/blobs/f96a048cbaeaecf14cd7177ff603620f6f2f138d"
+    }
+  ],
+  "license_index_url": "https://api.github.com/repos/elementary/wallpapers/contents/debian/copyright?ref=deb-packaging",
+  "license_text": "Odin wallpapers were created by Ryan Gorley featuring the work of Brendon Porter <https://brendonporter.com>, licensed CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>:\nodin <https://github.com/elementary/wallpapers>\nodin-dark <https://github.com/elementary/wallpapers>\n\nUnsplash photos published before June 8, 2017 are CC0 (public domain):\n\nAshim D'Silva <https://unsplash.com/photos/WeYamle9fDM>\nCanazei Granite Ridges <https://unsplash.com/photos/yrwpJwDNSHE>\nMr. Lee <https://unsplash.com/photos/v7r8kZStqFw>\nPhoto by SpaceX <https://unsplash.com/photos/VBNb52J8Trk>\nSunset by the Pier <https://unsplash.com/photos/ces8_Bo7bhQ>\n\nUnsplash photos published on or after June 8, 2017 are free to use, modify, and redistribute subject to the Unsplash license <https://unsplash.com/license>:\n\nMartin Adams <https://unsplash.com/photos/MpTdvXlAsVE>\nMorskie Oko <https://unsplash.com/photos/_1UF_3TlKcQ>\nNattu Adnan <https://unsplash.com/photos/Ai2TRdvI6gM>\nTj Holowaychuk <https://unsplash.com/photos/iGrsa9rL11o>\nViktor Forgacs <https://unsplash.com/photos/q8XSCZYh6D8>\n“A Large Body of Water Surrounded By Mountains” by Peter Thomas <https://unsplash.com/photos/Dxod5pdRtsk>\n“A Trail of Footprints In The Sand” by David Emrich <https://unsplash.com/photos/A9mr3TPoj0k>\n“Photo of Valley” by Aniket Doele <https://unsplash.com/photos/M6XC789HLe8>\n\nPexels photos are free to use, modify, and redistribute subject to the Pexels license <https://www.pexels.com/license/>:\n\nSnow-Capped Mountain <https://www.pexels.com/photo/photo-of-snow-capped-mountain-during-evening-2440024/>\n"
+}

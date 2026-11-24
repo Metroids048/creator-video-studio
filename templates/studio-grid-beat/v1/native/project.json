@@ -1,0 +1,20 @@
+{
+  "template": "studio-grid-beat",
+  "style": "grid-beat",
+  "entry": "index.html",
+  "duration": 32,
+  "capture": "canvas",
+  "content_promise": "夜里，每一扇窗都有自己的生活。有人热饭，有人翻书，有猫睡熟。灯一盏盏熄了，还有一盏亮着。因为晚归的人，也值得被等一等。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "d09070fe69cca76d29c4d987d18403edd3251605b8fd775ddba69c50523fe580",
+    "story.json": "609803e2c2afa4e76ef498d7cd8660ef68c7c9bcabe190136024dbc042038076",
+    "index.html": "e95911dacf63f0b0527aabe9a466864cbc7698dc0b01b07fe9a1a32443837ee9",
+    "ease.js": "81fc5d6aa1d69e6fb2e900143b9c209929c1bc371e43a4481098ad1f16767d05"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT precise easing reused; full picture/story code authored locally"
+  }
+}

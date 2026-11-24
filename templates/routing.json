@@ -1,0 +1,780 @@
+{
+  "schema": 1,
+  "version": "2026-11-15.failure-audit.1",
+  "method": "deterministic_full_copy_features_with_traceable_evidence_not_llm_semantics",
+  "threshold_likes": 200000,
+  "benchmark_policy": {"max_age_years": 3, "publication_date_required": true},
+  "method_proofs": {},
+  "profiles": {
+    "lanshu-v1-editorial": {
+      "id": "F01",
+      "name": "知识论证与信息图",
+      "tracks": [
+        "教育科普",
+        "商业分析",
+        "技术流程"
+      ],
+      "content_model": "有可核对的数据、对象关系、推导条件或状态流；最终能回答一个明确问题。",
+      "form": "图形/坐标/步骤随论证变化；编辑部、信号台、粉笔与排版为分支。",
+      "viewer_payoff": "看懂差异或因果，而非看满屏名词。",
+      "causal_grammar": "问题或反例→显示关系→改变一个条件→比较结果→解释结论。",
+      "required_assets": "有来源的数据/事实、可画的关系和完整解释稿；公式推导另核准确性。",
+      "limits": "editorial优先分布/对比；signal优先网络/状态流；chalk优先几何推导；swiss优先短句层级。不能把四个分支都称为任意科普。样片均16:9约30–32秒，复杂长课未验。",
+      "track_cues": [
+        "商业",
+        "数据",
+        "统计",
+        "收入",
+        "平均数",
+        "中位数",
+        "分布",
+        "报告"
+      ],
+      "grammar_cues": [
+        "逐个",
+        "比较",
+        "极端值",
+        "标尺",
+        "对比",
+        "位置",
+        "摆开"
+      ],
+      "exclude": [
+        "歌曲",
+        "演唱",
+        "多人对话"
+      ]
+    },
+    "lanshu-v2-signal": {
+      "id": "F01",
+      "name": "知识论证与信息图",
+      "tracks": [
+        "教育科普",
+        "商业分析",
+        "技术流程"
+      ],
+      "content_model": "有可核对的数据、对象关系、推导条件或状态流；最终能回答一个明确问题。",
+      "form": "图形/坐标/步骤随论证变化；编辑部、信号台、粉笔与排版为分支。",
+      "viewer_payoff": "看懂差异或因果，而非看满屏名词。",
+      "causal_grammar": "问题或反例→显示关系→改变一个条件→比较结果→解释结论。",
+      "required_assets": "有来源的数据/事实、可画的关系和完整解释稿；公式推导另核准确性。",
+      "limits": "editorial优先分布/对比；signal优先网络/状态流；chalk优先几何推导；swiss优先短句层级。不能把四个分支都称为任意科普。样片均16:9约30–32秒，复杂长课未验。",
+      "track_cues": [
+        "网络",
+        "系统",
+        "请求",
+        "重传",
+        "分块",
+        "缓存",
+        "上传",
+        "下载"
+      ],
+      "grammar_cues": [
+        "失败",
+        "校验",
+        "状态",
+        "队列",
+        "重新",
+        "断点"
+      ],
+      "exclude": [
+        "歌曲",
+        "演唱"
+      ]
+    },
+    "lanshu-v8-chalkboard": {
+      "id": "F01",
+      "name": "知识论证与信息图",
+      "tracks": [
+        "教育科普",
+        "商业分析",
+        "技术流程"
+      ],
+      "content_model": "有可核对的数据、对象关系、推导条件或状态流；最终能回答一个明确问题。",
+      "form": "图形/坐标/步骤随论证变化；编辑部、信号台、粉笔与排版为分支。",
+      "viewer_payoff": "看懂差异或因果，而非看满屏名词。",
+      "causal_grammar": "问题或反例→显示关系→改变一个条件→比较结果→解释结论。",
+      "required_assets": "有来源的数据/事实、可画的关系和完整解释稿；公式推导另核准确性。",
+      "limits": "editorial优先分布/对比；signal优先网络/状态流；chalk优先几何推导；swiss优先短句层级。不能把四个分支都称为任意科普。样片均16:9约30–32秒，复杂长课未验。",
+      "track_cues": [
+        "数学",
+        "几何",
+        "弧度",
+        "圆",
+        "三角形",
+        "公式",
+        "面积"
+      ],
+      "grammar_cues": [
+        "推导",
+        "证明",
+        "旋转",
+        "展开",
+        "半径",
+        "角度"
+      ],
+      "exclude": [
+        "歌曲",
+        "演唱"
+      ]
+    },
+    "opuscar-swiss-motion": {
+      "id": "F01",
+      "name": "知识论证与信息图",
+      "tracks": [
+        "教育科普",
+        "商业分析",
+        "技术流程"
+      ],
+      "content_model": "有可核对的数据、对象关系、推导条件或状态流；最终能回答一个明确问题。",
+      "form": "图形/坐标/步骤随论证变化；编辑部、信号台、粉笔与排版为分支。",
+      "viewer_payoff": "看懂差异或因果，而非看满屏名词。",
+      "causal_grammar": "问题或反例→显示关系→改变一个条件→比较结果→解释结论。",
+      "required_assets": "有来源的数据/事实、可画的关系和完整解释稿；公式推导另核准确性。",
+      "limits": "editorial优先分布/对比；signal优先网络/状态流；chalk优先几何推导；swiss优先短句层级。不能把四个分支都称为任意科普。样片均16:9约30–32秒，复杂长课未验。",
+      "track_cues": [
+        "设计",
+        "排版",
+        "品牌",
+        "口号",
+        "宣言",
+        "字体"
+      ],
+      "grammar_cues": [
+        "短句",
+        "层级",
+        "对齐",
+        "强调",
+        "节奏",
+        "字号"
+      ],
+      "exclude": [
+        "长对话",
+        "演唱"
+      ]
+    },
+    "lanshu-v11-casefile": {
+      "id": "F02",
+      "name": "证据调查与线索排除",
+      "tracks": [
+        "纪实解释",
+        "消费纠纷",
+        "历史疑案"
+      ],
+      "content_model": "存在待解释的事实、相互冲突的证据与可排除假设。",
+      "form": "证物卡、时间线、关系线逐步显露；文字随证据结论变化。",
+      "viewer_payoff": "跟着证据自己推断。",
+      "causal_grammar": "疑点→列事实→形成假设→新证据排除→回收开头疑点。",
+      "required_assets": "真实或明确虚构的证物及出处；证据数量足以支撑结论。",
+      "limits": "当前30秒横屏；长纪录、真人调查、复杂多人物未验。",
+      "track_cues": [
+        "调查",
+        "证据",
+        "案件",
+        "谣言",
+        "失踪",
+        "真相"
+      ],
+      "grammar_cues": [
+        "疑点",
+        "假设",
+        "排除",
+        "时间线",
+        "记录",
+        "反证"
+      ],
+      "exclude": [
+        "歌曲"
+      ]
+    },
+    "paper-ink-landscape": {
+      "id": "F03",
+      "name": "水墨空间寓言",
+      "tracks": [
+        "情绪共鸣",
+        "生活哲理",
+        "文化意境"
+      ],
+      "content_model": "一个具体处境，角色通过空间行动产生选择或变化。",
+      "form": "长卷山形、微人物、留白与远近层次形成空间叙事。",
+      "viewer_payoff": "在行路和停顿中感受处境变化。",
+      "causal_grammar": "目的地/障碍→行走或停留→视角变化→选择→情绪落点。",
+      "required_assets": "可表达动作与空间关系的原创场景；不能只替换末尾字幕。",
+      "limits": "水彩MV、手绘过程和海边扁平插画不能因都是绘画自动并入；海边工程只列弱变体参照。32秒16:9已验。",
+      "track_cues": [
+        "山路",
+        "山水",
+        "纸墨",
+        "旅人",
+        "山顶",
+        "选择",
+        "成长"
+      ],
+      "grammar_cues": [
+        "行走",
+        "路径",
+        "断桥",
+        "绕过",
+        "障碍",
+        "停下",
+        "转身"
+      ],
+      "exclude": [
+        "演唱",
+        "机械",
+        "多人对话"
+      ]
+    },
+    "studio-mechanical-cutaway": {
+      "id": "F04",
+      "name": "物件结构与装配",
+      "tracks": [
+        "工程科普",
+        "产品结构",
+        "装配/制作过程"
+      ],
+      "content_model": "装配分支回答先后接触与成品；剖面分支回答内部件怎样传动。",
+      "form": "稳定物件空间内分解、连接、驱动和观察结果。",
+      "viewer_payoff": "看懂装成什么，或为什么能动。",
+      "causal_grammar": "整体问题→分离部件→接触/传力→同步运转→结果。",
+      "required_assets": "原理资料、部件参考、接触关系和时序；真实产品必须忠实。",
+      "limits": "机械剖面28秒16:9，台灯15秒9:16分别已验；二者不能互换生产合同。配方倒液体需要流体与手势，透镜需要光路，旧工程并入档案不代表能力已覆盖。画内不放用户否定的制作说明。",
+      "track_cues": [
+        "机械",
+        "齿轮",
+        "活塞",
+        "发动机",
+        "水泵",
+        "内部",
+        "原理"
+      ],
+      "grammar_cues": [
+        "传力",
+        "啮合",
+        "同步",
+        "阀门",
+        "流动",
+        "运转",
+        "剖面"
+      ],
+      "exclude": [
+        "人物对话",
+        "歌曲"
+      ]
+    },
+    "object-assembly": {
+      "id": "F04",
+      "name": "物件结构与装配",
+      "tracks": [
+        "工程科普",
+        "产品结构",
+        "装配/制作过程"
+      ],
+      "content_model": "装配分支回答先后接触与成品；剖面分支回答内部件怎样传动。",
+      "form": "稳定物件空间内分解、连接、驱动和观察结果。",
+      "viewer_payoff": "看懂装成什么，或为什么能动。",
+      "causal_grammar": "整体问题→分离部件→接触/传力→同步运转→结果。",
+      "required_assets": "原理资料、部件参考、接触关系和时序；真实产品必须忠实。",
+      "limits": "机械剖面28秒16:9，台灯15秒9:16分别已验；二者不能互换生产合同。配方倒液体需要流体与手势，透镜需要光路，旧工程并入档案不代表能力已覆盖。画内不放用户否定的制作说明。",
+      "track_cues": [
+        "装配",
+        "零件",
+        "桌灯",
+        "花盆",
+        "器物",
+        "组装"
+      ],
+      "grammar_cues": [
+        "卡入",
+        "插入",
+        "拧紧",
+        "拼合",
+        "固定",
+        "接上",
+        "底座"
+      ],
+      "exclude": [
+        "人物打斗",
+        "多人对话",
+        "传力",
+        "啮合"
+      ]
+    },
+    "opuscar-one-line": {
+      "id": "F05",
+      "name": "连续线条演化",
+      "tracks": [
+        "关系寓言",
+        "品牌概念",
+        "生活情绪"
+      ],
+      "content_model": "同一条线不断变成互有关联的物体，变形本身推进含义。",
+      "form": "线条连续生长，旧轮廓参与新轮廓；少切镜。",
+      "viewer_payoff": "看到意象在同一条线上成立。",
+      "causal_grammar": "原始线形→行动/变化→沿已有线转义→最终形象回扣。",
+      "required_assets": "各阶段可连续衔接的路径；每次变形有语义理由。",
+      "limits": "38秒16:9；手绘郁金香的高赞只能证明绘画过程受欢迎，不等于连续演化叙事受欢迎。",
+      "track_cues": [
+        "线条",
+        "一笔",
+        "连续线",
+        "单线"
+      ],
+      "grammar_cues": [
+        "变成",
+        "转义",
+        "一条线",
+        "回到",
+        "延伸",
+        "连接"
+      ],
+      "exclude": [
+        "多人对话",
+        "剖面"
+      ]
+    },
+    "opuscar-pixel-story": {
+      "id": "F06",
+      "name": "像素关卡日常",
+      "tracks": [
+        "打工/校园共鸣",
+        "荒诞日常",
+        "游戏化故事"
+      ],
+      "content_model": "角色为一个目标穿越规则与障碍；事件改变可见状态。",
+      "form": "像素舞台、角色运动、规则提示与反馈形成连续剧情。",
+      "viewer_payoff": "在夸张规则里认出真实生活。",
+      "causal_grammar": "目标→规则→失败/阻碍→换办法→可见代价或反转。",
+      "required_assets": "分层像素场景和完整事件脚本；群体场面需新验证。",
+      "limits": "36秒16:9已验；原作大规模人群、3–4分钟叙事不是当前短样片已证明能力。",
+      "track_cues": [
+        "像素",
+        "宿舍",
+        "关卡",
+        "冒险",
+        "像素日常"
+      ],
+      "grammar_cues": [
+        "目标",
+        "阻碍",
+        "规则",
+        "失败",
+        "换法",
+        "反转",
+        "代价"
+      ],
+      "exclude": [
+        "真实演员"
+      ]
+    },
+    "studio-voxel-island": {
+      "id": "F07",
+      "name": "体素微缩场景",
+      "tracks": [
+        "空间想象",
+        "家园建设",
+        "氛围展示"
+      ],
+      "content_model": "场景部件按空间/功能关系生长，观众看整体空间变化。",
+      "form": "方块微缩、等轴空间、构建顺序与镜头揭示。",
+      "viewer_payoff": "观看一个小世界成形。",
+      "causal_grammar": "空地/初始岛→分区生成→功能连接→整体揭晓。",
+      "required_assets": "可复用的模块、镜头路径和空间叙事；黏土材质不等于已有人物表演。",
+      "limits": "28秒16:9；与像素剧情不合并，核心回报分别是空间与事件。黏土旧片只留材质档案。",
+      "track_cues": [
+        "体素",
+        "微缩",
+        "岛屿",
+        "城镇",
+        "空地",
+        "建筑"
+      ],
+      "grammar_cues": [
+        "分区",
+        "建造",
+        "生长",
+        "连通",
+        "俯瞰",
+        "揭晓"
+      ],
+      "exclude": [
+        "人物对白",
+        "像素关卡"
+      ]
+    },
+    "opuscar-silent-comedy": {
+      "id": "F08",
+      "name": "无对白肢体喜剧",
+      "tracks": [
+        "生活喜剧",
+        "视觉反转",
+        "轻剧情"
+      ],
+      "content_model": "人物目标、误判与行动后果无需旁白也可读懂。",
+      "form": "黑白舞台、姿态预备/动作/反应、节拍停顿。",
+      "viewer_payoff": "提前猜到或最后看懂反转。",
+      "causal_grammar": "想做某事→误判→升级尝试→动作后果→反应回扣。",
+      "required_assets": "完整动作分镜与反应节拍；身体动作可读性先验。",
+      "limits": "仅16:9、基础人形舞台动作；原作白底线描动物，本地黑白舞台/片间字幕，材质不同，不承诺动物或任意角色表演。市场双依据不等于本地新稿质量通过。",
+      "track_cues": [
+        "无对白",
+        "哑剧",
+        "肢体",
+        "喜剧",
+        "滑稽"
+      ],
+      "grammar_cues": [
+        "误判",
+        "失误",
+        "升级",
+        "后果",
+        "反应",
+        "误会"
+      ],
+      "exclude": [
+        "长对话",
+        "剖面"
+      ]
+    },
+    "studio-flower-field": {
+      "id": "F09",
+      "name": "自然氛围与循环",
+      "tracks": [
+        "治愈",
+        "自然意境",
+        "节气氛围"
+      ],
+      "content_model": "少量短句或无文案；注意力由有变化的自然过程承载。",
+      "form": "花草流场、雨点/涟漪、层次与缓慢推进。",
+      "viewer_payoff": "可停留、可循环的感官体验。",
+      "causal_grammar": "建立空间→出现扰动→传播与回应→空间恢复/循环。",
+      "required_assets": "场景、运动规律和可循环音画；静态短句不承担全部内容。",
+      "limits": "30秒16:9；雨景原片市场较强但本地雨景样片较弱已归档，不因来源高赞自动恢复。",
+      "track_cues": [
+        "花田",
+        "花海",
+        "花朵",
+        "草地",
+        "自然"
+      ],
+      "grammar_cues": [
+        "风吹",
+        "扰动",
+        "摇曳",
+        "波浪",
+        "循环",
+        "绽放"
+      ],
+      "exclude": [
+        "混剪",
+        "图片卡点",
+        "讲解"
+      ]
+    },
+    "studio-ui-morph": {
+      "id": "F10",
+      "name": "产品界面操作演示",
+      "tracks": [
+        "软件产品",
+        "工具教程",
+        "功能传播"
+      ],
+      "content_model": "用户为一个任务操作界面，操作后有清晰可见的结果。",
+      "form": "输入→界面反馈→层级或布局连续变形→完成任务。",
+      "viewer_payoff": "看明白功能如何解决问题。",
+      "causal_grammar": "原任务/阻碍→一次关键操作→状态反馈→完成效果。",
+      "required_assets": "可信界面、功能前后与操作链；实录与程序界面区分。",
+      "limits": "24秒16:9；操作演示互动可以用于产品演示赛道，不能借给普通MV。半色调吉祥物只是装饰，不单独计模板。",
+      "track_cues": [
+        "界面",
+        "待办",
+        "软件",
+        "产品",
+        "交互",
+        "按钮"
+      ],
+      "grammar_cues": [
+        "点击",
+        "拖动",
+        "输入",
+        "状态反馈",
+        "完成",
+        "操作"
+      ],
+      "exclude": [
+        "歌词",
+        "演唱"
+      ]
+    },
+    "photo-beat-montage": {
+      "id": "F11",
+      "name": "摄影图文与音乐编排",
+      "tracks": [
+        "旅行/成长回忆",
+        "生活共鸣",
+        "摄影展示"
+      ],
+      "content_model": "图像之间存在时间、人物、地点或情绪关系；音乐组织节奏。",
+      "form": "照片选取与排序为主，卡点、翻页、胶带、分屏、摆锤是分支效果。",
+      "viewer_payoff": "从具体照片读出经历与情绪。",
+      "causal_grammar": "建立主题→照片递进/对比→情绪重拍→回收一张/一句。",
+      "required_assets": "可使用照片与音乐、组图关系、节拍点；音乐不必来自AI。",
+      "limits": "卡点24秒、照片书36秒均16:9；翻页是支路，不能把每种蒙版算一套。歌曲仅作配乐时可选；要求词义驱动则转F13。",
+      "track_cues": [
+        "照片",
+        "图片",
+        "摄影",
+        "混剪",
+        "卡点",
+        "音乐"
+      ],
+      "grammar_cues": [
+        "转场",
+        "重拍",
+        "对比",
+        "拼贴",
+        "切换"
+      ],
+      "exclude": [
+        "乐谱",
+        "歌词变画面"
+      ]
+    },
+    "studio-curved-photo-album": {
+      "id": "F11",
+      "name": "摄影图文与音乐编排",
+      "tracks": [
+        "旅行/成长回忆",
+        "生活共鸣",
+        "摄影展示"
+      ],
+      "content_model": "图像之间存在时间、人物、地点或情绪关系；音乐组织节奏。",
+      "form": "照片选取与排序为主，卡点、翻页、胶带、分屏、摆锤是分支效果。",
+      "viewer_payoff": "从具体照片读出经历与情绪。",
+      "causal_grammar": "建立主题→照片递进/对比→情绪重拍→回收一张/一句。",
+      "required_assets": "可使用照片与音乐、组图关系、节拍点；音乐不必来自AI。",
+      "limits": "卡点24秒、照片书36秒均16:9；翻页是支路，不能把每种蒙版算一套。歌曲仅作配乐时可选；要求词义驱动则转F13。",
+      "track_cues": [
+        "相册",
+        "画册",
+        "旅行",
+        "照片",
+        "回忆"
+      ],
+      "grammar_cues": [
+        "翻页",
+        "翻过",
+        "翻动",
+        "贴纸",
+        "记忆"
+      ],
+      "exclude": [
+        "乐谱",
+        "歌词变画面"
+      ]
+    },
+    "studio-paper-question": {
+      "id": "F12",
+      "name": "纸艺窗口与拼贴叙事",
+      "tracks": [
+        "问题解释",
+        "轻故事",
+        "空间隐喻"
+      ],
+      "content_model": "纸层显隐、开窗与物件替换推进信息，内容不依赖高难角色表演。",
+      "form": "纸张厚度、层叠、窗口、遮挡与景别变化。",
+      "viewer_payoff": "通过揭开/翻开看到一个新关系。",
+      "causal_grammar": "问题/封闭层→打开→新对象/关系→选择→收束。",
+      "required_assets": "原创分层画面、遮挡关系、动作节拍。",
+      "limits": "28秒16:9；历史纸袋返修沿父版，不为合并替换其工程。皮影/彩铅角色摄影单列未落地。",
+      "track_cues": [
+        "纸艺",
+        "窗口",
+        "提问",
+        "拼贴",
+        "剪纸"
+      ],
+      "grammar_cues": [
+        "打开",
+        "撕开",
+        "揭开",
+        "封闭",
+        "回答",
+        "选择"
+      ],
+      "exclude": [
+        "人物打斗",
+        "多人对话"
+      ]
+    },
+    "studio-watercolor-music": {
+      "id": "F13",
+      "name": "歌曲歌词意象MV",
+      "tracks": [
+        "歌曲传播",
+        "情感共鸣",
+        "古风/生活意象"
+      ],
+      "content_model": "以真实演唱和完整歌词段落为主时钟，画面随词义推进。",
+      "form": "歌词→人物/物件/场景意象→动作或图像转义→随演唱衔接；水彩、照片、书法道具可以是实现分支。",
+      "viewer_payoff": "听歌同时读懂词中的情绪与含义。",
+      "causal_grammar": "逐句理解→搭建意象关系→与演唱时点绑定→副歌变化/回收。",
+      "required_assets": "歌曲/演唱与可使用音源、歌词时间表、跨句连续意象；不能用器乐替代演唱。",
+      "limits": "本地《送别》55秒完整一节，取原录音16–71秒，不是117秒整首。薄层水彩与人物表现尚有质量差距。仅16:9；无歌声生成、真人手部表演能力；双对标1/2。",
+      "track_cues": [
+        "歌词",
+        "歌曲",
+        "演唱",
+        "副歌",
+        "MV",
+        "水彩"
+      ],
+      "grammar_cues": [
+        "词义",
+        "意象",
+        "逐句",
+        "重逢",
+        "怀念",
+        "离别",
+        "画面"
+      ],
+      "exclude": [
+        "乐谱",
+        "识谱",
+        "五线谱"
+      ]
+    },
+    "studio-music-score": {
+      "id": "S01",
+      "name": "专业识谱",
+      "tracks": [
+        "音乐教育"
+      ],
+      "causal_grammar": "音符位置→音高→节拍→演奏",
+      "required_assets": "真实谱稿",
+      "limits": "不承接歌词MV",
+      "track_cues": [
+        "乐谱",
+        "识谱",
+        "五线谱",
+        "音符"
+      ],
+      "grammar_cues": [
+        "谱线",
+        "节拍",
+        "音高",
+        "演奏"
+      ],
+      "exclude": [
+        "歌词",
+        "演唱",
+        "歌曲MV"
+      ],
+      "specialist": true
+    }
+  },
+  "benchmarks": {
+    "lanshu-v1-editorial": [],
+    "lanshu-v2-signal": [],
+    "lanshu-v8-chalkboard": [],
+    "opuscar-swiss-motion": [],
+    "lanshu-v11-casefile": [],
+    "paper-ink-landscape": [],
+    "studio-mechanical-cutaway": [],
+    "object-assembly": [],
+    "opuscar-one-line": [],
+    "opuscar-pixel-story": [
+      {
+        "id": "7600724311846437049",
+        "url": "https://www.douyin.com/video/7600724311846437049",
+        "likes": 325308,
+        "evidence": "docs/research/2026-11-14-广域风格模板证据/browser-probe/public-7600724311846437049.json",
+        "observation": "历史全段抽帧/实际音轨模型材料可复用，非本轮重新真人视听",
+        "mechanism_reviewed": true,
+        "full_observation": true,
+        "source_role": "original",
+        "evidence_sha256": "37f0ab29d05356730bf80f012d11360b95eac8eb90826a2ef6c885f65083b407"
+      }
+    ],
+    "studio-voxel-island": [],
+    "opuscar-silent-comedy": [
+      {
+        "id": "s13dLaTIHSg",
+        "url": "https://www.youtube.com/watch?v=s13dLaTIHSg",
+        "likes": 229000,
+        "source_role": "original",
+        "mechanism_reviewed": false,
+        "full_observation": false,
+        "evidence": "productions/template-rollout-20261114/simons-pair-evidence.json",
+        "evidence_sha256": "42439c7935d428cdcf4b28f88214650622796daa19f99a454a0d427608894e1c",
+        "likes_exact": false,
+        "observation": "2026-11-15撤回旧完整拆解：偷三明治/空盘结尾误述。实际关键画面为挤占沙发、主人坐扶手、猫离开；本轮未完整连续重看，不计合格完整观察。原帖互动数保留为历史指标。",
+        "withdrawn_binding_20261115": {
+          "mechanism_reviewed": true,
+          "full_observation": true,
+          "evidence_sha256": "f63910c2cfd4ad237a96c6279518cc4f97c6925dd3227a2c843b0d3bd6477af7",
+          "observation": "黑白二维、无对白、清晰目标→重复尝试→动作升级→主人/动物反应→反转回扣；声音负责接触和反应而非解释剧情。 同类无对白肢体喜剧的观看与叙事机制；原作白底线描动物，与本地黑白舞台人物/片间字幕的画面材质不同。不是对现有引擎动物表演能力的证明。"
+        }
+      },
+      {
+        "id": "3VLcLH97eRw",
+        "url": "https://www.youtube.com/watch?v=3VLcLH97eRw",
+        "likes": 240000,
+        "source_role": "original",
+        "mechanism_reviewed": true,
+        "full_observation": true,
+        "evidence": "productions/template-rollout-20261114/simons-pair-evidence.json",
+        "evidence_sha256": "42439c7935d428cdcf4b28f88214650622796daa19f99a454a0d427608894e1c",
+        "likes_exact": false,
+        "observation": "黑白二维、无对白、清晰目标→重复尝试→动作升级→主人/动物反应→反转回扣；声音负责接触和反应而非解释剧情。 同类无对白肢体喜剧的观看与叙事机制；原作白底线描动物，与本地黑白舞台人物/片间字幕的画面材质不同。不是对现有引擎动物表演能力的证明。",
+        "withdrawn_binding_20261115": {
+          "mechanism_reviewed": true,
+          "full_observation": true,
+          "evidence_sha256": "f63910c2cfd4ad237a96c6279518cc4f97c6925dd3227a2c843b0d3bd6477af7",
+          "observation": "黑白二维、无对白、清晰目标→重复尝试→动作升级→主人/动物反应→反转回扣；声音负责接触和反应而非解释剧情。 同类无对白肢体喜剧的观看与叙事机制；原作白底线描动物，与本地黑白舞台人物/片间字幕的画面材质不同。不是对现有引擎动物表演能力的证明。"
+        }
+      }
+    ],
+    "studio-flower-field": [
+      {
+        "id": "7684122337486746341",
+        "url": "https://www.douyin.com/video/7684122337486746341",
+        "likes": 635940,
+        "source_role": "original",
+        "mechanism_reviewed": true,
+        "full_observation": true,
+        "evidence": "productions/template-rollout-20261114/flower-pair-evidence.json",
+        "evidence_sha256": "0254ba6a5b34323087aaf03e1b35f05eb0ac408c93eb0c9cc1fdec93855361dd",
+        "observation": "暗夜红花、满幅花茎、近固定构图、微风连续摇动、光晕；无歌词剧情或乐谱；全段抽帧＋实际音轨AI观察，非真人连续视听"
+      },
+      {
+        "id": "7695747594438292965",
+        "url": "https://www.douyin.com/video/7695747594438292965",
+        "likes": 223214,
+        "source_role": "original",
+        "mechanism_reviewed": true,
+        "full_observation": true,
+        "evidence": "productions/template-rollout-20261114/flower-pair-evidence.json",
+        "evidence_sha256": "0254ba6a5b34323087aaf03e1b35f05eb0ac408c93eb0c9cc1fdec93855361dd",
+        "observation": "暗夜蓝色小花密集填满画面、花茎随风摆动、缓慢镜头；无歌词剧情或乐谱；全段抽帧＋实际音轨AI观察，非真人连续视听"
+      }
+    ],
+    "studio-ui-morph": [],
+    "photo-beat-montage": [],
+    "studio-curved-photo-album": [],
+    "studio-paper-question": [],
+    "studio-watercolor-music": [
+      {
+        "id": "7690199228575960339",
+        "url": "https://www.douyin.com/video/7690199228575960339",
+        "likes": 632835,
+        "evidence": "docs/research/2026-11-14-非纯AI高互动模板/recap-7690199228575960339-public.json",
+        "observation": "历史全段抽帧/实际音轨模型材料可复用，非本轮重新真人视听",
+        "mechanism_reviewed": true,
+        "full_observation": true,
+        "source_role": "original",
+        "evidence_sha256": "032b53e49ba73bfdabe38cd14a1b05dbb39fbdf92aedb054ce718a56b3ff6bd3"
+      }
+    ]
+  }
+}

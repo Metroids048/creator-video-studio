@@ -1,0 +1,20 @@
+{
+  "template": "studio-flower-field",
+  "style": "flower-field",
+  "entry": "index.html",
+  "duration": 30,
+  "capture": "canvas",
+  "content_promise": "先是几朵，然后是整个花园。风来的时候，没有一朵站得笔直。可它们，也没有因此不再开花。风过，花还在。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "main.js": "d09070fe69cca76d29c4d987d18403edd3251605b8fd775ddba69c50523fe580",
+    "story.json": "447373ef7efe4b7a851d6f8a35dc068766de3e8439ec0526a9e10b45f2e8ce4a",
+    "index.html": "e95911dacf63f0b0527aabe9a466864cbc7698dc0b01b07fe9a1a32443837ee9",
+    "ease.js": "81fc5d6aa1d69e6fb2e900143b9c209929c1bc371e43a4481098ad1f16767d05"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "scope": "MIT precise easing reused; full picture/story code authored locally"
+  }
+}

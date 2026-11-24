@@ -1,0 +1,772 @@
+{
+  "title": "风从窗边经过",
+  "duration": 33.6,
+  "notes": [
+    {
+      "bar": 0,
+      "beat": 0,
+      "at": 1.2,
+      "length": 0.54,
+      "midi": 72,
+      "voice": "melody"
+    },
+    {
+      "bar": 0,
+      "beat": 1,
+      "at": 1.8,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 0,
+      "beat": 2,
+      "at": 2.4,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 0,
+      "beat": 3,
+      "at": 3.0,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 0,
+      "beat": 0,
+      "at": 1.2,
+      "length": 0.55,
+      "midi": 48,
+      "voice": "bass"
+    },
+    {
+      "bar": 0,
+      "beat": 1,
+      "at": 1.8,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 0,
+      "beat": 2,
+      "at": 2.4,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 0,
+      "beat": 3,
+      "at": 3.0,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 0,
+      "at": 3.6,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 1,
+      "beat": 1,
+      "at": 4.2,
+      "length": 0.54,
+      "midi": 77,
+      "voice": "melody"
+    },
+    {
+      "bar": 1,
+      "beat": 2,
+      "at": 4.8,
+      "length": 0.54,
+      "midi": 81,
+      "voice": "melody"
+    },
+    {
+      "bar": 1,
+      "beat": 3,
+      "at": 5.4,
+      "length": 0.54,
+      "midi": 77,
+      "voice": "melody"
+    },
+    {
+      "bar": 1,
+      "beat": 0,
+      "at": 3.6,
+      "length": 0.55,
+      "midi": 53,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 1,
+      "at": 4.2,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 2,
+      "at": 4.8,
+      "length": 0.55,
+      "midi": 60,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 3,
+      "at": 5.4,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 0,
+      "at": 6.0,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 2,
+      "beat": 1,
+      "at": 6.6,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 2,
+      "beat": 2,
+      "at": 7.2,
+      "length": 0.54,
+      "midi": 84,
+      "voice": "melody"
+    },
+    {
+      "bar": 2,
+      "beat": 3,
+      "at": 7.8,
+      "length": 0.54,
+      "midi": 83,
+      "voice": "melody"
+    },
+    {
+      "bar": 2,
+      "beat": 0,
+      "at": 6.0,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 1,
+      "at": 6.6,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 2,
+      "at": 7.2,
+      "length": 0.55,
+      "midi": 60,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 3,
+      "at": 7.8,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 0,
+      "at": 8.4,
+      "length": 0.54,
+      "midi": 81,
+      "voice": "melody"
+    },
+    {
+      "bar": 3,
+      "beat": 1,
+      "at": 9.0,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 3,
+      "beat": 2,
+      "at": 9.6,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 3,
+      "beat": 3,
+      "at": 10.2,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 3,
+      "beat": 0,
+      "at": 8.4,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 1,
+      "at": 9.0,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 2,
+      "at": 9.6,
+      "length": 0.55,
+      "midi": 62,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 3,
+      "at": 10.2,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 0,
+      "at": 10.8,
+      "length": 0.54,
+      "midi": 72,
+      "voice": "melody"
+    },
+    {
+      "bar": 4,
+      "beat": 1,
+      "at": 11.4,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 4,
+      "beat": 2,
+      "at": 12.0,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 4,
+      "beat": 3,
+      "at": 12.6,
+      "length": 0.54,
+      "midi": 84,
+      "voice": "melody"
+    },
+    {
+      "bar": 4,
+      "beat": 0,
+      "at": 10.8,
+      "length": 0.55,
+      "midi": 48,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 1,
+      "at": 11.4,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 2,
+      "at": 12.0,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 3,
+      "at": 12.6,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 0,
+      "at": 13.2,
+      "length": 0.54,
+      "midi": 83,
+      "voice": "melody"
+    },
+    {
+      "bar": 5,
+      "beat": 1,
+      "at": 13.8,
+      "length": 0.54,
+      "midi": 81,
+      "voice": "melody"
+    },
+    {
+      "bar": 5,
+      "beat": 2,
+      "at": 14.4,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 5,
+      "beat": 3,
+      "at": 15.0,
+      "length": 0.54,
+      "midi": 77,
+      "voice": "melody"
+    },
+    {
+      "bar": 5,
+      "beat": 0,
+      "at": 13.2,
+      "length": 0.55,
+      "midi": 53,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 1,
+      "at": 13.8,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 2,
+      "at": 14.4,
+      "length": 0.55,
+      "midi": 60,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 3,
+      "at": 15.0,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 0,
+      "at": 15.6,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 6,
+      "beat": 1,
+      "at": 16.2,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 6,
+      "beat": 2,
+      "at": 16.8,
+      "length": 0.54,
+      "midi": 72,
+      "voice": "melody"
+    },
+    {
+      "bar": 6,
+      "beat": 3,
+      "at": 17.4,
+      "length": 0.54,
+      "midi": 71,
+      "voice": "melody"
+    },
+    {
+      "bar": 6,
+      "beat": 0,
+      "at": 15.6,
+      "length": 0.55,
+      "midi": 48,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 1,
+      "at": 16.2,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 2,
+      "at": 16.8,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 3,
+      "at": 17.4,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 0,
+      "at": 18.0,
+      "length": 0.54,
+      "midi": 72,
+      "voice": "melody"
+    },
+    {
+      "bar": 7,
+      "beat": 1,
+      "at": 18.6,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 7,
+      "beat": 2,
+      "at": 19.2,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 7,
+      "beat": 3,
+      "at": 19.8,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 7,
+      "beat": 0,
+      "at": 18.0,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 1,
+      "at": 18.6,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 2,
+      "at": 19.2,
+      "length": 0.55,
+      "midi": 62,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 3,
+      "at": 19.8,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 0,
+      "at": 20.4,
+      "length": 0.54,
+      "midi": 81,
+      "voice": "melody"
+    },
+    {
+      "bar": 8,
+      "beat": 1,
+      "at": 21.0,
+      "length": 0.54,
+      "midi": 84,
+      "voice": "melody"
+    },
+    {
+      "bar": 8,
+      "beat": 2,
+      "at": 21.6,
+      "length": 0.54,
+      "midi": 83,
+      "voice": "melody"
+    },
+    {
+      "bar": 8,
+      "beat": 3,
+      "at": 22.2,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 8,
+      "beat": 0,
+      "at": 20.4,
+      "length": 0.55,
+      "midi": 45,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 1,
+      "at": 21.0,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 2,
+      "at": 21.6,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 3,
+      "at": 22.2,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 0,
+      "at": 22.8,
+      "length": 0.54,
+      "midi": 77,
+      "voice": "melody"
+    },
+    {
+      "bar": 9,
+      "beat": 1,
+      "at": 23.4,
+      "length": 0.54,
+      "midi": 81,
+      "voice": "melody"
+    },
+    {
+      "bar": 9,
+      "beat": 2,
+      "at": 24.0,
+      "length": 0.54,
+      "midi": 79,
+      "voice": "melody"
+    },
+    {
+      "bar": 9,
+      "beat": 3,
+      "at": 24.6,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 9,
+      "beat": 0,
+      "at": 22.8,
+      "length": 0.55,
+      "midi": 53,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 1,
+      "at": 23.4,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 2,
+      "at": 24.0,
+      "length": 0.55,
+      "midi": 60,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 3,
+      "at": 24.6,
+      "length": 0.55,
+      "midi": 57,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 0,
+      "at": 25.2,
+      "length": 0.54,
+      "midi": 76,
+      "voice": "melody"
+    },
+    {
+      "bar": 10,
+      "beat": 1,
+      "at": 25.8,
+      "length": 0.54,
+      "midi": 74,
+      "voice": "melody"
+    },
+    {
+      "bar": 10,
+      "beat": 2,
+      "at": 26.4,
+      "length": 0.54,
+      "midi": 71,
+      "voice": "melody"
+    },
+    {
+      "bar": 10,
+      "beat": 3,
+      "at": 27.0,
+      "length": 0.54,
+      "midi": 67,
+      "voice": "melody"
+    },
+    {
+      "bar": 10,
+      "beat": 0,
+      "at": 25.2,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 1,
+      "at": 25.8,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 2,
+      "at": 26.4,
+      "length": 0.55,
+      "midi": 62,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 3,
+      "at": 27.0,
+      "length": 0.55,
+      "midi": 59,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 0,
+      "at": 27.6,
+      "length": 2.4,
+      "midi": 72,
+      "voice": "melody"
+    },
+    {
+      "bar": 11,
+      "beat": 0,
+      "at": 27.6,
+      "length": 0.55,
+      "midi": 48,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 1,
+      "at": 28.2,
+      "length": 0.55,
+      "midi": 52,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 2,
+      "at": 28.8,
+      "length": 0.55,
+      "midi": 55,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 3,
+      "at": 29.4,
+      "length": 0.55,
+      "midi": 60,
+      "voice": "bass"
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 10.8,
+      "text": "窗边：第一句轻轻展开。"
+    },
+    {
+      "start": 10.8,
+      "end": 20.4,
+      "text": "风过：旋律向上，再回来。"
+    },
+    {
+      "start": 20.4,
+      "end": 30,
+      "text": "回响：同一动机走向终止。"
+    },
+    {
+      "start": 30,
+      "end": 33.6,
+      "text": "把最后一个音，留给窗外的风。"
+    }
+  ]
+}

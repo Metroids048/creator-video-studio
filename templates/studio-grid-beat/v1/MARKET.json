@@ -1,0 +1,42 @@
+{
+  "id": "grid-beat",
+  "name": "多分屏图片编舞",
+  "family": "音乐与图文",
+  "category": "图片与音乐",
+  "creator": "悦亦川",
+  "source_kind": "剪辑模板教程",
+  "amplification": null,
+  "tags": [
+    "四分屏",
+    "多分屏卡点",
+    "网格照片",
+    "照片编舞"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/grid-beat.md",
+  "source": "https://www.douyin.com/video/7645981477192948089",
+  "market": {
+    "date": "2026-11-14",
+    "method": "public Douyin detail response",
+    "followers": 175322,
+    "likes": 75516,
+    "saves": 25912,
+    "shares": 4260,
+    "views": null,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "1fps full length plus final frame; not continuous viewing",
+  "viewer_payoff_hypothesis": "同拍点的分屏重排产生整体秩序与局部惊喜。",
+  "visual_grammar": "四屏稳定构图→按拍点让一屏主导→重组位置与大小→单屏落定；主体焦点连续。",
+  "required_inputs": "照片分组、主次关系、版位表、入出拍点、清晰落定时长。",
+  "replacement_operation": "将数字占位换成真正照片后重排主次与裁切，不能直接把教程界面当作品。",
+  "avoid": "每个框同时乱动；只换颜色；照片均是占位数字。",
+  "implementation": "完整教程已看；7.55万赞证明教程需求，尚无同版净作品与模板验收。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}

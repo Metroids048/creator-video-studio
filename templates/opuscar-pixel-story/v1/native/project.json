@@ -1,0 +1,29 @@
+{
+  "template": "opuscar-pixel-story",
+  "style": "pixel-story",
+  "entry": "index.html",
+  "duration": 36,
+  "content_promise": "用夜间到家、故障电梯、无限楼梯和错误门牌讲清一次最后一公里的荒诞反转。",
+  "source_demo_unchanged": false,
+  "changed_files": {
+    "index.html": "8a9e4a726e2a5a40ec20a1aaf7103da6500f413e5a57614a224797f20ab64286",
+    "main.js": "65c65c30f02d756a88de978e28de12aa8a1f067bc9da5d1aea30fb92553abbad",
+    "story.json": "ca2899208b8f42912c48d30c4a7943f761a4e3f6dc7aaa003612fa490b8ba016"
+  },
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "revision": "8814b84c4e0f2c02884ea815eb43b67334aedeb1",
+    "reused": [
+      "px.js",
+      "sprites.js"
+    ],
+    "replacement": [
+      "全新五场景",
+      "中文新稿",
+      "障碍与反转",
+      "城市建筑与道具",
+      "完整时间线"
+    ]
+  },
+  "capture": "canvas"
+}

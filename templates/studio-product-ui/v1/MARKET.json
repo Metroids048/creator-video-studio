@@ -1,0 +1,40 @@
+{
+  "id": "product-ui",
+  "name": "真实产品界面发布片",
+  "family": "品牌与产品",
+  "category": "产品与演示",
+  "creator": "Miguel07Code",
+  "source_kind": "公开案例；完整原片待核",
+  "amplification": null,
+  "tags": [
+    "产品界面",
+    "软件发布",
+    "UI动效",
+    "Shotbase"
+  ],
+  "entry": ".agents/skills/studio-video-templates/references/formats/product-ui.md",
+  "source": "https://x.com/Miguel07Code/status/2102441708395041170",
+  "market": {
+    "date": "2026-09-27",
+    "method": "historical public X post HTML snapshot",
+    "followers": null,
+    "likes": 1315,
+    "views": 150893,
+    "retention": null,
+    "follower_growth": null,
+    "recent_consecutive_baseline": false
+  },
+  "visual_review": "Hypit samples in inherited source index; not this session full-length viewing",
+  "viewer_payoff_hypothesis": "具体用户任务被界面操作解决，观众看清产品收益。",
+  "visual_grammar": "问题／输入→真实界面重点操作→结果变化→关键收益与品牌收束。",
+  "required_inputs": "同版本真实截图／录屏、正确界面状态、目标任务、功能事实与标识。",
+  "replacement_operation": "整组换成真实产品状态，重新设计焦点、操作与结果；不能只贴新logo。",
+  "avoid": "虚构产品功能；广告字卡遮住操作；用占位UI冒充真实使用。",
+  "implementation": "作者称HyperFrames；可复用现有代码与原生素材路线，未核此原片全长。",
+  "method_sources": [],
+  "method_source_index": "docs/research/2026-11-14-广域风格模板证据/可复用工程与适配差距.md",
+  "compatible_production_templates": [],
+  "readiness": "research-recipe",
+  "production_template": false,
+  "formats_verified": []
+}
