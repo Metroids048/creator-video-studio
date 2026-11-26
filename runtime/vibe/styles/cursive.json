@@ -1,0 +1,4 @@
+{"desc": "行书（志莽行书）— 抒情、古风、情歌", "for": ["lyric-mv", "knowledge-short"], "font": "ZhiMangXing-Regular.ttf",
+ "fallback": "\"Kaiti SC\", serif",
+ "colors": {"base": "#F7F1E6", "fill": "#F2C46D", "outline": "#1C1A26", "title": "#F7EBD3", "artist": "#D9E4F2", "bar": "#22202C", "pun": "#F2C46D"},
+ "stroke": 4, "shadow": 3}

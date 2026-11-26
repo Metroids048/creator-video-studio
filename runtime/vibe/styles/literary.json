@@ -1,0 +1,4 @@
+{"desc": "文艺楷（霞鹜文楷）— 散文、人文、温柔叙述", "for": ["knowledge-short", "lyric-mv"], "font": "LXGWWenKai-Medium.ttf",
+ "fallback": "\"Songti SC\", serif",
+ "colors": {"base": "#F3EEE4", "fill": "#E8C27A", "outline": "#1A1A1A", "title": "#F7EFE0", "artist": "#D0DCEA", "bar": "#1E1E24", "pun": "#E8C27A"},
+ "stroke": 3, "shadow": 2}

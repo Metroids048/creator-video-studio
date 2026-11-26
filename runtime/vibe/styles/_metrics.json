@@ -1,0 +1,50 @@
+{
+ "LXGWWenKai-Medium.ttf": {
+  "family": "LXGW WenKai Medium",
+  "assH": 0.72,
+  "assAdv": 0.736,
+  "pxH": 0.94
+ },
+ "LongCang-Regular.ttf": {
+  "family": "Long Cang",
+  "assH": 0.63,
+  "assAdv": 0.726,
+  "pxH": 0.83
+ },
+ "MaShanZheng-Regular.ttf": {
+  "family": "Ma Shan Zheng",
+  "assH": 0.64,
+  "assAdv": 0.692,
+  "pxH": 0.87
+ },
+ "ShantellSans-VF.ttf": {
+  "family": "Shantell Sans Light",
+  "assH": 0.66,
+  "assAdv": 0.698,
+  "pxH": 1.08
+ },
+ "SmileySans-Oblique.ttf": {
+  "family": "Smiley Sans Oblique",
+  "assH": 0.83,
+  "assAdv": 0.648,
+  "pxH": 1.0
+ },
+ "ZCOOLKuaiLe-Regular.ttf": {
+  "family": "ZCOOL KuaiLe",
+  "assH": 0.82,
+  "assAdv": 0.85,
+  "pxH": 0.88
+ },
+ "ZCOOLQingKeHuangYou-Regular.ttf": {
+  "family": "ZCOOL QingKe HuangYou",
+  "assH": 0.86,
+  "assAdv": 0.696,
+  "pxH": 0.92
+ },
+ "ZhiMangXing-Regular.ttf": {
+  "family": "Zhi Mang Xing",
+  "assH": 0.63,
+  "assAdv": 0.62,
+  "pxH": 0.86
+ }
+}

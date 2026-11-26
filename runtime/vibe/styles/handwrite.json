@@ -1,0 +1,4 @@
+{"desc": "手写（龙藏体）— 日记感、校园、治愈", "for": ["lyric-mv", "knowledge-short"], "font": "LongCang-Regular.ttf",
+ "fallback": "\"Kaiti SC\", serif",
+ "colors": {"base": "#FFF8EC", "fill": "#8FD3C7", "outline": "#22313A", "title": "#FFF4E0", "artist": "#CDE7F0", "bar": "#22313A", "pun": "#FF8E7A"},
+ "stroke": 4, "shadow": 3}

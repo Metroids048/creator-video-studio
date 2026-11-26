@@ -76,6 +76,23 @@ python3 scripts/studio.py plan examples/briefs/focus.json
 - AVS 的 Python 源码、Episode 合同、分阶段入口及本地动效模板随仓库提供。按 [AVS 本地配置](runtime/avs/README.md) 安装后，用 `bash scripts/avs.sh runtime-check` 核对运行条件。
 - Nook 的场景引擎随仓库提供。按 [Nook 本地配置](resources/nook-anim/setup.md) 安装依赖和字体，再运行 `python3 scripts/nook.py check`。
 
+## 建立 Vibe 原生工程
+
+仓库包含知识短片和歌词 MV 的工程模板、逐帧渲染器、字幕和音频工具，以及打包脚本。原生入口使用 macOS 上的 Chrome、前文的 Node 和 FFmpeg，以及 `runtime/vibe-venv` 下的 Python 3.13 环境。Python 依赖版本见 [Vibe 锁文件](docs/vibe-macos-arm64.lock.json)。
+
+将字形样式指定的字体放入 `runtime/vibe/fonts/`。字体名见 [样式预设](runtime/vibe/styles/)，基础检查还需要 `PermanentMarker-Regular.ttf` 与 `ShantellSans-VF.ttf`。从字体项目取得字体及相应许可。
+
+```sh
+python3.13 -m venv runtime/vibe-venv
+runtime/vibe-venv/bin/python -m pip install numpy==2.2.6 scipy==1.15.3 fonttools==4.60.1
+npm install --prefix runtime/vibe
+mkdir -p works
+bash scripts/vibe.sh runtime-check
+bash scripts/vibe.sh --mode production demo-vibe new knowledge-short
+```
+
+在 `works/vibe-demo-vibe/` 填写分镜和来源，再按工程中的 `FILM_STATUS.md` 继续。模板目录包含源码和换稿说明。历史样片播放器依赖原工作区中的已登记素材，查看公开版本的模板可用 `python3 scripts/studio.py templates list`。
+
 ## 代码与文档
 
 - `scripts/studio.py` 提供路由、制作、恢复、返修和交付入口。 `adapters/` 对接各路线的渲染器和编辑器。

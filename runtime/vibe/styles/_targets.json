@@ -1,0 +1,23 @@
+{
+ "_doc": "Glyph heights in px (measured ink, not font size) — the user's 2026-10-24 call: subtitles smaller, still the first read. style.py turns them into font sizes with _metrics.json. A preset may override any of them. 2026-10-24 (refs measured): references keep body text at 2–4 % of the frame height; vertical lyric 60 → 48.",
+ "canvas": {
+  "karaoke": 40,
+  "pun": 58,
+  "openTitle": 84,
+  "openArtist": 34,
+  "sub": 36,
+  "center": 48
+ },
+ "vertical": {
+  "lyric": 48,
+  "title": 40,
+  "artist": 26,
+  "maxRowFrac": 0.7
+ },
+ "cover": {
+  "title": 120,
+  "sub": 40,
+  "tagline": 52,
+  "tagline2": 28
+ }
+}

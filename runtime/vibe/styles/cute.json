@@ -1,0 +1,4 @@
+{"desc": "圆润可爱（站酷快乐体）— 萌系水彩 MV 默认", "for": ["lyric-mv"], "font": "ZCOOLKuaiLe-Regular.ttf",
+ "fallback": "\"PingFang SC\", sans-serif",
+ "colors": {"base": "#FFF6E8", "fill": "#FFC94D", "outline": "#3A2533", "title": "#FFF1DC", "artist": "#CFE0FF", "bar": "#2B2233", "pun": "#FF7A9A"},
+ "stroke": 5, "shadow": 3}

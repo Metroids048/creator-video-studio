@@ -1,0 +1,4 @@
+{"desc": "现代（得意黑）— 知识短片默认，科技、潮流", "for": ["knowledge-short", "lyric-mv"], "font": "SmileySans-Oblique.ttf",
+ "fallback": "\"PingFang SC\", sans-serif",
+ "colors": {"base": "#F2EEE6", "fill": "#FFD54A", "outline": "#0E0E12", "title": "#FFFFFF", "artist": "#BFD6FF", "bar": "#121217", "pun": "#FFD54A"},
+ "stroke": 4, "shadow": 2}

@@ -1,0 +1,4 @@
+{"desc": "毛笔楷（马善政）— 国风、民谣、怀旧", "for": ["lyric-mv"], "font": "MaShanZheng-Regular.ttf",
+ "fallback": "\"Kaiti SC\", \"STKaiti\", serif",
+ "colors": {"base": "#F6EEE2", "fill": "#F4B63A", "outline": "#121A30", "title": "#F6E7C8", "artist": "#CFE0FF", "bar": "#2B2233", "pun": "#F4B63A"},
+ "stroke": 5, "shadow": 3}

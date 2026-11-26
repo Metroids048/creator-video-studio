@@ -1,0 +1,4 @@
+{"desc": "粗圆卡通（站酷庆科黄油体）— 搞笑、热闹、儿歌", "for": ["lyric-mv"], "font": "ZCOOLQingKeHuangYou-Regular.ttf",
+ "fallback": "\"PingFang SC\", sans-serif",
+ "colors": {"base": "#FFFFFF", "fill": "#FF9A3D", "outline": "#1E1B2E", "title": "#FFFFFF", "artist": "#FFE08A", "bar": "#1E1B2E", "pun": "#FF4F6D"},
+ "stroke": 6, "shadow": 3}
